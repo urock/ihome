@@ -1,0 +1,237 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:03:03 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\adc_sensors.c                             #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\adc_sensors.c -D USE_STDPERIPH_DRIVER -D  #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\adc_sensors.lst      #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\adc_sensors.o         #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\adc_sensors.c
+      1          #include "adc_sensors.h"
+      2          
+      3          //-------------------------------------
+      4          __IO uint16_t ADC1ConvertedValue[ADC_CH];
+      5          
+      6          void adc_sensors_Init(void){
+      7              GPIO_InitTypeDef            GPIO_InitStructure;
+      8              ADC_InitTypeDef             ADC_InitStructure;
+      9              ADC_CommonInitTypeDef       ADC_CommonInitStructure;
+     10              DMA_InitTypeDef             DMA_InitStructureADC;
+     11              
+     12              /* Enable ADC1, DMA2 and GPIO clocks ****************************************/
+     13            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2 | RCC_AHB1Periph_GPIOA | RCC_AHB1Periph_GPIOB , ENABLE);  //ADCx_CLK
+     14            RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
+     15            
+     16            DMA_DeInit(DMA_ADC_CHANNEL);
+     17            /* DMA2 Stream0 channel2 configuration **************************************/
+     18            DMA_InitStructureADC.DMA_Channel = DMA_ADC_CHANNEL;  
+     19            DMA_InitStructureADC.DMA_PeripheralBaseAddr = (uint32_t)&(ADC1->DR);
+     20            DMA_InitStructureADC.DMA_Memory0BaseAddr = (uint32_t)&ADC1ConvertedValue;
+     21            DMA_InitStructureADC.DMA_DIR = DMA_DIR_PeripheralToMemory; 
+     22            DMA_InitStructureADC.DMA_BufferSize = ADC_CH;  //1
+     23            DMA_InitStructureADC.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+     24            DMA_InitStructureADC.DMA_MemoryInc = DMA_MemoryInc_Enable; //DMA_MemoryInc_Disable;
+     25            DMA_InitStructureADC.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+     26            DMA_InitStructureADC.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
+     27            DMA_InitStructureADC.DMA_Mode = DMA_Mode_Circular;
+     28            DMA_InitStructureADC.DMA_Priority = DMA_Priority_High;
+     29            DMA_InitStructureADC.DMA_FIFOMode = DMA_FIFOMode_Enable;     //Disable    
+     30            DMA_InitStructureADC.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull;
+     31            DMA_InitStructureADC.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+     32            DMA_InitStructureADC.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+     33            DMA_Init(DMA_ADC_STREAM, &DMA_InitStructureADC);
+     34            DMA_Cmd(DMA_ADC_STREAM, ENABLE);
+     35          //********************************************************************************
+     36            GPIO_InitStructure.GPIO_Pin = ADC0_PIN;
+     37            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     38            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     39            GPIO_Init(ADC0_GPIO_PORT, &GPIO_InitStructure);  
+     40          
+     41            GPIO_InitStructure.GPIO_Pin = ADC3_PIN;
+     42            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     43            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     44            GPIO_Init(ADC3_GPIO_PORT, &GPIO_InitStructure); 
+     45          
+     46            GPIO_InitStructure.GPIO_Pin = ADC4_PIN;
+     47            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     48            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     49            GPIO_Init(ADC4_GPIO_PORT, &GPIO_InitStructure); 
+     50          
+     51            GPIO_InitStructure.GPIO_Pin = ADC5_PIN;
+     52            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     53            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     54            GPIO_Init(ADC5_GPIO_PORT, &GPIO_InitStructure); 
+     55          
+     56            GPIO_InitStructure.GPIO_Pin = ADC6_PIN;
+     57            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     58            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     59            GPIO_Init(ADC6_GPIO_PORT, &GPIO_InitStructure); 
+     60          
+     61            GPIO_InitStructure.GPIO_Pin = ADC8_PIN;
+     62            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     63            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     64            GPIO_Init(ADC8_GPIO_PORT, &GPIO_InitStructure); 
+     65          
+     66            GPIO_InitStructure.GPIO_Pin = ADC9_PIN;
+     67            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     68            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     69            GPIO_Init(ADC9_GPIO_PORT, &GPIO_InitStructure); 
+     70          
+     71            GPIO_InitStructure.GPIO_Pin = ADC10_PIN;
+     72            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     73            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     74            GPIO_Init(ADC10_GPIO_PORT, &GPIO_InitStructure); 
+     75          
+     76            GPIO_InitStructure.GPIO_Pin = ADC12_PIN;
+     77            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     78            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     79            GPIO_Init(ADC12_GPIO_PORT, &GPIO_InitStructure); 
+     80          
+     81            GPIO_InitStructure.GPIO_Pin = ADC13_PIN;
+     82            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     83            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     84            GPIO_Init(ADC13_GPIO_PORT, &GPIO_InitStructure); 
+     85          
+     86          //********************************************************************************  
+     87            /* ADC Common Init **********************************************************/
+     88            ADC_CommonInitStructure.ADC_Mode = ADC_Mode_Independent;
+     89            ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div8;  
+     90            ADC_CommonInitStructure.ADC_DMAAccessMode = ADC_DMAAccessMode_Disabled;
+     91            ADC_CommonInitStructure.ADC_TwoSamplingDelay = ADC_TwoSamplingDelay_5Cycles;
+     92            ADC_CommonInit(&ADC_CommonInitStructure);
+     93          
+     94            /* ADC1 Init ****************************************************************/
+     95            ADC_InitStructure.ADC_Resolution = ADC_Resolution_12b;
+     96            ADC_InitStructure.ADC_ScanConvMode = ENABLE; //DISABLE;
+     97            ADC_InitStructure.ADC_ContinuousConvMode = ENABLE;
+     98            ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+     99            ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_T1_CC1;
+    100            ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
+    101            ADC_InitStructure.ADC_NbrOfConversion = ADC_CH; //1;
+    102            ADC_Init(ADC1, &ADC_InitStructure);
+    103          
+    104            /* ADC1 regular channel7 configuration *************************************/
+    105            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_0, 1, ADC_SampleTime_480Cycles);
+    106            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_3, 2, ADC_SampleTime_480Cycles);
+    107            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_4, 3, ADC_SampleTime_480Cycles);
+    108            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_5, 4, ADC_SampleTime_480Cycles);
+    109            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_6, 5, ADC_SampleTime_480Cycles);
+    110            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_8, 6, ADC_SampleTime_480Cycles);
+    111            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_9, 8, ADC_SampleTime_480Cycles);
+    112            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_10, 9, ADC_SampleTime_480Cycles);
+    113            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_12, 12, ADC_SampleTime_480Cycles);
+    114            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL_13, 13 , ADC_SampleTime_480Cycles);
+    115          
+    116           /* Enable DMA request after last transfer (Single-ADC mode) */
+    117            ADC_DMARequestAfterLastTransferCmd(ADC1, ENABLE);
+    118          
+    119            
+    120            /* Enable ADC1 DMA */
+    121            ADC_DMACmd(ADC1, ENABLE);
+    122          
+    123            /* Enable ADC1 */
+    124            ADC_Cmd(ADC1, ENABLE);
+    125            
+    126          
+    127            ADC_SoftwareStartConv(ADC1);
+    128            //********************************************************************************************************
+    129           }
+    130          
+    131          
+    132          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     112   adc_sensors_Init
+       112   -> ADC_Cmd
+       112   -> ADC_CommonInit
+       112   -> ADC_DMACmd
+       112   -> ADC_DMARequestAfterLastTransferCmd
+       112   -> ADC_Init
+       112   -> ADC_RegularChannelConfig
+       112   -> ADC_SoftwareStartConv
+       112   -> DMA_Cmd
+       112   -> DMA_DeInit
+       112   -> DMA_Init
+       112   -> GPIO_Init
+       112   -> RCC_AHB1PeriphClockCmd
+       112   -> RCC_APB2PeriphClockCmd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      20  ADC1ConvertedValue
+     608  adc_sensors_Init
+
+ 
+  20 bytes in section .bss
+ 608 bytes in section .text
+ 
+ 608 bytes of CODE memory
+  20 bytes of DATA memory
+
+Errors: none
+Warnings: none

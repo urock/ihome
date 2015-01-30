@@ -1,0 +1,542 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:35
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\ethernetif.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\ethernetif.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\ethernetif.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\ethernetif.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\ethernetif.c
+      1          /**
+      2           * @file
+      3           * Ethernet Interface Skeleton
+      4           *
+      5           */
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved.
+     10           *
+     11           * Redistribution and use in source and binary forms, with or without modification,
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission.
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           *
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          /*
+     40           * This file is a skeleton for developing Ethernet network interface
+     41           * drivers for lwIP. Add code to the low_level functions and do a
+     42           * search-and-replace for the word "ethernetif" to replace it with
+     43           * something that better describes your network interface.
+     44           */
+     45          
+     46          #include "lwip/opt.h"
+     47          #include "lwip/def.h"
+     48          #include "lwip/mem.h"
+     49          #include "lwip/pbuf.h"
+     50          #include "lwip/sys.h"
+     51          #include "netif/etharp.h"
+     52          #include "err.h"
+     53          #include "ethernetif.h"
+     54          
+     55          #include "main.h"
+     56          #include "stm32f2x7_eth.h"
+     57          #include <string.h>
+     58          
+     59          
+     60          #define netifMTU                                (1500)
+     61          #define netifINTERFACE_TASK_STACK_SIZE		( 350 )
+     62          #define netifINTERFACE_TASK_PRIORITY		( configMAX_PRIORITIES - 1 )
+     63          #define netifGUARD_BLOCK_TIME			( 250 )
+     64          /* The time to block waiting for input. */
+     65          #define emacBLOCK_TIME_WAITING_FOR_INPUT	( ( portTickType ) 100 )
+     66          
+     67          /* Define those to better describe your network interface. */
+     68          #define IFNAME0 's'
+     69          #define IFNAME1 't'
+     70          
+     71          
+     72          static struct netif *s_pxNetIf = NULL;
+     73          xSemaphoreHandle s_xSemaphore = NULL;
+     74                    
+     75          
+     76          /* Ethernet Rx & Tx DMA Descriptors */
+     77          extern ETH_DMADESCTypeDef  DMARxDscrTab[ETH_RXBUFNB], DMATxDscrTab[ETH_TXBUFNB];
+     78          
+     79          /* Ethernet Receive buffers  */
+     80          extern uint8_t Rx_Buff[ETH_RXBUFNB][ETH_RX_BUF_SIZE]; 
+     81          
+     82          /* Ethernet Transmit buffers */
+     83          extern uint8_t Tx_Buff[ETH_TXBUFNB][ETH_TX_BUF_SIZE]; 
+     84          
+     85          /* Global pointers to track current transmit and receive descriptors */
+     86          extern ETH_DMADESCTypeDef  *DMATxDescToSet;
+     87          extern ETH_DMADESCTypeDef  *DMARxDescToGet;
+     88          
+     89          /* Global pointer for last received frame infos */
+     90          extern ETH_DMA_Rx_Frame_infos *DMA_RX_FRAME_infos;
+     91          
+     92          
+     93          
+     94          
+     95          static void ethernetif_input( void * pvParameters );
+     96          static void arp_timer(void *arg);
+     97          
+     98          
+     99          /**
+    100           * In this function, the hardware should be initialized.
+    101           * Called from ethernetif_init().
+    102           *
+    103           * @param netif the already initialized lwip network interface structure
+    104           *        for this ethernetif
+    105           */
+    106          static void low_level_init(struct netif *netif)
+    107          {
+    108            uint32_t i;
+    109           
+    110            /* set netif MAC hardware address length */
+    111            netif->hwaddr_len = ETHARP_HWADDR_LEN;
+    112          	
+    113            /* set netif MAC hardware address */
+    114            netif->hwaddr[0] =  MAC_ADDR0;
+    115            netif->hwaddr[1] =  MAC_ADDR1;
+    116            netif->hwaddr[2] =  MAC_ADDR2;
+    117            netif->hwaddr[3] =  MAC_ADDR3;
+    118            netif->hwaddr[4] =  MAC_ADDR4;
+    119            netif->hwaddr[5] =  MAC_ADDR5;
+    120            
+    121            /* set netif maximum transfer unit */
+    122            netif->mtu = 1500;
+    123          
+    124            /* Accept broadcast address and ARP traffic */
+    125            netif->flags = NETIF_FLAG_BROADCAST | NETIF_FLAG_ETHARP;
+    126            
+    127            s_pxNetIf =netif;
+    128           
+    129            /* create binary semaphore used for informing ethernetif of frame reception */
+    130            if (s_xSemaphore == NULL)
+    131            {
+    132              s_xSemaphore= xSemaphoreCreateCounting(20,0);
+    133            }
+    134          
+    135            /* initialize MAC address in ethernet MAC */ 
+    136            ETH_MACAddressConfig(ETH_MAC_Address0, netif->hwaddr); 
+    137            
+    138            /* Initialize Tx Descriptors list: Chain Mode */
+    139            ETH_DMATxDescChainInit(DMATxDscrTab, &Tx_Buff[0][0], ETH_TXBUFNB);
+    140            /* Initialize Rx Descriptors list: Chain Mode  */
+    141            ETH_DMARxDescChainInit(DMARxDscrTab, &Rx_Buff[0][0], ETH_RXBUFNB);
+    142            
+    143            /* Enable Ethernet Rx interrrupt */
+    144            { 
+    145              for(i=0; i<ETH_RXBUFNB; i++)
+    146              {
+    147                ETH_DMARxDescReceiveITConfig(&DMARxDscrTab[i], ENABLE);
+    148              }
+    149            }
+    150          
+    151          #ifdef CHECKSUM_BY_HARDWARE
+    152            /* Enable the checksum insertion for the Tx frames */
+    153            {
+    154              for(i=0; i<ETH_TXBUFNB; i++)
+    155              {
+    156                ETH_DMATxDescChecksumInsertionConfig(&DMATxDscrTab[i], ETH_DMATxDesc_ChecksumTCPUDPICMPFull);
+    157              }
+    158            } 
+    159          #endif
+    160            
+    161            /* create the task that handles the ETH_MAC */
+    162            xTaskCreate(ethernetif_input, (signed char*) "Eth_if", netifINTERFACE_TASK_STACK_SIZE, NULL,
+    163                        netifINTERFACE_TASK_PRIORITY,NULL);
+    164            
+    165            /* Enable MAC and DMA transmission and reception */
+    166            ETH_Start();   
+    167          }
+    168          
+    169          
+    170          /**
+    171           * This function should do the actual transmission of the packet. The packet is
+    172           * contained in the pbuf that is passed to the function. This pbuf
+    173           * might be chained.
+    174           *
+    175           * @param netif the lwip network interface structure for this ethernetif
+    176           * @param p the MAC packet to send (e.g. IP packet including MAC addresses and type)
+    177           * @return ERR_OK if the packet could be sent
+    178           *         an err_t value if the packet couldn't be sent
+    179           *
+    180           * @note Returning ERR_MEM here if a DMA queue of your MAC is full can lead to
+    181           *       strange results. You might consider waiting for space in the DMA queue
+    182           *       to become availale since the stack doesn't retry to send a packet
+    183           *       dropped because of memory failure (except for the TCP timers).
+    184           */
+    185          
+    186          static err_t low_level_output(struct netif *netif, struct pbuf *p)
+    187          {
+    188            static xSemaphoreHandle xTxSemaphore = NULL;
+    189            struct pbuf *q;
+    190            uint32_t l = 0;
+    191            u8 *buffer ;
+    192            
+    193            if (xTxSemaphore == NULL)
+    194            {
+    195              vSemaphoreCreateBinary (xTxSemaphore);
+    196            } 
+    197             
+    198            if (xSemaphoreTake(xTxSemaphore, netifGUARD_BLOCK_TIME))
+    199            {
+    200              buffer =  (u8 *)(DMATxDescToSet->Buffer1Addr);
+    201              for(q = p; q != NULL; q = q->next) 
+    202              {
+    203                memcpy((u8_t*)&buffer[l], q->payload, q->len);
+    204                l = l + q->len;
+    205              }
+    206              ETH_Prepare_Transmit_Descriptors(l);
+    207              xSemaphoreGive(xTxSemaphore);
+    208            }
+    209          
+    210            return ERR_OK;
+    211          }
+    212          
+    213          
+    214          	
+    215            	
+    216          
+    217          /**
+    218           * Should allocate a pbuf and transfer the bytes of the incoming
+    219           * packet from the interface into the pbuf.
+    220           *
+    221           * @param netif the lwip network interface structure for this ethernetif
+    222           * @return a pbuf filled with the received packet (including MAC header)
+    223           *         NULL on memory error
+    224           */
+    225          static struct pbuf * low_level_input(struct netif *netif)
+    226          {
+    227            struct pbuf *p, *q;
+    228            u16_t len;
+    229            uint32_t l=0,i =0;
+    230            FrameTypeDef frame;
+    231            u8 *buffer;
+    232            __IO ETH_DMADESCTypeDef *DMARxNextDesc;
+    233            
+    234            p = NULL;
+    235            
+    236            /* Get received frame */
+    237            frame = ETH_Get_Received_Frame_interrupt();
+    238            
+    239            if (frame.descriptor && frame.buffer) {
+    240                /* check that frame has no error */
+    241                if ((frame.descriptor->Status & ETH_DMARxDesc_ES) == (uint32_t)RESET)
+    242                {
+    243                  
+    244                  /* Obtain the size of the packet and put it into the "len" variable. */
+    245                  len = frame.length;
+    246                  buffer = (u8 *)frame.buffer;
+    247          
+    248                  /* We allocate a pbuf chain of pbufs from the pool. */
+    249                  p = pbuf_alloc(PBUF_RAW, len, PBUF_POOL);
+    250               
+    251                  /* Copy received frame from ethernet driver buffer to stack buffer */
+    252                  if (p != NULL)
+    253                  { 
+    254                    for (q = p; q != NULL; q = q->next)
+    255                    {
+    256                      memcpy((u8_t*)q->payload, (u8_t*)&buffer[l], q->len);
+    257                      l = l + q->len;
+    258                    } 
+    259                  }
+    260                }
+    261            
+    262                /* Release descriptors to DMA */
+    263                /* Check if received frame with multiple DMA buffer segments */
+    264                if (DMA_RX_FRAME_infos->Seg_Count > 1)
+    265                {
+    266                  DMARxNextDesc = DMA_RX_FRAME_infos->FS_Rx_Desc;
+    267                }
+    268                else
+    269                {
+    270                  DMARxNextDesc = frame.descriptor;
+    271                }
+    272                
+    273                /* Set Own bit in Rx descriptors: gives the buffers back to DMA */
+    274                for (i=0; i<DMA_RX_FRAME_infos->Seg_Count; i++)
+    275                {  
+    276                  DMARxNextDesc->Status = ETH_DMARxDesc_OWN;
+    277                  DMARxNextDesc = (ETH_DMADESCTypeDef *)(DMARxNextDesc->Buffer2NextDescAddr);
+    278                }
+    279                
+    280                /* Clear Segment_Count */
+    281                DMA_RX_FRAME_infos->Seg_Count =0;
+    282            }
+    283            return p;
+    284          }
+    285          
+    286          
+    287          /**
+    288           * This function is the ethernetif_input task, it is processed when a packet 
+    289           * is ready to be read from the interface. It uses the function low_level_input() 
+    290           * that should handle the actual reception of bytes from the network
+    291           * interface. Then the type of the received packet is determined and
+    292           * the appropriate input function is called.
+    293           *
+    294           * @param netif the lwip network interface structure for this ethernetif
+    295           */
+    296          ////--sergey begin ----
+    297          static void ethernet_watchdog(void) {
+    298              /* When Rx Buffer unavailable flag is set: clear it and resume reception */
+    299              if ((ETH->DMASR & ETH_DMASR_RBUS) != (u32)RESET)  
+    300              {
+    301                  /* Clear RBUS ETHERNET DMA flag */
+    302                  ETH->DMASR = ETH_DMASR_RBUS;   
+    303                  
+    304                  /* Resume DMA reception. The register doesn't care what you write to it. */
+    305                  ETH->DMARPDR = 0;
+    306              }
+    307          }
+    308          
+    309          unsigned int thread_cnt = 0;
+    310          void ethernetif_input( void * pvParameters )
+    311          {
+    312            struct pbuf *p;
+    313            
+    314            for( ;; )
+    315            {
+    316              if (xSemaphoreTake( s_xSemaphore, emacBLOCK_TIME_WAITING_FOR_INPUT)==pdTRUE)
+    317              {
+    318                while ((p = low_level_input( s_pxNetIf )) != 0) 
+    319          //      p = low_level_input( s_pxNetIf );
+    320                {
+    321                  thread_cnt++;
+    322                  if (p != 0) {
+    323                      if (ERR_OK != s_pxNetIf->input( p, s_pxNetIf))
+    324                      {
+    325                        pbuf_free(p);
+    326                        p=NULL;
+    327                      }
+    328                  }
+    329                }
+    330              }
+    331              ethernet_watchdog();
+    332            }
+    333          }
+    334          ////--sergey end ----      
+    335          //void ethernetif_input(void * pvParameters)
+    336          //{
+    337          //  struct pbuf *p;
+    338          //
+    339          //  for( ;; )
+    340          //  {
+    341          //    if(xSemaphoreTake(s_xSemaphore, emacBLOCK_TIME_WAITING_FOR_INPUT)==pdTRUE)
+    342          //    {
+    343          //GET_NEXT_FRAGMENT:
+    344          //      p = low_level_input( s_pxNetIf );
+    345          //      if (p != NULL) 
+    346          //      {
+    347          //        if (ERR_OK != s_pxNetIf->input( p, s_pxNetIf))
+    348          //        {
+    349          //          pbuf_free(p);
+    350          //          p=NULL;
+    351          //        }
+    352          //        else 
+    353          //        {
+    354          //          xSemaphoreTake(s_xSemaphore, 0);
+    355          //          goto GET_NEXT_FRAGMENT;
+    356          //        }
+    357          //      }
+    358          //    }
+    359          //  }
+    360          //}
+    361          /**
+    362           * Should be called at the beginning of the program to set up the
+    363           * network interface. It calls the function low_level_init() to do the
+    364           * actual setup of the hardware.
+    365           *
+    366           * This function should be passed as a parameter to netif_add().
+    367           *
+    368           * @param netif the lwip network interface structure for this ethernetif
+    369           * @return ERR_OK if the loopif is initialized
+    370           *         ERR_MEM if private data couldn't be allocated
+    371           *         any other err_t on error
+    372           */
+    373          err_t ethernetif_init(struct netif *netif)
+    374          {
+    375            LWIP_ASSERT("netif != NULL", (netif != NULL));
+    376          
+    377          #if LWIP_NETIF_HOSTNAME
+    378            /* Initialize interface hostname */
+    379            netif->hostname = "lwip";
+    380          #endif /* LWIP_NETIF_HOSTNAME */
+    381          
+    382            netif->name[0] = IFNAME0;
+    383            netif->name[1] = IFNAME1;
+    384          
+    385            netif->output = etharp_output;
+    386            netif->linkoutput = low_level_output;
+    387          
+    388            /* initialize the hardware */
+    389            low_level_init(netif);
+    390            
+    391            etharp_init();
+    392            sys_timeout(ARP_TMR_INTERVAL, arp_timer, NULL);
+    393          
+    394            return ERR_OK;
+    395          }
+    396          
+    397          
+    398          static void arp_timer(void *arg)
+    399          {
+    400            etharp_tmr();
+    401            sys_timeout(ARP_TMR_INTERVAL, arp_timer, NULL);
+    402          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   arp_timer
+         8   -> etharp_tmr
+         8   -> sys_timeout
+       0   ethernet_watchdog
+       8   ethernetif_init
+         8   -> low_level_init
+         8   -> sys_timeout
+      16   ethernetif_input
+        16   -- Indirect call
+        16   -> ethernet_watchdog
+        16   -> low_level_input
+        16   -> pbuf_free
+        16   -> xQueueGenericReceive
+      32   low_level_init
+        32   -> ETH_DMARxDescChainInit
+        32   -> ETH_DMARxDescReceiveITConfig
+        32   -> ETH_DMATxDescChainInit
+        32   -> ETH_DMATxDescChecksumInsertionConfig
+        32   -> ETH_MACAddressConfig
+        32   -> ETH_Start
+        32   -> xQueueCreateCountingSemaphore
+        32   -> xTaskGenericCreate
+      64   low_level_input
+        64   -> ETH_Get_Received_Frame_interrupt
+        64   -> __aeabi_memcpy
+        64   -> pbuf_alloc
+      40   low_level_output
+        40   -> ETH_Prepare_Transmit_Descriptors
+        40   -> __aeabi_memcpy
+        40   -> xQueueGenericCreate
+        40   -> xQueueGenericReceive
+        40   -> xQueueGenericSend
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_14
+       4  ??DataTable6_15
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+       8  ?_0
+      22  arp_timer
+      22  ethernet_watchdog
+      48  ethernetif_init
+      86  ethernetif_input
+     204  low_level_init
+     176  low_level_input
+     144  low_level_output
+       4  s_pxNetIf
+       4  s_xSemaphore
+       4  thread_cnt
+       4  xTxSemaphore
+
+ 
+  16 bytes in section .bss
+   8 bytes in section .rodata
+ 766 bytes in section .text
+ 
+ 766 bytes of CODE  memory
+   8 bytes of CONST memory
+  16 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,106 @@
+															
+															# Schematic net name
+# pins to stm															
+NET sel_channel<0>				LOC = p48;		# sel_xc0
+NET sel_channel<1>				LOC = p46;		# sel_xc1
+NET sel_channel<2>				LOC = p45;		# sel_xc2
+NET sel_mode						LOC = p44;		# sel_xc3
+
+NET stm_bus_0						LOC = p56;		# spi3_sck
+NET stm_bus_1						LOC = p54;		# spi3_miso
+NET stm_bus_2						LOC = p53;		# spi3_mosi
+NET stm_bus_3						LOC = p57;		# spi3_nss
+	
+
+# pins to connectors
+
+###################################################
+NET board_spi_cs<0>				LOC = p34;
+NET board_spi_miso<0>			LOC = p35;
+NET board_spi_mosi<0>			LOC = p38;
+NET board_spi_clk<0>				LOC = p39;
+
+NET board_tdo<0>					LOC = p40;
+NET board_tdi<0>					LOC = p41;
+NET board_tms<0>					LOC = p42;
+NET board_tck<0>					LOC = p43;
+
+###################################################
+NET board_spi_cs<1>				LOC = p19;
+NET board_spi_miso<1>			LOC = p20;
+NET board_spi_mosi<1>			LOC = p21;
+NET board_spi_clk<1>				LOC = p22;
+
+NET board_tdo<1>					LOC = p23;
+NET board_tdi<1>					LOC = p24;
+NET board_tms<1>					LOC = p25;
+NET board_tck<1>					LOC = p26;
+
+###################################################
+NET board_spi_cs<2>				LOC = p11;
+NET board_spi_miso<2>			LOC = p12;
+NET board_spi_mosi<2>			LOC = p13;
+NET board_spi_clk<2>				LOC = p14;
+
+NET board_tdo<2>					LOC = p15;
+NET board_tdi<2>					LOC = p16;
+NET board_tms<2>					LOC = p17;
+NET board_tck<2>					LOC = p18;
+
+###################################################
+NET board_spi_cs<3>				LOC = p2;
+NET board_spi_miso<3>			LOC = p3;
+NET board_spi_mosi<3>			LOC = p4;
+NET board_spi_clk<3>				LOC = p5;
+
+NET board_tdo<3>					LOC = p6;
+NET board_tdi<3>					LOC = p7;
+NET board_tms<3>					LOC = p9;
+NET board_tck<3>					LOC = p10;
+
+###################################################
+NET board_spi_cs<4>				LOC = p120;
+NET board_spi_miso<4>			LOC = p121;
+NET board_spi_mosi<4>			LOC = p124;
+NET board_spi_clk<4>				LOC = p125;
+
+NET board_tdo<4>					LOC = p126;
+NET board_tdi<4>					LOC = p128;
+NET board_tms<4>					LOC = p129;
+NET board_tck<4>					LOC = p130;
+
+###################################################
+NET board_spi_cs<5>				LOC = p112;
+NET board_spi_miso<5>			LOC = p113;
+NET board_spi_mosi<5>			LOC = p114;
+NET board_spi_clk<5>				LOC = p115;
+
+NET board_tdo<5>					LOC = p116;
+NET board_tdi<5>					LOC = p117;
+NET board_tms<5>					LOC = p118;
+NET board_tck<5>					LOC = p119;
+
+###################################################
+NET board_spi_cs<6>				LOC = p101;
+NET board_spi_miso<6>			LOC = p102;
+NET board_spi_mosi<6>			LOC = p103;
+NET board_spi_clk<6>				LOC = p104;
+
+NET board_tdo<6>					LOC = p105;
+NET board_tdi<6>					LOC = p106;
+NET board_tms<6>					LOC = p107;
+NET board_tck<6>					LOC = p110;
+
+###################################################
+NET board_spi_cs<7>				LOC = p91;
+NET board_spi_miso<7>			LOC = p92;
+NET board_spi_mosi<7>			LOC = p94;
+NET board_spi_clk<7>				LOC = p95;
+
+NET board_tdo<7>					LOC = p96;
+NET board_tdi<7>					LOC = p97;
+NET board_tms<7>					LOC = p98;
+NET board_tck<7>					LOC = p100;
+
+
+

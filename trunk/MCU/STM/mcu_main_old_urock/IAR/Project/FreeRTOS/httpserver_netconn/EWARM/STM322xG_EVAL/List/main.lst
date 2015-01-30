@@ -1,0 +1,421 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:10:50
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\main.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\main.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\main.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\main.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\main.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    main.c
+      4            * @author  urock
+      5            * @version V0.1.0
+      6            * @date    07-Jan-2014
+      7            * @brief   Main program body
+      8            ******************************************************************************
+      9          
+     10            */
+     11          
+     12          /* Includes ------------------------------------------------------------------*/
+     13          #include "main.h"
+     14          #include "gpio_low_level.h"
+     15          //#include "uart_low_level.h"
+     16          #include "spi_low_level.h"
+     17          //#include "tcp_server_netconn.h"
+     18          //#include "tcp_client_netconn.h"
+     19          #include "power_cntrl_thread.h"
+     20          //#include "uart_thread.h"
+     21          #include "flash.h"
+     22          //#include "udp_server.h"
+     23          
+     24          mcu_config_t	mcu_config;
+     25          
+     26          //---- My variables ------------------------------------------------------------
+     27          
+     28          //--- Timers -------------------------------------------------------------------
+     29          
+     30          xTimerHandle	xOneShotTimers;
+     31          uint8_t end_timer = 0; // флаг о том, что таймер сработал - следовательно бит не передался  и произошла ошибка при передачи данных в 1-wire
+     32          
+     33          /* Период работы периодического таймера = 1 секунда */
+     34          unsigned int uiAutoReloadTimerPeriod = 60000 / portTICK_RATE_MS;  // опрос через 1 минуту
+     35          const portTickType xTicksToWait = 300 / portTICK_RATE_MS;  // Макс число тактов для чтения или записи аднных из\в очередь 
+     36          
+     37          //-------Queue------------------------------------------------------------------
+     38          xQueueHandle xQueue_sendText_t ;//Очередь для хранения сообщений посылаемых в ХОСТ через ETH
+     39          
+     40          xQueueHandle power_control_queue ;
+     41          xQueueHandle tcp_client_queue ;
+     42          
+     43          //-------Status Return ---------------------------------------------------------
+     44          portBASE_TYPE xReturn;
+     45          //------------------------------------------------------------------------------
+     46          
+     47          //----Semaphores ---------------------------------------------------------------
+     48          //xSemaphoreHandle xUSARTSemaphore;
+     49          
+     50          
+     51          /*Private functions ---------------------------------------------------------*/
+     52          
+     53          /**
+     54            * @brief  Main program.
+     55            * @param  None
+     56            * @retval None
+     57            */
+     58           int main(void)
+     59          { 
+     60          
+     61          //	 portBASE_TYPE xReturn;  //  TaskCreate Error
+     62          //
+     63          	 uint8_t	wr_val=0;
+     64          	 uint8_t	rd_val=1;
+     65          //	 
+     66          //	 uint16_t	count = 0, cycles=0;
+     67          //	 
+     68          //	 uint32_t	errors = 0; 
+     69            
+     70          //#ifdef SERIAL_DEBUG
+     71          //	 DebugComPort_Init();
+     72          //
+     73          //	 vSemaphoreCreateBinary(xUSARTSemaphore);
+     74          //	 if (xUSARTSemaphore == NULL) {
+     75          //		msg_dbg(("vSemaphoreCreateBinary failed\n"));
+     76          //		while(1);
+     77          //	 }
+     78          //#endif
+     79          //	 
+     80          //  
+     81          //	 msg_dbg(("DBG: Program start, base type size is %d\n\n\r",sizeof(portBASE_TYPE)));
+     82            
+     83          	 init_leds();  //Инициализация светодиодов
+     84          
+     85          	 init_spi();  //инициализация интерфейса SPI
+     86          //         while(1){
+     87          //	 rd_val = relay_read_reg_spi(1);
+     88          	 rd_val = spi_read_id(1);
+     89          //         }
+     90                   
+     91          //	 printf("spi id = 0x%x\n",rd_val);	  
+     92          //	 {
+     93          //	 relay_write_reg_spi(1,(wr_val & 0xFE));
+     94          //
+     95          //	 rd_val = relay_read_reg_spi(1);
+     96          //	 
+     97          //	 if (rd_val != rd_val) {
+     98          //	 	errors++;
+     99          //		printf("errors = %d\n",errors);
+    100          //	 }
+    101          //	 
+    102          //	 if (count == 0) {
+    103          //	 	printf("cycles = %d, errors = %d\n",cycles, errors);
+    104          //		cycles++;
+    105          //	 }
+    106          //	 count++;
+    107          //	 wr_val++;
+    108          //	 }
+    109          
+    110          
+    111          
+    112          	 //TODO: add check of connected devices
+    113          
+    114          	 led_on(LED_ST);
+    115          
+    116          	 init_config_t(&mcu_config);
+    117          
+    118            
+    119           // инициализация Ethernet
+    120          /* configure Ethernet (GPIOs, clocks, MAC, DMA) */ 
+    121          	 ETH_BSP_Config();
+    122              
+    123          /* Initilaize the LwIP stack */
+    124          	 LwIP_Init();
+    125            
+    126          
+    127          //	 UDP_server_init();
+    128          	  
+    129          	  //  
+    130          //  /* Initialize webserver demo */
+    131          //  tcp_server_netconn_init(); //   // DEFAULT_THREAD_STACKSIZE = 500B
+    132            
+    133            /* Initialize webserver demo */
+    134            http_server_netconn_init(); //   // DEFAULT_THREAD_STACKSIZE = 500B   
+    135            vNetconnClient_init(NULL); // Задача которая отсылает данные на ХОСТ
+    136          
+    137          //#ifdef USE_DHCP
+    138          //  /* Start DHCPClient */
+    139          //  xReturn = xTaskCreate(LwIP_DHCP_task, "DHCPClient", configMINIMAL_STACK_SIZE * 2, NULL,DHCP_TASK_PRIO, NULL);
+    140          //  if (xReturn != pdPASS){
+    141          //      printf ("Can't create DHCP task! see errors %d in file 'projdefs.h' \n", xReturn);    
+    142          //      LED_alarm_On();
+    143          //  }
+    144          //#endif
+    145            
+    146            
+    147          //	msg_dbg(("Done Init, Start tasks\n\r"));
+    148             xQueue_sendText_t = xQueueCreate( 2, sizeof( struct sendText_t) );  // Создание очереди для передачи значений по Ethernet
+    149            if( xQueue_sendText_t != NULL ) {    //!!!!!Все создания задач использующие очередь xQueue_sendText_t должны находиться внутри этого if       
+    150            
+    151          //  ----- Read  1-wire interface -----------------------------------------------
+    152                xReturn = xTaskCreate(vGetTemperature, (signed portCHAR *)"Temperature", configMINIMAL_STACK_SIZE * 4, NULL, ONEWIRE_TASK_PRIO, NULL);   // Задача опроса 1-wire шины и считывания температуры с датчиков температуры с отсылкой на ХОСТ     
+    153                if (xReturn != pdPASS){
+    154                  printf ("Can't create Get_Temperature Task, see errors %d in file 'projdefs.h' \n", xReturn);    
+    155                  led_on(LED_AL); // Индикация ошибки
+    156                }  
+    157            
+    158          //------------------- Urock ----------------------------------------------------  
+    159          	power_control_queue 	= xQueueCreate( 8, sizeof( struct sendStateRelays_t) ); // Очередь чтения из устройств по каналу SPI
+    160          	tcp_client_queue 	= xQueueCreate( 8, sizeof( struct sendStateRelays_t) );
+    161          	
+    162          //	if ( (power_control_queue != NULL) && (tcp_client_queue != NULL) ) {  // Задача опроса плат подключенных к MCU по каналу SPI
+    163          	if  (power_control_queue != NULL) {  // Задача опроса плат подключенных к MCU по каналу SPI          
+    164          
+    165          		xReturn = xTaskCreate(power_control_thread, (signed portCHAR *)"power_control_thread", configMINIMAL_STACK_SIZE * 2, NULL, POWER_CNTRL_PRIO, NULL);
+    166          		if (xReturn != pdPASS){
+    167          		led_on(LED_AL); // Индикация ошибки
+    168          		}
+    169          
+    170          //		xReturn = xTaskCreate(thread_comport_out, ( signed portCHAR * )"thread_comport_out", configMINIMAL_STACK_SIZE * 2, NULL , thread_comport_out_PRIO, NULL);
+    171          //		if (xReturn != pdPASS){
+    172          //			msg_dbg(("Can't create thread_comport_out. Error = %d \n", xReturn));
+    173          //		}
+    174          
+    175          //		xReturn = xTaskCreate(thread_comport_in, ( signed portCHAR * )"thread_comport_in", configMINIMAL_STACK_SIZE * 2, NULL , thread_comport_in_PRIO, NULL);
+    176          //		if (xReturn != pdPASS){
+    177          ////			msg_dbg(("Can't create thread_comport_in. Error = %d \n", xReturn));
+    178          //		}
+    179          
+    180          //		tcp_client_netconn_init();
+    181          				
+    182          	} else {
+    183          //		msg_dbg(("Can't create xQueue_relay_x \n"));    
+    184          	}
+    185          
+    186            }          
+    187          //
+    188          //	/* Start scheduler */
+    189          	vTaskStartScheduler();
+    190            
+    191          	while(1);
+    192          
+    193          	return 0;
+    194          
+    195          }
+    196          
+    197          
+    198          
+    199          
+    200          
+    201          
+    202          /** ----------------------------------------------------------------------------
+    203          * @brief В этой функции выполняются какие либо действия если программный стек переполнился
+    204          * например можно зажечь светодиод
+    205          * @param
+    206          * @return void
+    207          */
+    208          void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed portCHAR *pcTaskName ){
+    209          // Если переполняется Stack то вызываем загорается индикатор alarm  
+    210           led_on(LED_AL); 
+    211          for (;;){
+    212          
+    213            portCHAR PAGE_BODY[1024];
+    214            printf("\n\n");
+    215          #ifdef configUSE_TRACE_FACILITY  
+    216            strcat((char *)PAGE_BODY, "Name          State  Priority  Stack   Num\n" );
+    217            strcat((char *)PAGE_BODY, "---------------------------------------------\n");
+    218            
+    219              
+    220            /* The list of tasks and their status */
+    221            vTaskList((signed char *)(PAGE_BODY + strlen(PAGE_BODY)));
+    222            printf("\n%s\n", "task name status priority HWMTS ID");
+    223            strcat((char *)PAGE_BODY, "---------------------------------------------\n");
+    224            strcat((char *)PAGE_BODY, "B : Blocked, R : Ready, D : Deleted, S : Suspended\n\n");
+    225             
+    226            printf ("%s\n", PAGE_BODY);
+    227          #endif
+    228            
+    229            } //end for
+    230          }
+    231          
+    232          
+    233          
+    234          /**-----------------------------------------------------------------------------
+    235          * @brief Этот таймер запускает функцию опроса датчиков температуры на  шине 1-wire каждую минуту
+    236          * 
+    237          */
+    238          void vAutoReloadTimerFunction(xTimerHandle xTimer) {  
+    239          // Вставить функцию запуска опроса датчика  
+    240            
+    241            
+    242            return;
+    243          }//--------------------------------------------------------------------------
+    244          //---------------------------------------------------------------------------
+    245          /**
+    246          * @brief Функция интервальных таймеров. 
+    247          * 
+    248          * 
+    249          */
+    250          void vQneShotTimersFunction(xTimerHandle xTimer) {
+    251          end_timer = 1;  // Одиночный таймер
+    252            return;
+    253          }
+    254          //------------------------------------------------------------------------------
+    255          
+    256          #ifdef  USE_FULL_ASSERT
+    257          
+    258          /**
+    259          * @brief  Reports the name of the source file and the source line number
+    260          *   where the assert_param error has occurred.
+    261          * @param  file: pointer to the source file name
+    262          * @param  line: assert_param error line source number
+    263          * @retval None
+    264          */
+    265          void assert_failed(uint8_t* file, uint32_t line)
+    266          {
+    267            /* User can add his own implementation to report the file name and line number,
+    268               ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+    269          
+    270            /* Infinite loop */
+    271            while (1)
+    272            {}
+    273          }
+    274          #endif
+    275          
+    276          
+    277          /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   main
+        32   -> ETH_BSP_Config
+        32   -> LwIP_Init
+        32   -> http_server_netconn_init
+        32   -> init_config_t
+        32   -> init_leds
+        32   -> init_spi
+        32   -> led_on
+        32   -> printf
+        32   -> spi_read_id
+        32   -> vNetconnClient_init
+        32   -> vTaskStartScheduler
+        32   -> xQueueGenericCreate
+        32   -> xTaskGenericCreate
+    1040   vApplicationStackOverflowHook
+      1040   -> led_on
+      1040   -> printf
+      1040   -> strcat
+      1040   -> strlen
+      1040   -> vTaskList
+       0   vAutoReloadTimerFunction
+       0   vQneShotTimersFunction
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_10
+       4  ??DataTable2_11
+       4  ??DataTable2_12
+       4  ??DataTable2_13
+       4  ??DataTable2_14
+       4  ??DataTable2_15
+       4  ??DataTable2_16
+       4  ??DataTable2_17
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       4  ??DataTable2_9
+      12  ?_0
+      72  ?_1
+      24  ?_2
+       4  ?_3
+      44  ?_4
+      48  ?_5
+       8  ?_6
+      36  ?_7
+      56  ?_8
+       4  ?_9
+       1  end_timer
+     224  main
+      24  mcu_config
+       4  power_control_queue
+       4  tcp_client_queue
+       4  uiAutoReloadTimerPeriod
+      82  vApplicationStackOverflowHook
+       2  vAutoReloadTimerFunction
+       8  vQneShotTimersFunction
+       4  xOneShotTimers
+       4  xQueue_sendText_t
+       4  xReturn
+       4  xTicksToWait
+
+ 
+  45 bytes in section .bss
+   4 bytes in section .data
+ 312 bytes in section .rodata
+ 388 bytes in section .text
+ 
+ 388 bytes of CODE  memory
+ 312 bytes of CONST memory
+  49 bytes of DATA  memory
+
+Errors: none
+Warnings: 3

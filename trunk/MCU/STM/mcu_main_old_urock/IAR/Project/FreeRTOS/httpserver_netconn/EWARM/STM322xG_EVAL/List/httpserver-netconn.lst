@@ -1,0 +1,581 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      26/Nov/2013  08:06:40 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\httpserver-netconn.c                      #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\httpserver-netconn.c -D                   #
+#                    USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL   #
+#                    -lcN E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\STM322xG_EVAL\List\ -o             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\httpserver-netconn.l #
+#                    st                                                       #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\httpserver-netconn.o  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\httpserver-netconn.c
+      1          /* Includes ------------------------------------------------------------------*/
+      2          #include "httpserver-netconn.h"
+      3          /* Private typedef -----------------------------------------------------------*/
+      4          /* Private define ------------------------------------------------------------*/
+      5          #define WEBSERVER_THREAD_PRIO    ( tskIDLE_PRIORITY + 1 )
+      6          
+      7          extern const portTickType xTicksToWait;
+      8          
+      9          
+     10          /* Private macro -------------------------------------------------------------*/
+     11          /* Private variables ---------------------------------------------------------*/
+     12          u32_t nPageHits = 0;
+     13          uint8_t port;
+     14          uint8_t error = 0;
+     15          
+     16            struct netbuf *inbuf;
+     17            char* buf;
+     18            uint8_t *buf_ptr;
+     19            
+     20            u16_t buflen;
+     21            
+     22            int val_http;
+     23            char str_http[5];
+     24            char port_http[3], status_http[2], enable_http[2], value_http[4], key_http[4], mode_http[2];   
+     25          //  struct sendText_t send2host_http; // —труктура хран€ща€ состо€ние порта, передаетс€ в очередь
+     26          
+     27          extern volatile struct PORT_struct PORTs[40];
+     28          extern volatile struct info_struct_t info_struct;
+     29          extern unsigned char ID;
+     30          extern xQueueHandle xQueue_sendText_t;
+     31          
+     32          extern char store_str[10];
+     33          
+     34          /* Private function prototypes -----------------------------------------------*/
+     35          /* Private functions ---------------------------------------------------------*/
+     36          
+     37          /**
+     38            * @brief serve tcp connection  
+     39            * @param conn: pointer on connection structure 
+     40            * @retval None
+     41            */
+     42          void http_server_serve(struct netconn *conn) 
+     43          {
+     44            portBASE_TYPE xStatus;
+     45          //  struct fs_file * file;
+     46            /* Read the data from the port, blocking if nothing yet there. 
+     47             We assume the request (the part we care about) is in one netbuf */
+     48            inbuf = netconn_recv(conn);
+     49            //*****************************************************************************
+     50          //  if (inbuf != NULL)
+     51          //  {
+     52          //    if (netconn_err(conn) == ERR_OK) 
+     53          //    {
+     54          //      netbuf_data(inbuf, (void**)&buf, &buflen);
+     55              
+     56                /* Is this an HTTP GET command? (only check the first 5 chars, since
+     57                there are other formats for GET, and we're keeping it very simple )*/
+     58          //      if ((buflen >=5) && (strncmp(buf, "GET /", 5) == 0))
+     59          //      {
+     60          ////*****************************************************************************
+     61          //// ----------------  Set PORT Config -------------------------------------------        
+     62          //        //-----------------------------------------------
+     63          //        // Set Port mode (PWM, ADC) 
+     64          //        if(strncmp(buf, "GET /SetMode", 12) == 0)  // set port mode
+     65          //        {
+     66          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct PORT_struct          
+     67          //          if (error == 0){
+     68          //            port = my_convert_str2int(store_str);  // определ€ем порт в котором будем устанавливать режим
+     69          //            
+     70          //            error = parsing_html_parsingGET(buf,"SetMode");  // parsim config porta and add it to struct parsing_html_device_pt          
+     71          //            if (error == 0){
+     72          //              
+     73          //              my_convert_toPort_struct(port, store_str, "SetMode");              
+     74          //            }
+     75          //            else{ // error mode
+     76          //              
+     77          //            }
+     78          //          }
+     79          //          else{  // error stmd
+     80          //            
+     81          //          }
+     82          //        }        
+     83          ////------------------------------------------------------------------------------        
+     84          //        else if(strncmp(buf, "GET /SetStatus", 14) == 0)  //Set status port
+     85          //        {
+     86          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct parsing_html_device_pt          
+     87          //          if (error == 0){
+     88          //            port = my_convert_str2int(store_str);  // определ€ем порт (переводим из строки в число)
+     89          //            
+     90          //            error = parsing_html_parsingGET(buf,"SetStatus");  // parsim config porta and add it to struct parsing_html_device_pt                    
+     91          //            if (error == 0){
+     92          //               my_convert_toPort_struct(port, store_str, "SetStatus");              
+     93          //                        
+     94          //              my_tasks_vConfigPort_init((void*)&PORTs[port]);          
+     95          //            }
+     96          //            else{ // error status
+     97          //              
+     98          //            }
+     99          //          }
+    100          //          else{ //error stpt
+    101          //            
+    102          //          }
+    103          //        }
+    104          ////------------------------------------------------------------------------------                
+    105          //        else if(strncmp(buf, "GET /SetValue", 13) == 0) //Set port value
+    106          //        {
+    107          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct parsing_html_device_pt          
+    108          //          if (error == 0){
+    109          //            port = my_convert_str2int(store_str); // устанавливаем порт
+    110          //            error = parsing_html_parsingGET(buf,"SetValue");  // parsim config porta and add it to struct parsing_html_device_pt          
+    111          //            if (error == 0){
+    112          //                PORTs[port].value =  my_convert_str2int(store_str);
+    113          ////                PORTs[port].num_port = port;
+    114          //            }
+    115          //            else{  //error value
+    116          //              
+    117          //            }
+    118          //          }
+    119          //          else {  //error stvl
+    120          //            
+    121          //          }
+    122          //        }        
+    123          ////------------------------------------------------------------------------------                
+    124          //        else if(strncmp(buf, "GET /WriteFlash", 15) == 0) //Write to flash
+    125          //        {
+    126          //          //«апись содержимого структуры PORTs во флеш пам€ть.
+    127          //          uint8_t size;
+    128          //          size = sizeof(PORTs);  // вычисл€ем размер структуры
+    129          //          buf_ptr =(uint8_t*) &PORTs[0];  // устанавливаем указатель на адрес структуры
+    130          //          write_buf_to_flash(buf_ptr, size, USER_FLASH_BASE);  // пишим структуру во флеш пам€ть
+    131          //          
+    132          //          info_struct.ver = PROG_VERTION;   //¬ерси€ программы       
+    133          //          info_struct.ID_board_flash = ID;  //«аписываем ID подключенной платы
+    134          //          
+    135          //          size = sizeof(info_struct);  // вычисл€ем размер структуры
+    136          //          buf_ptr =(uint8_t*) &info_struct;  // устанавливаем указатель на адрес структуры
+    137          //          write_buf_to_flash(buf_ptr, size, USER_FLASH_INFO);  // пишим структуру во флеш пам€ть          
+    138          //        }        
+    139          ////------------------------------------------------------------------------------                
+    140          //        else if(strncmp(buf, "GET /ClearFlash", 15) == 0) //Write to flash
+    141          //        {
+    142          //          //ќчищаем флкш пам€ть
+    143          //          clear_flash(USER_FLASH_BASE);  // пишим структуру во флеш пам€ть
+    144          //          clear_flash(USER_FLASH_INFO);  // пишим структуру во флеш пам€ть                    
+    145          //        }        
+    146          //
+    147          //
+    148          ////------------------------------------------------------------------------------        
+    149          //        else if(strncmp(buf, "GET /SetKey", 11) == 0) //Set port key
+    150          //        {
+    151          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct parsing_html_device_pt          
+    152          //          if (error == 0){
+    153          //            port = my_convert_str2int(store_str);  // устанавливаем порт
+    154          //
+    155          //            error = parsing_html_parsingGET(buf,"SetKey");  // parsim config porta and add it to struct parsing_html_device_pt          
+    156          //            if (error == 0){
+    157          //              PORTs[port].key =  my_convert_str2int(store_str);              
+    158          //            }
+    159          //            else{ // error key
+    160          //              
+    161          //            }
+    162          //          }
+    163          //          else{ //error stky
+    164          //            
+    165          //          }
+    166          //        }        
+    167          //        
+    168          ////------------------------------------------------------------------------------        
+    169          //        else if(strncmp(buf, "GET /SetEnable", 14) == 0) //Set port enable
+    170          //        {
+    171          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct parsing_html_device_pt          
+    172          //          if (error == 0){
+    173          //            port = my_convert_str2int(store_str);  // устанавливаем порт
+    174          //
+    175          //            error = parsing_html_parsingGET(buf,"SetEnable");  // parsim config porta and add it to struct parsing_html_device_pt          
+    176          //            if (error == 0){
+    177          //               my_convert_toPort_struct(port, store_str, "SetEnable"); 
+    178          //            }
+    179          //            else{ // error key
+    180          //              
+    181          //            }
+    182          //          }
+    183          //          else{ //error stky
+    184          //            
+    185          //          }
+    186          //        }        
+    187          //        
+    188          ////------------------------------------------------------------------------------
+    189          //        else if(strncmp(buf, "GET /GetMode", 12) == 0)  // get port mode
+    190          //        {
+    191          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct PORT_struct          
+    192          //          if (error == 0){
+    193          //            port = my_convert_str2int(store_str);  // определ€ем порт в котором будем устанавливать режим
+    194          //             
+    195          //            val_http = PORTs[port].num_port;  //Port int to string
+    196          //            sprintf(str_http, "%d", val_http);
+    197          //            strcpy(port_http,str_http);
+    198          //            
+    199          //            val_http = PORTs[port].mode;  //Status int to string
+    200          //            sprintf(str_http, "%d", val_http);
+    201          //            strcpy(mode_http, str_http);
+    202          //
+    203          //            send2host_http.cmd[0]=0;
+    204          //            strcat(strcpy(send2host_http.cmd, begin_pack), port_http);
+    205          //            strcat(send2host_http.cmd, mode_pack);
+    206          //            strcat(send2host_http.cmd, mode_http);
+    207          //            strcat(send2host_http.cmd, end_pack);
+    208          //                   
+    209          //            send2host_http.len = strlen(send2host_http.cmd);                  //length of send_com
+    210          //
+    211          //            xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_http, xTicksToWait );
+    212          //            if (xStatus != pdPASS){
+    213          //              LED_alarm_On();
+    214          //              printf("(httpserver-netconn)Can't to write port mode, error is %d ", xStatus);
+    215          //            }
+    216          //            
+    217          //            vNetconnClient_init(NULL);       
+    218          //            }
+    219          //          }        
+    220          ////------------------------------------------------------------------------------        
+    221          //        else if(strncmp(buf, "GET /GetStatus", 14) == 0)  // get port status
+    222          //        {
+    223          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct PORT_struct          
+    224          //          
+    225          //          val_http = PORTs[port].num_port;  //Port int to string
+    226          //          sprintf(str_http, "%d", val_http);
+    227          //          strcpy(port_http,str_http);
+    228          //            
+    229          //          val_http = PORTs[port].status;  //Status int to string
+    230          //          sprintf(str_http, "%d", val_http);
+    231          //          strcpy(status_http, str_http);
+    232          //
+    233          //          send2host_http.cmd[0]=0;
+    234          //          strcat(strcpy(send2host_http.cmd, begin_pack), port_http);
+    235          //          strcat(send2host_http.cmd, status_pack);
+    236          //          strcat(send2host_http.cmd, status_http);
+    237          //          strcat(send2host_http.cmd, end_pack);
+    238          //                   
+    239          //          send2host_http.len = strlen(send2host_http.cmd);                  //length of send_com
+    240          //
+    241          //          xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_http, xTicksToWait );
+    242          //            if (xStatus != pdPASS){
+    243          //              LED_alarm_On();
+    244          //              printf("(httpserver-netconn)Can't to write port status, error is %d ", xStatus);
+    245          //            }
+    246          //          
+    247          //          vNetconnClient_init(NULL);       
+    248          //        }
+    249          ////------------------------------------------------------------------------------        
+    250          //        else if(strncmp(buf, "GET /GetValue", 13) == 0)  // get port value
+    251          //        {
+    252          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct PORT_struct          
+    253          //          
+    254          //          val_http = PORTs[port].num_port;  //Port int to string
+    255          //          sprintf(str_http, "%d", val_http);
+    256          //          strcpy(port_http,str_http);
+    257          //            
+    258          //          val_http = PORTs[port].value;  //Status int to string
+    259          //          sprintf(str_http, "%d", val_http);
+    260          //          strcpy(value_http, str_http);
+    261          //
+    262          //          send2host_http.cmd[0]=0;
+    263          //          strcat(strcpy(send2host_http.cmd, begin_pack), port_http);
+    264          //          strcat(send2host_http.cmd, value_pack);
+    265          //          strcat(send2host_http.cmd, value_http);
+    266          //          strcat(send2host_http.cmd, end_pack);
+    267          //                   
+    268          //          send2host_http.len = strlen(send2host_http.cmd);                  //length of send_com
+    269          //
+    270          //          xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_http, xTicksToWait );
+    271          //            if (xStatus != pdPASS){
+    272          //              LED_alarm_On();
+    273          //              printf("(httpserver-netconn)Can't to write port value, error is %d ", xStatus);
+    274          //            }
+    275          //          
+    276          //          vNetconnClient_init(NULL);                 
+    277          //        }
+    278          ////------------------------------------------------------------------------------        
+    279          //        else if(strncmp(buf, "GET /GetKey", 11) == 0)  // get port key
+    280          //        {
+    281          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct PORT_struct          
+    282          //          
+    283          //          val_http = PORTs[port].num_port;  //Port int to string
+    284          //          sprintf(str_http, "%d", val_http);
+    285          //          strcpy(port_http,str_http);
+    286          //            
+    287          //          val_http = PORTs[port].key;  //Status int to string
+    288          //          sprintf(str_http, "%d", val_http);
+    289          //          strcpy(key_http, str_http);
+    290          //
+    291          //          send2host_http.cmd[0]=0;
+    292          //          strcat(strcpy(send2host_http.cmd, begin_pack), port_http);
+    293          //          strcat(send2host_http.cmd, key_pack);
+    294          //          strcat(send2host_http.cmd, key_http);
+    295          //          strcat(send2host_http.cmd, end_pack);
+    296          //                   
+    297          //          send2host_http.len = strlen(send2host_http.cmd);                  //length of send_com
+    298          //
+    299          //          xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_http, xTicksToWait );
+    300          //            if (xStatus != pdPASS){
+    301          //              LED_alarm_On();
+    302          //              printf("(httpserver-netconn)Can't to write port key, error is %d ", xStatus);
+    303          //            }
+    304          //          
+    305          //          vNetconnClient_init(NULL);       
+    306          //        }
+    307          ////------------------------------------------------------------------------------                
+    308          ////        else if(strncmp(buf, "GET /STM32F2x7TASKS.html", 24) == 0)
+    309          ////        {
+    310          ////           /* Load dynamic page */
+    311          ////           DynWebPage(conn);
+    312          ////        }
+    313          //        
+    314          ////------------------------------------------------------------------------------        
+    315          //        else if(strncmp(buf, "GET /GetEnable", 14) == 0)  // get port enable
+    316          //        {
+    317          //          error = parsing_html_parsingGET(buf,"port");  // parsim config porta and add it to struct PORT_struct          
+    318          //
+    319          //          val_http = PORTs[port].num_port;  //Port int to string
+    320          //          sprintf(str_http, "%d", val_http);
+    321          //          strcpy(port_http,str_http);
+    322          //            
+    323          //          val_http = PORTs[port].enable;  //Status int to string
+    324          //          sprintf(str_http, "%d", val_http);
+    325          //          strcpy(enable_http, str_http);
+    326          //
+    327          //          send2host_http.cmd[0]=0;
+    328          //          strcat(strcpy(send2host_http.cmd, begin_pack), port_http);
+    329          //          strcat(send2host_http.cmd, enable_pack);
+    330          //          strcat(send2host_http.cmd, enable_http);
+    331          //          strcat(send2host_http.cmd, end_pack);
+    332          //                   
+    333          //          send2host_http.len = strlen(send2host_http.cmd);                  //length of send_com
+    334          //
+    335          //          xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_http, xTicksToWait );
+    336          //            if (xStatus != pdPASS){
+    337          //              LED_alarm_On();
+    338          //              printf("(httpserver-netconn)Can't to write port enable, error is %d ", xStatus);
+    339          //            }
+    340          //          
+    341          //          vNetconnClient_init(NULL);                 
+    342          //        }
+    343          ////------------------------------------------------------------------------------        
+    344          //        
+    345          //        else  //if receive unknow command then nuthing to do
+    346          //        {
+    347          ////          /* Load Error page */
+    348          ////          file = fs_open("/404.html");
+    349          ////          netconn_write(conn, (const unsigned char*)(file->data), (size_t)file->len, NETCONN_NOCOPY);
+    350          ////          fs_close(file);
+    351          //        }
+    352          //      }      
+    353          //    }
+    354          //  }
+    355          //  /* Close the connection (server closes in HTTP) */
+    356          //  if (conn !=NULL){
+    357          //  netconn_close(conn);
+    358          //  }
+    359            
+    360            /* Delete the buffer (netconn_recv gives us ownership,
+    361             so we have to make sure to deallocate the buffer) */
+    362            netbuf_delete(inbuf);
+    363          }
+    364          
+    365          
+    366          /**
+    367            * @brief  http server thread 
+    368            * @param arg: pointer on argument(not used here) 
+    369            * @retval None
+    370            */
+    371          static void http_server_netconn_thread(void *arg)
+    372          { 
+    373            struct netconn *conn, *newconn;
+    374            err_t err;
+    375            
+    376            /* Create a new TCP connection handle */
+    377            conn = netconn_new(NETCONN_TCP);
+    378            
+    379            if (conn!= NULL)
+    380            {
+    381              /* Bind to port 80 (HTTP) with default IP address */
+    382              err = netconn_bind(conn, NULL, 80);
+    383              
+    384              if (err == ERR_OK)
+    385              {
+    386                /* Put the connection into LISTEN state */
+    387                netconn_listen(conn);
+    388            
+    389                while(1) 
+    390                {
+    391                  /* accept any icoming connection */
+    392                  newconn = netconn_accept(conn);
+    393                
+    394                  /* serve connection */
+    395                  http_server_serve(newconn);
+    396                
+    397                  /* delete connection */
+    398                  netconn_delete(newconn);
+    399                }
+    400              }
+    401              else
+    402              {
+    403                printf("can not bind netconn\n ");
+    404              }
+    405            }
+    406            else
+    407            {
+    408              printf("can not create netconn \n ");
+    409            }
+    410          }
+    411          
+    412          /**
+    413            * @brief  Initialize the HTTP server (start its thread) 
+    414            * @param  none
+    415            * @retval None
+    416            */
+    417          void http_server_netconn_init()
+    418          {
+    419            sys_thread_new("HTTP", http_server_netconn_thread, NULL, DEFAULT_THREAD_STACKSIZE, WEBSERVER_THREAD_PRIO);
+    420          }
+    421          
+    422          /**
+    423            * @brief  Create and send a dynamic Web Page. This page contains the list of 
+    424            *         running tasks and the number of page hits. 
+    425            * @param  conn pointer on connection structure 
+    426            * @retval None
+    427            */
+    428          //void DynWebPage(struct netconn *conn)
+    429          //{
+    430          ////  portCHAR PAGE_BODY[512];
+    431          ////  portCHAR pagehits[10] = {0};
+    432          ////
+    433          ////  memset(PAGE_BODY, 0,512);
+    434          ////
+    435          ////  /* Update the hit count */
+    436          ////  nPageHits++;
+    437          ////  sprintf(pagehits, "%d", nPageHits);
+    438          ////  strcat(PAGE_BODY, pagehits);
+    439          ////  strcat((char *)PAGE_BODY, "<pre><br>Name          State  Priority  Stack   Num" );
+    440          ////  strcat((char *)PAGE_BODY, "<br>---------------------------------------------<br>");
+    441          ////    
+    442          ////  /* The list of tasks and their status */
+    443          ////  vTaskList((signed char *)(PAGE_BODY + strlen(PAGE_BODY)));
+    444          ////  strcat((char *)PAGE_BODY, "<br><br>---------------------------------------------");
+    445          ////  strcat((char *)PAGE_BODY, "<br>B : Blocked, R : Ready, D : Deleted, S : Suspended<br>");
+    446          ////
+    447          ////  /* Send the dynamically generated page */
+    448          ////  //netconn_write(conn, PAGE_START, strlen((char*)PAGE_START), NETCONN_COPY);
+    449          ////  netconn_write(conn, PAGE_BODY, strlen(PAGE_BODY), NETCONN_COPY);
+    450          //}
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   http_server_netconn_init
+         8   -> sys_thread_new
+      24   http_server_netconn_thread
+        24   -> http_server_serve
+        24   -> netconn_accept
+        24   -> netconn_bind
+        24   -> netconn_delete
+        24   -> netconn_listen_with_backlog
+        24   -> netconn_new_with_proto_and_callback
+        24   -> printf
+       8   http_server_serve
+         8   -> netbuf_delete
+         8   -> netconn_recv
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?<Constant "HTTP">
+      24  ?<Constant "can not bind netconn\n ">
+      28  ?<Constant "can not create netcon...">
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  buf
+       4  buf_ptr
+       2  buflen
+       2  enable_http
+       1  error
+      22  http_server_netconn_init
+      84  http_server_netconn_thread
+      24  http_server_serve
+       4  inbuf
+       4  key_http
+       2  mode_http
+       4  nPageHits
+       1  port
+       4  port_http
+       2  status_http
+       8  str_http
+       4  val_http
+       4  value_http
+
+ 
+  50 bytes in section .bss
+  60 bytes in section .rodata
+ 150 bytes in section .text
+ 
+ 150 bytes of CODE  memory
+  60 bytes of CONST memory
+  50 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

@@ -1,0 +1,747 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:38
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\mem.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\mem.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\mem.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\mem.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\mem.c
+      1          /**
+      2           * @file
+      3           * Dynamic memory manager
+      4           *
+      5           * This is a lightweight replacement for the standard C library malloc().
+      6           *
+      7           * If you want to use the standard C library malloc() instead, define
+      8           * MEM_LIBC_MALLOC to 1 in your lwipopts.h
+      9           *
+     10           * To let mem_malloc() use pools (prevents fragmentation and is much faster than
+     11           * a heap but might waste some memory), define MEM_USE_POOLS to 1, define
+     12           * MEM_USE_CUSTOM_POOLS to 1 and create a file "lwippools.h" that includes a list
+     13           * of pools like this (more pools can be added between _START and _END):
+     14           *
+     15           * Define three pools with sizes 256, 512, and 1512 bytes
+     16           * LWIP_MALLOC_MEMPOOL_START
+     17           * LWIP_MALLOC_MEMPOOL(20, 256)
+     18           * LWIP_MALLOC_MEMPOOL(10, 512)
+     19           * LWIP_MALLOC_MEMPOOL(5, 1512)
+     20           * LWIP_MALLOC_MEMPOOL_END
+     21           **/
+     22          
+     23          /*
+     24           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+     25           * All rights reserved.
+     26           *
+     27           * Redistribution and use in source and binary forms, with or without modification,
+     28           * are permitted provided that the following conditions are met:
+     29           *
+     30           * 1. Redistributions of source code must retain the above copyright notice,
+     31           *    this list of conditions and the following disclaimer.
+     32           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     33           *    this list of conditions and the following disclaimer in the documentation
+     34           *    and/or other materials provided with the distribution.
+     35           * 3. The name of the author may not be used to endorse or promote products
+     36           *    derived from this software without specific prior written permission.
+     37           *
+     38           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     39           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     40           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     41           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     42           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     43           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     44           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     45           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     46           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     47           * OF SUCH DAMAGE.
+     48           *
+     49           * This file is part of the lwIP TCP/IP stack.
+     50           *
+     51           * Author: Adam Dunkels <adam@sics.se>
+     52           *         Simon Goldschmidt
+     53           *
+     54           */
+     55          
+     56          #include "lwip/opt.h"
+     57          
+     58          #if !MEM_LIBC_MALLOC /* don't build if not configured for use in lwipopts.h */
+     59          
+     60          #include "lwip/def.h"
+     61          #include "lwip/mem.h"
+     62          #include "lwip/sys.h"
+     63          #include "lwip/stats.h"
+     64          
+     65          #include <string.h>
+     66          
+     67          #if MEM_USE_POOLS
+     68          /* lwIP head implemented with different sized pools */
+     69          
+     70          /**
+     71           * Allocate memory: determine the smallest pool that is big enough
+     72           * to contain an element of 'size' and get an element from that pool.
+     73           *
+     74           * @param size the size in bytes of the memory needed
+     75           * @return a pointer to the allocated memory or NULL if the pool is empty
+     76           */
+     77          void *
+     78          mem_malloc(mem_size_t size)
+     79          {
+     80            struct memp_malloc_helper *element;
+     81            memp_t poolnr;
+     82            mem_size_t required_size = size + sizeof(struct memp_malloc_helper);
+     83          
+     84            for (poolnr = MEMP_POOL_FIRST; poolnr <= MEMP_POOL_LAST; poolnr++) {
+     85          #if MEM_USE_POOLS_TRY_BIGGER_POOL
+     86          again:
+     87          #endif /* MEM_USE_POOLS_TRY_BIGGER_POOL */
+     88              /* is this pool big enough to hold an element of the required size
+     89                 plus a struct memp_malloc_helper that saves the pool this element came from? */
+     90              if (required_size <= memp_sizes[poolnr]) {
+     91                break;
+     92              }
+     93            }
+     94            if (poolnr > MEMP_POOL_LAST) {
+     95              LWIP_ASSERT("mem_malloc(): no pool is that big!", 0);
+     96              return NULL;
+     97            }
+     98            element = (struct memp_malloc_helper*)memp_malloc(poolnr);
+     99            if (element == NULL) {
+    100              /* No need to DEBUGF or ASSERT: This error is already
+    101                 taken care of in memp.c */
+    102          #if MEM_USE_POOLS_TRY_BIGGER_POOL
+    103              /** Try a bigger pool if this one is empty! */
+    104              if (poolnr < MEMP_POOL_LAST) {
+    105                poolnr++;
+    106                goto again;
+    107              }
+    108          #endif /* MEM_USE_POOLS_TRY_BIGGER_POOL */
+    109              return NULL;
+    110            }
+    111          
+    112            /* save the pool number this element came from */
+    113            element->poolnr = poolnr;
+    114            /* and return a pointer to the memory directly after the struct memp_malloc_helper */
+    115            element++;
+    116          
+    117            return element;
+    118          }
+    119          
+    120          /**
+    121           * Free memory previously allocated by mem_malloc. Loads the pool number
+    122           * and calls memp_free with that pool number to put the element back into
+    123           * its pool
+    124           *
+    125           * @param rmem the memory element to free
+    126           */
+    127          void
+    128          mem_free(void *rmem)
+    129          {
+    130            struct memp_malloc_helper *hmem = (struct memp_malloc_helper*)rmem;
+    131          
+    132            LWIP_ASSERT("rmem != NULL", (rmem != NULL));
+    133            LWIP_ASSERT("rmem == MEM_ALIGN(rmem)", (rmem == LWIP_MEM_ALIGN(rmem)));
+    134          
+    135            /* get the original struct memp_malloc_helper */
+    136            hmem--;
+    137          
+    138            LWIP_ASSERT("hmem != NULL", (hmem != NULL));
+    139            LWIP_ASSERT("hmem == MEM_ALIGN(hmem)", (hmem == LWIP_MEM_ALIGN(hmem)));
+    140            LWIP_ASSERT("hmem->poolnr < MEMP_MAX", (hmem->poolnr < MEMP_MAX));
+    141          
+    142            /* and put it in the pool we saved earlier */
+    143            memp_free(hmem->poolnr, hmem);
+    144          }
+    145          
+    146          #else /* MEM_USE_POOLS */
+    147          /* lwIP replacement for your libc malloc() */
+    148          
+    149          /**
+    150           * The heap is made up as a list of structs of this type.
+    151           * This does not have to be aligned since for getting its size,
+    152           * we only use the macro SIZEOF_STRUCT_MEM, which automatically alignes.
+    153           */
+    154          struct mem {
+    155            /** index (-> ram[next]) of the next struct */
+    156            mem_size_t next;
+    157            /** index (-> ram[next]) of the next struct */
+    158            mem_size_t prev;
+    159            /** 1: this area is used; 0: this area is unused */
+    160            u8_t used;
+    161          };
+    162          
+    163          /** All allocated blocks will be MIN_SIZE bytes big, at least!
+    164           * MIN_SIZE can be overridden to suit your needs. Smaller values save space,
+    165           * larger values could prevent too small blocks to fragment the RAM too much. */
+    166          #ifndef MIN_SIZE
+    167          #define MIN_SIZE             12
+    168          #endif /* MIN_SIZE */
+    169          /* some alignment macros: we define them here for better source code layout */
+    170          #define MIN_SIZE_ALIGNED     LWIP_MEM_ALIGN_SIZE(MIN_SIZE)
+    171          #define SIZEOF_STRUCT_MEM    LWIP_MEM_ALIGN_SIZE(sizeof(struct mem))
+    172          #define MEM_SIZE_ALIGNED     LWIP_MEM_ALIGN_SIZE(MEM_SIZE)
+    173          
+    174          /** the heap. we need one struct mem at the end and some room for alignment */
+    175          static u8_t ram_heap[MEM_SIZE_ALIGNED + (2*SIZEOF_STRUCT_MEM) + MEM_ALIGNMENT];
+    176          /** pointer to the heap (ram_heap): for alignment, ram is now a pointer instead of an array */
+    177          static u8_t *ram;
+    178          /** the last entry, always unused! */
+    179          static struct mem *ram_end;
+    180          /** pointer to the lowest free block, this is used for faster search */
+    181          static struct mem *lfree;
+    182          
+    183          /** concurrent access protection */
+    184          static sys_sem_t mem_sem;
+    185          
+    186          #if LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT
+    187          
+    188          static volatile u8_t mem_free_count;
+    189          
+    190          /* Allow mem_free from other (e.g. interrupt) context */
+    191          #define LWIP_MEM_FREE_DECL_PROTECT()  SYS_ARCH_DECL_PROTECT(lev_free)
+    192          #define LWIP_MEM_FREE_PROTECT()       SYS_ARCH_PROTECT(lev_free)
+    193          #define LWIP_MEM_FREE_UNPROTECT()     SYS_ARCH_UNPROTECT(lev_free)
+    194          #define LWIP_MEM_ALLOC_DECL_PROTECT() SYS_ARCH_DECL_PROTECT(lev_alloc)
+    195          #define LWIP_MEM_ALLOC_PROTECT()      SYS_ARCH_PROTECT(lev_alloc)
+    196          #define LWIP_MEM_ALLOC_UNPROTECT()    SYS_ARCH_UNPROTECT(lev_alloc)
+    197          
+    198          #else /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    199          
+    200          /* Protect the heap only by using a semaphore */
+    201          #define LWIP_MEM_FREE_DECL_PROTECT()
+    202          #define LWIP_MEM_FREE_PROTECT()    sys_arch_sem_wait(mem_sem, 0)
+    203          #define LWIP_MEM_FREE_UNPROTECT()  sys_sem_signal(mem_sem)
+    204          /* mem_malloc is protected using semaphore AND LWIP_MEM_ALLOC_PROTECT */
+    205          #define LWIP_MEM_ALLOC_DECL_PROTECT()
+    206          #define LWIP_MEM_ALLOC_PROTECT()
+    207          #define LWIP_MEM_ALLOC_UNPROTECT()
+    208          
+    209          #endif /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    210          
+    211          
+    212          /**
+    213           * "Plug holes" by combining adjacent empty struct mems.
+    214           * After this function is through, there should not exist
+    215           * one empty struct mem pointing to another empty struct mem.
+    216           *
+    217           * @param mem this points to a struct mem which just has been freed
+    218           * @internal this function is only called by mem_free() and mem_realloc()
+    219           *
+    220           * This assumes access to the heap is protected by the calling function
+    221           * already.
+    222           */
+    223          static void
+    224          plug_holes(struct mem *mem)
+    225          {
+    226            struct mem *nmem;
+    227            struct mem *pmem;
+    228          
+    229            LWIP_ASSERT("plug_holes: mem >= ram", (u8_t *)mem >= ram);
+    230            LWIP_ASSERT("plug_holes: mem < ram_end", (u8_t *)mem < (u8_t *)ram_end);
+    231            LWIP_ASSERT("plug_holes: mem->used == 0", mem->used == 0);
+    232          
+    233            /* plug hole forward */
+    234            LWIP_ASSERT("plug_holes: mem->next <= MEM_SIZE_ALIGNED", mem->next <= MEM_SIZE_ALIGNED);
+    235          
+    236            nmem = (struct mem *)&ram[mem->next];
+    237            if (mem != nmem && nmem->used == 0 && (u8_t *)nmem != (u8_t *)ram_end) {
+    238              /* if mem->next is unused and not end of ram, combine mem and mem->next */
+    239              if (lfree == nmem) {
+    240                lfree = mem;
+    241              }
+    242              mem->next = nmem->next;
+    243              ((struct mem *)&ram[nmem->next])->prev = (u8_t *)mem - ram;
+    244            }
+    245          
+    246            /* plug hole backward */
+    247            pmem = (struct mem *)&ram[mem->prev];
+    248            if (pmem != mem && pmem->used == 0) {
+    249              /* if mem->prev is unused, combine mem and mem->prev */
+    250              if (lfree == mem) {
+    251                lfree = pmem;
+    252              }
+    253              pmem->next = mem->next;
+    254              ((struct mem *)&ram[mem->next])->prev = (u8_t *)pmem - ram;
+    255            }
+    256          }
+    257          
+    258          /**
+    259           * Zero the heap and initialize start, end and lowest-free
+    260           */
+    261          void
+    262          mem_init(void)
+    263          {
+    264            struct mem *mem;
+    265          
+    266            LWIP_ASSERT("Sanity check alignment",
+    267              (SIZEOF_STRUCT_MEM & (MEM_ALIGNMENT-1)) == 0);
+    268          
+    269            /* align the heap */
+    270            ram = LWIP_MEM_ALIGN(ram_heap);
+    271            /* initialize the start of the heap */
+    272            mem = (struct mem *)ram;
+    273            mem->next = MEM_SIZE_ALIGNED;
+    274            mem->prev = 0;
+    275            mem->used = 0;
+    276            /* initialize the end of the heap */
+    277            ram_end = (struct mem *)&ram[MEM_SIZE_ALIGNED];
+    278            ram_end->used = 1;
+    279            ram_end->next = MEM_SIZE_ALIGNED;
+    280            ram_end->prev = MEM_SIZE_ALIGNED;
+    281          
+    282            mem_sem = sys_sem_new(1);
+    283          
+    284            /* initialize the lowest-free pointer to the start of the heap */
+    285            lfree = (struct mem *)ram;
+    286          
+    287            MEM_STATS_AVAIL(avail, MEM_SIZE_ALIGNED);
+    288          }
+    289          
+    290          /**
+    291           * Put a struct mem back on the heap
+    292           *
+    293           * @param rmem is the data portion of a struct mem as returned by a previous
+    294           *             call to mem_malloc()
+    295           */
+    296          void
+    297          mem_free(void *rmem)
+    298          {
+    299            struct mem *mem;
+    300            LWIP_MEM_FREE_DECL_PROTECT();
+    301          
+    302            if (rmem == NULL) {
+    303              LWIP_DEBUGF(MEM_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_SERIOUS, ("mem_free(p == NULL) was called.\n"));
+    304              return;
+    305            }
+    306            LWIP_ASSERT("mem_free: sanity check alignment", (((mem_ptr_t)rmem) & (MEM_ALIGNMENT-1)) == 0);
+    307          
+    308            LWIP_ASSERT("mem_free: legal memory", (u8_t *)rmem >= (u8_t *)ram &&
+    309              (u8_t *)rmem < (u8_t *)ram_end);
+    310          
+    311            if ((u8_t *)rmem < (u8_t *)ram || (u8_t *)rmem >= (u8_t *)ram_end) {
+    312              SYS_ARCH_DECL_PROTECT(lev);
+    313              LWIP_DEBUGF(MEM_DEBUG | LWIP_DBG_LEVEL_SEVERE, ("mem_free: illegal memory\n"));
+    314              /* protect mem stats from concurrent access */
+    315              SYS_ARCH_PROTECT(lev);
+    316              MEM_STATS_INC(illegal);
+    317              SYS_ARCH_UNPROTECT(lev);
+    318              return;
+    319            }
+    320            /* protect the heap from concurrent access */
+    321            LWIP_MEM_FREE_PROTECT();
+    322            /* Get the corresponding struct mem ... */
+    323            mem = (struct mem *)((u8_t *)rmem - SIZEOF_STRUCT_MEM);
+    324            /* ... which has to be in a used state ... */
+    325            LWIP_ASSERT("mem_free: mem->used", mem->used);
+    326            /* ... and is now unused. */
+    327            mem->used = 0;
+    328          
+    329            if (mem < lfree) {
+    330              /* the newly freed struct is now the lowest */
+    331              lfree = mem;
+    332            }
+    333          
+    334            MEM_STATS_DEC_USED(used, mem->next - ((u8_t *)mem - ram));
+    335          
+    336            /* finally, see if prev or next are free also */
+    337            plug_holes(mem);
+    338          #if LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT
+    339            mem_free_count = 1;
+    340          #endif /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    341            LWIP_MEM_FREE_UNPROTECT();
+    342          }
+    343          
+    344          /**
+    345           * In contrast to its name, mem_realloc can only shrink memory, not expand it.
+    346           * Since the only use (for now) is in pbuf_realloc (which also can only shrink),
+    347           * this shouldn't be a problem!
+    348           *
+    349           * @param rmem pointer to memory allocated by mem_malloc the is to be shrinked
+    350           * @param newsize required size after shrinking (needs to be smaller than or
+    351           *                equal to the previous size)
+    352           * @return for compatibility reasons: is always == rmem, at the moment
+    353           *         or NULL if newsize is > old size, in which case rmem is NOT touched
+    354           *         or freed!
+    355           */
+    356          void *
+    357          mem_realloc(void *rmem, mem_size_t newsize)
+    358          {
+    359            mem_size_t size;
+    360            mem_size_t ptr, ptr2;
+    361            struct mem *mem, *mem2;
+    362            /* use the FREE_PROTECT here: it protects with sem OR SYS_ARCH_PROTECT */
+    363            LWIP_MEM_FREE_DECL_PROTECT();
+    364          
+    365            /* Expand the size of the allocated memory region so that we can
+    366               adjust for alignment. */
+    367            newsize = LWIP_MEM_ALIGN_SIZE(newsize);
+    368          
+    369            if(newsize < MIN_SIZE_ALIGNED) {
+    370              /* every data block must be at least MIN_SIZE_ALIGNED long */
+    371              newsize = MIN_SIZE_ALIGNED;
+    372            }
+    373          
+    374            if (newsize > MEM_SIZE_ALIGNED) {
+    375              return NULL;
+    376            }
+    377          
+    378            LWIP_ASSERT("mem_realloc: legal memory", (u8_t *)rmem >= (u8_t *)ram &&
+    379             (u8_t *)rmem < (u8_t *)ram_end);
+    380          
+    381            if ((u8_t *)rmem < (u8_t *)ram || (u8_t *)rmem >= (u8_t *)ram_end) {
+    382              SYS_ARCH_DECL_PROTECT(lev);
+    383              LWIP_DEBUGF(MEM_DEBUG | LWIP_DBG_LEVEL_SEVERE, ("mem_realloc: illegal memory\n"));
+    384              /* protect mem stats from concurrent access */
+    385              SYS_ARCH_PROTECT(lev);
+    386              MEM_STATS_INC(illegal);
+    387              SYS_ARCH_UNPROTECT(lev);
+    388              return rmem;
+    389            }
+    390            /* Get the corresponding struct mem ... */
+    391            mem = (struct mem *)((u8_t *)rmem - SIZEOF_STRUCT_MEM);
+    392            /* ... and its offset pointer */
+    393            ptr = (u8_t *)mem - ram;
+    394          
+    395            size = mem->next - ptr - SIZEOF_STRUCT_MEM;
+    396            LWIP_ASSERT("mem_realloc can only shrink memory", newsize <= size);
+    397            if (newsize > size) {
+    398              /* not supported */
+    399              return NULL;
+    400            }
+    401            if (newsize == size) {
+    402              /* No change in size, simply return */
+    403              return rmem;
+    404            }
+    405          
+    406            /* protect the heap from concurrent access */
+    407            LWIP_MEM_FREE_PROTECT();
+    408          
+    409            MEM_STATS_DEC_USED(used, (size - newsize));
+    410          
+    411            mem2 = (struct mem *)&ram[mem->next];
+    412            if(mem2->used == 0) {
+    413              /* The next struct is unused, we can simply move it at little */
+    414              mem_size_t next;
+    415              /* remember the old next pointer */
+    416              next = mem2->next;
+    417              /* create new struct mem which is moved directly after the shrinked mem */
+    418              ptr2 = ptr + SIZEOF_STRUCT_MEM + newsize;
+    419              if (lfree == mem2) {
+    420                lfree = (struct mem *)&ram[ptr2];
+    421              }
+    422              mem2 = (struct mem *)&ram[ptr2];
+    423              mem2->used = 0;
+    424              /* restore the next pointer */
+    425              mem2->next = next;
+    426              /* link it back to mem */
+    427              mem2->prev = ptr;
+    428              /* link mem to it */
+    429              mem->next = ptr2;
+    430              /* last thing to restore linked list: as we have moved mem2,
+    431               * let 'mem2->next->prev' point to mem2 again. but only if mem2->next is not
+    432               * the end of the heap */
+    433              if (mem2->next != MEM_SIZE_ALIGNED) {
+    434                ((struct mem *)&ram[mem2->next])->prev = ptr2;
+    435              }
+    436              /* no need to plug holes, we've already done that */
+    437            } else if (newsize + SIZEOF_STRUCT_MEM + MIN_SIZE_ALIGNED <= size) {
+    438              /* Next struct is used but there's room for another struct mem with
+    439               * at least MIN_SIZE_ALIGNED of data.
+    440               * Old size ('size') must be big enough to contain at least 'newsize' plus a struct mem
+    441               * ('SIZEOF_STRUCT_MEM') with some data ('MIN_SIZE_ALIGNED').
+    442               * @todo we could leave out MIN_SIZE_ALIGNED. We would create an empty
+    443               *       region that couldn't hold data, but when mem->next gets freed,
+    444               *       the 2 regions would be combined, resulting in more free memory */
+    445              ptr2 = ptr + SIZEOF_STRUCT_MEM + newsize;
+    446              mem2 = (struct mem *)&ram[ptr2];
+    447              if (mem2 < lfree) {
+    448                lfree = mem2;
+    449              }
+    450              mem2->used = 0;
+    451              mem2->next = mem->next;
+    452              mem2->prev = ptr;
+    453              mem->next = ptr2;
+    454              if (mem2->next != MEM_SIZE_ALIGNED) {
+    455                ((struct mem *)&ram[mem2->next])->prev = ptr2;
+    456              }
+    457              /* the original mem->next is used, so no need to plug holes! */
+    458            }
+    459            /* else {
+    460              next struct mem is used but size between mem and mem2 is not big enough
+    461              to create another struct mem
+    462              -> don't do anyhting. 
+    463              -> the remaining space stays unused since it is too small
+    464            } */
+    465          #if LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT
+    466            mem_free_count = 1;
+    467          #endif /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    468            LWIP_MEM_FREE_UNPROTECT();
+    469            return rmem;
+    470          }
+    471          
+    472          /**
+    473           * Adam's mem_malloc() plus solution for bug #17922
+    474           * Allocate a block of memory with a minimum of 'size' bytes.
+    475           *
+    476           * @param size is the minimum size of the requested block in bytes.
+    477           * @return pointer to allocated memory or NULL if no free memory was found.
+    478           *
+    479           * Note that the returned value will always be aligned (as defined by MEM_ALIGNMENT).
+    480           */
+    481          void *
+    482          mem_malloc(mem_size_t size)
+    483          {
+    484            mem_size_t ptr, ptr2;
+    485            struct mem *mem, *mem2;
+    486          #if LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT
+    487            u8_t local_mem_free_count = 0;
+    488          #endif /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    489            LWIP_MEM_ALLOC_DECL_PROTECT();
+    490          
+    491            if (size == 0) {
+    492              return NULL;
+    493            }
+    494          
+    495            /* Expand the size of the allocated memory region so that we can
+    496               adjust for alignment. */
+    497            size = LWIP_MEM_ALIGN_SIZE(size);
+    498          
+    499            if(size < MIN_SIZE_ALIGNED) {
+    500              /* every data block must be at least MIN_SIZE_ALIGNED long */
+    501              size = MIN_SIZE_ALIGNED;
+    502            }
+    503          
+    504            if (size > MEM_SIZE_ALIGNED) {
+    505              return NULL;
+    506            }
+    507          
+    508            /* protect the heap from concurrent access */
+    509            sys_arch_sem_wait(mem_sem, 0);
+    510            LWIP_MEM_ALLOC_PROTECT();
+    511          #if LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT
+    512            /* run as long as a mem_free disturbed mem_malloc */
+    513            do {
+    514              local_mem_free_count = 0;
+    515          #endif /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    516          
+    517              /* Scan through the heap searching for a free block that is big enough,
+    518               * beginning with the lowest free block.
+    519               */
+    520              for (ptr = (u8_t *)lfree - ram; ptr < MEM_SIZE_ALIGNED - size;
+    521                   ptr = ((struct mem *)&ram[ptr])->next) {
+    522                mem = (struct mem *)&ram[ptr];
+    523          #if LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT
+    524                mem_free_count = 0;
+    525                LWIP_MEM_ALLOC_UNPROTECT();
+    526                /* allow mem_free to run */
+    527                LWIP_MEM_ALLOC_PROTECT();
+    528                if (mem_free_count != 0) {
+    529                  local_mem_free_count = mem_free_count;
+    530                }
+    531                mem_free_count = 0;
+    532          #endif /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    533          
+    534                if ((!mem->used) &&
+    535                    (mem->next - (ptr + SIZEOF_STRUCT_MEM)) >= size) {
+    536                  /* mem is not used and at least perfect fit is possible:
+    537                   * mem->next - (ptr + SIZEOF_STRUCT_MEM) gives us the 'user data size' of mem */
+    538          
+    539                  if (mem->next - (ptr + SIZEOF_STRUCT_MEM) >= (size + SIZEOF_STRUCT_MEM + MIN_SIZE_ALIGNED)) {
+    540                    /* (in addition to the above, we test if another struct mem (SIZEOF_STRUCT_MEM) containing
+    541                     * at least MIN_SIZE_ALIGNED of data also fits in the 'user data space' of 'mem')
+    542                     * -> split large block, create empty remainder,
+    543                     * remainder must be large enough to contain MIN_SIZE_ALIGNED data: if
+    544                     * mem->next - (ptr + (2*SIZEOF_STRUCT_MEM)) == size,
+    545                     * struct mem would fit in but no data between mem2 and mem2->next
+    546                     * @todo we could leave out MIN_SIZE_ALIGNED. We would create an empty
+    547                     *       region that couldn't hold data, but when mem->next gets freed,
+    548                     *       the 2 regions would be combined, resulting in more free memory
+    549                     */
+    550                    ptr2 = ptr + SIZEOF_STRUCT_MEM + size;
+    551                    /* create mem2 struct */
+    552                    mem2 = (struct mem *)&ram[ptr2];
+    553                    mem2->used = 0;
+    554                    mem2->next = mem->next;
+    555                    mem2->prev = ptr;
+    556                    /* and insert it between mem and mem->next */
+    557                    mem->next = ptr2;
+    558                    mem->used = 1;
+    559          
+    560                    if (mem2->next != MEM_SIZE_ALIGNED) {
+    561                      ((struct mem *)&ram[mem2->next])->prev = ptr2;
+    562                    }
+    563                    MEM_STATS_INC_USED(used, (size + SIZEOF_STRUCT_MEM));
+    564                  } else {
+    565                    /* (a mem2 struct does no fit into the user data space of mem and mem->next will always
+    566                     * be used at this point: if not we have 2 unused structs in a row, plug_holes should have
+    567                     * take care of this).
+    568                     * -> near fit or excact fit: do not split, no mem2 creation
+    569                     * also can't move mem->next directly behind mem, since mem->next
+    570                     * will always be used at this point!
+    571                     */
+    572                    mem->used = 1;
+    573                    MEM_STATS_INC_USED(used, mem->next - ((u8_t *)mem - ram));
+    574                  }
+    575          
+    576                  if (mem == lfree) {
+    577                    /* Find next free block after mem and update lowest free pointer */
+    578                    while (lfree->used && lfree != ram_end) {
+    579                      LWIP_MEM_ALLOC_UNPROTECT();
+    580                      /* prevent high interrupt latency... */
+    581                      LWIP_MEM_ALLOC_PROTECT();
+    582                      lfree = (struct mem *)&ram[lfree->next];
+    583                    }
+    584                    LWIP_ASSERT("mem_malloc: !lfree->used", ((lfree == ram_end) || (!lfree->used)));
+    585                  }
+    586                  LWIP_MEM_ALLOC_UNPROTECT();
+    587                  sys_sem_signal(mem_sem);
+    588                  LWIP_ASSERT("mem_malloc: allocated memory not above ram_end.",
+    589                   (mem_ptr_t)mem + SIZEOF_STRUCT_MEM + size <= (mem_ptr_t)ram_end);
+    590                  LWIP_ASSERT("mem_malloc: allocated memory properly aligned.",
+    591                   ((mem_ptr_t)mem + SIZEOF_STRUCT_MEM) % MEM_ALIGNMENT == 0);
+    592                  LWIP_ASSERT("mem_malloc: sanity check alignment",
+    593                    (((mem_ptr_t)mem) & (MEM_ALIGNMENT-1)) == 0);
+    594          
+    595                  return (u8_t *)mem + SIZEOF_STRUCT_MEM;
+    596                }
+    597              }
+    598          #if LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT
+    599              /* if we got interrupted by a mem_free, try again */
+    600            } while(local_mem_free_count != 0);
+    601          #endif /* LWIP_ALLOW_MEM_FREE_FROM_OTHER_CONTEXT */
+    602            LWIP_DEBUGF(MEM_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("mem_malloc: could not allocate %"S16_F" bytes\n", (s16_t)size));
+    603            MEM_STATS_INC(err);
+    604            LWIP_MEM_ALLOC_UNPROTECT();
+    605            sys_sem_signal(mem_sem);
+    606            return NULL;
+    607          }
+    608          
+    609          #endif /* MEM_USE_POOLS */
+    610          /**
+    611           * Contiguously allocates enough space for count objects that are size bytes
+    612           * of memory each and returns a pointer to the allocated memory.
+    613           *
+    614           * The allocated memory is filled with bytes of value zero.
+    615           *
+    616           * @param count number of objects to allocate
+    617           * @param size size of the objects to allocate
+    618           * @return pointer to allocated memory / NULL pointer if there is an error
+    619           */
+    620          void *mem_calloc(mem_size_t count, mem_size_t size)
+    621          {
+    622            void *p;
+    623          
+    624            /* allocate 'count' objects of size 'size' */
+    625            p = mem_malloc(count * size);
+    626            if (p) {
+    627              /* zero the memory */
+    628              memset(p, 0, count * size);
+    629            }
+    630            return p;
+    631          }
+    632          
+    633          #endif /* !MEM_LIBC_MALLOC */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   mem_calloc
+        24   -> __aeabi_memset
+        24   -> mem_malloc
+      16   mem_free
+        16   -> plug_holes
+        16   -> sys_arch_protect
+        16   -> sys_arch_sem_wait
+        16   -> sys_arch_unprotect
+        16   -> sys_sem_signal
+       8   mem_init
+         8   -> sys_sem_new
+      24   mem_malloc
+        24   -> sys_arch_sem_wait
+        24   -> sys_sem_signal
+      40   mem_realloc
+        40   -> sys_arch_protect
+        40   -> sys_arch_sem_wait
+        40   -> sys_arch_unprotect
+        40   -> sys_sem_signal
+       8   plug_holes
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  lfree
+      52  mem_calloc
+      86  mem_free
+      94  mem_init
+     292  mem_malloc
+     356  mem_realloc
+       4  mem_sem
+     140  plug_holes
+       4  ram
+       4  ram_end
+   20500  ram_heap
+
+ 
+ 20 516 bytes in section .bss
+  1 040 bytes in section .text
+ 
+  1 040 bytes of CODE memory
+ 20 516 bytes of DATA memory
+
+Errors: none
+Warnings: none

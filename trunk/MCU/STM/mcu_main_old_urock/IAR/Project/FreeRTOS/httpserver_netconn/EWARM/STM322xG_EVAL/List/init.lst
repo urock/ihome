@@ -1,0 +1,359 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:37
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\init.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\init.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\init.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\init.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\init.c
+      1          /**
+      2           * @file
+      3           * Modules initialization
+      4           *
+      5           **/
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved. 
+     10           * 
+     11           * Redistribution and use in source and binary forms, with or without modification, 
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission. 
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           * 
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #include "lwip/init.h"
+     42          #include "lwip/stats.h"
+     43          #include "lwip/sys.h"
+     44          #include "lwip/mem.h"
+     45          #include "lwip/memp.h"
+     46          #include "lwip/pbuf.h"
+     47          #include "lwip/netif.h"
+     48          #include "lwip/sockets.h"
+     49          #include "lwip/ip.h"
+     50          #include "lwip/raw.h"
+     51          #include "lwip/udp.h"
+     52          #include "lwip/tcp.h"
+     53          #include "lwip/snmp_msg.h"
+     54          #include "lwip/autoip.h"
+     55          #include "lwip/igmp.h"
+     56          #include "lwip/dns.h"
+     57          #include "netif/etharp.h"
+     58          
+     59          /* Compile-time sanity checks for configuration errors.
+     60           * These can be done independently of LWIP_DEBUG, without penalty.
+     61           */
+     62          #ifndef BYTE_ORDER
+     63            #error "BYTE_ORDER is not defined, you have to define it in your cc.h"
+     64          #endif
+     65          #if (!IP_SOF_BROADCAST && IP_SOF_BROADCAST_RECV)
+     66            #error "If you want to use broadcast filter per pcb on recv operations, you have to define IP_SOF_BROADCAST=1 in your lwipopts.h"
+     67          #endif
+     68          #if (!LWIP_ARP && ARP_QUEUEING)
+     69            #error "If you want to use ARP Queueing, you have to define LWIP_ARP=1 in your lwipopts.h"
+     70          #endif
+     71          #if (!LWIP_UDP && LWIP_UDPLITE)
+     72            #error "If you want to use UDP Lite, you have to define LWIP_UDP=1 in your lwipopts.h"
+     73          #endif
+     74          #if (!LWIP_UDP && LWIP_SNMP)
+     75            #error "If you want to use SNMP, you have to define LWIP_UDP=1 in your lwipopts.h"
+     76          #endif
+     77          #if (!LWIP_UDP && LWIP_DHCP)
+     78            #error "If you want to use DHCP, you have to define LWIP_UDP=1 in your lwipopts.h"
+     79          #endif
+     80          #if (!LWIP_UDP && LWIP_IGMP)
+     81            #error "If you want to use IGMP, you have to define LWIP_UDP=1 in your lwipopts.h"
+     82          #endif
+     83          #if (!LWIP_UDP && LWIP_DNS)
+     84            #error "If you want to use DNS, you have to define LWIP_UDP=1 in your lwipopts.h"
+     85          #endif
+     86          #if (LWIP_ARP && (ARP_TABLE_SIZE > 0x7f))
+     87            #error "If you want to use ARP, ARP_TABLE_SIZE must fit in an s8_t, so, you have to reduce it in your lwipopts.h"
+     88          #endif
+     89          #if (LWIP_ARP && ARP_QUEUEING && (MEMP_NUM_ARP_QUEUE<=0))
+     90            #error "If you want to use ARP Queueing, you have to define MEMP_NUM_ARP_QUEUE>=1 in your lwipopts.h"
+     91          #endif
+     92          #if (LWIP_RAW && (MEMP_NUM_RAW_PCB<=0))
+     93            #error "If you want to use RAW, you have to define MEMP_NUM_RAW_PCB>=1 in your lwipopts.h"
+     94          #endif
+     95          #if (LWIP_UDP && (MEMP_NUM_UDP_PCB<=0))
+     96            #error "If you want to use UDP, you have to define MEMP_NUM_UDP_PCB>=1 in your lwipopts.h"
+     97          #endif
+     98          #if (LWIP_TCP && (MEMP_NUM_TCP_PCB<=0))
+     99            #error "If you want to use TCP, you have to define MEMP_NUM_TCP_PCB>=1 in your lwipopts.h"
+    100          #endif
+    101          #if (LWIP_TCP && (TCP_WND > 0xffff))
+    102            #error "If you want to use TCP, TCP_WND must fit in an u16_t, so, you have to reduce it in your lwipopts.h"
+    103          #endif
+    104          #if (LWIP_TCP && (TCP_SND_QUEUELEN > 0xffff))
+    105            #error "If you want to use TCP, TCP_SND_QUEUELEN must fit in an u16_t, so, you have to reduce it in your lwipopts.h"
+    106          #endif
+    107          #if (LWIP_TCP && ((TCP_MAXRTX > 12) || (TCP_SYNMAXRTX > 12)))
+    108            #error "If you want to use TCP, TCP_MAXRTX and TCP_SYNMAXRTX must less or equal to 12 (due to tcp_backoff table), so, you have to reduce them in your lwipopts.h"
+    109          #endif
+    110          #if (LWIP_TCP && TCP_LISTEN_BACKLOG && (TCP_DEFAULT_LISTEN_BACKLOG < 0) || (TCP_DEFAULT_LISTEN_BACKLOG > 0xff))
+    111            #error "If you want to use TCP backlog, TCP_DEFAULT_LISTEN_BACKLOG must fit into an u8_t"
+    112          #endif
+    113          #if (LWIP_IGMP && (MEMP_NUM_IGMP_GROUP<=1))
+    114            #error "If you want to use IGMP, you have to define MEMP_NUM_IGMP_GROUP>1 in your lwipopts.h"
+    115          #endif
+    116          #if (PPP_SUPPORT && (NO_SYS==1))
+    117            #error "If you want to use PPP, you have to define NO_SYS=0 in your lwipopts.h"
+    118          #endif 
+    119          #if (LWIP_NETIF_API && (NO_SYS==1))
+    120            #error "If you want to use NETIF API, you have to define NO_SYS=0 in your lwipopts.h"
+    121          #endif
+    122          #if ((LWIP_SOCKET || LWIP_NETCONN) && (NO_SYS==1))
+    123            #error "If you want to use Sequential API, you have to define NO_SYS=0 in your lwipopts.h"
+    124          #endif
+    125          #if ((LWIP_NETCONN || LWIP_SOCKET) && (MEMP_NUM_TCPIP_MSG_API<=0))
+    126            #error "If you want to use Sequential API, you have to define MEMP_NUM_TCPIP_MSG_API>=1 in your lwipopts.h"
+    127          #endif
+    128          #if (!LWIP_NETCONN && LWIP_SOCKET)
+    129            #error "If you want to use Socket API, you have to define LWIP_NETCONN=1 in your lwipopts.h"
+    130          #endif
+    131          #if (((!LWIP_DHCP) || (!LWIP_AUTOIP)) && LWIP_DHCP_AUTOIP_COOP)
+    132            #error "If you want to use DHCP/AUTOIP cooperation mode, you have to define LWIP_DHCP=1 and LWIP_AUTOIP=1 in your lwipopts.h"
+    133          #endif
+    134          #if (((!LWIP_DHCP) || (!LWIP_ARP)) && DHCP_DOES_ARP_CHECK)
+    135            #error "If you want to use DHCP ARP checking, you have to define LWIP_DHCP=1 and LWIP_ARP=1 in your lwipopts.h"
+    136          #endif
+    137          #if (!LWIP_ARP && LWIP_AUTOIP)
+    138            #error "If you want to use AUTOIP, you have to define LWIP_ARP=1 in your lwipopts.h"
+    139          #endif
+    140          #if (LWIP_SNMP && (SNMP_CONCURRENT_REQUESTS<=0))
+    141            #error "If you want to use SNMP, you have to define SNMP_CONCURRENT_REQUESTS>=1 in your lwipopts.h"
+    142          #endif
+    143          #if (LWIP_SNMP && (SNMP_TRAP_DESTINATIONS<=0))
+    144            #error "If you want to use SNMP, you have to define SNMP_TRAP_DESTINATIONS>=1 in your lwipopts.h"
+    145          #endif
+    146          #if (LWIP_TCP && ((LWIP_EVENT_API && LWIP_CALLBACK_API) || (!LWIP_EVENT_API && !LWIP_CALLBACK_API)))
+    147            #error "One and exactly one of LWIP_EVENT_API and LWIP_CALLBACK_API has to be enabled in your lwipopts.h"
+    148          #endif
+    149          /* There must be sufficient timeouts, taking into account requirements of the subsystems. */
+    150          #if ((NO_SYS==0) && (MEMP_NUM_SYS_TIMEOUT < (LWIP_TCP + IP_REASSEMBLY + LWIP_ARP + (2*LWIP_DHCP) + LWIP_AUTOIP + LWIP_IGMP + LWIP_DNS + PPP_SUPPORT)))
+    151            #error "MEMP_NUM_SYS_TIMEOUT is too low to accomodate all required timeouts"
+    152          #endif
+    153          #if (IP_REASSEMBLY && (MEMP_NUM_REASSDATA > IP_REASS_MAX_PBUFS))
+    154            #error "MEMP_NUM_REASSDATA > IP_REASS_MAX_PBUFS doesn't make sense since each struct ip_reassdata must hold 2 pbufs at least!"
+    155          #endif
+    156          #if (MEM_LIBC_MALLOC && MEM_USE_POOLS)
+    157            #error "MEM_LIBC_MALLOC and MEM_USE_POOLS may not both be simultaneously enabled in your lwipopts.h"
+    158          #endif
+    159          #if (MEM_USE_POOLS && !MEMP_USE_CUSTOM_POOLS)
+    160            #error "MEM_USE_POOLS requires custom pools (MEMP_USE_CUSTOM_POOLS) to be enabled in your lwipopts.h"
+    161          #endif
+    162          #if (PBUF_POOL_BUFSIZE <= MEM_ALIGNMENT)
+    163            #error "PBUF_POOL_BUFSIZE must be greater than MEM_ALIGNMENT or the offset may take the full first pbuf"
+    164          #endif
+    165          #if (TCP_QUEUE_OOSEQ && !LWIP_TCP)
+    166            #error "TCP_QUEUE_OOSEQ requires LWIP_TCP"
+    167          #endif
+    168          #if (DNS_LOCAL_HOSTLIST && !DNS_LOCAL_HOSTLIST_IS_DYNAMIC && !(defined(DNS_LOCAL_HOSTLIST_INIT)))
+    169            #error "you have to define define DNS_LOCAL_HOSTLIST_INIT {{'host1', 0x123}, {'host2', 0x234}} to initialize DNS_LOCAL_HOSTLIST"
+    170          #endif
+    171          #if PPP_SUPPORT && !PPPOS_SUPPORT & !PPPOE_SUPPORT
+    172            #error "PPP_SUPPORT needs either PPPOS_SUPPORT or PPPOE_SUPPORT turned on"
+    173          #endif
+    174          
+    175          
+    176          /* Compile-time checks for deprecated options.
+    177           */
+    178          #ifdef MEMP_NUM_TCPIP_MSG
+    179            #error "MEMP_NUM_TCPIP_MSG option is deprecated. Remove it from your lwipopts.h."
+    180          #endif
+    181          #ifdef MEMP_NUM_API_MSG
+    182            #error "MEMP_NUM_API_MSG option is deprecated. Remove it from your lwipopts.h."
+    183          #endif
+    184          #ifdef TCP_REXMIT_DEBUG
+    185            #error "TCP_REXMIT_DEBUG option is deprecated. Remove it from your lwipopts.h."
+    186          #endif
+    187          #ifdef RAW_STATS
+    188            #error "RAW_STATS option is deprecated. Remove it from your lwipopts.h."
+    189          #endif
+    190          #ifdef ETHARP_QUEUE_FIRST
+    191            #error "ETHARP_QUEUE_FIRST option is deprecated. Remove it from your lwipopts.h."
+    192          #endif
+    193          #ifdef ETHARP_ALWAYS_INSERT
+    194            #error "ETHARP_ALWAYS_INSERT option is deprecated. Remove it from your lwipopts.h."
+    195          #endif
+    196          #if SO_REUSE
+    197          /* I removed the lot since this was an ugly hack. It broke the raw-API.
+    198             It also came with many ugly goto's, Christiaan Simons. */
+    199            #error "SO_REUSE currently unavailable, this was a hack"
+    200          #endif
+    201          
+    202          #ifdef LWIP_DEBUG
+    203          static void
+    204          lwip_sanity_check(void)
+    205          {
+    206            /* Warnings */
+    207          #if LWIP_NETCONN
+    208            if (MEMP_NUM_NETCONN > (MEMP_NUM_TCP_PCB+MEMP_NUM_TCP_PCB_LISTEN+MEMP_NUM_UDP_PCB+MEMP_NUM_RAW_PCB))
+    209              LWIP_PLATFORM_DIAG(("lwip_sanity_check: WARNING: MEMP_NUM_NETCONN should be less than the sum of MEMP_NUM_{TCP,RAW,UDP}_PCB+MEMP_NUM_TCP_PCB_LISTEN\n"));
+    210          #endif /* LWIP_NETCONN */
+    211          #if LWIP_TCP
+    212            if (MEMP_NUM_TCP_SEG < TCP_SND_QUEUELEN)
+    213              LWIP_PLATFORM_DIAG(("lwip_sanity_check: WARNING: MEMP_NUM_TCP_SEG should be at least as big as TCP_SND_QUEUELEN\n"));
+    214            if (TCP_SND_BUF < 2 * TCP_MSS)
+    215              LWIP_PLATFORM_DIAG(("lwip_sanity_check: WARNING: TCP_SND_BUF must be at least as much as (2 * TCP_MSS) for things to work smoothly\n"));
+    216            if (TCP_SND_QUEUELEN < (2 * (TCP_SND_BUF/TCP_MSS)))
+    217              LWIP_PLATFORM_DIAG(("lwip_sanity_check: WARNING: TCP_SND_QUEUELEN must be at least as much as (2 * TCP_SND_BUF/TCP_MSS) for things to work\n"));
+    218            if (TCP_SNDLOWAT > TCP_SND_BUF)
+    219              LWIP_PLATFORM_DIAG(("lwip_sanity_check: WARNING: TCP_SNDLOWAT must be less than or equal to TCP_SND_BUF.\n"));
+    220            if (TCP_WND > (PBUF_POOL_SIZE*PBUF_POOL_BUFSIZE))
+    221              LWIP_PLATFORM_DIAG(("lwip_sanity_check: WARNING: TCP_WND is larger than space provided by PBUF_POOL_SIZE*PBUF_POOL_BUFSIZE\n"));
+    222            if (TCP_WND < TCP_MSS)
+    223              LWIP_PLATFORM_DIAG(("lwip_sanity_check: WARNING: TCP_WND is smaller than MSS\n"));
+    224          #endif /* LWIP_TCP */
+    225          }
+    226          #else  /* LWIP_DEBUG */
+    227          #define lwip_sanity_check()
+    228          #endif /* LWIP_DEBUG */
+    229          
+    230          /**
+    231           * Perform Sanity check of user-configurable values, and initialize all modules.
+    232           */
+    233          void
+    234          lwip_init(void)
+    235          {
+    236            /* Sanity check user-configurable values */
+    237            lwip_sanity_check();
+    238          
+    239            /* Modules initialization */
+    240            stats_init();
+    241            sys_init();
+    242            mem_init();
+    243            memp_init();
+    244            pbuf_init();
+    245            netif_init();
+    246          #if LWIP_SOCKET
+    247            lwip_socket_init();
+    248          #endif /* LWIP_SOCKET */
+    249            ip_init();
+    250          #if LWIP_ARP
+    251            etharp_init();
+    252          #endif /* LWIP_ARP */
+    253          #if LWIP_RAW
+    254            raw_init();
+    255          #endif /* LWIP_RAW */
+    256          #if LWIP_UDP
+    257            udp_init();
+    258          #endif /* LWIP_UDP */
+    259          #if LWIP_TCP
+    260            tcp_init();
+    261          #endif /* LWIP_TCP */
+    262          #if LWIP_SNMP
+    263            snmp_init();
+    264          #endif /* LWIP_SNMP */
+    265          #if LWIP_AUTOIP
+    266            autoip_init();
+    267          #endif /* LWIP_AUTOIP */
+    268          #if LWIP_IGMP
+    269            igmp_init();
+    270          #endif /* LWIP_IGMP */
+    271          #if LWIP_DNS
+    272            dns_init();
+    273          #endif /* LWIP_DNS */
+    274          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   lwip_init
+         8   -> autoip_init
+         8   -> lwip_sanity_check
+         8   -> mem_init
+         8   -> memp_init
+         8   -> sys_init
+       0   lwip_sanity_check
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      24  lwip_init
+       2  lwip_sanity_check
+
+ 
+ 26 bytes in section .text
+ 
+ 26 bytes of CODE memory
+
+Errors: none
+Warnings: none

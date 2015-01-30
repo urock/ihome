@@ -1,0 +1,169 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      13/Aug/2013  17:51:49 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\src\wather_sensor.c                                   #
+#    Command line =  C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\src\wather_sensor.c -D USE_STDPERIPH_DRIVER -D        #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\STM322xG_EVAL\List\ -o                          #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\STM322xG_EVAL\Obj\ --no_cse --no_unroll         #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M3  #
+#                    -e --fpu=None --dlib_config "C:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.5\arm\INC\c\DLib_Config_Ful #
+#                    l.h" -I C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\S #
+#                    T\STM32F2xx\ -I C:\ROSTA\host_mcu_soft\Project\FreeRTOS\ #
+#                    httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx #
+#                    _StdPeriph_Driver\inc\ -I C:\ROSTA\host_mcu_soft\Project #
+#                    \FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries #
+#                    \STM32F2x7_ETH_Driver\inc\ -I                            #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\ -I     #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\ #
+#                     -I C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_n #
+#                    etconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3 #
+#                    .2\src\include\ -I C:\ROSTA\host_mcu_soft\Project\FreeRT #
+#                    OS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_ #
+#                    Party\lwip_v1.3.2\src\include\lwip\ -I                   #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\s #
+#                    rc\include\netif\ -I C:\ROSTA\host_mcu_soft\Project\Free #
+#                    RTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Thir #
+#                    d_Party\lwip_v1.3.2\src\include\ipv4\ -I                 #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\p #
+#                    ort\STM32F2x7\ -I C:\ROSTA\host_mcu_soft\Project\FreeRTO #
+#                    S\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_P #
+#                    arty\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\ -I             #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4 #
+#                    .2\portable\IAR\ARM_CM3\ -I                              #
+#                    C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4 #
+#                    .2\include\ -On --use_c++_inline -I "C:\Program Files    #
+#                    (x86)\IAR Systems\Embedded Workbench                     #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\STM322xG_EVAL\List\wather_sensor.lst            #
+#    Object file  =  C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netco #
+#                    nn\EWARM\STM322xG_EVAL\Obj\wather_sensor.o               #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\ROSTA\host_mcu_soft\Project\FreeRTOS\httpserver_netconn\src\wather_sensor.c
+      1          #include "wather_sensor.h"
+      2          
+      3          __IO uint16_t ADC1ConvertedValue = 0;
+      4          
+      5          void wather_Init(void){
+      6              GPIO_InitTypeDef            GPIO_InitStructure;
+      7              ADC_InitTypeDef             ADC_InitStructure;
+      8              ADC_CommonInitTypeDef       ADC_CommonInitStructure;
+      9              DMA_InitTypeDef             DMA_InitStructureADC;
+     10              
+     11              /* Enable ADC1, DMA2 and GPIO clocks ****************************************/
+     12            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2 | ADCx_CLK , ENABLE);
+     13            RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
+     14          
+     15            /* DMA2 Stream0 channel2 configuration **************************************/
+     16            DMA_InitStructureADC.DMA_Channel = DMA_ADC_CHANNEL;  
+     17            DMA_InitStructureADC.DMA_PeripheralBaseAddr = (uint32_t)&(ADC1->DR);
+     18            DMA_InitStructureADC.DMA_Memory0BaseAddr = (uint32_t)&ADC1ConvertedValue;
+     19            DMA_InitStructureADC.DMA_DIR = DMA_DIR_PeripheralToMemory;
+     20            DMA_InitStructureADC.DMA_BufferSize = 1;
+     21            DMA_InitStructureADC.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+     22            DMA_InitStructureADC.DMA_MemoryInc = DMA_MemoryInc_Disable;
+     23            DMA_InitStructureADC.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+     24            DMA_InitStructureADC.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
+     25            DMA_InitStructureADC.DMA_Mode = DMA_Mode_Circular;
+     26            DMA_InitStructureADC.DMA_Priority = DMA_Priority_High;
+     27            DMA_InitStructureADC.DMA_FIFOMode = DMA_FIFOMode_Disable;         
+     28            DMA_InitStructureADC.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull;
+     29            DMA_InitStructureADC.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+     30            DMA_InitStructureADC.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+     31            DMA_Init(DMA_ADC_STREAM, &DMA_InitStructureADC);
+     32            DMA_Cmd(DMA_ADC_STREAM, ENABLE);
+     33          
+     34            /* Configure ADC1 Channel0 pin as analog input ******************************/
+     35            GPIO_InitStructure.GPIO_Pin = ADCx_AF;
+     36            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+     37            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+     38            GPIO_Init(ADC_GPIO_PORT, &GPIO_InitStructure);
+     39          
+     40            /* ADC Common Init **********************************************************/
+     41            ADC_CommonInitStructure.ADC_Mode = ADC_Mode_Independent;
+     42            ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div8;  //!!!!
+     43            ADC_CommonInitStructure.ADC_DMAAccessMode = ADC_DMAAccessMode_Disabled;
+     44            ADC_CommonInitStructure.ADC_TwoSamplingDelay = ADC_TwoSamplingDelay_5Cycles;
+     45            ADC_CommonInit(&ADC_CommonInitStructure);
+     46          
+     47            /* ADC1 Init ****************************************************************/
+     48            ADC_InitStructure.ADC_Resolution = ADC_Resolution_12b;
+     49            ADC_InitStructure.ADC_ScanConvMode = DISABLE;
+     50            ADC_InitStructure.ADC_ContinuousConvMode = ENABLE;
+     51            ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+     52            ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_T1_CC1;
+     53            ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
+     54            ADC_InitStructure.ADC_NbrOfConversion = 1;
+     55            ADC_Init(ADC1, &ADC_InitStructure);
+     56          
+     57            /* ADC1 regular channel7 configuration *************************************/
+     58            ADC_RegularChannelConfig(ADC1, ADC_CHANNEL, 1, ADC_SampleTime_3Cycles);
+     59          
+     60           /* Enable DMA request after last transfer (Single-ADC mode) */
+     61            ADC_DMARequestAfterLastTransferCmd(ADC1, ENABLE);
+     62          
+     63            /* Enable ADC1 DMA */
+     64            ADC_DMACmd(ADC1, ENABLE);
+     65          
+     66            /* Enable ADC3 */
+     67            ADC_Cmd(ADC1, ENABLE);
+     68            //********************************************************************************************************
+     69           }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     112   wather_Init
+       112   -> ADC_Cmd
+       112   -> ADC_CommonInit
+       112   -> ADC_DMACmd
+       112   -> ADC_DMARequestAfterLastTransferCmd
+       112   -> ADC_Init
+       112   -> ADC_RegularChannelConfig
+       112   -> DMA_Cmd
+       112   -> DMA_Init
+       112   -> GPIO_Init
+       112   -> RCC_AHB1PeriphClockCmd
+       112   -> RCC_APB2PeriphClockCmd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       2  ADC1ConvertedValue
+     260  wather_Init
+
+ 
+   2 bytes in section .bss
+ 260 bytes in section .text
+ 
+ 260 bytes of CODE memory
+   2 bytes of DATA memory
+
+Errors: none
+Warnings: none

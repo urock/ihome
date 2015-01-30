@@ -1,0 +1,560 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:07 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\onewire.c                                 #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\onewire.c -D USE_STDPERIPH_DRIVER -D      #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\onewire.lst          #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\onewire.o             #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\onewire.c
+      1          /*
+      2           * onewire.c
+      3           *
+      4           *  Version 1.0.3
+      5           */
+      6          
+      7          #include "onewire.h"
+      8          
+      9          //Переменный ДАМ структуры для TX и RX
+     10          DMA_InitTypeDef  DMA_InitStructureTX_1WIRE, DMA_InitStructureRX_1WIRE;
+     11          extern xTimerHandle	xOneShotTimers;
+     12          extern uint8_t end_timer;
+     13          // Буфер для приема/передачи по 1-wire
+     14          uint8_t ow_buf[8];
+     15          
+     16          #define OW_0	0x00
+     17          #define OW_1	0xff
+     18          #define OW_R_1	0xff
+     19          
+     20          #define USART_1WIRE_TX_DMA_STREAM             DMA1_Stream3
+     21          #define USART_1WIRE_RX_DMA_STREAM             DMA1_Stream1
+     22          #define USART_1WIRE_TX_DMA_CHANNEL            DMA_Channel_4
+     23          
+     24          
+     25          
+     26          /**-----------------------------------------------------------------------------
+     27          * @brief инициализирует USART и DMA что подключены к шине 1-wire
+     28          * @return void
+     29          *-----------------------------------------------------------------------------
+     30          */
+     31          void OW_Init(void){
+     32              GPIO_InitTypeDef GPIO_InitStructure;
+     33              USART_InitTypeDef USART_InitStructure;
+     34              
+     35              RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+     36              RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+     37              RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3, ENABLE);  
+     38              
+     39              
+     40              GPIO_InitStructure.GPIO_Pin = USART_1WIRE_TX_PIN | USART_1WIRE_RX_PIN;
+     41              GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+     42              GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+     43              GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;  //GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+     44              GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+     45              GPIO_Init(USART_1WIRE_TX_PORT, &GPIO_InitStructure); 
+     46              GPIO_PinAFConfig(USART_1WIRE_TX_PORT, USART_1WIRE_TX_SOURCE, USART_1WIRE_TX_AF);
+     47          
+     48              GPIO_PinAFConfig(USART_1WIRE_RX_PORT, USART_1WIRE_RX_SOURCE, USART_1WIRE_RX_AF);
+     49                 
+     50              USART_InitStructure.USART_BaudRate = 115200;
+     51              USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+     52              USART_InitStructure.USART_StopBits = USART_StopBits_1;
+     53              USART_InitStructure.USART_Parity = USART_Parity_No;
+     54              USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+     55              USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+     56              USART_Init(USART_1WIRE, &USART_InitStructure);
+     57              
+     58              USART_Cmd(USART_1WIRE, ENABLE);
+     59              
+     60              DMA_DeInit(USART_1WIRE_TX_DMA_STREAM);
+     61              while (DMA_GetCmdStatus(USART_1WIRE_TX_DMA_STREAM) != DISABLE)  //Дожидаемся пока будет DeInit
+     62              {
+     63              }
+     64              DMA_InitStructureTX_1WIRE.DMA_Channel = USART_1WIRE_TX_DMA_CHANNEL;
+     65              DMA_InitStructureTX_1WIRE.DMA_DIR = DMA_DIR_MemoryToPeripheral; // Transmit
+     66              DMA_InitStructureTX_1WIRE.DMA_Memory0BaseAddr = (uint32_t) ow_buf;
+     67              DMA_InitStructureTX_1WIRE.DMA_PeripheralBaseAddr = (uint32_t) &(USART_1WIRE->DR);
+     68              DMA_InitStructureTX_1WIRE.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+     69              DMA_InitStructureTX_1WIRE.DMA_MemoryInc = DMA_MemoryInc_Enable;
+     70              DMA_InitStructureTX_1WIRE.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+     71              DMA_InitStructureTX_1WIRE.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+     72              DMA_InitStructureTX_1WIRE.DMA_Mode = DMA_Mode_Normal;
+     73              DMA_InitStructureTX_1WIRE.DMA_Priority = DMA_Priority_VeryHigh;
+     74              DMA_InitStructureTX_1WIRE.DMA_FIFOMode = DMA_FIFOMode_Enable;
+     75              DMA_InitStructureTX_1WIRE.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;
+     76              DMA_InitStructureTX_1WIRE.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+     77              DMA_InitStructureTX_1WIRE.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+     78                  
+     79          //-----------    
+     80              DMA_DeInit(USART_1WIRE_RX_DMA_STREAM);
+     81              while (DMA_GetCmdStatus(USART_1WIRE_RX_DMA_STREAM) != DISABLE) //Дожидаемся пока будет DeInit
+     82              {
+     83              }    
+     84              DMA_InitStructureRX_1WIRE.DMA_Channel = USART_1WIRE_RX_DMA_CHANNEL;
+     85              DMA_InitStructureRX_1WIRE.DMA_DIR = DMA_DIR_PeripheralToMemory; // Receive
+     86              DMA_InitStructureRX_1WIRE.DMA_Memory0BaseAddr = (uint32_t) ow_buf;
+     87              DMA_InitStructureRX_1WIRE.DMA_PeripheralBaseAddr = (uint32_t) &(USART_1WIRE->DR);
+     88              DMA_InitStructureRX_1WIRE.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+     89              DMA_InitStructureRX_1WIRE.DMA_MemoryInc = DMA_MemoryInc_Enable;
+     90              DMA_InitStructureRX_1WIRE.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;
+     91              DMA_InitStructureRX_1WIRE.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;
+     92              DMA_InitStructureRX_1WIRE.DMA_Mode = DMA_Mode_Normal;
+     93              DMA_InitStructureRX_1WIRE.DMA_Priority = DMA_Priority_VeryHigh;
+     94              DMA_InitStructureRX_1WIRE.DMA_FIFOMode = DMA_FIFOMode_Enable;
+     95              DMA_InitStructureRX_1WIRE.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;
+     96              DMA_InitStructureRX_1WIRE.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+     97              DMA_InitStructureRX_1WIRE.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+     98              
+     99              
+    100          //// Создаем таймер
+    101          //    xOneShotTimers = xTimerCreate("OneShotTimer", 200, pdFALSE, 0, vQneShotTimersFunction);     
+    102           }
+    103          
+    104          
+    105          /**-----------------------------------------------------------------------------
+    106          * @brief функция преобразует один байт в восемь, для передачи через USART
+    107          * @param ow_byte - байт, который надо преобразовать
+    108          * @param ow_bits - ссылка на буфер, размером не менее 8 байт
+    109          * r@eturn void
+    110          * -----------------------------------------------------------------------------
+    111          */
+    112          void OW_toBits(uint8_t ow_byte, uint8_t *ow_bits) {
+    113          	uint8_t i;
+    114          	for (i = 0; i < 8; i++) {
+    115          		if (ow_byte & 0x01) {
+    116          			*ow_bits = OW_1;
+    117          		} else {
+    118          			*ow_bits = OW_0;
+    119          		}
+    120          		ow_bits++;
+    121          		ow_byte = ow_byte >> 1;
+    122          	}
+    123          }
+    124          
+    125          /**-----------------------------------------------------------------------------
+    126          * @brief обратное преобразование - из того, что получено через USART опять собирается байт
+    127          * @param ow_bits - ссылка на буфер, размером не менее 8 байт
+    128          * @return void
+    129          *-----------------------------------------------------------------------------
+    130          */
+    131          uint8_t OW_toByte(uint8_t *ow_bits) {
+    132          	uint8_t ow_byte, i;
+    133          	ow_byte = 0;
+    134          	for (i = 0; i < 8; i++) {
+    135          		ow_byte = ow_byte >> 1;
+    136          		if (*ow_bits == OW_R_1) {
+    137          			ow_byte |= 0x80;
+    138          		}
+    139          		ow_bits++;
+    140          	}
+    141          
+    142          	return ow_byte;
+    143          }
+    144          
+    145          /**-----------------------------------------------------------------------------
+    146          * @brief осуществляет сброс и проверку на наличие устройств на шине 1- wire
+    147          * @return ow_ok или устройство не найдено
+    148          *-----------------------------------------------------------------------------
+    149          */
+    150          uint8_t OW_Reset() {
+    151          	uint8_t ow_presence;
+    152          	USART_InitTypeDef USART_InitStructure;
+    153          
+    154          	USART_InitStructure.USART_BaudRate = 9600;
+    155          	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+    156          	USART_InitStructure.USART_StopBits = USART_StopBits_1;
+    157          	USART_InitStructure.USART_Parity = USART_Parity_No;
+    158          	USART_InitStructure.USART_HardwareFlowControl =
+    159          			USART_HardwareFlowControl_None;
+    160          	USART_InitStructure.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;
+    161          	USART_Init(USART_1WIRE, &USART_InitStructure);
+    162          
+    163          	// отправляем 0xf0 на скорости 9600
+    164          	USART_ClearFlag(USART_1WIRE, USART_FLAG_TC); //Очищаем флаг передачи ТС - transfer comlete
+    165          	USART_SendData(USART_1WIRE, 0xf0);  //Посылаем reset (0f) в шину 1-wire
+    166                  //Взводим таймер, по окончании которого выдается ошибка, чтобы программа не зависла в цикле while
+    167                  
+    168          	while (USART_GetFlagStatus(USART_1WIRE, USART_FLAG_TC) == RESET) {  //Дожидаемся пока не отправим все данные из уарта
+    169                    
+    170          #ifdef OW_GIVE_TICK_RTOS
+    171          		taskYIELD();
+    172          #endif
+    173          	}
+    174          
+    175          	ow_presence = USART_ReceiveData(USART_1WIRE); //После reset устройства на шине должны опустить сигнал в 0
+    176          
+    177          	USART_InitStructure.USART_BaudRate = 115200;
+    178          	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+    179          	USART_InitStructure.USART_StopBits = USART_StopBits_1;
+    180          	USART_InitStructure.USART_Parity = USART_Parity_No;
+    181          	USART_InitStructure.USART_HardwareFlowControl =
+    182          			USART_HardwareFlowControl_None;
+    183          	USART_InitStructure.USART_Mode = USART_Mode_Tx | USART_Mode_Rx;
+    184          	USART_Init(USART_1WIRE, &USART_InitStructure);
+    185          
+    186          	if (ow_presence != 0xf0) { // Если устройство откликнулось
+    187          		return OW_OK;
+    188          	}
+    189          
+    190          	return OW_NO_DEVICE;  //Устройств не найдено
+    191          }
+    192          /**-----------------------------------------------------------------------
+    193          * @brief внутренняя процедура. Записывает указанное число бит
+    194          * @param nbits - байт который нужно записать
+    195          * @return void
+    196          *------------------------------------------------------------------------
+    197          */
+    198          
+    199          void OW_SendBits(uint8_t nbits){
+    200              portBASE_TYPE xStatus;
+    201            
+    202              DMA_DeInit(USART_1WIRE_TX_DMA_STREAM);
+    203              while (DMA_GetCmdStatus(USART_1WIRE_TX_DMA_STREAM) != DISABLE)   //Ожидаем окончания процедуры DeInit        
+    204              {      
+    205              }
+    206              
+    207              DMA_DeInit(USART_1WIRE_RX_DMA_STREAM);    
+    208              while (DMA_GetCmdStatus(USART_1WIRE_RX_DMA_STREAM) != DISABLE)   //Ожидаем окончания процедуры DeInit        
+    209              {      
+    210              }
+    211              
+    212              DMA_InitStructureTX_1WIRE.DMA_BufferSize = nbits;
+    213              DMA_InitStructureRX_1WIRE.DMA_BufferSize = nbits;
+    214              DMA_Init(USART_1WIRE_TX_DMA_STREAM, &DMA_InitStructureTX_1WIRE);
+    215              DMA_Init(USART_1WIRE_RX_DMA_STREAM, &DMA_InitStructureRX_1WIRE);
+    216          
+    217              USART_ClearFlag(USART_1WIRE, USART_FLAG_RXNE | USART_FLAG_TC | USART_FLAG_TXE);    //Обязательно нужно сбрасывать эти флаги
+    218              USART_DMACmd(USART_1WIRE, USART_DMAReq_Tx | USART_DMAReq_Rx, ENABLE);
+    219              
+    220              DMA_ClearFlag(USART_1WIRE_TX_DMA_STREAM, USART_1WIRE_TX_DMA_FLAG_TCIF);  //Обязательно нужно сбрасывать эти флаги  
+    221              DMA_ClearFlag(USART_1WIRE_RX_DMA_STREAM, USART_1WIRE_RX_DMA_FLAG_TCIF);  
+    222              
+    223              DMA_Cmd(USART_1WIRE_TX_DMA_STREAM, ENABLE);
+    224              DMA_Cmd(USART_1WIRE_RX_DMA_STREAM, ENABLE);
+    225          /*******************************************************************************/    
+    226          //  !!! sergey софтовый таймер переполняет STACK !!!! пришлось его убрать ... надо смотреть почему !!! 
+    227          //    Без таймера прога может зависнуть в этом месте
+    228              //Взводим таймер, если таймер доходит до 0, то ошибка при передачи и выходим из цикла, чтобы не зависла программа, передаем ошибку на ХОСТ
+    229              xOneShotTimers = xTimerCreate("OneShotTimer", 200, pdFALSE, 0, vQneShotTimersFunction); 
+    230                    /* Вьшолнить сброс только первого интервального таймера. * Именно он начнет отсчитывать время сразу после запуска планировщика * Остальные 2 таймера после запуска планировщика останутся в пассивном состоянии. */   
+    231              xTimerReset(xOneShotTimers, 0);
+    232              end_timer = 0;
+    233                 
+    234          ////    while((DMA_GetFlagStatus(DMA_TX_STREAM, DMA_FLAG_TCIF6) == RESET)&&(DMA_GetFlagStatus(DMA_RX_STREAM, DMA_FLAG_TCIF1) == RESET)); 
+    235                while((DMA_GetFlagStatus(USART_1WIRE_TX_DMA_STREAM, USART_1WIRE_TX_DMA_FLAG_TCIF) == RESET)&&(DMA_GetFlagStatus(USART_1WIRE_RX_DMA_STREAM, USART_1WIRE_RX_DMA_FLAG_TCIF) == RESET)&&(end_timer == 0));
+    236              /*********************************************************************** ********/
+    237                while((DMA_GetFlagStatus(USART_1WIRE_TX_DMA_STREAM, USART_1WIRE_TX_DMA_FLAG_TCIF) == RESET)&&(DMA_GetFlagStatus(USART_1WIRE_RX_DMA_STREAM, USART_1WIRE_RX_DMA_FLAG_TCIF) == RESET));
+    238              xStatus = xTimerDelete(xOneShotTimers, 200);
+    239              if (xStatus != pdPASS){
+    240                LED_alarm_On();
+    241                printf ("Timer is not deleted, error is %d", xStatus);
+    242              }
+    243                
+    244              
+    245              while (USART_GetFlagStatus(USART_1WIRE, USART_FLAG_TC) == RESET) //Дожидаемся пока послдний бит уйднт из UART
+    246                {
+    247                }    
+    248              
+    249              DMA_ClearFlag(USART_1WIRE_TX_DMA_STREAM, USART_1WIRE_TX_DMA_FLAG_HTIF | USART_1WIRE_TX_DMA_FLAG_TCIF);    //Очищаем флаги ДМА
+    250              
+    251              DMA_ClearFlag(USART_1WIRE_RX_DMA_STREAM, USART_1WIRE_RX_DMA_FLAG_HTIF | USART_1WIRE_RX_DMA_FLAG_TCIF);    //Очищаем флаги ДМА    
+    252          
+    253              DMA_Cmd(USART_1WIRE_TX_DMA_STREAM, DISABLE);
+    254              DMA_Cmd(USART_1WIRE_RX_DMA_STREAM, DISABLE);
+    255              
+    256              USART_DMACmd(USART_1WIRE, USART_DMAReq_Tx | USART_DMAReq_Rx, DISABLE);  // Конец работы для UART
+    257          }
+    258          
+    259          /**-----------------------------------------------------------------------------
+    260          * @brief процедура общения с шиной 1-wire
+    261          * @param sendReset - посылать RESET в начале общения.
+    262          * 		OW_SEND_RESET или OW_NO_RESET
+    263          * command - массив байт, отсылаемых в шину. Если нужно чтение - отправляем OW_READ_SLOT
+    264          * cLen - длина буфера команд, столько байт отошлется в шину
+    265          * data - если требуется чтение, то ссылка на буфер для чтения
+    266          * dLen - длина буфера для чтения. Прочитается не более этой длины
+    267          * readStart - с какого символа передачи начинать чтение (нумеруются с 0)
+    268          *		можно указать OW_NO_READ, тогда можно не задавать data и dLen
+    269          * @return удвчно или не удачно отослали массив байт
+    270          *!ВНИМАНИЕ readStart зависит от посылаемой команды, т.к. ТХ связан с RX то что передаю (клманды), то и принимаю - вот это мы пропускаем и считываем только данные
+    271          * ----------------------------------------------------------------------------
+    272          */
+    273          uint8_t OW_Send(uint8_t sendReset, uint8_t *command, uint8_t cLen,
+    274          		uint8_t *data, uint8_t dLen, uint8_t readStart) {
+    275          
+    276          	// если требуется сброс - сбрасываем и проверяем на наличие устройств
+    277          	if (sendReset == OW_SEND_RESET) {
+    278          		if (OW_Reset() == OW_NO_DEVICE) {
+    279          			return OW_NO_DEVICE;
+    280          		}
+    281          	}
+    282          
+    283          	while (cLen > 0) {
+    284          
+    285          		OW_toBits(*command, ow_buf);
+    286          		command++;
+    287          		cLen--;
+    288          
+    289          		OW_SendBits(8);
+    290          
+    291          		// если прочитанные данные кому-то нужны - выкинем их в буфер
+    292          		if (readStart == 0 && dLen > 0) {
+    293          			*data = OW_toByte(ow_buf);
+    294          			data++;
+    295          			dLen--;
+    296          		} else {
+    297          			if (readStart != OW_NO_READ) {
+    298          				readStart--;
+    299          			}
+    300          		}
+    301          	}
+    302          
+    303          	return OW_OK;
+    304          }
+    305          
+    306          /**-----------------------------------------------------------------------------
+    307          * @brief Данная функция осуществляет сканирование сети 1-wire и записывает найденные
+    308          * @param  ID устройств в массив buf, по 8 байт на каждое устройство.
+    309          * переменная num ограничивает количество находимых устройств, чтобы не переполнить
+    310          * буфер.
+    311          * @return - количество найденых устройст на шине 1-wire
+    312          -----------------------------------------------------------------------------*/
+    313          uint8_t OW_Scan(uint8_t *buf, uint8_t num) {
+    314          
+    315                  uint8_t found = 0;
+    316                  uint8_t *lastDevice;
+    317                  uint8_t *curDevice = buf;
+    318                  uint8_t numBit, lastCollision, currentCollision, currentSelection;
+    319          
+    320                  lastCollision = 0;
+    321                  while (found < num) {
+    322                          numBit = 1;
+    323                          currentCollision = 0;
+    324          
+    325                          // посылаем команду на поиск устройств
+    326                          OW_Send(OW_SEND_RESET, (uint8_t*)"\xf0", 1, 0, 0, OW_NO_READ);
+    327          
+    328                          for (numBit = 1; numBit <= 64; numBit++) {
+    329                                  // читаем два бита. Основной и комплементарный
+    330                                  OW_toBits(OW_READ_SLOT, ow_buf);
+    331                                  OW_SendBits(2);
+    332          
+    333                                  if (ow_buf[0] == OW_R_1) {
+    334                                          if (ow_buf[1] == OW_R_1) {
+    335                                                  // две единицы, где-то провтыкали и заканчиваем поиск
+    336                                                  return found;
+    337                                          } else {
+    338                                                  // 10 - на данном этапе только 1
+    339                                                  currentSelection = 1;
+    340                                          }
+    341                                  } else {
+    342                                          if (ow_buf[1] == OW_R_1) {
+    343                                                  // 01 - на данном этапе только 0
+    344                                                  currentSelection = 0;
+    345                                          } else {
+    346                                                  // 00 - коллизия
+    347                                                  if (numBit < lastCollision) {
+    348                                                          // идем по дереву, не дошли до развилки
+    349                                                          if (lastDevice[(numBit - 1) >> 3]
+    350                                                                          & 1 << ((numBit - 1) & 0x07)) {
+    351                                                                  // (numBit-1)>>3 - номер байта
+    352                                                                  // (numBit-1)&0x07 - номер бита в байте
+    353                                                                  currentSelection = 1;
+    354          
+    355                                                                  // если пошли по правой ветке, запоминаем номер бита
+    356                                                                  if (currentCollision < numBit) {
+    357                                                                          currentCollision = numBit;
+    358                                                                  }
+    359                                                          } else {
+    360                                                                  currentSelection = 0;
+    361                                                          }
+    362                                                  } else {
+    363                                                          if (numBit == lastCollision) {
+    364                                                                  currentSelection = 0;
+    365                                                          } else {
+    366                                                                  // идем по правой ветке
+    367                                                                  currentSelection = 1;
+    368          
+    369                                                                  // если пошли по правой ветке, запоминаем номер бита
+    370                                                                  if (currentCollision < numBit) {
+    371                                                                          currentCollision = numBit;
+    372                                                                  }
+    373                                                          }
+    374                                                  }
+    375                                          }
+    376                                  }
+    377          
+    378                                  if (currentSelection == 1) {
+    379                                          curDevice[(numBit - 1) >> 3] |= 1 << ((numBit - 1) & 0x07);
+    380                                          OW_toBits(0x01, ow_buf);
+    381                                  } else {
+    382                                          curDevice[(numBit - 1) >> 3] &= ~(1 << ((numBit - 1) & 0x07));
+    383                                          OW_toBits(0x00, ow_buf);
+    384                                  }
+    385                                  OW_SendBits(1);
+    386                          }
+    387                          found++;
+    388                          lastDevice = curDevice;
+    389                          curDevice += 8;
+    390                          if (currentCollision == 0)
+    391                                  return found;
+    392          
+    393                          lastCollision = currentCollision;
+    394                  }
+    395          
+    396                  return found;
+    397          }
+    398          //---------------------------
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   OW_Init
+        32   -> DMA_DeInit
+        32   -> DMA_GetCmdStatus
+        32   -> GPIO_Init
+        32   -> GPIO_PinAFConfig
+        32   -> RCC_AHB1PeriphClockCmd
+        32   -> RCC_APB1PeriphClockCmd
+        32   -> USART_Cmd
+        32   -> USART_Init
+      24   OW_Reset
+        24   -> USART_ClearFlag
+        24   -> USART_GetFlagStatus
+        24   -> USART_Init
+        24   -> USART_ReceiveData
+        24   -> USART_SendData
+        24   -> vPortYield
+      48   OW_Scan
+        48   -> OW_Send
+        48   -> OW_SendBits
+        48   -> OW_toBits
+      32   OW_Send
+        32   -> OW_Reset
+        32   -> OW_SendBits
+        32   -> OW_toBits
+        32   -> OW_toByte
+      16   OW_SendBits
+        16   -> DMA_ClearFlag
+        16   -> DMA_Cmd
+        16   -> DMA_DeInit
+        16   -> DMA_GetCmdStatus
+        16   -> DMA_GetFlagStatus
+        16   -> DMA_Init
+        16   -> LED_alarm_On
+        16   -> USART_ClearFlag
+        16   -> USART_DMACmd
+        16   -> USART_GetFlagStatus
+        16   -> printf
+        16   -> xTaskGetTickCount
+        16   -> xTimerCreate
+        16   -> xTimerGenericCommand
+       0   OW_toBits
+       0   OW_toByte
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      16  ?<Constant "OneShotTimer">
+      36  ?<Constant "Timer is not deleted,...">
+       2  ?<Constant "\360">
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_11
+       4  ??DataTable4_12
+       4  ??DataTable4_13
+       4  ??DataTable4_14
+       4  ??DataTable4_15
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+      60  DMA_InitStructureRX_1WIRE
+      60  DMA_InitStructureTX_1WIRE
+     440  OW_Init
+     160  OW_Reset
+     376  OW_Scan
+     110  OW_Send
+     318  OW_SendBits
+      36  OW_toBits
+      40  OW_toByte
+       8  ow_buf
+
+ 
+   128 bytes in section .bss
+    54 bytes in section .rodata
+ 1 544 bytes in section .text
+ 
+ 1 544 bytes of CODE  memory
+    54 bytes of CONST memory
+   128 bytes of DATA  memory
+
+Errors: none
+Warnings: none

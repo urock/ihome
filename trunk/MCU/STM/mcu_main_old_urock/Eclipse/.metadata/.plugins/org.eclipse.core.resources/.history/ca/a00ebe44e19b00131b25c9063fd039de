@@ -1,0 +1,183 @@
+/**
+  ******************************************************************************
+  * @file    main.h
+  * @author  MCD Application Team
+  * @version V1.1.0
+  * @date    07-October-2011
+  * @brief   This file contains all the functions prototypes for the main.c 
+  *          file.
+  ******************************************************************************
+  * @attention
+  *
+  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+  * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+  * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+  * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+  * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+  *
+  * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+  ******************************************************************************
+  */
+
+
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __MAIN_H
+#define __MAIN_H
+
+ /* Includes ------------------------------------------------------------------*/
+#include "sys_include.h"
+
+
+
+
+// freeRTOS tasks priorities
+#define TCP_SERVER_THREAD_PRIO    ( tskIDLE_PRIORITY + 1 )
+#define TCP_CLIENT_THREAD_PRIO    ( tskIDLE_PRIORITY + 1 )
+
+#define thread_comport_in_PRIO    	( tskIDLE_PRIORITY + 1 )
+#define thread_comport_out_PRIO    	( tskIDLE_PRIORITY + 1 )
+	
+#define RELAY_THREAD_PRIO    		( tskIDLE_PRIORITY + 1 )
+	
+
+#define RELAY_SCAN_PERIOD_MS		100
+#define TCP_CLIENT_PERIOD_MS		100
+
+
+	
+	
+#define QUEUE_WRITE_TICKS_TO_WAIT		100
+//#define QUEUE_READ_TICKS_TO_WAIT		10
+	
+#define NUM_RELAY_BOARDS				1
+
+   
+/* Exported types ------------------------------------------------------------*/
+/* Exported constants --------------------------------------------------------*/
+
+//#define USE_DHCP       /* enable DHCP, if disabled static address is used*/
+
+
+//------------------------------------------------------------------
+/* Uncomment SERIAL_DEBUG to enables retarget of printf to  serial port for debug purpose */   
+
+#define SERIAL_DEBUG
+   
+#ifdef SERIAL_DEBUG
+
+#define msg_dbg(message) printf message
+	
+	
+#define msg_dbg_tsk( message )													\
+	do {																		\
+	  if ( xSemaphoreTake(xUSARTSemaphore, portMAX_DELAY) == pdTRUE) {			\
+		msg_dbg( message );														\
+		xSemaphoreGive(xUSARTSemaphore); 										\
+	  }																			\
+	} while(0) 																\
+
+//////////////////////////////////////////////////////////////////////////////////////
+#else	// SERIAL_DEBUG not defined
+	  
+#define msg_dbg_tsk( message )													\
+	do {																		\
+	  if ( xSemaphoreTake(xUSARTSemaphore, portMAX_DELAY) == pdTRUE) {			\
+		msg_dbg( message );														\
+		xSemaphoreGive(xUSARTSemaphore); 										\
+	  }																			\
+	} while(0) 																	\
+	
+	
+#define msg_dbg(message)
+
+#endif 	// SERIAL_DEBUG
+   
+
+ 
+/* MAC ADDRESS*/
+#define MAC_ADDR0   02
+#define MAC_ADDR1   00
+#define MAC_ADDR2   00
+#define MAC_ADDR3   00
+#define MAC_ADDR4   00
+#define MAC_ADDR5   01
+ 
+
+// STM Server Side
+
+/*STM IP ADDRESS*/
+#define IP_ADDR0   192
+#define IP_ADDR1   168
+#define IP_ADDR2   0
+#define IP_ADDR3   38
+   
+/*NETMASK*/
+#define NETMASK_ADDR0   255
+#define NETMASK_ADDR1   255
+#define NETMASK_ADDR2   255
+#define NETMASK_ADDR3   0
+
+/*Gateway Address*/
+#define GW_ADDR0   192
+#define GW_ADDR1   168
+#define GW_ADDR2   0
+#define GW_ADDR3   254  
+
+#define TCP_SERVER_PORT		10001
+
+
+// STM Client Side
+
+
+#define RMII_MODE  
+
+#define HOST_IP_ADDR0   192
+#define HOST_IP_ADDR1   168
+#define HOST_IP_ADDR2   0
+#define HOST_IP_ADDR3   13
+
+#define HOST_PORT		111
+
+
+#define MAX_TCP_MSG_SIZE	128
+
+
+#define CID_RELAY			0x01
+
+#define GET_RSTATE_REQ		0x01
+#define GET_RSTATE_ANS		0x02
+#define SET_RSTATE_REQ		0x03
+#define SET_RSTATE_ACK		0x04
+
+#define REP_RSTATE_REQ		0x05
+#define REP_RSTATE_ACK		0x06
+
+
+#define GET_RSTATE_ERROR_DATA		0x81
+
+
+#define ERROR_CMD			0xFF
+
+
+
+
+/* Exported macro ------------------------------------------------------------*/
+/* Exported functions ------------------------------------------------------- */  
+void Time_Update(void);
+void Delay(uint32_t nCount);
+void vApplicationStackOverflowHook( xTaskHandle *pxTask, signed portCHAR *pcTaskName );
+
+//---- Прототипы вызываемых функций при достижении таймеров заданного значения --
+void vAutoReloadTimerFunction(xTimerHandle xTimer);
+void vQneShotTimersFunction(xTimerHandle xTimer);
+
+
+
+
+
+#endif /* __MAIN_H */
+
+
+/******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+

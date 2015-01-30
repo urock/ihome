@@ -1,0 +1,73 @@
+
+
+												#	Schematic name		
+
+NET clk25				LOC = p30;		# 25 MHz
+
+
+
+NET port_switch		LOC = p68;		# port_switch
+NET led_switch			LOC = p69;		# led_switch
+
+NET spi_clk				LOC = p41;		# SPI_CLK
+NET spi_cs				LOC = p38;		# SPI_NSS
+NET spi_i				LOC = p40;		# SPI_MOSI
+NET spi_o				LOC = p39;		# SPI_MISO
+
+NET spi_out_test1		LOC = p35;
+NET spi_out_test2		LOC = p42;
+
+NET power_out<7> 			LOC = p117; # PORT_ULN_IN0
+NET power_out<6> 			LOC = p116;	# PORT_ULN_IN1
+NET power_out<5> 			LOC = p115;	# PORT_ULN_IN2
+NET power_out<4> 			LOC = p114;	# PORT_ULN_IN3
+NET power_out<3> 			LOC = p113;	# PORT_ULN_IN4
+NET power_out<2> 			LOC = p112;	# PORT_ULN_IN5
+NET power_out<1> 			LOC = p111;	# PORT_ULN_IN6
+NET power_out<0> 			LOC = p110;	# PORT_ULN_IN7
+
+
+
+NET pb_in<0> 			LOC = p2;	# CON1_OUT0	/ CONx_XC0
+NET pb_in<1> 			LOC = p4;	# CON2_OUT0
+NET pb_in<2> 			LOC = p6;	# CON3_OUT0
+NET pb_in<3> 			LOC = p9;	# CON4_OUT0
+NET pb_in<4> 			LOC = p12;	# CON5_OUT0
+NET pb_in<5> 			LOC = p14;	# CON6_OUT0
+NET pb_in<6> 			LOC = p16;	# CON7_OUT0
+NET pb_in<7> 			LOC = p18;	# CON8_OUT0
+
+
+#NET pb_in<0> 			LOC = p3;	# CON1_OUT1	/ CONx_XC1
+#NET pb_in<1> 			LOC = p5;	# CON2_OUT1
+#NET pb_in<2> 			LOC = p7;	# CON3_OUT1
+#NET pb_in<3> 			LOC = p10;	# CON4_OUT1
+#NET pb_in<4> 			LOC = p13;	# CON5_OUT1
+#NET pb_in<5> 			LOC = p15;	# CON6_OUT1
+#NET pb_in<6> 			LOC = p17;	# CON7_OUT1
+#NET pb_in<7> 			LOC = p19;	# CON8_OUT1
+
+
+
+
+NET stm_unused<0> LOC = p5;
+NET stm_unused<1> LOC = p4;
+NET stm_unused<2> LOC = p48;
+NET stm_unused<3> LOC = p46;
+NET stm_unused<4> LOC = p45;
+NET stm_unused<5> LOC = p44;
+NET stm_unused<6> LOC = p43;
+NET stm_unused<7> LOC = p39;
+NET stm_unused<8> LOC = p38;
+NET stm_unused<9> LOC = p37;
+NET stm_unused<10> LOC = p36;
+NET stm_unused<11> LOC = p34;
+
+NET "clk25" TNM_NET = "clk25_t";
+TIMESPEC "TS_clk25_t" = PERIOD "clk25_t" 40 ns HIGH 50 %;
+
+
+NET "spi_clk" TNM_NET = "spi_clk_t";
+TIMESPEC "TS_SPI_clk_t" = PERIOD "spi_clk_t" 20 ns HIGH 50 %;
+
+		

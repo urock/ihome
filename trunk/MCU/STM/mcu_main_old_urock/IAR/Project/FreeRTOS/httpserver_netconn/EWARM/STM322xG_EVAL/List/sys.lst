@@ -1,0 +1,456 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:47
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\sys.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\sys.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\sys.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\sys.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\sys.c
+      1          /**
+      2           * @file
+      3           * lwIP Operating System abstraction
+      4           *
+      5           */
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved.
+     10           *
+     11           * Redistribution and use in source and binary forms, with or without modification,
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission.
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           *
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #if (NO_SYS == 0) /* don't build if not configured for use in lwipopts.h */
+     42          
+     43          #include "lwip/sys.h"
+     44          #include "lwip/def.h"
+     45          #include "lwip/memp.h"
+     46          #include "lwip/tcpip.h"
+     47          
+     48          /**
+     49           * Struct used for sys_sem_wait_timeout() to tell wether the time
+     50           * has run out or the semaphore has really become available.
+     51           */
+     52          struct sswt_cb
+     53          {
+     54            s16_t timeflag;
+     55            sys_sem_t *psem;
+     56          };
+     57          
+     58          /**
+     59           * Wait (forever) for a message to arrive in an mbox.
+     60           * While waiting, timeouts (for this thread) are processed.
+     61           *
+     62           * @param mbox the mbox to fetch the message from
+     63           * @param msg the place to store the message
+     64           */
+     65          void
+     66          sys_mbox_fetch(sys_mbox_t mbox, void **msg)
+     67          {
+     68            u32_t time_needed;
+     69            struct sys_timeouts *timeouts;
+     70            struct sys_timeo *tmptimeout;
+     71            sys_timeout_handler h;
+     72            void *arg;
+     73          
+     74           again:
+     75            timeouts = sys_arch_timeouts();
+     76          
+     77            if (!timeouts || !timeouts->next) {
+     78              UNLOCK_TCPIP_CORE();
+     79              time_needed = sys_arch_mbox_fetch(mbox, msg, 0);
+     80              LOCK_TCPIP_CORE();
+     81            } else {
+     82              if (timeouts->next->time > 0) {
+     83                UNLOCK_TCPIP_CORE();
+     84                time_needed = sys_arch_mbox_fetch(mbox, msg, timeouts->next->time);
+     85                LOCK_TCPIP_CORE();
+     86              } else {
+     87                time_needed = SYS_ARCH_TIMEOUT;
+     88              }
+     89          
+     90              if (time_needed == SYS_ARCH_TIMEOUT) {
+     91                /* If time == SYS_ARCH_TIMEOUT, a timeout occured before a message
+     92                   could be fetched. We should now call the timeout handler and
+     93                   deallocate the memory allocated for the timeout. */
+     94                tmptimeout = timeouts->next;
+     95                timeouts->next = tmptimeout->next;
+     96                h   = tmptimeout->h;
+     97                arg = tmptimeout->arg;
+     98                memp_free(MEMP_SYS_TIMEOUT, tmptimeout);
+     99                if (h != NULL) {
+    100                  LWIP_DEBUGF(SYS_DEBUG, ("smf calling h=%p(%p)\n", *(void**)&h, arg));
+    101                  h(arg);
+    102                }
+    103          
+    104                /* We try again to fetch a message from the mbox. */
+    105                goto again;
+    106              } else {
+    107                /* If time != SYS_ARCH_TIMEOUT, a message was received before the timeout
+    108                   occured. The time variable is set to the number of
+    109                   milliseconds we waited for the message. */
+    110                if (time_needed < timeouts->next->time) {
+    111                  timeouts->next->time -= time_needed;
+    112                } else {
+    113                  timeouts->next->time = 0;
+    114                }
+    115              }
+    116            }
+    117          }
+    118          
+    119          /**
+    120           * Wait (forever) for a semaphore to become available.
+    121           * While waiting, timeouts (for this thread) are processed.
+    122           *
+    123           * @param sem semaphore to wait for
+    124           */
+    125          void
+    126          sys_sem_wait(sys_sem_t sem)
+    127          {
+    128            u32_t time_needed;
+    129            struct sys_timeouts *timeouts;
+    130            struct sys_timeo *tmptimeout;
+    131            sys_timeout_handler h;
+    132            void *arg;
+    133          
+    134           again:
+    135          
+    136            timeouts = sys_arch_timeouts();
+    137          
+    138            if (!timeouts || !timeouts->next) {
+    139              sys_arch_sem_wait(sem, 0);
+    140            } else {
+    141              if (timeouts->next->time > 0) {
+    142                time_needed = sys_arch_sem_wait(sem, timeouts->next->time);
+    143              } else {
+    144                time_needed = SYS_ARCH_TIMEOUT;
+    145              }
+    146          
+    147              if (time_needed == SYS_ARCH_TIMEOUT) {
+    148                /* If time == SYS_ARCH_TIMEOUT, a timeout occured before a message
+    149                  could be fetched. We should now call the timeout handler and
+    150                  deallocate the memory allocated for the timeout. */
+    151                tmptimeout = timeouts->next;
+    152                timeouts->next = tmptimeout->next;
+    153                h = tmptimeout->h;
+    154                arg = tmptimeout->arg;
+    155                memp_free(MEMP_SYS_TIMEOUT, tmptimeout);
+    156                if (h != NULL) {
+    157                  LWIP_DEBUGF(SYS_DEBUG, ("ssw h=%p(%p)\n", *(void**)&h, (void *)arg));
+    158                  h(arg);
+    159                }
+    160          
+    161                /* We try again to fetch a message from the mbox. */
+    162                goto again;
+    163              } else {
+    164                /* If time != SYS_ARCH_TIMEOUT, a message was received before the timeout
+    165                   occured. The time variable is set to the number of
+    166                   milliseconds we waited for the message. */
+    167                if (time_needed < timeouts->next->time) {
+    168                  timeouts->next->time -= time_needed;
+    169                } else {
+    170                  timeouts->next->time = 0;
+    171                }
+    172              }
+    173            }
+    174          }
+    175          
+    176          /**
+    177           * Create a one-shot timer (aka timeout). Timeouts are processed in the
+    178           * following cases:
+    179           * - while waiting for a message using sys_mbox_fetch()
+    180           * - while waiting for a semaphore using sys_sem_wait() or sys_sem_wait_timeout()
+    181           * - while sleeping using the inbuilt sys_msleep()
+    182           *
+    183           * @param msecs time in milliseconds after that the timer should expire
+    184           * @param h callback function to call when msecs have elapsed
+    185           * @param arg argument to pass to the callback function
+    186           */
+    187          void
+    188          sys_timeout(u32_t msecs, sys_timeout_handler h, void *arg)
+    189          {
+    190            struct sys_timeouts *timeouts;
+    191            struct sys_timeo *timeout, *t;
+    192          
+    193            timeout = memp_malloc(MEMP_SYS_TIMEOUT);
+    194            if (timeout == NULL) {
+    195              LWIP_ASSERT("sys_timeout: timeout != NULL", timeout != NULL);
+    196              return;
+    197            }
+    198            timeout->next = NULL;
+    199            timeout->h = h;
+    200            timeout->arg = arg;
+    201            timeout->time = msecs;
+    202          
+    203            timeouts = sys_arch_timeouts();
+    204          
+    205            LWIP_DEBUGF(SYS_DEBUG, ("sys_timeout: %p msecs=%"U32_F" h=%p arg=%p\n",
+    206              (void *)timeout, msecs, *(void**)&h, (void *)arg));
+    207          
+    208            if (timeouts == NULL) {
+    209              LWIP_ASSERT("sys_timeout: timeouts != NULL", timeouts != NULL);
+    210              return;
+    211            }
+    212          
+    213            if (timeouts->next == NULL) {
+    214              timeouts->next = timeout;
+    215              return;
+    216            }
+    217          
+    218            if (timeouts->next->time > msecs) {
+    219              timeouts->next->time -= msecs;
+    220              timeout->next = timeouts->next;
+    221              timeouts->next = timeout;
+    222            } else {
+    223              for(t = timeouts->next; t != NULL; t = t->next) {
+    224                timeout->time -= t->time;
+    225                if (t->next == NULL || t->next->time > timeout->time) {
+    226                  if (t->next != NULL) {
+    227                    t->next->time -= timeout->time;
+    228                  }
+    229                  timeout->next = t->next;
+    230                  t->next = timeout;
+    231                  break;
+    232                }
+    233              }
+    234            }
+    235          }
+    236          
+    237          /**
+    238           * Go through timeout list (for this task only) and remove the first matching
+    239           * entry, even though the timeout has not triggered yet.
+    240           *
+    241           * @note This function only works as expected if there is only one timeout
+    242           * calling 'h' in the list of timeouts.
+    243           *
+    244           * @param h callback function that would be called by the timeout
+    245           * @param arg callback argument that would be passed to h
+    246          */
+    247          void
+    248          sys_untimeout(sys_timeout_handler h, void *arg)
+    249          {
+    250            struct sys_timeouts *timeouts;
+    251            struct sys_timeo *prev_t, *t;
+    252          
+    253            timeouts = sys_arch_timeouts();
+    254          
+    255            if (timeouts == NULL) {
+    256              LWIP_ASSERT("sys_untimeout: timeouts != NULL", timeouts != NULL);
+    257              return;
+    258            }
+    259            if (timeouts->next == NULL) {
+    260              return;
+    261            }
+    262          
+    263            for (t = timeouts->next, prev_t = NULL; t != NULL; prev_t = t, t = t->next) {
+    264              if ((t->h == h) && (t->arg == arg)) {
+    265                /* We have a match */
+    266                /* Unlink from previous in list */
+    267                if (prev_t == NULL) {
+    268                  timeouts->next = t->next;
+    269                } else {
+    270                  prev_t->next = t->next;
+    271                }
+    272                /* If not the last one, add time of this one back to next */
+    273                if (t->next != NULL) {
+    274                  t->next->time += t->time;
+    275                }
+    276                memp_free(MEMP_SYS_TIMEOUT, t);
+    277                return;
+    278              }
+    279            }
+    280            return;
+    281          }
+    282          
+    283          /**
+    284           * Timeout handler function for sys_sem_wait_timeout()
+    285           *
+    286           * @param arg struct sswt_cb* used to signal a semaphore and end waiting.
+    287           */
+    288          static void
+    289          sswt_handler(void *arg)
+    290          {
+    291            struct sswt_cb *sswt_cb = (struct sswt_cb *) arg;
+    292          
+    293            /* Timeout. Set flag to TRUE and signal semaphore */
+    294            sswt_cb->timeflag = 1;
+    295            sys_sem_signal(*(sswt_cb->psem));
+    296          }
+    297          
+    298          /**
+    299           * Wait for a semaphore with timeout (specified in ms)
+    300           *
+    301           * @param sem semaphore to wait
+    302           * @param timeout timeout in ms (0: wait forever)
+    303           * @return 0 on timeout, 1 otherwise
+    304           */
+    305          int
+    306          sys_sem_wait_timeout(sys_sem_t sem, u32_t timeout)
+    307          {
+    308            struct sswt_cb sswt_cb;
+    309          
+    310            sswt_cb.psem = &sem;
+    311            sswt_cb.timeflag = 0;
+    312          
+    313            /* If timeout is zero, then just wait forever */
+    314            if (timeout > 0) {
+    315              /* Create a timer and pass it the address of our flag */
+    316              sys_timeout(timeout, sswt_handler, &sswt_cb);
+    317            }
+    318            sys_sem_wait(sem);
+    319            /* Was it a timeout? */
+    320            if (sswt_cb.timeflag) {
+    321              /* timeout */
+    322              return 0;
+    323            } else {
+    324              /* Not a timeout. Remove timeout entry */
+    325              sys_untimeout(sswt_handler, &sswt_cb);
+    326              return 1;
+    327            }
+    328          }
+    329          
+    330          /**
+    331           * Sleep for some ms. Timeouts are processed while sleeping.
+    332           *
+    333           * @param ms number of milliseconds to sleep
+    334           */
+    335          void
+    336          sys_msleep(u32_t ms)
+    337          {
+    338            sys_sem_t delaysem = sys_sem_new(0);
+    339          
+    340            sys_sem_wait_timeout(delaysem, ms);
+    341          
+    342            sys_sem_free(delaysem);
+    343          }
+    344          
+    345          
+    346          #endif /* NO_SYS */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sswt_handler
+         8   -> sys_sem_signal
+      32   sys_mbox_fetch
+        32   -- Indirect call
+        32   -> memp_free
+        32   -> sys_arch_mbox_fetch
+        32   -> sys_arch_timeouts
+      16   sys_msleep
+        16   -> sys_sem_free
+        16   -> sys_sem_new
+        16   -> sys_sem_wait_timeout
+      32   sys_sem_wait
+        32   -- Indirect call
+        32   -> memp_free
+        32   -> sys_arch_sem_wait
+        32   -> sys_arch_timeouts
+      24   sys_sem_wait_timeout
+        24   -> sys_sem_wait
+        24   -> sys_timeout
+        24   -> sys_untimeout
+      32   sys_timeout
+        32   -> memp_malloc
+        32   -> sys_arch_timeouts
+      24   sys_untimeout
+        24   -> memp_free
+        24   -> sys_arch_timeouts
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+      18  sswt_handler
+     146  sys_mbox_fetch
+      28  sys_msleep
+     132  sys_sem_wait
+      62  sys_sem_wait_timeout
+     190  sys_timeout
+     122  sys_untimeout
+
+ 
+ 702 bytes in section .text
+ 
+ 702 bytes of CODE memory
+
+Errors: none
+Warnings: none

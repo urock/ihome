@@ -1,0 +1,230 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:09 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\user_flash.c                              #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\user_flash.c -D USE_STDPERIPH_DRIVER -D   #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\user_flash.lst       #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\user_flash.o          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\user_flash.c
+      1          /** \file user_flash.c
+      2           *  \brief File containing functions to work with STM Flash memory
+      3          
+      4          	Last Flash Sector is used to store user data
+      5          	Sector size = 128 Kbytes
+      6          	Sector BASE Address = 0x080E0000
+      7          	Sector High Address = 0x080FFFFF
+      8          	
+      9           */
+     10           
+     11             
+     12          #include "main.h"
+     13          #include "user_flash.h"
+     14          
+     15          
+     16          
+     17          /** 
+     18          * @brief Writes buffer to Flash at constant address 
+     19          * @param buf Pointer to write buffer
+     20          * @param len Number of DWORDs (32 bits) to write
+     21          *
+     22          * Flash Addess is defined by USER_FLASH_BASE
+     23          *
+     24          * @return <0 on error
+     25           */
+     26          int write_buf_to_flash(uint8_t *buf, int len, int address)
+     27          {
+     28          	int i; 
+     29          	
+     30          	uint32_t 	Address = 0; 
+     31          	
+     32          	// Unlock the Flash to enable the flash control register access 
+     33          	FLASH_Unlock();
+     34              
+     35          
+     36          	//Clear pending flags (if any) 
+     37          	FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_OPERR | FLASH_FLAG_WRPERR | 
+     38                            FLASH_FLAG_PGAERR | FLASH_FLAG_PGPERR|FLASH_FLAG_PGSERR); 
+     39          
+     40          	//FLASH_OB_WRPConfig(OB_WRP_Sector_11, DISABLE);
+     41                  if (address == USER_FLASH_INFO){
+     42                    if (FLASH_EraseSector(FLASH_Sector_10, VoltageRange_3) != FLASH_COMPLETE)
+     43                            return FLASH_ERROR_ERASE;            
+     44                  }
+     45                  
+     46                  if (address == USER_FLASH_BASE){
+     47                    if (FLASH_EraseSector(FLASH_Sector_11, VoltageRange_3) != FLASH_COMPLETE)
+     48                            return FLASH_ERROR_ERASE;  
+     49                  }
+     50          	
+     51          
+     52          //	Address = USER_FLASH_BASE;
+     53                  Address = address;
+     54                  
+     55          		
+     56          	for (i=0; i<len; i++) {
+     57          		if (FLASH_ProgramByte(Address,buf[i]) != FLASH_COMPLETE) 
+     58          			return FLASH_ERROR_WRITE; 
+     59          		Address++;
+     60          	}
+     61          
+     62          
+     63          	
+     64          	FLASH_Lock(); 
+     65          	
+     66          	return FLASH_OK; 
+     67          	
+     68          }
+     69          
+     70          
+     71          /** 
+     72          * @brief Reads buffer from Flash from constant address 
+     73          * @param buf Pointer to read buffer
+     74          * @param len Number of DWORDs (32 bits) to read
+     75          *
+     76          *	Flash Addess is defined by USER_FLASH_BASE
+     77          *
+     78          * @ return <0 on error
+     79           */
+     80          void read_buf_from_flash(uint8_t *buf, int len, int address)
+     81          {
+     82          	int i; 
+     83          	uint8_t 	*ptr_flash; 
+     84                  
+     85          			
+     86          	ptr_flash =(uint8_t*)address;
+     87          		
+     88          	for (i=0; i<len; i++)
+     89          		buf[i] = *ptr_flash++; 
+     90          }
+     91          
+     92          
+     93          //-------------------------------------------------
+     94          /** 
+     95          * @brief Writes buffer to Flash at constant address 
+     96          * @param buf Pointer to write buffer
+     97          * @param len Number of DWORDs (32 bits) to write
+     98          *
+     99          * Flash Addess is defined by USER_FLASH_BASE
+    100          *
+    101          * @return <0 on error
+    102           */
+    103          int clear_flash(int address)
+    104          //int write_buf_to_flash(uint8_t *buf, int len, int address)
+    105          {
+    106          	// Unlock the Flash to enable the flash control register access 
+    107          	FLASH_Unlock();
+    108              
+    109          
+    110          	//Clear pending flags (if any) 
+    111          	FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_OPERR | FLASH_FLAG_WRPERR | 
+    112                            FLASH_FLAG_PGAERR | FLASH_FLAG_PGPERR|FLASH_FLAG_PGSERR); 
+    113          
+    114          	//FLASH_OB_WRPConfig(OB_WRP_Sector_10, DISABLE);
+    115                  if (address == USER_FLASH_INFO){
+    116                    if (FLASH_EraseSector(FLASH_Sector_10, VoltageRange_3) != FLASH_COMPLETE)
+    117                            return FLASH_ERROR_ERASE;            
+    118                  }
+    119                  
+    120                  if (address == USER_FLASH_BASE){
+    121                    if (FLASH_EraseSector(FLASH_Sector_11, VoltageRange_3) != FLASH_COMPLETE)
+    122                            return FLASH_ERROR_ERASE;  
+    123                  }
+    124          	
+    125          	FLASH_Lock(); 
+    126          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   clear_flash
+         8   -> FLASH_ClearFlag
+         8   -> FLASH_EraseSector
+         8   -> FLASH_Lock
+         8   -> FLASH_Unlock
+       8   read_buf_from_flash
+      24   write_buf_to_flash
+        24   -> FLASH_ClearFlag
+        24   -> FLASH_EraseSector
+        24   -> FLASH_Lock
+        24   -> FLASH_ProgramByte
+        24   -> FLASH_Unlock
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+      68  clear_flash
+      26  read_buf_from_flash
+     118  write_buf_to_flash
+
+ 
+ 220 bytes in section .text
+ 
+ 220 bytes of CODE memory
+
+Errors: none
+Warnings: 1

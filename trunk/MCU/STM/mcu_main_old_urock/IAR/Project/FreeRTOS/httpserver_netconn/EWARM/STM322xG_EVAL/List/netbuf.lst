@@ -1,0 +1,344 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:39
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netbuf.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netbuf.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\netbuf.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\netbuf.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netbuf.c
+      1          /**
+      2           * @file
+      3           * Network buffer management
+      4           *
+      5           **/
+      6           
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved. 
+     10           * 
+     11           * Redistribution and use in source and binary forms, with or without modification, 
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission. 
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           * 
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #if LWIP_NETCONN /* don't build if not configured for use in lwipopts.h */
+     42          
+     43          #include "lwip/netbuf.h"
+     44          #include "lwip/memp.h"
+     45          
+     46          #include <string.h>
+     47          
+     48          /**
+     49           * Create (allocate) and initialize a new netbuf.
+     50           * The netbuf doesn't yet contain a packet buffer!
+     51           *
+     52           * @return a pointer to a new netbuf
+     53           *         NULL on lack of memory
+     54           */
+     55          struct
+     56          netbuf *netbuf_new(void)
+     57          {
+     58            struct netbuf *buf;
+     59          
+     60            buf = memp_malloc(MEMP_NETBUF);
+     61            if (buf != NULL) {
+     62              buf->p = NULL;
+     63              buf->ptr = NULL;
+     64              buf->addr = NULL;
+     65              buf->port = 0;
+     66          #if LWIP_NETBUF_RECVINFO
+     67              buf->toaddr = NULL;
+     68              buf->toport = 0;
+     69          #endif /* LWIP_NETBUF_RECVINFO */
+     70              return buf;
+     71            } else {
+     72              return NULL;
+     73            }
+     74          }
+     75          
+     76          /**
+     77           * Deallocate a netbuf allocated by netbuf_new().
+     78           *
+     79           * @param buf pointer to a netbuf allocated by netbuf_new()
+     80           */
+     81          void
+     82          netbuf_delete(struct netbuf *buf)
+     83          {
+     84            if (buf != NULL) {
+     85              if (buf->p != NULL) {
+     86                pbuf_free(buf->p);
+     87                buf->p = buf->ptr = NULL;
+     88              }
+     89              memp_free(MEMP_NETBUF, buf);
+     90            }
+     91          }
+     92          
+     93          /**
+     94           * Allocate memory for a packet buffer for a given netbuf.
+     95           *
+     96           * @param buf the netbuf for which to allocate a packet buffer
+     97           * @param size the size of the packet buffer to allocate
+     98           * @return pointer to the allocated memory
+     99           *         NULL if no memory could be allocated
+    100           */
+    101          void *
+    102          netbuf_alloc(struct netbuf *buf, u16_t size)
+    103          {
+    104            LWIP_ERROR("netbuf_alloc: invalid buf", (buf != NULL), return NULL;);
+    105          
+    106            /* Deallocate any previously allocated memory. */
+    107            if (buf->p != NULL) {
+    108              pbuf_free(buf->p);
+    109            }
+    110            buf->p = pbuf_alloc(PBUF_TRANSPORT, size, PBUF_RAM);
+    111            if (buf->p == NULL) {
+    112               return NULL;
+    113            }
+    114            LWIP_ASSERT("check that first pbuf can hold size",
+    115                       (buf->p->len >= size));
+    116            buf->ptr = buf->p;
+    117            return buf->p->payload;
+    118          }
+    119          
+    120          /**
+    121           * Free the packet buffer included in a netbuf
+    122           *
+    123           * @param buf pointer to the netbuf which contains the packet buffer to free
+    124           */
+    125          void
+    126          netbuf_free(struct netbuf *buf)
+    127          {
+    128            LWIP_ERROR("netbuf_free: invalid buf", (buf != NULL), return;);
+    129            if (buf->p != NULL) {
+    130              pbuf_free(buf->p);
+    131            }
+    132            buf->p = buf->ptr = NULL;
+    133          }
+    134          
+    135          /**
+    136           * Let a netbuf reference existing (non-volatile) data.
+    137           *
+    138           * @param buf netbuf which should reference the data
+    139           * @param dataptr pointer to the data to reference
+    140           * @param size size of the data
+    141           * @return ERR_OK if data is referenced
+    142           *         ERR_MEM if data couldn't be referenced due to lack of memory
+    143           */
+    144          err_t
+    145          netbuf_ref(struct netbuf *buf, const void *dataptr, u16_t size)
+    146          {
+    147            LWIP_ERROR("netbuf_ref: invalid buf", (buf != NULL), return ERR_ARG;);
+    148            if (buf->p != NULL) {
+    149              pbuf_free(buf->p);
+    150            }
+    151            buf->p = pbuf_alloc(PBUF_TRANSPORT, 0, PBUF_REF);
+    152            if (buf->p == NULL) {
+    153              buf->ptr = NULL;
+    154              return ERR_MEM;
+    155            }
+    156            buf->p->payload = (void*)dataptr;
+    157            buf->p->len = buf->p->tot_len = size;
+    158            buf->ptr = buf->p;
+    159            return ERR_OK;
+    160          }
+    161          
+    162          /**
+    163           * Chain one netbuf to another (@see pbuf_chain)
+    164           *
+    165           * @param head the first netbuf
+    166           * @param tail netbuf to chain after head, freed by this function, may not be reference after returning
+    167           */
+    168          void
+    169          netbuf_chain(struct netbuf *head, struct netbuf *tail)
+    170          {
+    171            LWIP_ERROR("netbuf_ref: invalid head", (head != NULL), return;);
+    172            LWIP_ERROR("netbuf_chain: invalid tail", (tail != NULL), return;);
+    173            pbuf_cat(head->p, tail->p);
+    174            head->ptr = head->p;
+    175            memp_free(MEMP_NETBUF, tail);
+    176          }
+    177          
+    178          /**
+    179           * Get the data pointer and length of the data inside a netbuf.
+    180           *
+    181           * @param buf netbuf to get the data from
+    182           * @param dataptr pointer to a void pointer where to store the data pointer
+    183           * @param len pointer to an u16_t where the length of the data is stored
+    184           * @return ERR_OK if the information was retreived,
+    185           *         ERR_BUF on error.
+    186           */
+    187          err_t
+    188          netbuf_data(struct netbuf *buf, void **dataptr, u16_t *len)
+    189          {
+    190            LWIP_ERROR("netbuf_data: invalid buf", (buf != NULL), return ERR_ARG;);
+    191            LWIP_ERROR("netbuf_data: invalid dataptr", (dataptr != NULL), return ERR_ARG;);
+    192            LWIP_ERROR("netbuf_data: invalid len", (len != NULL), return ERR_ARG;);
+    193          
+    194            if (buf->ptr == NULL) {
+    195              return ERR_BUF;
+    196            }
+    197            *dataptr = buf->ptr->payload;
+    198            *len = buf->ptr->len;
+    199            return ERR_OK;
+    200          }
+    201          
+    202          /**
+    203           * Move the current data pointer of a packet buffer contained in a netbuf
+    204           * to the next part.
+    205           * The packet buffer itself is not modified.
+    206           *
+    207           * @param buf the netbuf to modify
+    208           * @return -1 if there is no next part
+    209           *         1  if moved to the next part but now there is no next part
+    210           *         0  if moved to the next part and there are still more parts
+    211           */
+    212          s8_t
+    213          netbuf_next(struct netbuf *buf)
+    214          {
+    215            LWIP_ERROR("netbuf_free: invalid buf", (buf != NULL), return -1;);
+    216            if (buf->ptr->next == NULL) {
+    217              return -1;
+    218            }
+    219            buf->ptr = buf->ptr->next;
+    220            if (buf->ptr->next == NULL) {
+    221              return 1;
+    222            }
+    223            return 0;
+    224          }
+    225          
+    226          /**
+    227           * Move the current data pointer of a packet buffer contained in a netbuf
+    228           * to the beginning of the packet.
+    229           * The packet buffer itself is not modified.
+    230           *
+    231           * @param buf the netbuf to modify
+    232           */
+    233          void
+    234          netbuf_first(struct netbuf *buf)
+    235          {
+    236            LWIP_ERROR("netbuf_free: invalid buf", (buf != NULL), return;);
+    237            buf->ptr = buf->p;
+    238          }
+    239          
+    240          #endif /* LWIP_NETCONN */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   netbuf_alloc
+        16   -> pbuf_alloc
+        16   -> pbuf_free
+      16   netbuf_chain
+        16   -> memp_free
+        16   -> pbuf_cat
+       0   netbuf_data
+       8   netbuf_delete
+         8   -> memp_free
+         8   -> pbuf_free
+       0   netbuf_first
+       8   netbuf_free
+         8   -> pbuf_free
+       8   netbuf_new
+         8   -> memp_malloc
+       0   netbuf_next
+      16   netbuf_ref
+        16   -> pbuf_alloc
+        16   -> pbuf_free
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      60  netbuf_alloc
+      36  netbuf_chain
+      60  netbuf_data
+      38  netbuf_delete
+      10  netbuf_first
+      30  netbuf_free
+      38  netbuf_new
+      48  netbuf_next
+      82  netbuf_ref
+
+ 
+ 402 bytes in section .text
+ 
+ 402 bytes of CODE memory
+
+Errors: none
+Warnings: none

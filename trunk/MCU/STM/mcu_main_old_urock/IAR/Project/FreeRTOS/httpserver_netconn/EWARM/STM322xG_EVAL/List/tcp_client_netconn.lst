@@ -1,0 +1,338 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.70.2.6274/W32 for ARM      11/Jul/2014  14:14:30 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\src\tcp_client_netconn.c                 #
+#    Command line =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\src\tcp_client_netconn.c -D              #
+#                    USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL   #
+#                    -lcN C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTO #
+#                    S\httpserver_netconn\EWARM\STM322xG_EVAL\List\ -o        #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse        #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.7\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\inc\ -I                         #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\De #
+#                    viceSupport\ST\STM32F2xx\ -I                             #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_St #
+#                    dPeriph_Driver\inc\ -I C:\ihome\MCU\STM\trunk\mcu_main\I #
+#                    AR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\.. #
+#                    \Libraries\STM32F2x7_ETH_Driver\inc\ -I                  #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\C #
+#                    ommon\ -I C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\Fr #
+#                    eeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ST #
+#                    M32_EVAL\STM322xG_EVAL\ -I C:\ihome\MCU\STM\trunk\mcu_ma #
+#                    in\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\. #
+#                    .\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ -I   #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\src\include\lwip\ -I                         #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\src\include\netif\ -I                        #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\src\include\ipv4\ -I                         #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\port\STM32F2x7\ -I                           #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\port\STM32F2x7\FreeRTOS\ -I                  #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\include\ -On --use_c++_inline -I         #
+#                    "C:\Program Files (x86)\IAR Systems\Embedded Workbench   #
+#                    6.7\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\STM322xG_EVAL\List\tcp_client_netc #
+#                    onn.lst                                                  #
+#    Object file  =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\STM322xG_EVAL\Obj\tcp_client_netco #
+#                    nn.o                                                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\tcp_client_netconn.c
+      1          #include "main.h"
+      2          #include "tcp_client_netconn.h"
+      3          #include "tcp_protocol.h"
+      4          
+      5          
+      6          struct ip_addr remote_ip_global;
+      7          
+      8          extern xSemaphoreHandle xUSARTSemaphore;
+      9          
+     10          extern xQueueHandle tcp_client_queue ;
+     11          
+     12          
+     13          
+     14          err_t tcp_send_buffer(
+     15          						//struct netconn 		*conn,
+     16          						struct ip_addr 		*addr,
+     17          						u16_t 				port,
+     18          						uint8_t 			*data_in,
+     19          						uint8_t 				size_in,
+     20          						uint8_t				*data_out,
+     21          						uint8_t 				*size_out
+     22          					)
+     23          {
+     24          	err_t tcp_error;
+     25          
+     26          	struct netbuf *inbuf;
+     27          
+     28          	uint8_t *buf;
+     29          	uint16_t buflen;
+     30          
+     31          	size_t	i;
+     32          
+     33          	struct netconn 		*conn = NULL;
+     34          
+     35          
+     36          	msg_dbg_tsk(("tcp_send_buffer: enter\n"));
+     37          
+     38          	conn = netconn_new ( NETCONN_TCP );
+     39          
+     40          	if (conn == NULL) {
+     41          		msg_dbg_tsk(("client_netconn_thread: Error in netconn_new\n"));
+     42          		//while(1);
+     43          	}
+     44          
+     45          	tcp_error = netconn_connect (conn, addr, port);
+     46          
+     47          	if ( tcp_error != ERR_OK ) {
+     48          		msg_dbg_tsk(("tcp_send_buffer: netconn_connect failed\n"));
+     49          		return tcp_error;
+     50          	}
+     51          
+     52          	// send data
+     53          	tcp_error = netconn_write(conn, data_in, size_in, NETCONN_NOCOPY);
+     54          	if (tcp_error != ERR_OK) {
+     55          		msg_dbg_tsk(("tcp_send_buffer: Error in netconn_write\n"));
+     56          		netconn_close(conn);
+     57          		return tcp_error;
+     58          	}
+     59          
+     60          	// check response
+     61          	inbuf = netconn_recv(conn);
+     62          	if (inbuf != NULL) {
+     63          
+     64          		// copy data from inbuf to data_out buf
+     65          		netbuf_data(inbuf, (void**)&buf, &buflen);
+     66          
+     67          		if (buflen > MAX_TCP_MSG_SIZE) {
+     68          			msg_dbg_tsk(("tcp_send_buffer: buflen > MAX_TCP_MSG_SIZE\n"));
+     69          			tcp_error = ERR_IF;
+     70          		}
+     71          
+     72          		for (i=0; i<buflen; i++)
+     73          			data_out[i] = buf[i];
+     74          
+     75          		*size_out = buflen;
+     76          
+     77          		// free inbuf
+     78          		netbuf_delete(inbuf);
+     79          
+     80          
+     81          	} else {
+     82          		msg_dbg_tsk(("tcp_send_buffer: inbuf = NULL\n"));
+     83          		return ERR_IF;
+     84          	}
+     85          
+     86          	netconn_close(conn);
+     87          
+     88          	netconn_delete(conn);
+     89          
+     90          	return tcp_error;
+     91          }
+     92          
+     93          
+     94          
+     95          /**
+     96            * @brief  http server thread
+     97            * @param arg: pointer on argument(not used here)
+     98            * @retval None
+     99            */
+    100          static void client_netconn_thread(void *arg)
+    101          {
+    102          
+    103          
+    104          	uint16_t 	data16;
+    105          	uint8_t		board;
+    106          	uint8_t 	relay_state;
+    107          
+    108          	uint8_t	tcp_cmd[MAX_TCP_MSG_SIZE];
+    109          	uint8_t	tcp_answer[MAX_TCP_MSG_SIZE];
+    110          
+    111          	uint8_t		cmd_len;
+    112          	uint8_t 	answer_len;
+    113          
+    114          	int i;
+    115          
+    116          
+    117          	portTickType 			xLastWakeTime;
+    118          
+    119          //	struct netconn 		*xNetConn = NULL;
+    120          
+    121          
+    122          	msg_dbg_tsk(("client_netconn_thread: enter\n"));
+    123          
+    124          //	xNetConn = netconn_new ( NETCONN_TCP );
+    125          //
+    126          //	if (xNetConn == NULL) {
+    127          //		msg_dbg_tsk(("client_netconn_thread: Error in netconn_new\n"));
+    128          //		while(1);
+    129          //	}
+    130          
+    131          
+    132          	// remote server address
+    133          	IP4_ADDR( &remote_ip_global, HOST_IP_ADDR0, HOST_IP_ADDR1, HOST_IP_ADDR2, HOST_IP_ADDR3 );
+    134          
+    135          	xLastWakeTime = xTaskGetTickCount();
+    136          
+    137          	while(1) {
+    138          
+    139          		// TODO: change to blocking read from queue
+    140          		if (xQueueReceive(tcp_client_queue, &data16, 100) == pdTRUE) {
+    141          			board 			= (uint8_t)(data16 >> 8);
+    142          			relay_state = (uint8_t)data16;
+    143          			msg_dbg_tsk(("client_netconn_thread: board = %d; new state = %d\n\r",board,relay_state));
+    144          
+    145          			// form command
+    146          			tcp_cmd[0] = CID_RELAY;
+    147          			tcp_cmd[1] = REPORT_RSTATE_REQ;
+    148          			tcp_cmd[2] = 0; // MSB of length
+    149          			tcp_cmd[3] = 2;	// LSB of length
+    150          			tcp_cmd[4] = board;
+    151          			tcp_cmd[5] = relay_state;
+    152          
+    153          			cmd_len = 6;
+    154          
+    155          
+    156          			// send command and get answer
+    157          			if (tcp_send_buffer( &remote_ip_global, HOST_PORT, tcp_cmd, cmd_len, tcp_answer, &answer_len)
+    158          					!= ERR_OK) {
+    159          				msg_dbg_tsk(("client_netconn_thread: Error in tcp_send_buffer\n"));
+    160          				continue;
+    161          			}
+    162          			// check crc and errors
+    163          
+    164          			msg_dbg_tsk(("client_netconn_thread: tcp_answer = "));
+    165          			for (i=0; i<answer_len; i++)
+    166          				msg_dbg_tsk(("%x",tcp_answer[i]));
+    167          			msg_dbg_tsk(("\n"));
+    168          
+    169          		}
+    170          
+    171          
+    172          		vTaskDelayUntil( &xLastWakeTime, TCP_CLIENT_PERIOD_MS/portTICK_RATE_MS );
+    173          	}
+    174          
+    175          
+    176          }
+    177          
+    178          
+    179          
+    180          
+    181          void tcp_client_netconn_init()
+    182          {
+    183            sys_thread_new("NetconnServer", client_netconn_thread, NULL, DEFAULT_THREAD_STACKSIZE, TCP_SERVER_THREAD_PRIO);
+    184          }
+    185          
+    186          			   
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     296   client_netconn_thread
+       296   -> htonl
+       296   -> printf
+       296   -> tcp_send_buffer
+       296   -> vTaskDelayUntil
+       296   -> xQueueGenericReceive
+       296   -> xQueueGenericSend
+       296   -> xTaskGetTickCount
+       8   tcp_client_netconn_init
+         8   -> sys_thread_new
+      56   tcp_send_buffer
+        56   -> netbuf_data
+        56   -> netbuf_delete
+        56   -> netconn_close
+        56   -> netconn_connect
+        56   -> netconn_delete
+        56   -> netconn_new_with_proto_and_callback
+        56   -> netconn_recv
+        56   -> netconn_write
+        56   -> printf
+        56   -> xQueueGenericReceive
+        56   -> xQueueGenericSend
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ?<Constant "%x">
+      16  ?<Constant "NetconnServer">
+       2  ?<Constant "\n">
+      48  ?<Constant "client_netconn_thread...">
+      32  ?<Constant "client_netconn_thread...">_1
+      52  ?<Constant "client_netconn_thread...">_2
+      52  ?<Constant "client_netconn_thread...">_3
+      40  ?<Constant "client_netconn_thread...">_4
+      44  ?<Constant "tcp_send_buffer: Erro...">
+      44  ?<Constant "tcp_send_buffer: bufl...">
+      24  ?<Constant "tcp_send_buffer: enter\n">
+      32  ?<Constant "tcp_send_buffer: inbu...">
+      44  ?<Constant "tcp_send_buffer: netc...">
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_10
+       4  ??DataTable2_11
+       4  ??DataTable2_12
+       4  ??DataTable2_13
+       4  ??DataTable2_14
+       4  ??DataTable2_15
+       4  ??DataTable2_16
+       4  ??DataTable2_17
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       4  ??DataTable2_9
+     408  client_netconn_thread
+       4  remote_ip_global
+      22  tcp_client_netconn_init
+     450  tcp_send_buffer
+
+ 
+   4 bytes in section .bss
+ 434 bytes in section .rodata
+ 952 bytes in section .text
+ 
+ 952 bytes of CODE  memory
+ 434 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

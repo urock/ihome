@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.cdt.launch.applicationLaunchType">
+<stringAttribute key="iar.debug.launch.version.tag" value="com.iar.cdt.arm.debugger"/>
+<stringAttribute key="iar.debug.setting.configName" value="Simulator"/>
+<stringAttribute key="iar.debug.setting.configProvider" value="com.iar.cdt.arm.debugger.sim.driver"/>
+<stringAttribute key="iar.debug.setting.driver" value="armSIM2"/>
+<listAttribute key="iar.debug.setting.driverconfig">
+<listEntry value="--backend"/>
+<listEntry value="-B"/>
+<listEntry value="--endian=little"/>
+<listEntry value="--cpu=Cortex-M3"/>
+<listEntry value="--fpu=None"/>
+<listEntry value="--semihosting"/>
+<listEntry value="-p"/>
+<listEntry value="$TOOLKIT_DIR$\config\debugger\ST\STM32F207VG.ddf"/>
+<listEntry value="--device=STM32F207VG"/>
+</listAttribute>
+<stringAttribute key="iar.debug.setting.kernelType" value="com.iar.ide.debugger.cdp.cspy.CDPKernel"/>
+<listAttribute key="iar.debug.setting.pluginslist">
+<listEntry value="$EW_DIR$/common/plugins/ServiceCodeCoveragePlugin@ServiceCodeCoveragePlugin"/>
+</listAttribute>
+<stringAttribute key="iar.debug.setting.processor" value="armPROC"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.iar.ide.debugger.dsf.ui.cdi.debugger.dummy"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="STM322xG_EVAL/Project.out"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="Project"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="iar.arm.toolchain.project.exe.configuration.debug.v5.4.0.1395789249"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Project"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.preferred_launchers">
+<mapEntry key="[debug]" value="com.iar.cdt.arm.debugger.launchDelegate"/>
+<mapEntry key="[run]" value="com.iar.cdt.arm.debugger.launchDelegate"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;Context string&quot;/&gt;&#13;&#10;"/>
+</launchConfiguration>

@@ -1,0 +1,149 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:49
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\uart_thread.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\uart_thread.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\uart_thread.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\uart_thread.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\uart_thread.c
+      1          /*
+      2           * uart_thread.c
+      3           *
+      4           */
+      5          
+      6          
+      7          #include "main.h"
+      8          #include "uart_thread.h"
+      9          #include "uart_low_level.h"
+     10          
+     11          extern xQueueHandle power_control_queue ;
+     12          extern xQueueHandle tcp_client_queue ;
+     13          
+     14          extern xSemaphoreHandle xUSARTSemaphore;
+     15          
+     16          
+     17          void thread_comport_out(void *pParams)
+     18          {
+     19          	uint16_t 	data16;
+     20          	uint8_t		board;
+     21          	uint8_t 	new_relay_state;
+     22          	while(1) {
+     23          
+     24          		if (xQueueReceive(tcp_client_queue, &data16, 100) == pdTRUE) {
+     25          			board 			= (uint8_t)(data16 >> 8);
+     26          			new_relay_state = (uint8_t)data16;
+     27          //			msg_dbg_tsk(("thread_comport_out: board = %d; new state = %d\n\r",board,new_relay_state));
+     28          		}
+     29          
+     30          		vTaskDelay(10/portTICK_RATE_MS);
+     31          	}
+     32          
+     33          }
+     34          
+     35          
+     36          
+     37          void thread_comport_in(void *pParams)
+     38          {
+     39          	uint8_t ch1, ch2;
+     40          	uint16_t data16;
+     41          
+     42          
+     43          	while(1) {
+     44          
+     45          		if (USART_GetFlagStatus(USART1, USART_FLAG_RXNE) != RESET) {
+     46          
+     47          			ch1 = USART_ReceiveData(USART1);
+     48          
+     49          //			msg_dbg_tsk(("thread_comport_in:  %d \n\r", ch1));
+     50          
+     51          			data16 = (uint16_t)ch1;
+     52          
+     53          			xQueueSend(power_control_queue, &data16, QUEUE_WRITE_TICKS_TO_WAIT);
+     54          		}
+     55          
+     56          		vTaskDelay(10/portTICK_RATE_MS);
+     57          	}
+     58          
+     59          
+     60          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   thread_comport_in
+        16   -> USART_GetFlagStatus
+        16   -> USART_ReceiveData
+        16   -> vTaskDelay
+        16   -> xQueueGenericSend
+      24   thread_comport_out
+        24   -> vTaskDelay
+        24   -> xQueueGenericReceive
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+      52  thread_comport_in
+      48  thread_comport_out
+
+ 
+ 112 bytes in section .text
+ 
+ 112 bytes of CODE memory
+
+Errors: none
+Warnings: 3

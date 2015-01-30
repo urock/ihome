@@ -1,0 +1,856 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:37
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\ip.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\ip.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\ip.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\ip.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\ip.c
+      1          /**
+      2           * @file
+      3           * This is the IPv4 layer implementation for incoming and outgoing IP traffic.
+      4           * 
+      5           * @see ip_frag.c
+      6           *
+      7           **/
+      8          
+      9          /*
+     10           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+     11           * All rights reserved.
+     12           *
+     13           * Redistribution and use in source and binary forms, with or without modification,
+     14           * are permitted provided that the following conditions are met:
+     15           *
+     16           * 1. Redistributions of source code must retain the above copyright notice,
+     17           *    this list of conditions and the following disclaimer.
+     18           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     19           *    this list of conditions and the following disclaimer in the documentation
+     20           *    and/or other materials provided with the distribution.
+     21           * 3. The name of the author may not be used to endorse or promote products
+     22           *    derived from this software without specific prior written permission.
+     23           *
+     24           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     25           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     26           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     27           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     28           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     29           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     30           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     31           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     32           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     33           * OF SUCH DAMAGE.
+     34           *
+     35           * This file is part of the lwIP TCP/IP stack.
+     36           *
+     37           * Author: Adam Dunkels <adam@sics.se>
+     38           *
+     39           */
+     40          
+     41          #include "lwip/opt.h"
+     42          #include "lwip/ip.h"
+     43          #include "lwip/def.h"
+     44          #include "lwip/mem.h"
+     45          #include "lwip/ip_frag.h"
+     46          #include "lwip/inet.h"
+     47          #include "lwip/inet_chksum.h"
+     48          #include "lwip/netif.h"
+     49          #include "lwip/icmp.h"
+     50          #include "lwip/igmp.h"
+     51          #include "lwip/raw.h"
+     52          #include "lwip/udp.h"
+     53          #include "lwip/tcp.h"
+     54          #include "lwip/snmp.h"
+     55          #include "lwip/dhcp.h"
+     56          #include "lwip/stats.h"
+     57          #include "arch/perf.h"
+     58          
+     59          #include <string.h>
+     60          
+     61          /**
+     62           * The interface that provided the packet for the current callback
+     63           * invocation.
+     64           */
+     65          struct netif *current_netif;
+     66          
+     67          /**
+     68           * Header of the input packet currently being processed.
+     69           */
+     70          const struct ip_hdr *current_header;
+     71          
+     72          /**
+     73           * Finds the appropriate network interface for a given IP address. It
+     74           * searches the list of network interfaces linearly. A match is found
+     75           * if the masked IP address of the network interface equals the masked
+     76           * IP address given to the function.
+     77           *
+     78           * @param dest the destination IP address for which to find the route
+     79           * @return the netif on which to send to reach dest
+     80           */
+     81          struct netif *
+     82          ip_route(struct ip_addr *dest)
+     83          {
+     84            struct netif *netif;
+     85          
+     86            /* iterate through netifs */
+     87            for(netif = netif_list; netif != NULL; netif = netif->next) {
+     88              /* network mask matches? */
+     89              if (netif_is_up(netif)) {
+     90                if (ip_addr_netcmp(dest, &(netif->ip_addr), &(netif->netmask))) {
+     91                  /* return netif on which to forward IP packet */
+     92                  return netif;
+     93                }
+     94              }
+     95            }
+     96            if ((netif_default == NULL) || (!netif_is_up(netif_default))) {
+     97              LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip_route: No route to 0x%"X32_F"\n", dest->addr));
+     98              IP_STATS_INC(ip.rterr);
+     99              snmp_inc_ipoutnoroutes();
+    100              return NULL;
+    101            }
+    102            /* no matching netif found, use default netif */
+    103            return netif_default;
+    104          }
+    105          
+    106          #if IP_FORWARD
+    107          /**
+    108           * Forwards an IP packet. It finds an appropriate route for the
+    109           * packet, decrements the TTL value of the packet, adjusts the
+    110           * checksum and outputs the packet on the appropriate interface.
+    111           *
+    112           * @param p the packet to forward (p->payload points to IP header)
+    113           * @param iphdr the IP header of the input packet
+    114           * @param inp the netif on which this packet was received
+    115           * @return the netif on which the packet was sent (NULL if it wasn't sent)
+    116           */
+    117          static struct netif *
+    118          ip_forward(struct pbuf *p, struct ip_hdr *iphdr, struct netif *inp)
+    119          {
+    120            struct netif *netif;
+    121          
+    122            PERF_START;
+    123            /* Find network interface where to forward this IP packet to. */
+    124            netif = ip_route((struct ip_addr *)&(iphdr->dest));
+    125            if (netif == NULL) {
+    126              LWIP_DEBUGF(IP_DEBUG, ("ip_forward: no forwarding route for 0x%"X32_F" found\n",
+    127                                iphdr->dest.addr));
+    128              snmp_inc_ipoutnoroutes();
+    129              return (struct netif *)NULL;
+    130            }
+    131            /* Do not forward packets onto the same network interface on which
+    132             * they arrived. */
+    133            if (netif == inp) {
+    134              LWIP_DEBUGF(IP_DEBUG, ("ip_forward: not bouncing packets back on incoming interface.\n"));
+    135              snmp_inc_ipoutnoroutes();
+    136              return (struct netif *)NULL;
+    137            }
+    138          
+    139            /* decrement TTL */
+    140            IPH_TTL_SET(iphdr, IPH_TTL(iphdr) - 1);
+    141            /* send ICMP if TTL == 0 */
+    142            if (IPH_TTL(iphdr) == 0) {
+    143              snmp_inc_ipinhdrerrors();
+    144          #if LWIP_ICMP
+    145              /* Don't send ICMP messages in response to ICMP messages */
+    146              if (IPH_PROTO(iphdr) != IP_PROTO_ICMP) {
+    147                icmp_time_exceeded(p, ICMP_TE_TTL);
+    148              }
+    149          #endif /* LWIP_ICMP */
+    150              return (struct netif *)NULL;
+    151            }
+    152          
+    153            /* Incrementally update the IP checksum. */
+    154            if (IPH_CHKSUM(iphdr) >= htons(0xffff - 0x100)) {
+    155              IPH_CHKSUM_SET(iphdr, IPH_CHKSUM(iphdr) + htons(0x100) + 1);
+    156            } else {
+    157              IPH_CHKSUM_SET(iphdr, IPH_CHKSUM(iphdr) + htons(0x100));
+    158            }
+    159          
+    160            LWIP_DEBUGF(IP_DEBUG, ("ip_forward: forwarding packet to 0x%"X32_F"\n",
+    161                              iphdr->dest.addr));
+    162          
+    163            IP_STATS_INC(ip.fw);
+    164            IP_STATS_INC(ip.xmit);
+    165            snmp_inc_ipforwdatagrams();
+    166          
+    167            PERF_STOP("ip_forward");
+    168            /* transmit pbuf on chosen interface */
+    169            netif->output(netif, p, (struct ip_addr *)&(iphdr->dest));
+    170            return netif;
+    171          }
+    172          #endif /* IP_FORWARD */
+    173          
+    174          /**
+    175           * This function is called by the network interface device driver when
+    176           * an IP packet is received. The function does the basic checks of the
+    177           * IP header such as packet size being at least larger than the header
+    178           * size etc. If the packet was not destined for us, the packet is
+    179           * forwarded (using ip_forward). The IP checksum is always checked.
+    180           *
+    181           * Finally, the packet is sent to the upper layer protocol input function.
+    182           * 
+    183           * @param p the received IP packet (p->payload points to IP header)
+    184           * @param inp the netif on which this packet was received
+    185           * @return ERR_OK if the packet was processed (could return ERR_* if it wasn't
+    186           *         processed, but currently always returns ERR_OK)
+    187           */
+    188          err_t
+    189          ip_input(struct pbuf *p, struct netif *inp)
+    190          {
+    191            struct ip_hdr *iphdr;
+    192            struct netif *netif;
+    193            u16_t iphdr_hlen;
+    194            u16_t iphdr_len;
+    195          #if LWIP_DHCP || LWIP_UPNP
+    196            int check_ip_src=1;
+    197          #endif /* LWIP_DHCP || LWIP_UPNP */
+    198          
+    199            IP_STATS_INC(ip.recv);
+    200            snmp_inc_ipinreceives();
+    201          
+    202            /* identify the IP header */
+    203            iphdr = p->payload;
+    204            if (IPH_V(iphdr) != 4) {
+    205              LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_WARNING, ("IP packet dropped due to bad version number %"U16_F"\n", IPH_V(iphdr)));
+    206              ip_debug_print(p);
+    207              pbuf_free(p);
+    208              IP_STATS_INC(ip.err);
+    209              IP_STATS_INC(ip.drop);
+    210              snmp_inc_ipinhdrerrors();
+    211              return ERR_OK;
+    212            }
+    213          
+    214            /* obtain IP header length in number of 32-bit words */
+    215            iphdr_hlen = IPH_HL(iphdr);
+    216            /* calculate IP header length in bytes */
+    217            iphdr_hlen *= 4;
+    218            /* obtain ip length in bytes */
+    219            iphdr_len = ntohs(IPH_LEN(iphdr));
+    220          
+    221            /* header length exceeds first pbuf length, or ip length exceeds total pbuf length? */
+    222            if ((iphdr_hlen > p->len) || (iphdr_len > p->tot_len)) {
+    223              if (iphdr_hlen > p->len) {
+    224                LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+    225                  ("IP header (len %"U16_F") does not fit in first pbuf (len %"U16_F"), IP packet dropped.\n",
+    226                  iphdr_hlen, p->len));
+    227              }
+    228              if (iphdr_len > p->tot_len) {
+    229                LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+    230                  ("IP (len %"U16_F") is longer than pbuf (len %"U16_F"), IP packet dropped.\n",
+    231                  iphdr_len, p->tot_len));
+    232              }
+    233              /* free (drop) packet pbufs */
+    234              pbuf_free(p);
+    235              IP_STATS_INC(ip.lenerr);
+    236              IP_STATS_INC(ip.drop);
+    237              snmp_inc_ipindiscards();
+    238              return ERR_OK;
+    239            }
+    240          
+    241            /* verify checksum */
+    242          #if CHECKSUM_CHECK_IP
+    243            if (inet_chksum(iphdr, iphdr_hlen) != 0) {
+    244          
+    245              LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+    246                ("Checksum (0x%"X16_F") failed, IP packet dropped.\n", inet_chksum(iphdr, iphdr_hlen)));
+    247              ip_debug_print(p);
+    248              pbuf_free(p);
+    249              IP_STATS_INC(ip.chkerr);
+    250              IP_STATS_INC(ip.drop);
+    251              snmp_inc_ipinhdrerrors();
+    252              return ERR_OK;
+    253            }
+    254          #endif
+    255          
+    256            /* Trim pbuf. This should have been done at the netif layer,
+    257             * but we'll do it anyway just to be sure that its done. */
+    258            pbuf_realloc(p, iphdr_len);
+    259          
+    260            /* match packet against an interface, i.e. is this packet for us? */
+    261          #if LWIP_IGMP
+    262            if (ip_addr_ismulticast(&(iphdr->dest))) {
+    263              if ((inp->flags & NETIF_FLAG_IGMP) && (igmp_lookfor_group(inp, &(iphdr->dest)))) {
+    264                netif = inp;
+    265              } else {
+    266                netif = NULL;
+    267              }
+    268            } else
+    269          #endif /* LWIP_IGMP */
+    270            {
+    271              /* start trying with inp. if that's not acceptable, start walking the
+    272                 list of configured netifs.
+    273                 'first' is used as a boolean to mark whether we started walking the list */
+    274              int first = 1;
+    275              netif = inp;
+    276              do {
+    277                LWIP_DEBUGF(IP_DEBUG, ("ip_input: iphdr->dest 0x%"X32_F" netif->ip_addr 0x%"X32_F" (0x%"X32_F", 0x%"X32_F", 0x%"X32_F")\n",
+    278                    iphdr->dest.addr, netif->ip_addr.addr,
+    279                    iphdr->dest.addr & netif->netmask.addr,
+    280                    netif->ip_addr.addr & netif->netmask.addr,
+    281                    iphdr->dest.addr & ~(netif->netmask.addr)));
+    282          
+    283                /* interface is up and configured? */
+    284                if ((netif_is_up(netif)) && (!ip_addr_isany(&(netif->ip_addr)))) {
+    285                  /* unicast to this interface address? */
+    286                  if (ip_addr_cmp(&(iphdr->dest), &(netif->ip_addr)) ||
+    287                      /* or broadcast on this interface network address? */
+    288                      ip_addr_isbroadcast(&(iphdr->dest), netif)) {
+    289                    LWIP_DEBUGF(IP_DEBUG, ("ip_input: packet accepted on interface %c%c\n",
+    290                        netif->name[0], netif->name[1]));
+    291                    /* break out of for loop */
+    292                    break;
+    293                  }
+    294                }
+    295                if (first) {
+    296                  first = 0;
+    297                  netif = netif_list;
+    298                } else {
+    299                  netif = netif->next;
+    300                }
+    301                if (netif == inp) {
+    302                  netif = netif->next;
+    303                }
+    304              } while(netif != NULL);
+    305            }
+    306          
+    307          #if LWIP_DHCP
+    308            /* Pass DHCP messages regardless of destination address. DHCP traffic is addressed
+    309             * using link layer addressing (such as Ethernet MAC) so we must not filter on IP.
+    310             * According to RFC 1542 section 3.1.1, referred by RFC 2131).
+    311             */
+    312            if (netif == NULL) {
+    313              /* remote port is DHCP server? */
+    314              if (IPH_PROTO(iphdr) == IP_PROTO_UDP) {
+    315                LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE, ("ip_input: UDP packet to DHCP client port %"U16_F"\n",
+    316                  ntohs(((struct udp_hdr *)((u8_t *)iphdr + iphdr_hlen))->dest)));
+    317                if (ntohs(((struct udp_hdr *)((u8_t *)iphdr + iphdr_hlen))->dest) == DHCP_CLIENT_PORT) {
+    318                  LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE, ("ip_input: DHCP packet accepted.\n"));
+    319                  netif = inp;
+    320                  check_ip_src = 0;
+    321                }
+    322              }
+    323            }
+    324          #endif /* LWIP_DHCP */
+    325          
+    326          /* This part of code has been modified by ST's MCD Application Team */
+    327          /* To use the UPnP responder for device discovery */
+    328          #if LWIP_UPNP
+    329            /* Pass UPNP messages regardless of destination address. UPNP traffic is addressed
+    330             * using multicast addressing so we must not filter on IP.
+    331             */
+    332            if (netif == NULL) {
+    333              /* remote port is DHCP server? */
+    334              if (IPH_PROTO(iphdr) == IP_PROTO_UDP) {
+    335                LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE | 1, ("ip_input: UDP packet to UPNP client port %"U16_F"\n",
+    336                  ntohs(((struct udp_hdr *)((u8_t *)iphdr + iphdr_hlen))->dest)));
+    337                if (ntohs(((struct udp_hdr *)((u8_t *)iphdr + iphdr_hlen))->dest) == 1900) {
+    338                  LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE | 1, ("ip_input: UPNP packet accepted.\n"));
+    339                  netif = inp;
+    340                  check_ip_src = 0;
+    341                }
+    342              }
+    343            }
+    344          #endif /* LWIP_UPNP */
+    345          
+    346            /* broadcast or multicast packet source address? Compliant with RFC 1122: 3.2.1.3 */
+    347          #if LWIP_DHCP || LWIP_UPNP
+    348            /* DHCP servers need 0.0.0.0 to be allowed as source address (RFC 1.1.2.2: 3.2.1.3/a) */
+    349            if (check_ip_src && (iphdr->src.addr != 0))
+    350          #endif /* LWIP_DHCP || LWIP_UPNP */
+    351            {  if ((ip_addr_isbroadcast(&(iphdr->src), inp)) ||
+    352                   (ip_addr_ismulticast(&(iphdr->src)))) {
+    353                /* packet source is not valid */
+    354                LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_WARNING, ("ip_input: packet source is not valid.\n"));
+    355                /* free (drop) packet pbufs */
+    356                pbuf_free(p);
+    357                IP_STATS_INC(ip.drop);
+    358                snmp_inc_ipinaddrerrors();
+    359                snmp_inc_ipindiscards();
+    360                return ERR_OK;
+    361              }
+    362            }
+    363          
+    364            /* packet not for us? */
+    365            if (netif == NULL) {
+    366              /* packet not for us, route or discard */
+    367              LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE, ("ip_input: packet not for us.\n"));
+    368          #if IP_FORWARD
+    369              /* non-broadcast packet? */
+    370              if (!ip_addr_isbroadcast(&(iphdr->dest), inp)) {
+    371                /* try to forward IP packet on (other) interfaces */
+    372                ip_forward(p, iphdr, inp);
+    373              } else
+    374          #endif /* IP_FORWARD */
+    375              {
+    376                snmp_inc_ipinaddrerrors();
+    377                snmp_inc_ipindiscards();
+    378              }
+    379              pbuf_free(p);
+    380              return ERR_OK;
+    381            }
+    382            /* packet consists of multiple fragments? */
+    383            if ((IPH_OFFSET(iphdr) & htons(IP_OFFMASK | IP_MF)) != 0) {
+    384          #if IP_REASSEMBLY /* packet fragment reassembly code present? */
+    385              LWIP_DEBUGF(IP_DEBUG, ("IP packet is a fragment (id=0x%04"X16_F" tot_len=%"U16_F" len=%"U16_F" MF=%"U16_F" offset=%"U16_F"), calling ip_reass()\n",
+    386                ntohs(IPH_ID(iphdr)), p->tot_len, ntohs(IPH_LEN(iphdr)), !!(IPH_OFFSET(iphdr) & htons(IP_MF)), (ntohs(IPH_OFFSET(iphdr)) & IP_OFFMASK)*8));
+    387              /* reassemble the packet*/
+    388              p = ip_reass(p);
+    389              /* packet not fully reassembled yet? */
+    390              if (p == NULL) {
+    391                return ERR_OK;
+    392              }
+    393              iphdr = p->payload;
+    394          #else /* IP_REASSEMBLY == 0, no packet fragment reassembly code present */
+    395              pbuf_free(p);
+    396              LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("IP packet dropped since it was fragmented (0x%"X16_F") (while IP_REASSEMBLY == 0).\n",
+    397                ntohs(IPH_OFFSET(iphdr))));
+    398              IP_STATS_INC(ip.opterr);
+    399              IP_STATS_INC(ip.drop);
+    400              /* unsupported protocol feature */
+    401              snmp_inc_ipinunknownprotos();
+    402              return ERR_OK;
+    403          #endif /* IP_REASSEMBLY */
+    404            }
+    405          
+    406          #if IP_OPTIONS_ALLOWED == 0 /* no support for IP options in the IP header? */
+    407          
+    408          #if LWIP_IGMP
+    409            /* there is an extra "router alert" option in IGMP messages which we allow for but do not police */
+    410            if((iphdr_hlen > IP_HLEN &&  (IPH_PROTO(iphdr) != IP_PROTO_IGMP)) {
+    411          #else
+    412            if (iphdr_hlen > IP_HLEN) {
+    413          #endif /* LWIP_IGMP */
+    414              LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("IP packet dropped since there were IP options (while IP_OPTIONS_ALLOWED == 0).\n"));
+    415              pbuf_free(p);
+    416              IP_STATS_INC(ip.opterr);
+    417              IP_STATS_INC(ip.drop);
+    418              /* unsupported protocol feature */
+    419              snmp_inc_ipinunknownprotos();
+    420              return ERR_OK;
+    421            }
+    422          #endif /* IP_OPTIONS_ALLOWED == 0 */
+    423          
+    424            /* send to upper layers */
+    425            LWIP_DEBUGF(IP_DEBUG, ("ip_input: \n"));
+    426            ip_debug_print(p);
+    427            LWIP_DEBUGF(IP_DEBUG, ("ip_input: p->len %"U16_F" p->tot_len %"U16_F"\n", p->len, p->tot_len));
+    428          
+    429            current_netif = inp;
+    430            current_header = iphdr;
+    431          
+    432          #if LWIP_RAW
+    433            /* raw input did not eat the packet? */
+    434            if (raw_input(p, inp) == 0)
+    435          #endif /* LWIP_RAW */
+    436            {
+    437          
+    438              switch (IPH_PROTO(iphdr)) {
+    439          #if LWIP_UDP
+    440              case IP_PROTO_UDP:
+    441          #if LWIP_UDPLITE
+    442              case IP_PROTO_UDPLITE:
+    443          #endif /* LWIP_UDPLITE */
+    444                snmp_inc_ipindelivers();
+    445                udp_input(p, inp);
+    446                break;
+    447          #endif /* LWIP_UDP */
+    448          #if LWIP_TCP
+    449              case IP_PROTO_TCP:
+    450                snmp_inc_ipindelivers();
+    451                tcp_input(p, inp);
+    452                break;
+    453          #endif /* LWIP_TCP */
+    454          #if LWIP_ICMP
+    455              case IP_PROTO_ICMP:
+    456                snmp_inc_ipindelivers();
+    457                icmp_input(p, inp);
+    458                break;
+    459          #endif /* LWIP_ICMP */
+    460          #if LWIP_IGMP
+    461              case IP_PROTO_IGMP:
+    462                igmp_input(p,inp,&(iphdr->dest));
+    463                break;
+    464          #endif /* LWIP_IGMP */
+    465              default:
+    466          #if LWIP_ICMP
+    467                /* send ICMP destination protocol unreachable unless is was a broadcast */
+    468                if (!ip_addr_isbroadcast(&(iphdr->dest), inp) &&
+    469                    !ip_addr_ismulticast(&(iphdr->dest))) {
+    470                  p->payload = iphdr;
+    471                  icmp_dest_unreach(p, ICMP_DUR_PROTO);
+    472                }
+    473          #endif /* LWIP_ICMP */
+    474                pbuf_free(p);
+    475          
+    476                LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("Unsupported transport protocol %"U16_F"\n", IPH_PROTO(iphdr)));
+    477          
+    478                IP_STATS_INC(ip.proterr);
+    479                IP_STATS_INC(ip.drop);
+    480                snmp_inc_ipinunknownprotos();
+    481              }
+    482            }
+    483          
+    484            current_netif = NULL;
+    485            current_header = NULL;
+    486          
+    487            return ERR_OK;
+    488          }
+    489          
+    490          /**
+    491           * Sends an IP packet on a network interface. This function constructs
+    492           * the IP header and calculates the IP header checksum. If the source
+    493           * IP address is NULL, the IP address of the outgoing network
+    494           * interface is filled in as source address.
+    495           * If the destination IP address is IP_HDRINCL, p is assumed to already
+    496           * include an IP header and p->payload points to it instead of the data.
+    497           *
+    498           * @param p the packet to send (p->payload points to the data, e.g. next
+    499                      protocol header; if dest == IP_HDRINCL, p already includes an IP
+    500                      header and p->payload points to that IP header)
+    501           * @param src the source IP address to send from (if src == IP_ADDR_ANY, the
+    502           *         IP  address of the netif used to send is used as source address)
+    503           * @param dest the destination IP address to send the packet to
+    504           * @param ttl the TTL value to be set in the IP header
+    505           * @param tos the TOS value to be set in the IP header
+    506           * @param proto the PROTOCOL to be set in the IP header
+    507           * @param netif the netif on which to send this packet
+    508           * @return ERR_OK if the packet was sent OK
+    509           *         ERR_BUF if p doesn't have enough space for IP/LINK headers
+    510           *         returns errors returned by netif->output
+    511           *
+    512           * @note ip_id: RFC791 "some host may be able to simply use
+    513           *  unique identifiers independent of destination"
+    514           */
+    515          err_t
+    516          ip_output_if(struct pbuf *p, struct ip_addr *src, struct ip_addr *dest,
+    517                       u8_t ttl, u8_t tos,
+    518                       u8_t proto, struct netif *netif)
+    519          {
+    520          #if IP_OPTIONS_SEND
+    521            return ip_output_if_opt(p, src, dest, ttl, tos, proto, netif, NULL, 0);
+    522          }
+    523          
+    524          /**
+    525           * Same as ip_output_if() but with the possibility to include IP options:
+    526           *
+    527           * @ param ip_options pointer to the IP options, copied into the IP header
+    528           * @ param optlen length of ip_options
+    529           */
+    530          err_t ip_output_if_opt(struct pbuf *p, struct ip_addr *src, struct ip_addr *dest,
+    531                 u8_t ttl, u8_t tos, u8_t proto, struct netif *netif, void *ip_options,
+    532                 u16_t optlen)
+    533          {
+    534          #endif /* IP_OPTIONS_SEND */
+    535            struct ip_hdr *iphdr;
+    536            static u16_t ip_id = 0;
+    537          
+    538            snmp_inc_ipoutrequests();
+    539          
+    540            /* Should the IP header be generated or is it already included in p? */
+    541            if (dest != IP_HDRINCL) {
+    542              u16_t ip_hlen = IP_HLEN;
+    543          #if IP_OPTIONS_SEND
+    544              u16_t optlen_aligned = 0;
+    545              if (optlen != 0) {
+    546                /* round up to a multiple of 4 */
+    547                optlen_aligned = ((optlen + 3) & ~3);
+    548                ip_hlen += optlen_aligned;
+    549                /* First write in the IP options */
+    550                if (pbuf_header(p, optlen_aligned)) {
+    551                  LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip_output_if_opt: not enough room for IP options in pbuf\n"));
+    552                  IP_STATS_INC(ip.err);
+    553                  snmp_inc_ipoutdiscards();
+    554                  return ERR_BUF;
+    555                }
+    556                MEMCPY(p->payload, ip_options, optlen);
+    557                if (optlen < optlen_aligned) {
+    558                  /* zero the remaining bytes */
+    559                  memset(((char*)p->payload) + optlen, 0, optlen_aligned - optlen);
+    560                }
+    561              }
+    562          #endif /* IP_OPTIONS_SEND */
+    563              /* generate IP header */
+    564              if (pbuf_header(p, IP_HLEN)) {
+    565                LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip_output: not enough room for IP header in pbuf\n"));
+    566          
+    567                IP_STATS_INC(ip.err);
+    568                snmp_inc_ipoutdiscards();
+    569                return ERR_BUF;
+    570              }
+    571          
+    572              iphdr = p->payload;
+    573              LWIP_ASSERT("check that first pbuf can hold struct ip_hdr",
+    574                         (p->len >= sizeof(struct ip_hdr)));
+    575          
+    576              IPH_TTL_SET(iphdr, ttl);
+    577              IPH_PROTO_SET(iphdr, proto);
+    578          
+    579              ip_addr_set(&(iphdr->dest), dest);
+    580          
+    581              IPH_VHLTOS_SET(iphdr, 4, ip_hlen / 4, tos);
+    582              IPH_LEN_SET(iphdr, htons(p->tot_len));
+    583              IPH_OFFSET_SET(iphdr, 0);
+    584              IPH_ID_SET(iphdr, htons(ip_id));
+    585              ++ip_id;
+    586          
+    587              if (ip_addr_isany(src)) {
+    588                ip_addr_set(&(iphdr->src), &(netif->ip_addr));
+    589              } else {
+    590                ip_addr_set(&(iphdr->src), src);
+    591              }
+    592          
+    593              IPH_CHKSUM_SET(iphdr, 0);
+    594          #if CHECKSUM_GEN_IP
+    595              IPH_CHKSUM_SET(iphdr, inet_chksum(iphdr, ip_hlen));
+    596          #endif
+    597            } else {
+    598              /* IP header already included in p */
+    599              iphdr = p->payload;
+    600              dest = &(iphdr->dest);
+    601            }
+    602          
+    603            IP_STATS_INC(ip.xmit);
+    604          
+    605            LWIP_DEBUGF(IP_DEBUG, ("ip_output_if: %c%c%"U16_F"\n", netif->name[0], netif->name[1], netif->num));
+    606            ip_debug_print(p);
+    607          
+    608          #if ENABLE_LOOPBACK
+    609            if (ip_addr_cmp(dest, &netif->ip_addr)) {
+    610              /* Packet to self, enqueue it for loopback */
+    611              LWIP_DEBUGF(IP_DEBUG, ("netif_loop_output()"));
+    612              return netif_loop_output(netif, p, dest);
+    613            }
+    614          #endif /* ENABLE_LOOPBACK */
+    615          #if IP_FRAG
+    616            /* don't fragment if interface has mtu set to 0 [loopif] */
+    617            if (netif->mtu && (p->tot_len > netif->mtu)) {
+    618              return ip_frag(p,netif,dest);
+    619            }
+    620          #endif
+    621          
+    622            LWIP_DEBUGF(IP_DEBUG, ("netif->output()"));
+    623            return netif->output(netif, p, dest);
+    624          }
+    625          
+    626          /**
+    627           * Simple interface to ip_output_if. It finds the outgoing network
+    628           * interface and calls upon ip_output_if to do the actual work.
+    629           *
+    630           * @param p the packet to send (p->payload points to the data, e.g. next
+    631                      protocol header; if dest == IP_HDRINCL, p already includes an IP
+    632                      header and p->payload points to that IP header)
+    633           * @param src the source IP address to send from (if src == IP_ADDR_ANY, the
+    634           *         IP  address of the netif used to send is used as source address)
+    635           * @param dest the destination IP address to send the packet to
+    636           * @param ttl the TTL value to be set in the IP header
+    637           * @param tos the TOS value to be set in the IP header
+    638           * @param proto the PROTOCOL to be set in the IP header
+    639           *
+    640           * @return ERR_RTE if no route is found
+    641           *         see ip_output_if() for more return values
+    642           */
+    643          err_t
+    644          ip_output(struct pbuf *p, struct ip_addr *src, struct ip_addr *dest,
+    645                    u8_t ttl, u8_t tos, u8_t proto)
+    646          {
+    647            struct netif *netif;
+    648          
+    649            if ((netif = ip_route(dest)) == NULL) {
+    650              LWIP_DEBUGF(IP_DEBUG, ("ip_output: No route to 0x%"X32_F"\n", dest->addr));
+    651              IP_STATS_INC(ip.rterr);
+    652              return ERR_RTE;
+    653            }
+    654          
+    655            return ip_output_if(p, src, dest, ttl, tos, proto, netif);
+    656          }
+    657          
+    658          #if LWIP_NETIF_HWADDRHINT
+    659          /** Like ip_output, but takes and addr_hint pointer that is passed on to netif->addr_hint
+    660           *  before calling ip_output_if.
+    661           *
+    662           * @param p the packet to send (p->payload points to the data, e.g. next
+    663                      protocol header; if dest == IP_HDRINCL, p already includes an IP
+    664                      header and p->payload points to that IP header)
+    665           * @param src the source IP address to send from (if src == IP_ADDR_ANY, the
+    666           *         IP  address of the netif used to send is used as source address)
+    667           * @param dest the destination IP address to send the packet to
+    668           * @param ttl the TTL value to be set in the IP header
+    669           * @param tos the TOS value to be set in the IP header
+    670           * @param proto the PROTOCOL to be set in the IP header
+    671           * @param addr_hint address hint pointer set to netif->addr_hint before
+    672           *        calling ip_output_if()
+    673           *
+    674           * @return ERR_RTE if no route is found
+    675           *         see ip_output_if() for more return values
+    676           */
+    677          err_t
+    678          ip_output_hinted(struct pbuf *p, struct ip_addr *src, struct ip_addr *dest,
+    679                    u8_t ttl, u8_t tos, u8_t proto, u8_t *addr_hint)
+    680          {
+    681            struct netif *netif;
+    682            err_t err;
+    683          
+    684            if ((netif = ip_route(dest)) == NULL) {
+    685              LWIP_DEBUGF(IP_DEBUG, ("ip_output: No route to 0x%"X32_F"\n", dest->addr));
+    686              IP_STATS_INC(ip.rterr);
+    687              return ERR_RTE;
+    688            }
+    689          
+    690            netif->addr_hint = addr_hint;
+    691            err = ip_output_if(p, src, dest, ttl, tos, proto, netif);
+    692            netif->addr_hint = NULL;
+    693          
+    694            return err;
+    695          }
+    696          #endif /* LWIP_NETIF_HWADDRHINT*/
+    697          
+    698          #if IP_DEBUG
+    699          /* Print an IP header by using LWIP_DEBUGF
+    700           * @param p an IP packet, p->payload pointing to the IP header
+    701           */
+    702          void
+    703          ip_debug_print(struct pbuf *p)
+    704          {
+    705            struct ip_hdr *iphdr = p->payload;
+    706            u8_t *payload;
+    707          
+    708            payload = (u8_t *)iphdr + IP_HLEN;
+    709          
+    710            LWIP_DEBUGF(IP_DEBUG, ("IP header:\n"));
+    711            LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+    712            LWIP_DEBUGF(IP_DEBUG, ("|%2"S16_F" |%2"S16_F" |  0x%02"X16_F" |     %5"U16_F"     | (v, hl, tos, len)\n",
+    713                              IPH_V(iphdr),
+    714                              IPH_HL(iphdr),
+    715                              IPH_TOS(iphdr),
+    716                              ntohs(IPH_LEN(iphdr))));
+    717            LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+    718            LWIP_DEBUGF(IP_DEBUG, ("|    %5"U16_F"      |%"U16_F"%"U16_F"%"U16_F"|    %4"U16_F"   | (id, flags, offset)\n",
+    719                              ntohs(IPH_ID(iphdr)),
+    720                              ntohs(IPH_OFFSET(iphdr)) >> 15 & 1,
+    721                              ntohs(IPH_OFFSET(iphdr)) >> 14 & 1,
+    722                              ntohs(IPH_OFFSET(iphdr)) >> 13 & 1,
+    723                              ntohs(IPH_OFFSET(iphdr)) & IP_OFFMASK));
+    724            LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+    725            LWIP_DEBUGF(IP_DEBUG, ("|  %3"U16_F"  |  %3"U16_F"  |    0x%04"X16_F"     | (ttl, proto, chksum)\n",
+    726                              IPH_TTL(iphdr),
+    727                              IPH_PROTO(iphdr),
+    728                              ntohs(IPH_CHKSUM(iphdr))));
+    729            LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+    730            LWIP_DEBUGF(IP_DEBUG, ("|  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  | (src)\n",
+    731                              ip4_addr1(&iphdr->src),
+    732                              ip4_addr2(&iphdr->src),
+    733                              ip4_addr3(&iphdr->src),
+    734                              ip4_addr4(&iphdr->src)));
+    735            LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+    736            LWIP_DEBUGF(IP_DEBUG, ("|  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  | (dest)\n",
+    737                              ip4_addr1(&iphdr->dest),
+    738                              ip4_addr2(&iphdr->dest),
+    739                              ip4_addr3(&iphdr->dest),
+    740                              ip4_addr4(&iphdr->dest)));
+    741            LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+    742          }
+    743          #endif /* IP_DEBUG */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   ip_input
+        40   -> htons
+        40   -> icmp_dest_unreach
+        40   -> icmp_input
+        40   -> ip_addr_isbroadcast
+        40   -> netif_is_up
+        40   -> ntohl
+        40   -> ntohs
+        40   -> pbuf_free
+        40   -> pbuf_realloc
+        40   -> raw_input
+        40   -> tcp_input
+        40   -> udp_input
+      48   ip_output
+        48   -> ip_output_if
+        48   -> ip_route
+      40   ip_output_if
+        40   -- Indirect call
+        40   -> htons
+        40   -> ntohs
+        40   -> pbuf_header
+      16   ip_route
+        16   -> netif_is_up
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  current_header
+       4  current_netif
+       2  ip_id
+     512  ip_input
+      68  ip_output
+     272  ip_output_if
+      78  ip_route
+
+ 
+  10 bytes in section .bss
+ 950 bytes in section .text
+ 
+ 950 bytes of CODE memory
+  10 bytes of DATA memory
+
+Errors: none
+Warnings: none

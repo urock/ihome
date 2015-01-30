@@ -1,0 +1,412 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:39
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netdb.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netdb.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\netdb.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\netdb.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netdb.c
+      1          /**
+      2           * @file
+      3           * API functions for name resolving
+      4           *
+      5           **/
+      6          
+      7          /*
+      8           * Redistribution and use in source and binary forms, with or without modification, 
+      9           * are permitted provided that the following conditions are met:
+     10           *
+     11           * 1. Redistributions of source code must retain the above copyright notice,
+     12           *    this list of conditions and the following disclaimer.
+     13           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     14           *    this list of conditions and the following disclaimer in the documentation
+     15           *    and/or other materials provided with the distribution.
+     16           * 3. The name of the author may not be used to endorse or promote products
+     17           *    derived from this software without specific prior written permission. 
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
+     20           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+     21           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+     22           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+     23           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+     24           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+     25           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+     26           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+     27           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+     28           * OF SUCH DAMAGE.
+     29           *
+     30           * This file is part of the lwIP TCP/IP stack.
+     31           * 
+     32           * Author: Simon Goldschmidt
+     33           *
+     34           */
+     35          
+     36          #include "lwip/netdb.h"
+     37          
+     38          #if LWIP_DNS && LWIP_SOCKET
+     39          
+     40          #include "lwip/err.h"
+     41          #include "lwip/mem.h"
+     42          #include "lwip/ip_addr.h"
+     43          #include "lwip/api.h"
+     44          
+     45          #include <string.h>
+     46          #include <stdlib.h>
+     47          
+     48          /** helper struct for gethostbyname_r to access the char* buffer */
+     49          struct gethostbyname_r_helper {
+     50            struct ip_addr *addrs;
+     51            struct ip_addr addr;
+     52            char *aliases;
+     53          };
+     54          
+     55          /** h_errno is exported in netdb.h for access by applications. */
+     56          #if LWIP_DNS_API_DECLARE_H_ERRNO
+     57          int h_errno;
+     58          #endif /* LWIP_DNS_API_DECLARE_H_ERRNO */
+     59          
+     60          /** define "hostent" variables storage: 0 if we use a static (but unprotected)
+     61           * set of variables for lwip_gethostbyname, 1 if we use a local storage */
+     62          #ifndef LWIP_DNS_API_HOSTENT_STORAGE
+     63          #define LWIP_DNS_API_HOSTENT_STORAGE 0
+     64          #endif
+     65          
+     66          /** define "hostent" variables storage */
+     67          #if LWIP_DNS_API_HOSTENT_STORAGE
+     68          #define HOSTENT_STORAGE
+     69          #else
+     70          #define HOSTENT_STORAGE static
+     71          #endif /* LWIP_DNS_API_STATIC_HOSTENT */
+     72          
+     73          /**
+     74           * Returns an entry containing addresses of address family AF_INET
+     75           * for the host with name name.
+     76           * Due to dns_gethostbyname limitations, only one address is returned.
+     77           *
+     78           * @param name the hostname to resolve
+     79           * @return an entry containing addresses of address family AF_INET
+     80           *         for the host with name name
+     81           */
+     82          struct hostent*
+     83          lwip_gethostbyname(const char *name)
+     84          {
+     85            err_t err;
+     86            struct ip_addr addr;
+     87          
+     88            /* buffer variables for lwip_gethostbyname() */
+     89            HOSTENT_STORAGE struct hostent s_hostent;
+     90            HOSTENT_STORAGE char *s_aliases;
+     91            HOSTENT_STORAGE struct ip_addr s_hostent_addr;
+     92            HOSTENT_STORAGE struct ip_addr *s_phostent_addr;
+     93          
+     94            /* query host IP address */
+     95            err = netconn_gethostbyname(name, &addr);
+     96            if (err != ERR_OK) {
+     97              LWIP_DEBUGF(DNS_DEBUG, ("lwip_gethostbyname(%s) failed, err=%d\n", name, err));
+     98              h_errno = HOST_NOT_FOUND;
+     99              return NULL;
+    100            }
+    101          
+    102            /* fill hostent */
+    103            s_hostent_addr = addr;
+    104            s_phostent_addr = &s_hostent_addr;
+    105            s_hostent.h_name = (char*)name;
+    106            s_hostent.h_aliases = &s_aliases;
+    107            s_hostent.h_addrtype = AF_INET;
+    108            s_hostent.h_length = sizeof(struct ip_addr);
+    109            s_hostent.h_addr_list = (char**)&s_phostent_addr;
+    110          
+    111          #if DNS_DEBUG
+    112            /* dump hostent */
+    113            LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_name           == %s\n", s_hostent.h_name));
+    114            LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_aliases        == %p\n", s_hostent.h_aliases));
+    115            if (s_hostent.h_aliases != NULL) {
+    116              u8_t idx;
+    117              for ( idx=0; s_hostent.h_aliases[idx]; idx++) {
+    118                LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_aliases[%i]->   == %p\n", idx, s_hostent.h_aliases[idx]));
+    119                LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_aliases[%i]->   == %s\n", idx, s_hostent.h_aliases[idx]));
+    120              }
+    121            }
+    122            LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addrtype       == %d\n", s_hostent.h_addrtype));
+    123            LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_length         == %d\n", s_hostent.h_length));
+    124            LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addr_list      == %p\n", s_hostent.h_addr_list));
+    125            if (s_hostent.h_addr_list != NULL) {
+    126              u8_t idx;
+    127              for ( idx=0; s_hostent.h_addr_list[idx]; idx++) {
+    128                LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addr_list[%i]   == %p\n", idx, s_hostent.h_addr_list[idx]));
+    129                LWIP_DEBUGF(DNS_DEBUG, ("hostent.h_addr_list[%i]-> == %s\n", idx, ip_ntoa(s_hostent.h_addr_list[idx])));
+    130              }
+    131            }
+    132          #endif /* DNS_DEBUG */
+    133          
+    134          #if LWIP_DNS_API_HOSTENT_STORAGE
+    135            /* this function should return the "per-thread" hostent after copy from s_hostent */
+    136            return sys_thread_hostent(&s_hostent);
+    137          #else
+    138            return &s_hostent;
+    139          #endif /* LWIP_DNS_API_HOSTENT_STORAGE */
+    140          }
+    141          
+    142          /**
+    143           * Thread-safe variant of lwip_gethostbyname: instead of using a static
+    144           * buffer, this function takes buffer and errno pointers as arguments
+    145           * and uses these for the result.
+    146           *
+    147           * @param name the hostname to resolve
+    148           * @param ret pre-allocated struct where to store the result
+    149           * @param buf pre-allocated buffer where to store additional data
+    150           * @param buflen the size of buf
+    151           * @param result pointer to a hostent pointer that is set to ret on success
+    152           *               and set to zero on error
+    153           * @param h_errnop pointer to an int where to store errors (instead of modifying
+    154           *                 the global h_errno)
+    155           * @return 0 on success, non-zero on error, additional error information
+    156           *         is stored in *h_errnop instead of h_errno to be thread-safe
+    157           */
+    158          int
+    159          lwip_gethostbyname_r(const char *name, struct hostent *ret, char *buf,
+    160                          size_t buflen, struct hostent **result, int *h_errnop)
+    161          {
+    162            err_t err;
+    163            struct gethostbyname_r_helper *h;
+    164            char *hostname;
+    165            size_t namelen;
+    166            int lh_errno;
+    167          
+    168            if (h_errnop == NULL) {
+    169              /* ensure h_errnop is never NULL */
+    170              h_errnop = &lh_errno;
+    171            }
+    172          
+    173            if (result == NULL) {
+    174              /* not all arguments given */
+    175              *h_errnop = EINVAL;
+    176              return -1;
+    177            }
+    178            /* first thing to do: set *result to nothing */
+    179            *result = NULL;
+    180            if ((name == NULL) || (ret == NULL) || (buf == 0)) {
+    181              /* not all arguments given */
+    182              *h_errnop = EINVAL;
+    183              return -1;
+    184            }
+    185          
+    186            namelen = strlen(name);
+    187            if (buflen < (sizeof(struct gethostbyname_r_helper) + namelen + 1 + (MEM_ALIGNMENT - 1))) {
+    188              /* buf can't hold the data needed + a copy of name */
+    189              *h_errnop = ERANGE;
+    190              return -1;
+    191            }
+    192          
+    193            h = (struct gethostbyname_r_helper*)LWIP_MEM_ALIGN(buf);
+    194            hostname = ((char*)h) + sizeof(struct gethostbyname_r_helper);
+    195          
+    196            /* query host IP address */
+    197            err = netconn_gethostbyname(name, &(h->addr));
+    198            if (err != ERR_OK) {
+    199              LWIP_DEBUGF(DNS_DEBUG, ("lwip_gethostbyname(%s) failed, err=%d\n", name, err));
+    200              *h_errnop = ENSRNOTFOUND;
+    201              return -1;
+    202            }
+    203          
+    204            /* copy the hostname into buf */
+    205            MEMCPY(hostname, name, namelen);
+    206            hostname[namelen] = 0;
+    207          
+    208            /* fill hostent */
+    209            h->addrs = &(h->addr);
+    210            h->aliases = NULL;
+    211            ret->h_name = (char*)hostname;
+    212            ret->h_aliases = &(h->aliases);
+    213            ret->h_addrtype = AF_INET;
+    214            ret->h_length = sizeof(struct ip_addr);
+    215            ret->h_addr_list = (char**)&(h->addrs);
+    216          
+    217            /* set result != NULL */
+    218            *result = ret;
+    219          
+    220            /* return success */
+    221            return 0;
+    222          }
+    223          
+    224          /**
+    225           * Frees one or more addrinfo structures returned by getaddrinfo(), along with
+    226           * any additional storage associated with those structures. If the ai_next field
+    227           * of the structure is not null, the entire list of structures is freed.
+    228           *
+    229           * @param ai struct addrinfo to free
+    230           */
+    231          void
+    232          lwip_freeaddrinfo(struct addrinfo *ai)
+    233          {
+    234            struct addrinfo *next;
+    235          
+    236            while (ai != NULL) {
+    237              next = ai->ai_next;
+    238              mem_free(ai);
+    239              ai = next;
+    240            }
+    241          }
+    242          
+    243          /**
+    244           * Translates the name of a service location (for example, a host name) and/or
+    245           * a service name and returns a set of socket addresses and associated
+    246           * information to be used in creating a socket with which to address the
+    247           * specified service.
+    248           * Memory for the result is allocated internally and must be freed by calling
+    249           * lwip_freeaddrinfo()!
+    250           *
+    251           * Due to a limitation in dns_gethostbyname, only the first address of a
+    252           * host is returned.
+    253           * Also, service names are not supported (only port numbers)!
+    254           *
+    255           * @param nodename descriptive name or address string of the host
+    256           *                 (may be NULL -> local address)
+    257           * @param servname port number as string of NULL 
+    258           * @param hints structure containing input values that set socktype and protocol
+    259           * @param res pointer to a pointer where to store the result (set to NULL on failure)
+    260           * @return 0 on success, non-zero on failure
+    261           */
+    262          int
+    263          lwip_getaddrinfo(const char *nodename, const char *servname,
+    264                 const struct addrinfo *hints, struct addrinfo **res)
+    265          {
+    266            err_t err;
+    267            struct ip_addr addr;
+    268            struct addrinfo *ai;
+    269            struct sockaddr_in *sa = NULL;
+    270            int port_nr = 0;
+    271            size_t total_size;
+    272            size_t namelen = 0;
+    273          
+    274            if (res == NULL) {
+    275              return EAI_FAIL;
+    276            }
+    277            *res = NULL;
+    278            if ((nodename == NULL) && (servname == NULL)) {
+    279              return EAI_NONAME;
+    280            }
+    281          
+    282            if (servname != NULL) {
+    283              /* service name specified: convert to port number
+    284               * @todo?: currently, only ASCII integers (port numbers) are supported! */
+    285              port_nr = atoi(servname);
+    286              if ((port_nr <= 0) || (port_nr > 0xffff)) {
+    287                return EAI_SERVICE;
+    288              }
+    289            }
+    290          
+    291            if (nodename != NULL) {
+    292              /* service location specified, try to resolve */
+    293              err = netconn_gethostbyname(nodename, &addr);
+    294              if (err != ERR_OK) {
+    295                return EAI_FAIL;
+    296              }
+    297            } else {
+    298              /* service location specified, use loopback address */
+    299              addr.addr = htonl(INADDR_LOOPBACK);
+    300            }
+    301          
+    302            total_size = sizeof(struct addrinfo) + sizeof(struct sockaddr_in);
+    303            if (nodename != NULL) {
+    304              namelen = strlen(nodename);
+    305              LWIP_ASSERT("namelen is too long", (namelen + 1) <= (mem_size_t)-1);
+    306              total_size += namelen + 1;
+    307            }
+    308            ai = mem_malloc(total_size);
+    309            if (ai == NULL) {
+    310              goto memerr;
+    311            }
+    312            memset(ai, 0, total_size);
+    313            sa = (struct sockaddr_in*)((u8_t*)ai + sizeof(struct addrinfo));
+    314            /* set up sockaddr */
+    315            sa->sin_addr.s_addr = addr.addr;
+    316            sa->sin_family = AF_INET;
+    317            sa->sin_len = sizeof(struct sockaddr_in);
+    318            sa->sin_port = htons(port_nr);
+    319          
+    320            /* set up addrinfo */
+    321            ai->ai_family = AF_INET;
+    322            if (hints != NULL) {
+    323              /* copy socktype & protocol from hints if specified */
+    324              ai->ai_socktype = hints->ai_socktype;
+    325              ai->ai_protocol = hints->ai_protocol;
+    326            }
+    327            if (nodename != NULL) {
+    328              /* copy nodename to canonname if specified */
+    329              ai->ai_canonname = ((char*)ai + sizeof(struct addrinfo) + sizeof(struct sockaddr_in));
+    330              MEMCPY(ai->ai_canonname, nodename, namelen);
+    331              ai->ai_canonname[namelen] = 0;
+    332            }
+    333            ai->ai_addrlen = sizeof(struct sockaddr_in);
+    334            ai->ai_addr = (struct sockaddr*)sa;
+    335          
+    336            *res = ai;
+    337          
+    338            return 0;
+    339          memerr:
+    340            if (ai != NULL) {
+    341              mem_free(ai);
+    342            }
+    343            return EAI_MEMORY;
+    344          }
+    345          
+    346          #endif /* LWIP_DNS && LWIP_SOCKET */
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

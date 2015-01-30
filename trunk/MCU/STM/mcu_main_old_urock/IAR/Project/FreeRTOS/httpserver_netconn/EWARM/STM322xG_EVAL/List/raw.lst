@@ -1,0 +1,461 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:41
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\raw.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\raw.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\raw.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\raw.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\raw.c
+      1          /**
+      2           * @file
+      3           * Implementation of raw protocol PCBs for low-level handling of
+      4           * different types of protocols besides (or overriding) those
+      5           * already available in lwIP.
+      6           *
+      7           **/
+      8          
+      9          /*
+     10           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+     11           * All rights reserved.
+     12           *
+     13           * Redistribution and use in source and binary forms, with or without modification,
+     14           * are permitted provided that the following conditions are met:
+     15           *
+     16           * 1. Redistributions of source code must retain the above copyright notice,
+     17           *    this list of conditions and the following disclaimer.
+     18           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     19           *    this list of conditions and the following disclaimer in the documentation
+     20           *    and/or other materials provided with the distribution.
+     21           * 3. The name of the author may not be used to endorse or promote products
+     22           *    derived from this software without specific prior written permission.
+     23           *
+     24           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     25           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     26           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     27           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     28           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     29           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     30           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     31           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     32           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     33           * OF SUCH DAMAGE.
+     34           *
+     35           * This file is part of the lwIP TCP/IP stack.
+     36           *
+     37           * Author: Adam Dunkels <adam@sics.se>
+     38           *
+     39           */
+     40          
+     41          #include "lwip/opt.h"
+     42          
+     43          #if LWIP_RAW /* don't build if not configured for use in lwipopts.h */
+     44          
+     45          #include "lwip/def.h"
+     46          #include "lwip/memp.h"
+     47          #include "lwip/inet.h"
+     48          #include "lwip/ip_addr.h"
+     49          #include "lwip/netif.h"
+     50          #include "lwip/raw.h"
+     51          #include "lwip/stats.h"
+     52          #include "lwip/snmp.h"
+     53          #include "arch/perf.h"
+     54          
+     55          #include <string.h>
+     56          
+     57          /** The list of RAW PCBs */
+     58          static struct raw_pcb *raw_pcbs;
+     59          
+     60          /**
+     61           * Determine if in incoming IP packet is covered by a RAW PCB
+     62           * and if so, pass it to a user-provided receive callback function.
+     63           *
+     64           * Given an incoming IP datagram (as a chain of pbufs) this function
+     65           * finds a corresponding RAW PCB and calls the corresponding receive
+     66           * callback function.
+     67           *
+     68           * @param p pbuf to be demultiplexed to a RAW PCB.
+     69           * @param inp network interface on which the datagram was received.
+     70           * @return - 1 if the packet has been eaten by a RAW PCB receive
+     71           *           callback function. The caller MAY NOT not reference the
+     72           *           packet any longer, and MAY NOT call pbuf_free().
+     73           * @return - 0 if packet is not eaten (pbuf is still referenced by the
+     74           *           caller).
+     75           *
+     76           */
+     77          u8_t
+     78          raw_input(struct pbuf *p, struct netif *inp)
+     79          {
+     80            struct raw_pcb *pcb, *prev;
+     81            struct ip_hdr *iphdr;
+     82            s16_t proto;
+     83            u8_t eaten = 0;
+     84          
+     85            LWIP_UNUSED_ARG(inp);
+     86          
+     87            iphdr = p->payload;
+     88            proto = IPH_PROTO(iphdr);
+     89          
+     90            prev = NULL;
+     91            pcb = raw_pcbs;
+     92            /* loop through all raw pcbs until the packet is eaten by one */
+     93            /* this allows multiple pcbs to match against the packet by design */
+     94            while ((eaten == 0) && (pcb != NULL)) {
+     95              if (pcb->protocol == proto) {
+     96          #if IP_SOF_BROADCAST_RECV
+     97                /* broadcast filter? */
+     98                if ((pcb->so_options & SOF_BROADCAST) || !ip_addr_isbroadcast(&(iphdr->dest), inp))
+     99          #endif /* IP_SOF_BROADCAST_RECV */
+    100                {
+    101                  /* receive callback function available? */
+    102                  if (pcb->recv != NULL) {
+    103                    /* the receive callback function did not eat the packet? */
+    104                    if (pcb->recv(pcb->recv_arg, pcb, p, &(iphdr->src)) != 0) {
+    105                      /* receive function ate the packet */
+    106                      p = NULL;
+    107                      eaten = 1;
+    108                      if (prev != NULL) {
+    109                      /* move the pcb to the front of raw_pcbs so that is
+    110                         found faster next time */
+    111                        prev->next = pcb->next;
+    112                        pcb->next = raw_pcbs;
+    113                        raw_pcbs = pcb;
+    114                      }
+    115                    }
+    116                  }
+    117                  /* no receive callback function was set for this raw PCB */
+    118                }
+    119                /* drop the packet */
+    120              }
+    121              prev = pcb;
+    122              pcb = pcb->next;
+    123            }
+    124            return eaten;
+    125          }
+    126          
+    127          /**
+    128           * Bind a RAW PCB.
+    129           *
+    130           * @param pcb RAW PCB to be bound with a local address ipaddr.
+    131           * @param ipaddr local IP address to bind with. Use IP_ADDR_ANY to
+    132           * bind to all local interfaces.
+    133           *
+    134           * @return lwIP error code.
+    135           * - ERR_OK. Successful. No error occured.
+    136           * - ERR_USE. The specified IP address is already bound to by
+    137           * another RAW PCB.
+    138           *
+    139           * @see raw_disconnect()
+    140           */
+    141          err_t
+    142          raw_bind(struct raw_pcb *pcb, struct ip_addr *ipaddr)
+    143          {
+    144            ip_addr_set(&pcb->local_ip, ipaddr);
+    145            return ERR_OK;
+    146          }
+    147          
+    148          /**
+    149           * Connect an RAW PCB. This function is required by upper layers
+    150           * of lwip. Using the raw api you could use raw_sendto() instead
+    151           *
+    152           * This will associate the RAW PCB with the remote address.
+    153           *
+    154           * @param pcb RAW PCB to be connected with remote address ipaddr and port.
+    155           * @param ipaddr remote IP address to connect with.
+    156           *
+    157           * @return lwIP error code
+    158           *
+    159           * @see raw_disconnect() and raw_sendto()
+    160           */
+    161          err_t
+    162          raw_connect(struct raw_pcb *pcb, struct ip_addr *ipaddr)
+    163          {
+    164            ip_addr_set(&pcb->remote_ip, ipaddr);
+    165            return ERR_OK;
+    166          }
+    167          
+    168          
+    169          /**
+    170           * Set the callback function for received packets that match the
+    171           * raw PCB's protocol and binding. 
+    172           * 
+    173           * The callback function MUST either
+    174           * - eat the packet by calling pbuf_free() and returning non-zero. The
+    175           *   packet will not be passed to other raw PCBs or other protocol layers.
+    176           * - not free the packet, and return zero. The packet will be matched
+    177           *   against further PCBs and/or forwarded to another protocol layers.
+    178           * 
+    179           * @return non-zero if the packet was free()d, zero if the packet remains
+    180           * available for others.
+    181           */
+    182          void
+    183          raw_recv(struct raw_pcb *pcb,
+    184                   u8_t (* recv)(void *arg, struct raw_pcb *upcb, struct pbuf *p,
+    185                                struct ip_addr *addr),
+    186                   void *recv_arg)
+    187          {
+    188            /* remember recv() callback and user data */
+    189            pcb->recv = recv;
+    190            pcb->recv_arg = recv_arg;
+    191          }
+    192          
+    193          /**
+    194           * Send the raw IP packet to the given address. Note that actually you cannot
+    195           * modify the IP headers (this is inconsistent with the receive callback where
+    196           * you actually get the IP headers), you can only specify the IP payload here.
+    197           * It requires some more changes in lwIP. (there will be a raw_send() function
+    198           * then.)
+    199           *
+    200           * @param pcb the raw pcb which to send
+    201           * @param p the IP payload to send
+    202           * @param ipaddr the destination address of the IP packet
+    203           *
+    204           */
+    205          err_t
+    206          raw_sendto(struct raw_pcb *pcb, struct pbuf *p, struct ip_addr *ipaddr)
+    207          {
+    208            err_t err;
+    209            struct netif *netif;
+    210            struct ip_addr *src_ip;
+    211            struct pbuf *q; /* q will be sent down the stack */
+    212            
+    213            LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_TRACE, ("raw_sendto\n"));
+    214            
+    215            /* not enough space to add an IP header to first pbuf in given p chain? */
+    216            if (pbuf_header(p, IP_HLEN)) {
+    217              /* allocate header in new pbuf */
+    218              q = pbuf_alloc(PBUF_IP, 0, PBUF_RAM);
+    219              /* new header pbuf could not be allocated? */
+    220              if (q == NULL) {
+    221                LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_SERIOUS, ("raw_sendto: could not allocate header\n"));
+    222                return ERR_MEM;
+    223              }
+    224              /* chain header q in front of given pbuf p */
+    225              pbuf_chain(q, p);
+    226              /* { first pbuf q points to header pbuf } */
+    227              LWIP_DEBUGF(RAW_DEBUG, ("raw_sendto: added header pbuf %p before given pbuf %p\n", (void *)q, (void *)p));
+    228            }  else {
+    229              /* first pbuf q equals given pbuf */
+    230              q = p;
+    231              if(pbuf_header(q, -IP_HLEN)) {
+    232                LWIP_ASSERT("Can't restore header we just removed!", 0);
+    233                return ERR_MEM;
+    234              }
+    235            }
+    236          
+    237            if ((netif = ip_route(ipaddr)) == NULL) {
+    238              LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_LEVEL_WARNING, ("raw_sendto: No route to 0x%"X32_F"\n", ipaddr->addr));
+    239              /* free any temporary header pbuf allocated by pbuf_header() */
+    240              if (q != p) {
+    241                pbuf_free(q);
+    242              }
+    243              return ERR_RTE;
+    244            }
+    245          
+    246          #if IP_SOF_BROADCAST
+    247            /* broadcast filter? */
+    248            if ( ((pcb->so_options & SOF_BROADCAST) == 0) && ip_addr_isbroadcast(ipaddr, netif) ) {
+    249              LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_LEVEL_WARNING, ("raw_sendto: SOF_BROADCAST not enabled on pcb %p\n", (void *)pcb));
+    250              /* free any temporary header pbuf allocated by pbuf_header() */
+    251              if (q != p) {
+    252                pbuf_free(q);
+    253              }
+    254              return ERR_VAL;
+    255            }
+    256          #endif /* IP_SOF_BROADCAST */
+    257          
+    258            if (ip_addr_isany(&pcb->local_ip)) {
+    259              /* use outgoing network interface IP address as source address */
+    260              src_ip = &(netif->ip_addr);
+    261            } else {
+    262              /* use RAW PCB local IP address as source address */
+    263              src_ip = &(pcb->local_ip);
+    264            }
+    265          
+    266          #if LWIP_NETIF_HWADDRHINT
+    267            netif->addr_hint = &(pcb->addr_hint);
+    268          #endif /* LWIP_NETIF_HWADDRHINT*/
+    269            err = ip_output_if (q, src_ip, ipaddr, pcb->ttl, pcb->tos, pcb->protocol, netif);
+    270          #if LWIP_NETIF_HWADDRHINT
+    271            netif->addr_hint = NULL;
+    272          #endif /* LWIP_NETIF_HWADDRHINT*/
+    273          
+    274            /* did we chain a header earlier? */
+    275            if (q != p) {
+    276              /* free the header */
+    277              pbuf_free(q);
+    278            }
+    279            return err;
+    280          }
+    281          
+    282          /**
+    283           * Send the raw IP packet to the address given by raw_connect()
+    284           *
+    285           * @param pcb the raw pcb which to send
+    286           * @param p the IP payload to send
+    287           *
+    288           */
+    289          err_t
+    290          raw_send(struct raw_pcb *pcb, struct pbuf *p)
+    291          {
+    292            return raw_sendto(pcb, p, &pcb->remote_ip);
+    293          }
+    294          
+    295          /**
+    296           * Remove an RAW PCB.
+    297           *
+    298           * @param pcb RAW PCB to be removed. The PCB is removed from the list of
+    299           * RAW PCB's and the data structure is freed from memory.
+    300           *
+    301           * @see raw_new()
+    302           */
+    303          void
+    304          raw_remove(struct raw_pcb *pcb)
+    305          {
+    306            struct raw_pcb *pcb2;
+    307            /* pcb to be removed is first in list? */
+    308            if (raw_pcbs == pcb) {
+    309              /* make list start at 2nd pcb */
+    310              raw_pcbs = raw_pcbs->next;
+    311              /* pcb not 1st in list */
+    312            } else {
+    313              for(pcb2 = raw_pcbs; pcb2 != NULL; pcb2 = pcb2->next) {
+    314                /* find pcb in raw_pcbs list */
+    315                if (pcb2->next != NULL && pcb2->next == pcb) {
+    316                  /* remove pcb from list */
+    317                  pcb2->next = pcb->next;
+    318                }
+    319              }
+    320            }
+    321            memp_free(MEMP_RAW_PCB, pcb);
+    322          }
+    323          
+    324          /**
+    325           * Create a RAW PCB.
+    326           *
+    327           * @return The RAW PCB which was created. NULL if the PCB data structure
+    328           * could not be allocated.
+    329           *
+    330           * @param proto the protocol number of the IPs payload (e.g. IP_PROTO_ICMP)
+    331           *
+    332           * @see raw_remove()
+    333           */
+    334          struct raw_pcb *
+    335          raw_new(u8_t proto) {
+    336            struct raw_pcb *pcb;
+    337          
+    338            LWIP_DEBUGF(RAW_DEBUG | LWIP_DBG_TRACE, ("raw_new\n"));
+    339          
+    340            pcb = memp_malloc(MEMP_RAW_PCB);
+    341            /* could allocate RAW PCB? */
+    342            if (pcb != NULL) {
+    343              /* initialize PCB to all zeroes */
+    344              memset(pcb, 0, sizeof(struct raw_pcb));
+    345              pcb->protocol = proto;
+    346              pcb->ttl = RAW_TTL;
+    347              pcb->next = raw_pcbs;
+    348              raw_pcbs = pcb;
+    349            }
+    350            return pcb;
+    351          }
+    352          
+    353          #endif /* LWIP_RAW */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   raw_bind
+       0   raw_connect
+      32   raw_input
+        32   -- Indirect call
+        32   -> ntohs
+      24   raw_new
+        24   -> __aeabi_memset
+        24   -> memp_malloc
+       0   raw_recv
+      16   raw_remove
+        16   -> memp_free
+      16   raw_send
+        16   -> raw_sendto
+      48   raw_sendto
+        48   -> ip_output_if
+        48   -> ip_route
+        48   -> pbuf_alloc
+        48   -> pbuf_chain
+        48   -> pbuf_free
+        48   -> pbuf_header
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+      18  raw_bind
+      18  raw_connect
+     130  raw_input
+      50  raw_new
+       4  raw_pcbs
+       6  raw_recv
+      64  raw_remove
+      18  raw_send
+     174  raw_sendto
+
+ 
+   4 bytes in section .bss
+ 482 bytes in section .text
+ 
+ 482 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

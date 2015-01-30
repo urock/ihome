@@ -1,0 +1,8 @@
+IHOME USB UTILITY 0.1
+
+	Работа с ihome так же как с RC47
+	
+	Данная программа работает с сервисной версией программы MCU
+
+Functions: 
+		PROG CPLD

@@ -1,0 +1,218 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:50
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\udp_server.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\udp_server.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\udp_server.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\udp_server.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\udp_server.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    server.c
+      4            * @author  MCD Application Team
+      5            * @version V1.0.0
+      6            * @date    11/20/2009
+      7            * @brief   A sample UDP/TCP server application.
+      8            ******************************************************************************
+      9            * @copy
+     10            *
+     11            * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     12            * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     13            * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     14            * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     15            * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     16            * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     17            *
+     18            * <h2><center>&copy; COPYRIGHT 2009 STMicroelectronics</center></h2>
+     19            */
+     20          
+     21          /* Includes ------------------------------------------------------------------*/
+     22          #include "udp_server.h"
+     23          
+     24          
+     25          
+     26          extern mcu_config_t	mcu_config;
+     27          
+     28          
+     29          /* Private define ------------------------------------------------------------*/
+     30          #define UDP_SERVER_PORT    7   /* define the UDP local connection port */
+     31          #define UDP_CLIENT_PORT    4   /* define the UDP remote connection port */
+     32          
+     33          
+     34          
+     35          
+     36          /**
+     37            * @brief  Initialize the server application.
+     38            * @param  None
+     39            * @retval None
+     40            */
+     41          void UDP_server_init(void)
+     42          {
+     43             struct udp_pcb *upcb;                                 
+     44             
+     45             /* Create a new UDP control block  */
+     46             upcb = udp_new();
+     47             
+     48             /* Bind the upcb to the UDP_PORT port */
+     49             /* Using IP_ADDR_ANY allow the upcb to be used by any local interface */
+     50             udp_bind(upcb, IP_ADDR_ANY, UDP_SERVER_PORT);
+     51             
+     52             /* Set a receive callback for the upcb */
+     53             udp_recv(upcb, udp_server_callback, NULL);
+     54            
+     55          }
+     56          
+     57          /**
+     58            * @brief This function is called when an UDP datagrm has been received on the port UDP_PORT.
+     59            * @param arg user supplied argument (udp_pcb.recv_arg)
+     60            * @param pcb the udp_pcb which received data
+     61            * @param p the packet buffer that was received
+     62            * @param addr the remote IP address from which the packet was received
+     63            * @param port the remote port from which the packet was received
+     64            * @retval None
+     65            */
+     66          void udp_server_callback(void *arg, struct udp_pcb *upcb, struct pbuf *p, struct ip_addr *addr, u16_t port)
+     67          {
+     68          
+     69              
+     70            uint8_t *data;
+     71            uint8_t datalen;
+     72          
+     73             if ( p == NULL)
+     74             {
+     75               pbuf_free(p);
+     76               return;
+     77             }
+     78             
+     79             data = p->payload;
+     80             /*Check request string*/
+     81             if( strncmp(data, "iHome?",6)==0 )
+     82             {
+     83                  datalen=0;
+     84                  
+     85                  //Put id data to buffer (ROSTA+RDM_MAC+RDM_IP+RDM_SERIAL+RBD_SERIAL)
+     86                  data = (uint8_t*)p->payload;
+     87                  //ROSTA - 5Bytes
+     88                  for(uint8_t i=0; i<4; i++)
+     89                  {
+     90                    *data++=mcu_config.SN[i];
+     91                    datalen++;          
+     92                  }
+     93          
+     94          //        //CRC
+     95          //        *data= calc_CRC8_general((uint8_t*)p->payload, (uint16_t)datalen);
+     96          //        datalen++;
+     97                  
+     98          	p->tot_len = datalen;
+     99          	p->len = p->tot_len;
+    100             
+    101            /* Connect to the remote client */
+    102          	udp_connect(upcb, addr, UDP_CLIENT_PORT);
+    103              
+    104            /* Tell the client that we have accepted it */
+    105          	udp_send(upcb, p);
+    106          
+    107            /* free the UDP connection, so we can accept new clients */
+    108          	udp_disconnect(upcb);
+    109          	
+    110            /* Bind the upcb to IP_ADDR_ANY address and the UDP_PORT port*/
+    111            /* Be ready to get a new request from another client */  
+    112          	udp_bind(upcb, IP_ADDR_ANY, UDP_SERVER_PORT);
+    113          	
+    114            /* Set a receive callback for the upcb */
+    115          	udp_recv(upcb, udp_server_callback, NULL);   
+    116           	
+    117          	pbuf_free(p);
+    118             }   
+    119          }
+    120          
+    121          /******************* (C) COPYRIGHT 2009 STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   UDP_server_init
+         8   -> udp_bind
+         8   -> udp_new
+         8   -> udp_recv
+      32   udp_server_callback
+        32   -> pbuf_free
+        32   -> strncmp
+        32   -> udp_bind
+        32   -> udp_connect
+        32   -> udp_disconnect
+        32   -> udp_recv
+        32   -> udp_send
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       8  ?_0
+      32  UDP_server_init
+     146  udp_server_callback
+
+ 
+   8 bytes in section .rodata
+ 194 bytes in section .text
+ 
+ 194 bytes of CODE  memory
+   8 bytes of CONST memory
+
+Errors: none
+Warnings: 1

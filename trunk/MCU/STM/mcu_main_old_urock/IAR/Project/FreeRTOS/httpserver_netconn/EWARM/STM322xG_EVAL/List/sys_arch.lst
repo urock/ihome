@@ -1,0 +1,580 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:47
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\sys_arch.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\sys_arch.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\sys_arch.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\sys_arch.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\sys_arch.c
+      1          /*
+      2           * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
+      3           * All rights reserved.
+      4           *
+      5           * Redistribution and use in source and binary forms, with or without modification,
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * 1. Redistributions of source code must retain the above copyright notice,
+      9           *    this list of conditions and the following disclaimer.
+     10           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     11           *    this list of conditions and the following disclaimer in the documentation
+     12           *    and/or other materials provided with the distribution.
+     13           * 3. The name of the author may not be used to endorse or promote products
+     14           *    derived from this software without specific prior written permission.
+     15           *
+     16           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     17           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     18           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     19           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     20           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     21           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     22           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     23           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     24           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     25           * OF SUCH DAMAGE.
+     26           *
+     27           * This file is part of the lwIP TCP/IP stack.
+     28           *
+     29           * Author: Adam Dunkels <adam@sics.se>
+     30           *
+     31           */
+     32          
+     33          /* lwIP includes. */
+     34          #include "lwip/debug.h"
+     35          #include "lwip/def.h"
+     36          #include "lwip/sys.h"
+     37          #include "lwip/mem.h"
+     38          #include "lwip/stats.h"
+     39          #include "FreeRTOS.h"
+     40          #include "task.h"
+     41          
+     42          
+     43          xTaskHandle xTaskGetCurrentTaskHandle( void ) PRIVILEGED_FUNCTION;
+     44          
+     45          struct timeoutlist
+     46          {
+     47          	struct sys_timeouts timeouts;
+     48          	xTaskHandle pid;
+     49          };
+     50          
+     51          /* This is the number of threads that can be started with sys_thread_new() */
+     52          #define SYS_THREAD_MAX 6
+     53          
+     54          static struct timeoutlist s_timeoutlist[SYS_THREAD_MAX];
+     55          static u16_t s_nextthread = 0;
+     56          
+     57          
+     58          /*-----------------------------------------------------------------------------------*/
+     59          //  Creates an empty mailbox.
+     60          sys_mbox_t sys_mbox_new(int size)
+     61          {
+     62          	xQueueHandle mbox;
+     63          	
+     64          	( void ) size;
+     65          	
+     66          	mbox = xQueueCreate( archMESG_QUEUE_LENGTH, sizeof( void * ) );
+     67          
+     68          #if SYS_STATS
+     69                ++lwip_stats.sys.mbox.used;
+     70                if (lwip_stats.sys.mbox.max < lwip_stats.sys.mbox.used) {
+     71                   lwip_stats.sys.mbox.max = lwip_stats.sys.mbox.used;
+     72          	  }
+     73          #endif /* SYS_STATS */
+     74          
+     75          	return mbox;
+     76          }
+     77          
+     78          /*-----------------------------------------------------------------------------------*/
+     79          /*
+     80            Deallocates a mailbox. If there are messages still present in the
+     81            mailbox when the mailbox is deallocated, it is an indication of a
+     82            programming error in lwIP and the developer should be notified.
+     83          */
+     84          void sys_mbox_free(sys_mbox_t mbox)
+     85          {
+     86          	if( uxQueueMessagesWaiting( mbox ) )
+     87          	{
+     88          		/* Line for breakpoint.  Should never break here! */
+     89          		portNOP();
+     90          #if SYS_STATS
+     91          	    lwip_stats.sys.mbox.err++;
+     92          #endif /* SYS_STATS */
+     93          			
+     94          		// TODO notify the user of failure.
+     95          	}
+     96          
+     97          	vQueueDelete( mbox );
+     98          
+     99          #if SYS_STATS
+    100               --lwip_stats.sys.mbox.used;
+    101          #endif /* SYS_STATS */
+    102          }
+    103          
+    104          /*-----------------------------------------------------------------------------------*/
+    105          //   Posts the "msg" to the mailbox.
+    106          void sys_mbox_post(sys_mbox_t mbox, void *data)
+    107          {
+    108          	while ( xQueueSendToBack(mbox, &data, portMAX_DELAY ) != pdTRUE ){}
+    109          }
+    110          
+    111          
+    112          /*-----------------------------------------------------------------------------------*/
+    113          //   Try to post the "msg" to the mailbox.
+    114          err_t sys_mbox_trypost(sys_mbox_t mbox, void *msg)
+    115          {
+    116          err_t result;
+    117          
+    118             if ( xQueueSend( mbox, &msg, 0 ) == pdPASS )
+    119             {
+    120                result = ERR_OK;
+    121             }
+    122             else {
+    123                // could not post, queue must be full
+    124                result = ERR_MEM;
+    125          			
+    126          #if SYS_STATS
+    127                lwip_stats.sys.mbox.err++;
+    128          #endif /* SYS_STATS */
+    129          			
+    130             }
+    131          
+    132             return result;
+    133          }
+    134          
+    135          /*-----------------------------------------------------------------------------------*/
+    136          /*
+    137            Blocks the thread until a message arrives in the mailbox, but does
+    138            not block the thread longer than "timeout" milliseconds (similar to
+    139            the sys_arch_sem_wait() function). The "msg" argument is a result
+    140            parameter that is set by the function (i.e., by doing "*msg =
+    141            ptr"). The "msg" parameter maybe NULL to indicate that the message
+    142            should be dropped.
+    143          
+    144            The return values are the same as for the sys_arch_sem_wait() function:
+    145            Number of milliseconds spent waiting or SYS_ARCH_TIMEOUT if there was a
+    146            timeout.
+    147          
+    148            Note that a function with a similar name, sys_mbox_fetch(), is
+    149            implemented by lwIP.
+    150          */
+    151          u32_t sys_arch_mbox_fetch(sys_mbox_t mbox, void **msg, u32_t timeout)
+    152          {
+    153          void *dummyptr;
+    154          portTickType StartTime, EndTime, Elapsed;
+    155          
+    156          	StartTime = xTaskGetTickCount();
+    157          
+    158          	if ( msg == NULL )
+    159          	{
+    160          		msg = &dummyptr;
+    161          	}
+    162          		
+    163          	if ( timeout != 0 )
+    164          	{
+    165          		if ( pdTRUE == xQueueReceive( mbox, &(*msg), timeout / portTICK_RATE_MS ) )
+    166          		{
+    167          			EndTime = xTaskGetTickCount();
+    168          			Elapsed = (EndTime - StartTime) * portTICK_RATE_MS;
+    169          			
+    170          			return ( Elapsed );
+    171          		}
+    172          		else // timed out blocking for message
+    173          		{
+    174          			*msg = NULL;
+    175          			
+    176          			return SYS_ARCH_TIMEOUT;
+    177          		}
+    178          	}
+    179          	else // block forever for a message.
+    180          	{
+    181          		while( pdTRUE != xQueueReceive( mbox, &(*msg), portMAX_DELAY ) ){} // time is arbitrary
+    182          		EndTime = xTaskGetTickCount();
+    183          		Elapsed = (EndTime - StartTime) * portTICK_RATE_MS;
+    184          		
+    185          		return ( Elapsed ); // return time blocked TODO test	
+    186          	}
+    187          }
+    188          
+    189          /*-----------------------------------------------------------------------------------*/
+    190          /*
+    191            Similar to sys_arch_mbox_fetch, but if message is not ready immediately, we'll
+    192            return with SYS_MBOX_EMPTY.  On success, 0 is returned.
+    193          */
+    194          u32_t sys_arch_mbox_tryfetch(sys_mbox_t mbox, void **msg)
+    195          {
+    196          void *dummyptr;
+    197          
+    198          	if ( msg == NULL )
+    199          	{
+    200          		msg = &dummyptr;
+    201          	}
+    202          
+    203             if ( pdTRUE == xQueueReceive( mbox, &(*msg), 0 ) )
+    204             {
+    205                return ERR_OK;
+    206             }
+    207             else
+    208             {
+    209                return SYS_MBOX_EMPTY;
+    210             }
+    211          }
+    212          
+    213          /*-----------------------------------------------------------------------------------*/
+    214          //  Creates and returns a new semaphore. The "count" argument specifies
+    215          //  the initial state of the semaphore.
+    216          sys_sem_t sys_sem_new(u8_t count)
+    217          {
+    218          	xSemaphoreHandle  xSemaphore;
+    219          
+    220          	vSemaphoreCreateBinary( xSemaphore );
+    221          	
+    222          	if( xSemaphore == NULL )
+    223          	{
+    224          		
+    225          #if SYS_STATS
+    226                ++lwip_stats.sys.sem.err;
+    227          #endif /* SYS_STATS */
+    228          			
+    229          		return SYS_SEM_NULL;	// TODO need assert
+    230          	}
+    231          	
+    232          	if(count == 0)	// Means it can't be taken
+    233          	{
+    234          		xSemaphoreTake(xSemaphore,1);
+    235          	}
+    236          
+    237          #if SYS_STATS
+    238          	++lwip_stats.sys.sem.used;
+    239           	if (lwip_stats.sys.sem.max < lwip_stats.sys.sem.used) {
+    240          		lwip_stats.sys.sem.max = lwip_stats.sys.sem.used;
+    241          	}
+    242          #endif /* SYS_STATS */
+    243          		
+    244          	return xSemaphore;
+    245          }
+    246          
+    247          /*-----------------------------------------------------------------------------------*/
+    248          /*
+    249            Blocks the thread while waiting for the semaphore to be
+    250            signaled. If the "timeout" argument is non-zero, the thread should
+    251            only be blocked for the specified time (measured in
+    252            milliseconds).
+    253          
+    254            If the timeout argument is non-zero, the return value is the number of
+    255            milliseconds spent waiting for the semaphore to be signaled. If the
+    256            semaphore wasn't signaled within the specified time, the return value is
+    257            SYS_ARCH_TIMEOUT. If the thread didn't have to wait for the semaphore
+    258            (i.e., it was already signaled), the function may return zero.
+    259          
+    260            Notice that lwIP implements a function with a similar name,
+    261            sys_sem_wait(), that uses the sys_arch_sem_wait() function.
+    262          */
+    263          u32_t sys_arch_sem_wait(sys_sem_t sem, u32_t timeout)
+    264          {
+    265          portTickType StartTime, EndTime, Elapsed;
+    266          
+    267          	StartTime = xTaskGetTickCount();
+    268          
+    269          	if(	timeout != 0)
+    270          	{
+    271          		if( xSemaphoreTake( sem, timeout / portTICK_RATE_MS ) == pdTRUE )
+    272          		{
+    273          			EndTime = xTaskGetTickCount();
+    274          			Elapsed = (EndTime - StartTime) * portTICK_RATE_MS;
+    275          			
+    276          			return (Elapsed); // return time blocked TODO test	
+    277          		}
+    278          		else
+    279          		{
+    280          			return SYS_ARCH_TIMEOUT;
+    281          		}
+    282          	}
+    283          	else // must block without a timeout
+    284          	{
+    285          		while( xSemaphoreTake( sem, portMAX_DELAY ) != pdTRUE ){}
+    286          		EndTime = xTaskGetTickCount();
+    287          		Elapsed = (EndTime - StartTime) * portTICK_RATE_MS;
+    288          
+    289          		return ( Elapsed ); // return time blocked	
+    290          		
+    291          	}
+    292          }
+    293          
+    294          /*-----------------------------------------------------------------------------------*/
+    295          // Signals a semaphore
+    296          void sys_sem_signal(sys_sem_t sem)
+    297          {
+    298          	xSemaphoreGive( sem );
+    299          }
+    300          
+    301          /*-----------------------------------------------------------------------------------*/
+    302          // Deallocates a semaphore
+    303          void sys_sem_free(sys_sem_t sem)
+    304          {
+    305          #if SYS_STATS
+    306                --lwip_stats.sys.sem.used;
+    307          #endif /* SYS_STATS */
+    308          			
+    309          	vQueueDelete( sem );
+    310          }
+    311          
+    312          /*-----------------------------------------------------------------------------------*/
+    313          // Initialize sys arch
+    314          void sys_init(void)
+    315          {
+    316          	int i;
+    317          
+    318          	// Initialize the the per-thread sys_timeouts structures
+    319          	// make sure there are no valid pids in the list
+    320          	for(i = 0; i < SYS_THREAD_MAX; i++)
+    321          	{
+    322          		s_timeoutlist[i].pid = 0;
+    323          		s_timeoutlist[i].timeouts.next = NULL;
+    324          	}
+    325          
+    326          	// keep track of how many threads have been created
+    327          	s_nextthread = 0;
+    328          }
+    329          
+    330          /*-----------------------------------------------------------------------------------*/
+    331          /*
+    332            Returns a pointer to the per-thread sys_timeouts structure. In lwIP,
+    333            each thread has a list of timeouts which is represented as a linked
+    334            list of sys_timeout structures. The sys_timeouts structure holds a
+    335            pointer to a linked list of timeouts. This function is called by
+    336            the lwIP timeout scheduler and must not return a NULL value.
+    337          
+    338            In a single threaded sys_arch implementation, this function will
+    339            simply return a pointer to a global sys_timeouts variable stored in
+    340            the sys_arch module.
+    341          */
+    342          struct sys_timeouts *sys_arch_timeouts(void)
+    343          {
+    344          int i;
+    345          xTaskHandle pid;
+    346          struct timeoutlist *tl;
+    347          
+    348          	pid =  xTaskGetCurrentTaskHandle();
+    349                        
+    350          
+    351          	for(i = 0; i < s_nextthread; i++)
+    352          	{
+    353          		tl = &(s_timeoutlist[i]);
+    354          		if(tl->pid == pid)
+    355          		{
+    356          			return &(tl->timeouts);
+    357          		}
+    358          	}
+    359          
+    360          	// Error
+    361          	return NULL;
+    362          }
+    363          
+    364          /*-----------------------------------------------------------------------------------*/
+    365          /*-----------------------------------------------------------------------------------*/
+    366          // TODO
+    367          /*-----------------------------------------------------------------------------------*/
+    368          /*
+    369            Starts a new thread with priority "prio" that will begin its execution in the
+    370            function "thread()". The "arg" argument will be passed as an argument to the
+    371            thread() function. The id of the new thread is returned. Both the id and
+    372            the priority are system dependent.
+    373          */
+    374          sys_thread_t sys_thread_new(char *name, void (* thread)(void *arg), void *arg, int stacksize, int prio)
+    375          {
+    376          xTaskHandle CreatedTask;
+    377          int result;
+    378          
+    379             if ( s_nextthread < SYS_THREAD_MAX )
+    380             {
+    381                result = xTaskCreate( thread, ( signed portCHAR * ) name, stacksize, arg, prio, &CreatedTask );
+    382          
+    383          	   // For each task created, store the task handle (pid) in the timers array.
+    384          	   // This scheme doesn't allow for threads to be deleted
+    385          	   s_timeoutlist[s_nextthread++].pid = CreatedTask;
+    386          
+    387          	   if(result == pdPASS)
+    388          	   {
+    389          		   return CreatedTask;
+    390          	   }
+    391          	   else
+    392          	   {
+    393          		   return NULL;
+    394          	   }
+    395             }
+    396             else
+    397             {
+    398                return NULL;
+    399             }
+    400          }
+    401          
+    402          /*
+    403            This optional function does a "fast" critical region protection and returns
+    404            the previous protection level. This function is only called during very short
+    405            critical regions. An embedded system which supports ISR-based drivers might
+    406            want to implement this function by disabling interrupts. Task-based systems
+    407            might want to implement this by using a mutex or disabling tasking. This
+    408            function should support recursive calls from the same task or interrupt. In
+    409            other words, sys_arch_protect() could be called while already protected. In
+    410            that case the return value indicates that it is already protected.
+    411          
+    412            sys_arch_protect() is only required if your port is supporting an operating
+    413            system.
+    414          */
+    415          sys_prot_t sys_arch_protect(void)
+    416          {
+    417          	vPortEnterCritical();
+    418          	return 1;
+    419          }
+    420          
+    421          /*
+    422            This optional function does a "fast" set of critical region protection to the
+    423            value specified by pval. See the documentation for sys_arch_protect() for
+    424            more information. This function is only required if your port is supporting
+    425            an operating system.
+    426          */
+    427          void sys_arch_unprotect(sys_prot_t pval)
+    428          {
+    429          	( void ) pval;
+    430          	vPortExitCritical();
+    431          }
+    432          
+    433          /*
+    434           * Prints an assertion messages and aborts execution.
+    435           */
+    436          void sys_assert( const char *msg )
+    437          {	
+    438          	( void ) msg;
+    439          	/*FSL:only needed for debugging
+    440          	printf(msg);
+    441          	printf("\n\r");
+    442          	*/
+    443              vPortEnterCritical(  );
+    444              for(;;)
+    445              ;
+    446          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   sys_arch_mbox_fetch
+        32   -> xQueueGenericReceive
+        32   -> xTaskGetTickCount
+      16   sys_arch_mbox_tryfetch
+        16   -> xQueueGenericReceive
+       8   sys_arch_protect
+         8   -> vPortEnterCritical
+      24   sys_arch_sem_wait
+        24   -> xQueueGenericReceive
+        24   -> xTaskGetTickCount
+      16   sys_arch_timeouts
+        16   -> xTaskGetCurrentTaskHandle
+       8   sys_arch_unprotect
+         8   -> vPortExitCritical
+       8   sys_assert
+         8   -> vPortEnterCritical
+       0   sys_init
+      16   sys_mbox_free
+        16   -> uxQueueMessagesWaiting
+        16   -> vQueueDelete
+      16   sys_mbox_new
+        16   -> xQueueGenericCreate
+      16   sys_mbox_post
+        16   -> xQueueGenericSend
+      16   sys_mbox_trypost
+        16   -> xQueueGenericSend
+       8   sys_sem_free
+         8   -> vQueueDelete
+      16   sys_sem_new
+        16   -> xQueueGenericCreate
+        16   -> xQueueGenericReceive
+        16   -> xQueueGenericSend
+       8   sys_sem_signal
+         8   -> xQueueGenericSend
+      48   sys_thread_new
+        48   -> xTaskGenericCreate
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       2  s_nextthread
+      48  s_timeoutlist
+     110  sys_arch_mbox_fetch
+      40  sys_arch_mbox_tryfetch
+      10  sys_arch_protect
+      92  sys_arch_sem_wait
+      46  sys_arch_timeouts
+      10  sys_arch_unprotect
+      10  sys_assert
+      38  sys_init
+      20  sys_mbox_free
+      20  sys_mbox_new
+      24  sys_mbox_post
+      38  sys_mbox_trypost
+      12  sys_sem_free
+      62  sys_sem_new
+      18  sys_sem_signal
+     104  sys_thread_new
+
+ 
+  50 bytes in section .bss
+ 662 bytes in section .text
+ 
+ 662 bytes of CODE memory
+  50 bytes of DATA memory
+
+Errors: none
+Warnings: none

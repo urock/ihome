@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
+pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
+preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
+preferredTargets=EMUL_CODE,EMUL_TRACE_FILTER,EMUL_TRACE_START,EMUL_TRACE_STOP,STD_CODE2,STD_LOG2,STD_TRACE_START2,STD_TRACE_STOP2,org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:STD_CODE2|EMUL_CODE,EMUL_DATA,EMUL_DATA_LOG,EMUL_TRACE_FILTER,EMUL_TRACE_START,EMUL_TRACE_STOP,STD_CODE2,STD_DATA2,STD_DATA_LOG,STD_IMM2,STD_LOG2,STD_TRACE_START2,STD_TRACE_STOP2,org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:STD_CODE2|

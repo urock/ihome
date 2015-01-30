@@ -1,0 +1,376 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:37
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\inet.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\inet.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\inet.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\inet.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\inet.c
+      1          /**
+      2           * @file
+      3           * Functions common to all TCP/IPv4 modules, such as the byte order functions.
+      4           *
+      5           **/
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved.
+     10           *
+     11           * Redistribution and use in source and binary forms, with or without modification,
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission.
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           *
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #include "lwip/inet.h"
+     42          
+     43          /* Here for now until needed in other places in lwIP */
+     44          #ifndef isprint
+     45          #define in_range(c, lo, up)  ((u8_t)c >= lo && (u8_t)c <= up)
+     46          #define isprint(c)           in_range(c, 0x20, 0x7f)
+     47          #define isdigit(c)           in_range(c, '0', '9')
+     48          #define isxdigit(c)          (isdigit(c) || in_range(c, 'a', 'f') || in_range(c, 'A', 'F'))
+     49          #define islower(c)           in_range(c, 'a', 'z')
+     50          #define isspace(c)           (c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v')
+     51          #endif    
+     52              
+     53          /**
+     54           * Ascii internet address interpretation routine.
+     55           * The value returned is in network order.
+     56           *
+     57           * @param cp IP address in ascii represenation (e.g. "127.0.0.1")
+     58           * @return ip address in network order
+     59           */
+     60          u32_t
+     61          inet_addr(const char *cp)
+     62          {
+     63            struct in_addr val;
+     64          
+     65            if (inet_aton(cp, &val)) {
+     66              return (val.s_addr);
+     67            }
+     68            return (INADDR_NONE);
+     69          }
+     70          
+     71          /**
+     72           * Check whether "cp" is a valid ascii representation
+     73           * of an Internet address and convert to a binary address.
+     74           * Returns 1 if the address is valid, 0 if not.
+     75           * This replaces inet_addr, the return value from which
+     76           * cannot distinguish between failure and a local broadcast address.
+     77           *
+     78           * @param cp IP address in ascii represenation (e.g. "127.0.0.1")
+     79           * @param addr pointer to which to save the ip address in network order
+     80           * @return 1 if cp could be converted to addr, 0 on failure
+     81           */
+     82          int
+     83          inet_aton(const char *cp, struct in_addr *addr)
+     84          {
+     85            u32_t val;
+     86            u8_t base;
+     87            char c;
+     88            u32_t parts[4];
+     89            u32_t *pp = parts;
+     90          
+     91            c = *cp;
+     92            for (;;) {
+     93              /*
+     94               * Collect number up to ``.''.
+     95               * Values are specified as for C:
+     96               * 0x=hex, 0=octal, 1-9=decimal.
+     97               */
+     98              if (!isdigit(c))
+     99                return (0);
+    100              val = 0;
+    101              base = 10;
+    102              if (c == '0') {
+    103                c = *++cp;
+    104                if (c == 'x' || c == 'X') {
+    105                  base = 16;
+    106                  c = *++cp;
+    107                } else
+    108                  base = 8;
+    109              }
+    110              for (;;) {
+    111                if (isdigit(c)) {
+    112                  val = (val * base) + (int)(c - '0');
+    113                  c = *++cp;
+    114                } else if (base == 16 && isxdigit(c)) {
+    115                  val = (val << 4) | (int)(c + 10 - (islower(c) ? 'a' : 'A'));
+    116                  c = *++cp;
+    117                } else
+    118                  break;
+    119              }
+    120              if (c == '.') {
+    121                /*
+    122                 * Internet format:
+    123                 *  a.b.c.d
+    124                 *  a.b.c   (with c treated as 16 bits)
+    125                 *  a.b (with b treated as 24 bits)
+    126                 */
+    127                if (pp >= parts + 3)
+    128                  return (0);
+    129                *pp++ = val;
+    130                c = *++cp;
+    131              } else
+    132                break;
+    133            }
+    134            /*
+    135             * Check for trailing characters.
+    136             */
+    137            if (c != '\0' && !isspace(c))
+    138              return (0);
+    139            /*
+    140             * Concoct the address according to
+    141             * the number of parts specified.
+    142             */
+    143            switch (pp - parts + 1) {
+    144          
+    145            case 0:
+    146              return (0);       /* initial nondigit */
+    147          
+    148            case 1:             /* a -- 32 bits */
+    149              break;
+    150          
+    151            case 2:             /* a.b -- 8.24 bits */
+    152              if (val > 0xffffffUL)
+    153                return (0);
+    154              val |= parts[0] << 24;
+    155              break;
+    156          
+    157            case 3:             /* a.b.c -- 8.8.16 bits */
+    158              if (val > 0xffff)
+    159                return (0);
+    160              val |= (parts[0] << 24) | (parts[1] << 16);
+    161              break;
+    162          
+    163            case 4:             /* a.b.c.d -- 8.8.8.8 bits */
+    164              if (val > 0xff)
+    165                return (0);
+    166              val |= (parts[0] << 24) | (parts[1] << 16) | (parts[2] << 8);
+    167              break;
+    168            }
+    169            if (addr)
+    170              addr->s_addr = htonl(val);
+    171            return (1);
+    172          }
+    173          
+    174          /**
+    175           * Convert numeric IP address into decimal dotted ASCII representation.
+    176           * returns ptr to static buffer; not reentrant!
+    177           *
+    178           * @param addr ip address in network order to convert
+    179           * @return pointer to a global static (!) buffer that holds the ASCII
+    180           *         represenation of addr
+    181           */
+    182          char *
+    183          inet_ntoa(struct in_addr addr)
+    184          {
+    185            static char str[16];
+    186            u32_t s_addr = addr.s_addr;
+    187            char inv[3];
+    188            char *rp;
+    189            u8_t *ap;
+    190            u8_t rem;
+    191            u8_t n;
+    192            u8_t i;
+    193          
+    194            rp = str;
+    195            ap = (u8_t *)&s_addr;
+    196            for(n = 0; n < 4; n++) {
+    197              i = 0;
+    198              do {
+    199                rem = *ap % (u8_t)10;
+    200                *ap /= (u8_t)10;
+    201                inv[i++] = '0' + rem;
+    202              } while(*ap);
+    203              while(i--)
+    204                *rp++ = inv[i];
+    205              *rp++ = '.';
+    206              ap++;
+    207            }
+    208            *--rp = 0;
+    209            return str;
+    210          }
+    211          
+    212          /**
+    213           * These are reference implementations of the byte swapping functions.
+    214           * Again with the aim of being simple, correct and fully portable.
+    215           * Byte swapping is the second thing you would want to optimize. You will
+    216           * need to port it to your architecture and in your cc.h:
+    217           * 
+    218           * #define LWIP_PLATFORM_BYTESWAP 1
+    219           * #define LWIP_PLATFORM_HTONS(x) <your_htons>
+    220           * #define LWIP_PLATFORM_HTONL(x) <your_htonl>
+    221           *
+    222           * Note ntohs() and ntohl() are merely references to the htonx counterparts.
+    223           */
+    224          
+    225          #if (LWIP_PLATFORM_BYTESWAP == 0) && (BYTE_ORDER == LITTLE_ENDIAN)
+    226          
+    227          /**
+    228           * Convert an u16_t from host- to network byte order.
+    229           *
+    230           * @param n u16_t in host byte order
+    231           * @return n in network byte order
+    232           */
+    233          u16_t
+    234          htons(u16_t n)
+    235          {
+    236            return ((n & 0xff) << 8) | ((n & 0xff00) >> 8);
+    237          }
+    238          
+    239          /**
+    240           * Convert an u16_t from network- to host byte order.
+    241           *
+    242           * @param n u16_t in network byte order
+    243           * @return n in host byte order
+    244           */
+    245          u16_t
+    246          ntohs(u16_t n)
+    247          {
+    248            return htons(n);
+    249          }
+    250          
+    251          /**
+    252           * Convert an u32_t from host- to network byte order.
+    253           *
+    254           * @param n u32_t in host byte order
+    255           * @return n in network byte order
+    256           */
+    257          u32_t
+    258          htonl(u32_t n)
+    259          {
+    260            return ((n & 0xff) << 24) |
+    261              ((n & 0xff00) << 8) |
+    262              ((n & 0xff0000UL) >> 8) |
+    263              ((n & 0xff000000UL) >> 24);
+    264          }
+    265          
+    266          /**
+    267           * Convert an u32_t from network- to host byte order.
+    268           *
+    269           * @param n u32_t in network byte order
+    270           * @return n in host byte order
+    271           */
+    272          u32_t
+    273          ntohl(u32_t n)
+    274          {
+    275            return htonl(n);
+    276          }
+    277          
+    278          #endif /* (LWIP_PLATFORM_BYTESWAP == 0) && (BYTE_ORDER == LITTLE_ENDIAN) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   htonl
+       0   htons
+      16   inet_addr
+        16   -> inet_aton
+      48   inet_aton
+        48   -> htonl
+      24   inet_ntoa
+       8   ntohl
+         8   -> htonl
+       8   ntohs
+         8   -> htons
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+      24  htonl
+      12  htons
+      28  inet_addr
+     490  inet_aton
+     116  inet_ntoa
+      12  ntohl
+      14  ntohs
+      16  str
+
+ 
+  16 bytes in section .bss
+ 700 bytes in section .text
+ 
+ 700 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none

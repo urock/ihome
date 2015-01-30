@@ -1,0 +1,215 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:42
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\stats.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\stats.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\stats.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\stats.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\stats.c
+      1          /**
+      2           * @file
+      3           * Statistics module
+      4           *
+      5           **/
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved. 
+     10           * 
+     11           * Redistribution and use in source and binary forms, with or without modification, 
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission. 
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           * 
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #if LWIP_STATS /* don't build if not configured for use in lwipopts.h */
+     42          
+     43          #include "lwip/def.h"
+     44          #include "lwip/stats.h"
+     45          #include "lwip/mem.h"
+     46          
+     47          #include <string.h>
+     48          
+     49          struct stats_ lwip_stats;
+     50          
+     51          #if LWIP_STATS_DISPLAY
+     52          void
+     53          stats_display_proto(struct stats_proto *proto, char *name)
+     54          {
+     55            LWIP_PLATFORM_DIAG(("\n%s\n\t", name));
+     56            LWIP_PLATFORM_DIAG(("xmit: %"STAT_COUNTER_F"\n\t", proto->xmit)); 
+     57            LWIP_PLATFORM_DIAG(("recv: %"STAT_COUNTER_F"\n\t", proto->recv)); 
+     58            LWIP_PLATFORM_DIAG(("fw: %"STAT_COUNTER_F"\n\t", proto->fw)); 
+     59            LWIP_PLATFORM_DIAG(("drop: %"STAT_COUNTER_F"\n\t", proto->drop)); 
+     60            LWIP_PLATFORM_DIAG(("chkerr: %"STAT_COUNTER_F"\n\t", proto->chkerr)); 
+     61            LWIP_PLATFORM_DIAG(("lenerr: %"STAT_COUNTER_F"\n\t", proto->lenerr)); 
+     62            LWIP_PLATFORM_DIAG(("memerr: %"STAT_COUNTER_F"\n\t", proto->memerr)); 
+     63            LWIP_PLATFORM_DIAG(("rterr: %"STAT_COUNTER_F"\n\t", proto->rterr)); 
+     64            LWIP_PLATFORM_DIAG(("proterr: %"STAT_COUNTER_F"\n\t", proto->proterr)); 
+     65            LWIP_PLATFORM_DIAG(("opterr: %"STAT_COUNTER_F"\n\t", proto->opterr)); 
+     66            LWIP_PLATFORM_DIAG(("err: %"STAT_COUNTER_F"\n\t", proto->err)); 
+     67            LWIP_PLATFORM_DIAG(("cachehit: %"STAT_COUNTER_F"\n", proto->cachehit)); 
+     68          }
+     69          
+     70          #if IGMP_STATS
+     71          void
+     72          stats_display_igmp(struct stats_igmp *igmp)
+     73          {
+     74            LWIP_PLATFORM_DIAG(("\nIGMP\n\t"));
+     75            LWIP_PLATFORM_DIAG(("lenerr: %"STAT_COUNTER_F"\n\t", igmp->lenerr)); 
+     76            LWIP_PLATFORM_DIAG(("chkerr: %"STAT_COUNTER_F"\n\t", igmp->chkerr)); 
+     77            LWIP_PLATFORM_DIAG(("v1_rxed: %"STAT_COUNTER_F"\n\t", igmp->v1_rxed)); 
+     78            LWIP_PLATFORM_DIAG(("join_sent: %"STAT_COUNTER_F"\n\t", igmp->join_sent)); 
+     79            LWIP_PLATFORM_DIAG(("leave_sent: %"STAT_COUNTER_F"\n\t", igmp->leave_sent)); 
+     80            LWIP_PLATFORM_DIAG(("unicast_query: %"STAT_COUNTER_F"\n\t", igmp->unicast_query)); 
+     81            LWIP_PLATFORM_DIAG(("report_sent: %"STAT_COUNTER_F"\n\t", igmp->report_sent)); 
+     82            LWIP_PLATFORM_DIAG(("report_rxed: %"STAT_COUNTER_F"\n\t", igmp->report_rxed)); 
+     83            LWIP_PLATFORM_DIAG(("group_query_rxed: %"STAT_COUNTER_F"\n", igmp->group_query_rxed));
+     84          }
+     85          #endif /* IGMP_STATS */
+     86          
+     87          #if MEM_STATS || MEMP_STATS
+     88          void
+     89          stats_display_mem(struct stats_mem *mem, char *name)
+     90          {
+     91            LWIP_PLATFORM_DIAG(("\nMEM %s\n\t", name));
+     92            LWIP_PLATFORM_DIAG(("avail: %"U32_F"\n\t", (u32_t)mem->avail)); 
+     93            LWIP_PLATFORM_DIAG(("used: %"U32_F"\n\t", (u32_t)mem->used)); 
+     94            LWIP_PLATFORM_DIAG(("max: %"U32_F"\n\t", (u32_t)mem->max)); 
+     95            LWIP_PLATFORM_DIAG(("err: %"U32_F"\n", (u32_t)mem->err));
+     96          }
+     97          
+     98          #if MEMP_STATS
+     99          void
+    100          stats_display_memp(struct stats_mem *mem, int index)
+    101          {
+    102            char * memp_names[] = {
+    103          #define LWIP_MEMPOOL(name,num,size,desc) desc,
+    104          #include "lwip/memp_std.h"
+    105            };
+    106            if(index < MEMP_MAX) {
+    107              stats_display_mem(mem, memp_names[index]);
+    108            }
+    109          }
+    110          #endif /* MEMP_STATS */
+    111          #endif /* MEM_STATS || MEMP_STATS */
+    112          
+    113          #if SYS_STATS
+    114          void
+    115          stats_display_sys(struct stats_sys *sys)
+    116          {
+    117            LWIP_PLATFORM_DIAG(("\nSYS\n\t"));
+    118            LWIP_PLATFORM_DIAG(("sem.used: %"U32_F"\n\t", (u32_t)sys->sem.used)); 
+    119            LWIP_PLATFORM_DIAG(("sem.max:  %"U32_F"\n\t", (u32_t)sys->sem.max)); 
+    120            LWIP_PLATFORM_DIAG(("sem.err:  %"U32_F"\n\t", (u32_t)sys->sem.err)); 
+    121            LWIP_PLATFORM_DIAG(("mbox.used: %"U32_F"\n\t", (u32_t)sys->mbox.used)); 
+    122            LWIP_PLATFORM_DIAG(("mbox.max:  %"U32_F"\n\t", (u32_t)sys->mbox.max)); 
+    123            LWIP_PLATFORM_DIAG(("mbox.err:  %"U32_F"\n\t", (u32_t)sys->mbox.err)); 
+    124          }
+    125          #endif /* SYS_STATS */
+    126          
+    127          void
+    128          stats_display(void)
+    129          {
+    130            s16_t i;
+    131          
+    132            LINK_STATS_DISPLAY();
+    133            ETHARP_STATS_DISPLAY();
+    134            IPFRAG_STATS_DISPLAY();
+    135            IP_STATS_DISPLAY();
+    136            IGMP_STATS_DISPLAY();
+    137            ICMP_STATS_DISPLAY();
+    138            UDP_STATS_DISPLAY();
+    139            TCP_STATS_DISPLAY();
+    140            MEM_STATS_DISPLAY();
+    141            for (i = 0; i < MEMP_MAX; i++) {
+    142              MEMP_STATS_DISPLAY(i);
+    143            }
+    144            SYS_STATS_DISPLAY();
+    145          }
+    146          #endif /* LWIP_STATS_DISPLAY */
+    147          
+    148          #endif /* LWIP_STATS */
+    149          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

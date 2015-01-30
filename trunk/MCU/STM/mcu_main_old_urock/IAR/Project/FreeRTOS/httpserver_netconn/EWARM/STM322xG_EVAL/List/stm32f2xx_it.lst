@@ -1,0 +1,544 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:45
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\stm32f2xx_it.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\stm32f2xx_it.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\stm32f2xx_it.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\stm32f2xx_it.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\stm32f2xx_it.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm32f2xx_it.c 
+      4            * @author  MCD Application Team
+      5            * @version V1.1.0
+      6            * @date    07-October-2011
+      7            * @brief   Main Interrupt Service Routines.
+      8            *          This file provides template for all exceptions handler and 
+      9            *          peripherals interrupt service routine.
+     10            ******************************************************************************
+     11            * @attention
+     12            *
+     13            * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     14            * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     15            * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     16            * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     17            * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     18            * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     19            *
+     20            * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+     21            ******************************************************************************
+     22            */
+     23          
+     24          /* Includes ------------------------------------------------------------------*/
+     25          
+     26          
+     27          #include "stm32f2xx_it.h"
+     28          #include "main.h"
+     29          #include "stm32f2x7_eth.h"
+     30          
+     31          
+     32          
+     33          /* Scheduler includes */
+     34          #include "FreeRTOS.h"
+     35          #include "task.h"
+     36          #include "queue.h"
+     37          
+     38          /* lwip includes */
+     39          #include "lwip/sys.h"
+     40          
+     41          /* Private typedef -----------------------------------------------------------*/
+     42          /* Private define ------------------------------------------------------------*/
+     43          /* Private macro -------------------------------------------------------------*/
+     44          /* Private variables ---------------------------------------------------------*/
+     45          extern xSemaphoreHandle s_xSemaphore;
+     46          extern volatile xSemaphoreHandle xSemaphore_inputs[16];
+     47          /* Private function prototypes -----------------------------------------------*/
+     48          extern void xPortSysTickHandler(void); 
+     49          /* Private functions ---------------------------------------------------------*/
+     50          extern volatile struct PORT_struct PORTs[40];
+     51          //volatile 
+     52          //struct sendText_t send2host_cmd;
+     53          
+     54           /******************************************************************************/
+     55          /*            Cortex-M3 Processor Exceptions Handlers                         */
+     56          /******************************************************************************/
+     57          
+     58          /**
+     59            * @brief   This function handles NMI exception.
+     60            * @param  None
+     61            * @retval None
+     62            */
+     63          void NMI_Handler(void)
+     64          {
+     65          }
+     66          
+     67          /**
+     68            * @brief  This function handles Hard Fault exception.
+     69            * @param  None
+     70            * @retval None
+     71            */
+     72          void HardFault_Handler(void)
+     73          {
+     74            /* Go to infinite loop when Hard Fault exception occurs */
+     75            while (1)
+     76            {
+     77              led_off(LED0);
+     78          //  portCHAR PAGE_BODY[1024];
+     79          //  printf("\n\n");
+     80          //
+     81          //  strcat((char *)PAGE_BODY, "Name          State  Priority  Stack   Num\n" );
+     82          //  strcat((char *)PAGE_BODY, "---------------------------------------------\n");
+     83          //  
+     84          //    
+     85          //  /* The list of tasks and their status */
+     86          //  vTaskList((signed char *)(PAGE_BODY + strlen(PAGE_BODY)));
+     87          //  printf("\n%s\n", "task name status priority HWMTS ID");
+     88          //  strcat((char *)PAGE_BODY, "---------------------------------------------\n");
+     89          //  strcat((char *)PAGE_BODY, "B : Blocked, R : Ready, D : Deleted, S : Suspended\n\n");
+     90          //   
+     91          //  printf ("%s\n", PAGE_BODY);    
+     92            }
+     93          }
+     94          
+     95          /**
+     96            * @brief  This function handles Memory Manage exception.
+     97            * @param  None
+     98            * @retval None
+     99            */
+    100          void MemManage_Handler(void)
+    101          {
+    102            /* Go to infinite loop when Memory Manage exception occurs */
+    103            while (1)
+    104            {
+    105            }
+    106          }
+    107          
+    108          /**
+    109            * @brief  This function handles Bus Fault exception.
+    110            * @param  None
+    111            * @retval None
+    112            */
+    113          void BusFault_Handler(void)
+    114          {
+    115            /* Go to infinite loop when Bus Fault exception occurs */
+    116            while (1)
+    117            {
+    118            }
+    119          }
+    120          
+    121          /**
+    122            * @brief  This function handles Usage Fault exception.
+    123            * @param  None
+    124            * @retval None
+    125            */
+    126          void UsageFault_Handler(void)
+    127          {
+    128            /* Go to infinite loop when Usage Fault exception occurs */
+    129            while (1)
+    130            {
+    131            }
+    132          }
+    133          
+    134          /**
+    135            * @brief  This function handles SVCall exception.
+    136            * @param  None
+    137            * @retval None
+    138            */
+    139          void SVC_Handler(void)
+    140          {
+    141          }
+    142          
+    143          /**
+    144            * @brief  This function handles Debug Monitor exception.
+    145            * @param  None
+    146            * @retval None
+    147            */
+    148          void DebugMon_Handler(void)
+    149          {
+    150          }
+    151          
+    152          /**
+    153            * @brief  This function handles PendSVC exception.
+    154            * @param  None
+    155            * @retval None
+    156            */
+    157          void PendSV_Handler(void)
+    158          {
+    159          }
+    160          
+    161          /**
+    162            * @brief  This function handles SysTick Handler.
+    163            * @param  None
+    164            * @retval None
+    165            */
+    166          void SysTick_Handler(void)
+    167          {
+    168            xPortSysTickHandler(); 
+    169          }
+    170          
+    171          /**
+    172            * @brief  This function handles External line 10 interrupt request.
+    173            * @param  None
+    174            * @retval None
+    175            */
+    176          
+    177          void EXTI15_10_IRQHandler(void)
+    178          {
+    179            if(EXTI_GetITStatus(ETH_LINK_EXTI_LINE) != RESET)
+    180            {
+    181              Eth_Link_ITHandler(DP83848_PHY_ADDRESS);
+    182              /* Clear interrupt pending bit */
+    183              EXTI_ClearITPendingBit(ETH_LINK_EXTI_LINE);
+    184            }
+    185          //  ------------------------------------------------------
+    186          //  if(EXTI_GetITStatus(EXTI_Line12) != RESET)    
+    187          //  {
+    188          //    if (GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_12)== RESET){
+    189          //      // Port7 
+    190          //       LED_alarm_Toggle();
+    191          //    }
+    192          //    else if (GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_12)== RESET){
+    193          //      // Port5      
+    194          //      LED_warning_Toggle();
+    195          //    }    
+    196          //    /* Clear the EXTI line 3 pending bit */
+    197          //    EXTI_ClearITPendingBit(EXTI_Line12);
+    198          //  }
+    199          ////--------------------------------------------------------
+    200          //  if(EXTI_GetITStatus(EXTI_Line11) != RESET)    
+    201          //  {
+    202          //    if (GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_11)== RESET){
+    203          //      // Port7 
+    204          //       LED_alarm_Toggle();
+    205          //    }
+    206          //    else if (GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_11)== RESET){
+    207          //      // Port5      
+    208          //      LED_warning_Toggle();
+    209          //    }    
+    210          //    /* Clear the EXTI line 3 pending bit */
+    211          //    EXTI_ClearITPendingBit(EXTI_Line11);
+    212          //  }
+    213          //  
+    214            
+    215          //------------------  
+    216          //  if(EXTI_GetITStatus(EXTI_Line11) != RESET)  
+    217          //  {  
+    218          //
+    219          //    EXTI_ClearITPendingBit(EXTI_Line11);
+    220          //  }
+    221          ////------------------
+    222          //  if(EXTI_GetITStatus(EXTI_Line12) != RESET)  
+    223          //  {  
+    224          //
+    225          //    EXTI_ClearITPendingBit(EXTI_Line12);
+    226          //  }
+    227          //------------------
+    228          //  if(EXTI_GetITStatus(EXTI_Line13) != RESET)  //Button temper
+    229          //  {  
+    230          //    LEDOff(LED3); 
+    231          //    EXTI_ClearITPendingBit(EXTI_Line13);
+    232          //  }
+    233          //------------------  
+    234          //  if(EXTI_GetITStatus(EXTI_Line14) != RESET)  
+    235          //  {  
+    236          //
+    237          //    EXTI_ClearITPendingBit(EXTI_Line14);
+    238          //  }
+    239          //------------------  
+    240          //  if(EXTI_GetITStatus(EXTI_Line15) != RESET) //Button key  допустим что это порт 0
+    241          //  {      
+    242          //  }    
+    243          }
+    244          
+    245          /**
+    246            * @brief  This function handles External line 0 interrupt request.
+    247            * @param  None
+    248            * @retval None
+    249            */
+    250          void EXTI0_IRQHandler(void)
+    251          { 
+    252          //  if(EXTI_GetITStatus(EXTI_Line0) != RESET)
+    253          //  {
+    254          //    
+    255          //    /* Clear the EXTI line 0 pending bit */
+    256          //    EXTI_ClearITPendingBit(EXTI_Line0);
+    257          //  }
+    258          }
+    259          
+    260          /**
+    261            * @brief  This function handles External line 1 interrupt request.
+    262            * @param  None
+    263            * @retval None
+    264            */
+    265          
+    266          void EXTI1_IRQHandler(void)
+    267          {
+    268          //  if(EXTI_GetITStatus(EXTI_Line1) != RESET)
+    269          //  {
+    270          //    
+    271          //    /* Clear the EXTI line 1 pending bit */
+    272          //    EXTI_ClearITPendingBit(EXTI_Line1);
+    273          //  }
+    274          }
+    275          
+    276          /**
+    277            * @brief  This function handles External line 2 interrupt request.
+    278            * @param  None
+    279            * @retval None
+    280            */
+    281          
+    282          void EXTI2_IRQHandler(void)
+    283          { 
+    284          //  if(EXTI_GetITStatus(EXTI_Line2) != RESET)
+    285          //  {
+    286          //    
+    287          //    /* Clear the EXTI line 2 pending bit */
+    288          //    EXTI_ClearITPendingBit(EXTI_Line2);
+    289          //  }
+    290          }
+    291          
+    292          /**
+    293            * @brief  This function handles External line 3 interrupt request.
+    294            * @param  None
+    295            * @retval None
+    296            */
+    297          
+    298          void EXTI3_IRQHandler(void)
+    299          {
+    300          //  if(EXTI_GetITStatus(EXTI_Line3) != RESET)    
+    301          //  {
+    302          //    if (GPIO_ReadInputDataBit(GPIOD,GPIO_Pin_3)== RESET){
+    303          //      // Port7 
+    304          //      LED_alarm_Toggle();
+    305          //    }
+    306          //    else if (GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_3)== RESET){
+    307          //      // Port5      
+    308          //      LED_warning_Toggle();
+    309          //    }    
+    310          //    /* Clear the EXTI line 3 pending bit */
+    311          //    EXTI_ClearITPendingBit(EXTI_Line3);
+    312          //  }
+    313          }
+    314          
+    315          /**
+    316            * @brief  This function handles External line 4 interrupt request.
+    317            * @param  None
+    318            * @retval None
+    319            */
+    320          
+    321          void EXTI4_IRQHandler(void)
+    322          {
+    323          // 
+    324          //  if(EXTI_GetITStatus(EXTI_Line4) != RESET)
+    325          //  {
+    326          //    
+    327          //    /* Clear the EXTI line 4 pending bit */
+    328          //    EXTI_ClearITPendingBit(EXTI_Line4);
+    329          //  }
+    330          }
+    331          
+    332          void EXTI9_5_IRQHandler(void)
+    333          {  
+    334          //  if(EXTI_GetITStatus(Port19_EXTI_LINE) != RESET)
+    335          //  {
+    336          //    static portBASE_TYPE xHigherPriorityTaskWoken;
+    337          //
+    338          //    xHigherPriorityTaskWoken = pdFALSE;
+    339          //    
+    340          //    xSemaphoreGiveFromISR( xSemaphore_inputs[7], &xHigherPriorityTaskWoken );
+    341          //    if( xHigherPriorityTaskWoken == pdTRUE )
+    342          //    {
+    343          //     /* Выдача семафора разблокировала задачу, и приоритет разблокированной
+    344          //        задачи выше, чем у текущей задачи - принудительно переключаем
+    345          //        контекст выполнения, чтобы обеспечить возврат из ISR напрямую
+    346          //        в разблокированную (которая имеет самый высокий приоритет) задачу.
+    347          //        ВНИМАНИЕ: макрос, реально используемый для переключения контекста
+    348          //        из ISR, зависит от конкретного порта FreeRTOS. Здесь указано имя
+    349          //        макроса, корректное для порта Open Watcom DOS. Другие порты FreeRTOS
+    350          //        могут использовать другой синтаксис. Для определения используемого
+    351          //        синтаксиса обратитесь к примерам, предоставленным вместе с портом
+    352          //        FreeRTOS. */
+    353          ////        my_tasks_vReceiveButton_init ((void*)&PORTs[8 + MAX_PORTs_in_shift]);  //!!!!!!!!!!!!
+    354          //        taskYIELD();     
+    355          //        EXTI_ClearITPendingBit(Port19_EXTI_LINE);  
+    356          //    }
+    357          //  }  
+    358          //  
+    359            
+    360          //  if(EXTI_GetITStatus(Port18_EXTI_LINE) != RESET)
+    361          //  {
+    362          //    LED_warning_Toggle();
+    363          //    EXTI_ClearITPendingBit(Port18_EXTI_LINE);  
+    364          //  }  
+    365          //
+    366          //  if(EXTI_GetITStatus(Port17_EXTI_LINE) != RESET)
+    367          //  {
+    368          //    LED_warning_Toggle();
+    369          //    EXTI_ClearITPendingBit(Port17_EXTI_LINE);  
+    370          //  }  
+    371          //  
+    372          //  if(EXTI_GetITStatus(Port16_EXTI_LINE) != RESET)
+    373          //  {
+    374          //    LED_warning_Toggle();
+    375          //    EXTI_ClearITPendingBit(Port16_EXTI_LINE);  
+    376          //  }     
+    377            
+    378          }
+    379          
+    380          /**
+    381            * @brief  This function handles ethernet DMA interrupt request.
+    382            * @param  None
+    383            * @retval None
+    384            */
+    385          void ETH_IRQHandler(void)
+    386          {
+    387            portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;
+    388          
+    389            /* Frame received */
+    390            if ( ETH_GetDMAFlagStatus(ETH_DMA_FLAG_R) == SET) 
+    391            {
+    392              /* Give the semaphore to wakeup LwIP task */
+    393              xSemaphoreGiveFromISR( s_xSemaphore, &xHigherPriorityTaskWoken );   
+    394            }
+    395          	
+    396            /* Clear the interrupt flags. */
+    397            /* Clear the Eth DMA Rx IT pending bits */
+    398            ETH_DMAClearITPendingBit(ETH_DMA_IT_R);
+    399            ETH_DMAClearITPendingBit(ETH_DMA_IT_NIS);
+    400          	
+    401            /* Switch tasks if necessary. */	
+    402            if( xHigherPriorityTaskWoken != pdFALSE )
+    403            {
+    404              portEND_SWITCHING_ISR( xHigherPriorityTaskWoken );
+    405            }
+    406          }
+    407          
+    408          /******************************************************************************/
+    409          /*                 STM32F2xx Peripherals Interrupt Handlers                   */
+    410          /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */
+    411          /*  available peripheral interrupt handler's name please refer to the startup */
+    412          /*  file (startup_stm32f2xx.s).                                               */
+    413          /******************************************************************************/
+    414          /**
+    415            * @brief  This function handles PPP interrupt request.
+    416            * @param  None
+    417            * @retval None
+    418            */
+    419          /*void PPP_IRQHandler(void)
+    420          {
+    421          }*/
+    422          
+    423          
+    424          /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   BusFault_Handler
+       0   DebugMon_Handler
+       8   ETH_IRQHandler
+         8   -> ETH_DMAClearITPendingBit
+         8   -> ETH_GetDMAFlagStatus
+         8   -> xQueueGenericSendFromISR
+       0   EXTI0_IRQHandler
+       8   EXTI15_10_IRQHandler
+         8   -> EXTI_ClearITPendingBit
+         8   -> EXTI_GetITStatus
+         8   -> Eth_Link_ITHandler
+       0   EXTI1_IRQHandler
+       0   EXTI2_IRQHandler
+       0   EXTI3_IRQHandler
+       0   EXTI4_IRQHandler
+       0   EXTI9_5_IRQHandler
+       8   HardFault_Handler
+         8   -> led_off
+       0   MemManage_Handler
+       0   NMI_Handler
+       0   PendSV_Handler
+       0   SVC_Handler
+       8   SysTick_Handler
+         8   -> xPortSysTickHandler
+       0   UsageFault_Handler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       2  BusFault_Handler
+       2  DebugMon_Handler
+      66  ETH_IRQHandler
+       2  EXTI0_IRQHandler
+      30  EXTI15_10_IRQHandler
+       2  EXTI1_IRQHandler
+       2  EXTI2_IRQHandler
+       2  EXTI3_IRQHandler
+       2  EXTI4_IRQHandler
+       2  EXTI9_5_IRQHandler
+      10  HardFault_Handler
+       2  MemManage_Handler
+       2  NMI_Handler
+       2  PendSV_Handler
+       2  SVC_Handler
+       8  SysTick_Handler
+       2  UsageFault_Handler
+
+ 
+ 148 bytes in section .text
+ 
+ 148 bytes of CODE memory
+
+Errors: none
+Warnings: none

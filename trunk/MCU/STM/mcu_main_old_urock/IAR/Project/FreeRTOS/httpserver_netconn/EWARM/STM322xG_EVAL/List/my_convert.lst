@@ -1,0 +1,253 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:04 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\my_convert.c                              #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\my_convert.c -D USE_STDPERIPH_DRIVER -D   #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\my_convert.lst       #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\my_convert.o          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\my_convert.c
+      1          #include "my_convert.h"
+      2          extern volatile struct PORT_struct PORTs[MAX_PORTs];
+      3          extern struct str2int_t str2int_gi;
+      4          /**
+      5          * @brief Function convert string to integer
+      6          * @param str - string for cinverting
+      7          * @return convert integer
+      8          */
+      9          void my_convert_int2str (void){
+     10                  sprintf(str2int_gi.str, "%d", str2int_gi.val); // «аписать в device_t.port число, содержащеес€ в строке port_str
+     11          }
+     12          //---------------------------------------
+     13          
+     14          /**
+     15          * @brief Function convert string to integer
+     16          * @param str - string for cinverting
+     17          * @return convert integer
+     18          */
+     19          int my_convert_str2int (const char *str){
+     20                  uint8_t port;
+     21                  sscanf(str, "%d", &port); // «аписать в device_t.port число, содержащеес€ в строке port_str
+     22                  return port;
+     23          }
+     24          //---------------------------------------
+     25          /**
+     26          * @brief Function Convert str to structure Port_struct
+     27          * param port - number of port, *str - string to convert, how_str - tamplate 
+     28          * @return - void
+     29          */
+     30          void my_convert_toPort_struct (uint8_t port, const char *str, const char *how_str)
+     31          {
+     32            PORTs[port].num_port = port;
+     33            Ports_TypeDef port_set = getPort_name(port);    
+     34          // IF tamplate is "mode"
+     35            if (strcmp(how_str,"SetMode")==0){ //begin if mode
+     36                PORTs[port].mode =my_convert_str2PortModeTypedef(str, port_set);
+     37            }// end if mode
+     38            
+     39          // IF tamplate is "status"
+     40            if (strcmp(how_str,"SetStatus")==0){ //begin if status
+     41                PORTs[port].status =my_convert_str2PortStatusTypeDef(str);
+     42            }// end if status
+     43          
+     44          // IF tamplate is "enable"
+     45            if (strcmp(how_str,"SetEnable")==0){ //begin if enable
+     46                PORTs[port].enable =my_convert_str2PortEnableTypeDef(str);
+     47            }// end if enable
+     48            
+     49            
+     50            if (strcmp(how_str,"GetStatus")==0){  //begin if status
+     51                PORTs[port].status = getStatus(port);
+     52            }// end if status
+     53            
+     54            if (strcmp(how_str,"GetEnable")==0){  //begin if enable
+     55              PORTs[port].enable = getEnable(port);
+     56            }// end if enable
+     57            
+     58            //value and key is desimal
+     59            
+     60          }
+     61                
+     62                
+     63          //------------------------------------------------------
+     64          PortMode_TypeDef my_convert_str2PortModeTypedef(const char *str, Ports_TypeDef port_set){
+     65            if (strcmp(str,"Out_pin")== 0){
+     66              init_ports_PORTOut(port_set);
+     67              return OUT_pin;
+     68            }
+     69            else if (strcmp(str,"In_pin")== 0){
+     70              init_ports_PORTIn(port_set);
+     71              return IN_pin;
+     72            }
+     73            else if (strcmp(str,"Pwm_pin")== 0){
+     74              init_ports_PORTPwm(port_set);
+     75              return PWM_OUT_pin;
+     76            }
+     77            else if (strcmp(str,"Adc_pin")== 0){
+     78              init_ports_PORTAdc(port_set);
+     79              return ADC_IN_pin;
+     80            }
+     81            else{
+     82              init_ports_PORTIn(port_set);
+     83              return IN_pin;    
+     84            }
+     85          }
+     86          
+     87          //------------------------------------------------------------------------------      
+     88          PortStatus_TypeDef my_convert_str2PortStatusTypeDef(const char *str){
+     89            if (strcmp(str,"On")== 0){
+     90              return On;
+     91            }
+     92            else if (strcmp(str,"Off")== 0){
+     93              return Off;
+     94            }
+     95          }
+     96          
+     97          //------------------------------------------------------------------------------
+     98          
+     99          PortEnable_TypeDef my_convert_str2PortEnableTypeDef(const char *str){
+    100            if (strcmp(str,"Enable")== 0){
+    101              return enable;
+    102            }
+    103            else if (strcmp(str,"Disable")== 0){
+    104              return disable;
+    105            }  
+    106          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   my_convert_int2str
+         8   -> sprintf
+       8   my_convert_str2PortEnableTypeDef
+         8   -> strcmp
+      16   my_convert_str2PortModeTypedef
+        16   -> init_ports_PORTAdc
+        16   -> init_ports_PORTIn
+        16   -> init_ports_PORTOut
+        16   -> init_ports_PORTPwm
+        16   -> strcmp
+       8   my_convert_str2PortStatusTypeDef
+         8   -> strcmp
+      16   my_convert_str2int
+        16   -> sscanf
+      24   my_convert_toPort_struct
+        24   -> getEnable
+        24   -> getPort_name
+        24   -> getStatus
+        24   -> my_convert_str2PortEnableTypeDef
+        24   -> my_convert_str2PortModeTypedef
+        24   -> my_convert_str2PortStatusTypeDef
+        24   -> strcmp
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ?<Constant "%d">
+       8  ?<Constant "Adc_pin">
+       8  ?<Constant "Disable">
+       8  ?<Constant "Enable">
+      12  ?<Constant "GetEnable">
+      12  ?<Constant "GetStatus">
+       8  ?<Constant "In_pin">
+       4  ?<Constant "Off">
+       4  ?<Constant "On">
+       8  ?<Constant "Out_pin">
+       8  ?<Constant "Pwm_pin">
+      12  ?<Constant "SetEnable">
+       8  ?<Constant "SetMode">
+      12  ?<Constant "SetStatus">
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_10
+       4  ??DataTable5_11
+       4  ??DataTable5_12
+       4  ??DataTable5_13
+       4  ??DataTable5_14
+       4  ??DataTable5_15
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  ??DataTable5_9
+      16  my_convert_int2str
+      38  my_convert_str2PortEnableTypeDef
+     114  my_convert_str2PortModeTypedef
+      38  my_convert_str2PortStatusTypeDef
+      22  my_convert_str2int
+     190  my_convert_toPort_struct
+
+ 
+ 116 bytes in section .rodata
+ 482 bytes in section .text
+ 
+ 482 bytes of CODE  memory
+ 116 bytes of CONST memory
+
+Errors: none
+Warnings: 3

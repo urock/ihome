@@ -1,0 +1,228 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:40
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netifapi.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netifapi.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\netifapi.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\netifapi.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\netifapi.c
+      1          /**
+      2           * @file
+      3           * Network Interface Sequential API module
+      4           *
+      5           **/
+      6          
+      7          /*
+      8           * Redistribution and use in source and binary forms, with or without modification, 
+      9           * are permitted provided that the following conditions are met:
+     10           *
+     11           * 1. Redistributions of source code must retain the above copyright notice,
+     12           *    this list of conditions and the following disclaimer.
+     13           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     14           *    this list of conditions and the following disclaimer in the documentation
+     15           *    and/or other materials provided with the distribution.
+     16           * 3. The name of the author may not be used to endorse or promote products
+     17           *    derived from this software without specific prior written permission. 
+     18           *
+     19           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
+     20           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+     21           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+     22           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+     23           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+     24           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+     25           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+     26           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+     27           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+     28           * OF SUCH DAMAGE.
+     29           *
+     30           * This file is part of the lwIP TCP/IP stack.
+     31           * 
+     32           */
+     33          
+     34          #include "lwip/opt.h"
+     35          
+     36          #if LWIP_NETIF_API /* don't build if not configured for use in lwipopts.h */
+     37          
+     38          #include "lwip/netifapi.h"
+     39          #include "lwip/tcpip.h"
+     40          
+     41          /**
+     42           * Call netif_add() inside the tcpip_thread context.
+     43           */
+     44          void
+     45          do_netifapi_netif_add( struct netifapi_msg_msg *msg)
+     46          {
+     47            if (!netif_add( msg->netif,
+     48                            msg->msg.add.ipaddr,
+     49                            msg->msg.add.netmask,
+     50                            msg->msg.add.gw,
+     51                            msg->msg.add.state,
+     52                            msg->msg.add.init,
+     53                            msg->msg.add.input)) {
+     54              msg->err = ERR_IF;
+     55            } else {
+     56              msg->err = ERR_OK;
+     57            }
+     58            TCPIP_NETIFAPI_ACK(msg);
+     59          }
+     60          
+     61          /**
+     62           * Call netif_set_addr() inside the tcpip_thread context.
+     63           */
+     64          void
+     65          do_netifapi_netif_set_addr( struct netifapi_msg_msg *msg)
+     66          {
+     67            netif_set_addr( msg->netif,
+     68                            msg->msg.add.ipaddr,
+     69                            msg->msg.add.netmask,
+     70                            msg->msg.add.gw);
+     71            msg->err = ERR_OK;
+     72            TCPIP_NETIFAPI_ACK(msg);
+     73          }
+     74          
+     75          /**
+     76           * Call the "errtfunc" (or the "voidfunc" if "errtfunc" is NULL) inside the
+     77           * tcpip_thread context.
+     78           */
+     79          void
+     80          do_netifapi_netif_common( struct netifapi_msg_msg *msg)
+     81          {
+     82            if (msg->msg.common.errtfunc!=NULL) {
+     83              msg->err =
+     84              msg->msg.common.errtfunc(msg->netif);
+     85            } else {
+     86              msg->err = ERR_OK;
+     87              msg->msg.common.voidfunc(msg->netif);
+     88            }
+     89            TCPIP_NETIFAPI_ACK(msg);
+     90          }
+     91          
+     92          /**
+     93           * Call netif_add() in a thread-safe way by running that function inside the
+     94           * tcpip_thread context.
+     95           *
+     96           * @note for params @see netif_add()
+     97           */
+     98          err_t
+     99          netifapi_netif_add(struct netif *netif,
+    100                             struct ip_addr *ipaddr,
+    101                             struct ip_addr *netmask,
+    102                             struct ip_addr *gw,
+    103                             void *state,
+    104                             err_t (* init)(struct netif *netif),
+    105                             err_t (* input)(struct pbuf *p, struct netif *netif))
+    106          {
+    107            struct netifapi_msg msg;
+    108            msg.function = do_netifapi_netif_add;
+    109            msg.msg.netif = netif;
+    110            msg.msg.msg.add.ipaddr  = ipaddr;
+    111            msg.msg.msg.add.netmask = netmask;
+    112            msg.msg.msg.add.gw      = gw;
+    113            msg.msg.msg.add.state   = state;
+    114            msg.msg.msg.add.init    = init;
+    115            msg.msg.msg.add.input   = input;
+    116            TCPIP_NETIFAPI(&msg);
+    117            return msg.msg.err;
+    118          }
+    119          
+    120          /**
+    121           * Call netif_set_addr() in a thread-safe way by running that function inside the
+    122           * tcpip_thread context.
+    123           *
+    124           * @note for params @see netif_set_addr()
+    125           */
+    126          err_t
+    127          netifapi_netif_set_addr(struct netif *netif,
+    128                                  struct ip_addr *ipaddr,
+    129                                  struct ip_addr *netmask,
+    130                                  struct ip_addr *gw)
+    131          {
+    132            struct netifapi_msg msg;
+    133            msg.function = do_netifapi_netif_set_addr;
+    134            msg.msg.netif = netif;
+    135            msg.msg.msg.add.ipaddr  = ipaddr;
+    136            msg.msg.msg.add.netmask = netmask;
+    137            msg.msg.msg.add.gw      = gw;
+    138            TCPIP_NETIFAPI(&msg);
+    139            return msg.msg.err;
+    140          }
+    141          
+    142          /**
+    143           * call the "errtfunc" (or the "voidfunc" if "errtfunc" is NULL) in a thread-safe
+    144           * way by running that function inside the tcpip_thread context.
+    145           *
+    146           * @note use only for functions where there is only "netif" parameter.
+    147           */
+    148          err_t
+    149          netifapi_netif_common( struct netif *netif,
+    150                                 void  (* voidfunc)(struct netif *netif),
+    151                                 err_t (* errtfunc)(struct netif *netif) )
+    152          {
+    153            struct netifapi_msg msg;
+    154            msg.function = do_netifapi_netif_common;
+    155            msg.msg.netif = netif;
+    156            msg.msg.msg.common.voidfunc = voidfunc;
+    157            msg.msg.msg.common.errtfunc = errtfunc;
+    158            TCPIP_NETIFAPI(&msg);
+    159            return msg.msg.err;
+    160          }
+    161          
+    162          #endif /* LWIP_NETIF_API */
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

@@ -1,0 +1,25 @@
+mcu_main_03
+	Не знаю, в чем отличия...
+
+mcu_main_02
+
+	1. Обнаружение подключенных плат POWER_RELAY при старте программы
+
+mcu_main_01
+
+	1. Нахождение устройств по UDP запросу: "iHome?"
+		Ответ: Serial Number
+		
+	2. Функции общения с хостом (TCP протокол):
+		GET_RSTATE_REQ
+		SET_RSTATE_REQ
+		REPORT_RSTATE_REQ
+		
+		GET_CONFIG_T_REQ
+		SET_CONFIG_T_REQ
+		
+	3. Управление платами POWER RELAY по SPI
+			Get state, Set State
+			
+			
+

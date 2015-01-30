@@ -1,0 +1,438 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:36
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\icmp.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\icmp.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\icmp.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\icmp.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\icmp.c
+      1          /**
+      2           * @file
+      3           * ICMP - Internet Control Message Protocol
+      4           *
+      5           **/
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved.
+     10           *
+     11           * Redistribution and use in source and binary forms, with or without modification,
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission.
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           *
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          /* Some ICMP messages should be passed to the transport protocols. This
+     40             is not implemented. */
+     41          
+     42          #include "lwip/opt.h"
+     43          
+     44          #if LWIP_ICMP /* don't build if not configured for use in lwipopts.h */
+     45          
+     46          #include "lwip/icmp.h"
+     47          #include "lwip/inet.h"
+     48          #include "lwip/inet_chksum.h"
+     49          #include "lwip/ip.h"
+     50          #include "lwip/def.h"
+     51          #include "lwip/stats.h"
+     52          #include "lwip/snmp.h"
+     53          
+     54          #include <string.h>
+     55          
+     56          /** Small optimization: set to 0 if incoming PBUF_POOL pbuf always can be
+     57           * used to modify and send a response packet (and to 1 if this is not the case,
+     58           * e.g. when link header is stripped of when receiving) */
+     59          #ifndef LWIP_ICMP_ECHO_CHECK_INPUT_PBUF_LEN
+     60          #define LWIP_ICMP_ECHO_CHECK_INPUT_PBUF_LEN 1
+     61          #endif /* LWIP_ICMP_ECHO_CHECK_INPUT_PBUF_LEN */
+     62          
+     63          /* The amount of data from the original packet to return in a dest-unreachable */
+     64          #define ICMP_DEST_UNREACH_DATASIZE 8
+     65          
+     66          static void icmp_send_response(struct pbuf *p, u8_t type, u8_t code);
+     67          
+     68          /**
+     69           * Processes ICMP input packets, called from ip_input().
+     70           *
+     71           * Currently only processes icmp echo requests and sends
+     72           * out the echo response.
+     73           *
+     74           * @param p the icmp echo request packet, p->payload pointing to the ip header
+     75           * @param inp the netif on which this packet was received
+     76           */
+     77          void
+     78          icmp_input(struct pbuf *p, struct netif *inp)
+     79          {
+     80            u8_t type;
+     81          #ifdef LWIP_DEBUG
+     82            u8_t code;
+     83          #endif /* LWIP_DEBUG */
+     84            struct icmp_echo_hdr *iecho;
+     85            struct ip_hdr *iphdr;
+     86            struct ip_addr tmpaddr;
+     87            s16_t hlen;
+     88          
+     89            ICMP_STATS_INC(icmp.recv);
+     90            snmp_inc_icmpinmsgs();
+     91          
+     92          
+     93            iphdr = p->payload;
+     94            hlen = IPH_HL(iphdr) * 4;
+     95            if (pbuf_header(p, -hlen) || (p->tot_len < sizeof(u16_t)*2)) {
+     96              LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: short ICMP (%"U16_F" bytes) received\n", p->tot_len));
+     97              goto lenerr;
+     98            }
+     99          
+    100            type = *((u8_t *)p->payload);
+    101          #ifdef LWIP_DEBUG
+    102            code = *(((u8_t *)p->payload)+1);
+    103          #endif /* LWIP_DEBUG */
+    104            switch (type) {
+    105            case ICMP_ECHO:
+    106          #if !LWIP_MULTICAST_PING || !LWIP_BROADCAST_PING
+    107              {
+    108                int accepted = 1;
+    109          #if !LWIP_MULTICAST_PING
+    110                /* multicast destination address? */
+    111                if (ip_addr_ismulticast(&iphdr->dest)) {
+    112                  accepted = 0;
+    113                }
+    114          #endif /* LWIP_MULTICAST_PING */
+    115          #if !LWIP_BROADCAST_PING
+    116                /* broadcast destination address? */
+    117                if (ip_addr_isbroadcast(&iphdr->dest, inp)) {
+    118                  accepted = 0;
+    119                }
+    120          #endif /* LWIP_BROADCAST_PING */
+    121                /* broadcast or multicast destination address not acceptd? */
+    122                if (!accepted) {
+    123                  LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: Not echoing to multicast or broadcast pings\n"));
+    124                  ICMP_STATS_INC(icmp.err);
+    125                  pbuf_free(p);
+    126                  return;
+    127                }
+    128              }
+    129          #endif /* !LWIP_MULTICAST_PING || !LWIP_BROADCAST_PING */
+    130              LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: ping\n"));
+    131              if (p->tot_len < sizeof(struct icmp_echo_hdr)) {
+    132                LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: bad ICMP echo received\n"));
+    133                goto lenerr;
+    134              }
+    135              if (inet_chksum_pbuf(p) != 0) {
+    136                LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: checksum failed for received ICMP echo\n"));
+    137                pbuf_free(p);
+    138                ICMP_STATS_INC(icmp.chkerr);
+    139                snmp_inc_icmpinerrors();
+    140                return;
+    141              }
+    142          #if LWIP_ICMP_ECHO_CHECK_INPUT_PBUF_LEN
+    143              if (pbuf_header(p, (PBUF_IP_HLEN + PBUF_LINK_HLEN))) {
+    144                /* p is not big enough to contain link headers
+    145                 * allocate a new one and copy p into it
+    146                 */
+    147                struct pbuf *r;
+    148                /* switch p->payload to ip header */
+    149                if (pbuf_header(p, hlen)) {
+    150                  LWIP_ASSERT("icmp_input: moving p->payload to ip header failed\n", 0);
+    151                  goto memerr;
+    152                }
+    153                /* allocate new packet buffer with space for link headers */
+    154                r = pbuf_alloc(PBUF_LINK, p->tot_len, PBUF_RAM);
+    155                if (r == NULL) {
+    156                  LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: allocating new pbuf failed\n"));
+    157                  goto memerr;
+    158                }
+    159                LWIP_ASSERT("check that first pbuf can hold struct the ICMP header",
+    160                            (r->len >= hlen + sizeof(struct icmp_echo_hdr)));
+    161                /* copy the whole packet including ip header */
+    162                if (pbuf_copy(r, p) != ERR_OK) {
+    163                  LWIP_ASSERT("icmp_input: copying to new pbuf failed\n", 0);
+    164                  goto memerr;
+    165                }
+    166                iphdr = r->payload;
+    167                /* switch r->payload back to icmp header */
+    168                if (pbuf_header(r, -hlen)) {
+    169                  LWIP_ASSERT("icmp_input: restoring original p->payload failed\n", 0);
+    170                  goto memerr;
+    171                }
+    172                /* free the original p */
+    173                pbuf_free(p);
+    174                /* we now have an identical copy of p that has room for link headers */
+    175                p = r;
+    176              } else {
+    177                /* restore p->payload to point to icmp header */
+    178                if (pbuf_header(p, -(s16_t)(PBUF_IP_HLEN + PBUF_LINK_HLEN))) {
+    179                  LWIP_ASSERT("icmp_input: restoring original p->payload failed\n", 0);
+    180                  goto memerr;
+    181                }
+    182              }
+    183          #endif /* LWIP_ICMP_ECHO_CHECK_INPUT_PBUF_LEN */
+    184              /* At this point, all checks are OK. */
+    185              /* We generate an answer by switching the dest and src ip addresses,
+    186               * setting the icmp type to ECHO_RESPONSE and updating the checksum. */
+    187              iecho = p->payload;
+    188              tmpaddr.addr = iphdr->src.addr;
+    189              iphdr->src.addr = iphdr->dest.addr;
+    190              iphdr->dest.addr = tmpaddr.addr;
+    191              ICMPH_TYPE_SET(iecho, ICMP_ER);
+    192              
+    193          
+    194          /* This part of code has been modified by ST's MCD Application Team */
+    195          /* To use the Checksum Offload Engine for the putgoing ICMP packets,
+    196             the ICMP checksum field should be set to 0, this is required only for Tx ICMP*/
+    197          #ifdef CHECKSUM_BY_HARDWARE
+    198              iecho->chksum = 0;
+    199          #else	
+    200          	/* adjust the checksum */
+    201              if (iecho->chksum >= htons(0xffff - (ICMP_ECHO << 8))) {
+    202                iecho->chksum += htons(ICMP_ECHO << 8) + 1;
+    203              } else {
+    204                iecho->chksum += htons(ICMP_ECHO << 8);
+    205              }	
+    206          #endif
+    207          
+    208              /* Set the correct TTL and recalculate the header checksum. */
+    209              IPH_TTL_SET(iphdr, ICMP_TTL);
+    210              IPH_CHKSUM_SET(iphdr, 0);
+    211          #if CHECKSUM_GEN_IP
+    212              IPH_CHKSUM_SET(iphdr, inet_chksum(iphdr, IP_HLEN));
+    213          #endif /* CHECKSUM_GEN_IP */
+    214          
+    215              ICMP_STATS_INC(icmp.xmit);
+    216              /* increase number of messages attempted to send */
+    217              snmp_inc_icmpoutmsgs();
+    218              /* increase number of echo replies attempted to send */
+    219              snmp_inc_icmpoutechoreps();
+    220          
+    221              if(pbuf_header(p, hlen)) {
+    222                LWIP_ASSERT("Can't move over header in packet", 0);
+    223              } else {
+    224                err_t ret;
+    225                ret = ip_output_if(p, &(iphdr->src), IP_HDRINCL,
+    226                             ICMP_TTL, 0, IP_PROTO_ICMP, inp);
+    227                if (ret != ERR_OK) {
+    228                  LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: ip_output_if returned an error: %c.\n", ret));
+    229                }
+    230              }
+    231              break;
+    232            default:
+    233              LWIP_DEBUGF(ICMP_DEBUG, ("icmp_input: ICMP type %"S16_F" code %"S16_F" not supported.\n", 
+    234                          (s16_t)type, (s16_t)code));
+    235              ICMP_STATS_INC(icmp.proterr);
+    236              ICMP_STATS_INC(icmp.drop);
+    237            }
+    238            pbuf_free(p);
+    239            return;
+    240          lenerr:
+    241            pbuf_free(p);
+    242            ICMP_STATS_INC(icmp.lenerr);
+    243            snmp_inc_icmpinerrors();
+    244            return;
+    245          #if LWIP_ICMP_ECHO_CHECK_INPUT_PBUF_LEN
+    246          memerr:
+    247            pbuf_free(p);
+    248            ICMP_STATS_INC(icmp.err);
+    249            snmp_inc_icmpinerrors();
+    250            return;
+    251          #endif /* LWIP_ICMP_ECHO_CHECK_INPUT_PBUF_LEN */
+    252          }
+    253          
+    254          /**
+    255           * Send an icmp 'destination unreachable' packet, called from ip_input() if
+    256           * the transport layer protocol is unknown and from udp_input() if the local
+    257           * port is not bound.
+    258           *
+    259           * @param p the input packet for which the 'unreachable' should be sent,
+    260           *          p->payload pointing to the IP header
+    261           * @param t type of the 'unreachable' packet
+    262           */
+    263          void
+    264          icmp_dest_unreach(struct pbuf *p, enum icmp_dur_type t)
+    265          {
+    266            icmp_send_response(p, ICMP_DUR, t);
+    267          }
+    268          
+    269          #if IP_FORWARD || IP_REASSEMBLY
+    270          /**
+    271           * Send a 'time exceeded' packet, called from ip_forward() if TTL is 0.
+    272           *
+    273           * @param p the input packet for which the 'time exceeded' should be sent,
+    274           *          p->payload pointing to the IP header
+    275           * @param t type of the 'time exceeded' packet
+    276           */
+    277          void
+    278          icmp_time_exceeded(struct pbuf *p, enum icmp_te_type t)
+    279          {
+    280            icmp_send_response(p, ICMP_TE, t);
+    281          }
+    282          
+    283          #endif /* IP_FORWARD || IP_REASSEMBLY */
+    284          
+    285          /**
+    286           * Send an icmp packet in response to an incoming packet.
+    287           *
+    288           * @param p the input packet for which the 'unreachable' should be sent,
+    289           *          p->payload pointing to the IP header
+    290           * @param type Type of the ICMP header
+    291           * @param code Code of the ICMP header
+    292           */
+    293          static void
+    294          icmp_send_response(struct pbuf *p, u8_t type, u8_t code)
+    295          {
+    296            struct pbuf *q;
+    297            struct ip_hdr *iphdr;
+    298            /* we can use the echo header here */
+    299            struct icmp_echo_hdr *icmphdr;
+    300          
+    301            /* ICMP header + IP header + 8 bytes of data */
+    302            q = pbuf_alloc(PBUF_IP, sizeof(struct icmp_echo_hdr) + IP_HLEN + ICMP_DEST_UNREACH_DATASIZE,
+    303                           PBUF_RAM);
+    304            if (q == NULL) {
+    305              LWIP_DEBUGF(ICMP_DEBUG, ("icmp_time_exceeded: failed to allocate pbuf for ICMP packet.\n"));
+    306              return;
+    307            }
+    308            LWIP_ASSERT("check that first pbuf can hold icmp message",
+    309                       (q->len >= (sizeof(struct icmp_echo_hdr) + IP_HLEN + ICMP_DEST_UNREACH_DATASIZE)));
+    310          
+    311            iphdr = p->payload;
+    312            LWIP_DEBUGF(ICMP_DEBUG, ("icmp_time_exceeded from "));
+    313            ip_addr_debug_print(ICMP_DEBUG, &(iphdr->src));
+    314            LWIP_DEBUGF(ICMP_DEBUG, (" to "));
+    315            ip_addr_debug_print(ICMP_DEBUG, &(iphdr->dest));
+    316            LWIP_DEBUGF(ICMP_DEBUG, ("\n"));
+    317          
+    318            icmphdr = q->payload;
+    319            icmphdr->type = type;
+    320            icmphdr->code = code;
+    321            icmphdr->id = 0;
+    322            icmphdr->seqno = 0;
+    323          
+    324            /* copy fields from original packet */
+    325            SMEMCPY((u8_t *)q->payload + sizeof(struct icmp_echo_hdr), (u8_t *)p->payload,
+    326                    IP_HLEN + ICMP_DEST_UNREACH_DATASIZE);
+    327          
+    328            /* calculate checksum */
+    329            icmphdr->chksum = 0;
+    330            icmphdr->chksum = inet_chksum(icmphdr, q->len);
+    331            ICMP_STATS_INC(icmp.xmit);
+    332            /* increase number of messages attempted to send */
+    333            snmp_inc_icmpoutmsgs();
+    334            /* increase number of destination unreachable messages attempted to send */
+    335            snmp_inc_icmpouttimeexcds();
+    336            ip_output(q, NULL, &(iphdr->src), ICMP_TTL, 0, IP_PROTO_ICMP);
+    337            pbuf_free(q);
+    338          }
+    339          
+    340          #endif /* LWIP_ICMP */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   icmp_dest_unreach
+        16   -> icmp_send_response
+      56   icmp_input
+        56   -> htons
+        56   -> inet_chksum_pbuf
+        56   -> ip_addr_isbroadcast
+        56   -> ip_output_if
+        56   -> ntohl
+        56   -> ntohs
+        56   -> pbuf_alloc
+        56   -> pbuf_copy
+        56   -> pbuf_free
+        56   -> pbuf_header
+      48   icmp_send_response
+        48   -> __aeabi_memcpy
+        48   -> inet_chksum
+        48   -> ip_output
+        48   -> pbuf_alloc
+        48   -> pbuf_free
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      20  icmp_dest_unreach
+     406  icmp_input
+     130  icmp_send_response
+
+ 
+ 556 bytes in section .text
+ 
+ 556 bytes of CODE memory
+
+Errors: none
+Warnings: none

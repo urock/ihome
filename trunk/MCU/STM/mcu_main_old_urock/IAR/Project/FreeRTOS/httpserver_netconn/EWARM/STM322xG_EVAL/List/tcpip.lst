@@ -1,0 +1,765 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:48
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\tcpip.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\tcpip.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\tcpip.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\tcpip.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\api\tcpip.c
+      1          /**
+      2           * @file
+      3           * Sequential API Main thread module
+      4           *
+      5           */
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved.
+     10           *
+     11           * Redistribution and use in source and binary forms, with or without modification,
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission.
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           *
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #if !NO_SYS /* don't build if not configured for use in lwipopts.h */
+     42          
+     43          #include "lwip/sys.h"
+     44          #include "lwip/memp.h"
+     45          #include "lwip/pbuf.h"
+     46          #include "lwip/ip_frag.h"
+     47          #include "lwip/tcp.h"
+     48          #include "lwip/autoip.h"
+     49          #include "lwip/dhcp.h"
+     50          #include "lwip/igmp.h"
+     51          #include "lwip/dns.h"
+     52          #include "lwip/tcpip.h"
+     53          #include "lwip/init.h"
+     54          #include "netif/etharp.h"
+     55          #include "netif/ppp_oe.h"
+     56          
+     57          /* global variables */
+     58          static void (* tcpip_init_done)(void *arg);
+     59          static void *tcpip_init_done_arg;
+     60          static sys_mbox_t mbox = SYS_MBOX_NULL;
+     61          
+     62          #if LWIP_TCPIP_CORE_LOCKING
+     63          /** The global semaphore to lock the stack. */
+     64          sys_sem_t lock_tcpip_core;
+     65          #endif /* LWIP_TCPIP_CORE_LOCKING */
+     66          
+     67          #if LWIP_TCP
+     68          /* global variable that shows if the tcp timer is currently scheduled or not */
+     69          static int tcpip_tcp_timer_active;
+     70          
+     71          /**
+     72           * Timer callback function that calls tcp_tmr() and reschedules itself.
+     73           *
+     74           * @param arg unused argument
+     75           */
+     76          static void
+     77          tcpip_tcp_timer(void *arg)
+     78          {
+     79            LWIP_UNUSED_ARG(arg);
+     80          
+     81            /* call TCP timer handler */
+     82            tcp_tmr();
+     83            /* timer still needed? */
+     84            if (tcp_active_pcbs || tcp_tw_pcbs) {
+     85              /* restart timer */
+     86              sys_timeout(TCP_TMR_INTERVAL, tcpip_tcp_timer, NULL);
+     87            } else {
+     88              /* disable timer */
+     89              tcpip_tcp_timer_active = 0;
+     90            }
+     91          }
+     92          
+     93          #if !NO_SYS
+     94          /**
+     95           * Called from TCP_REG when registering a new PCB:
+     96           * the reason is to have the TCP timer only running when
+     97           * there are active (or time-wait) PCBs.
+     98           */
+     99          void
+    100          tcp_timer_needed(void)
+    101          {
+    102            /* timer is off but needed again? */
+    103            if (!tcpip_tcp_timer_active && (tcp_active_pcbs || tcp_tw_pcbs)) {
+    104              /* enable and start timer */
+    105              tcpip_tcp_timer_active = 1;
+    106              sys_timeout(TCP_TMR_INTERVAL, tcpip_tcp_timer, NULL);
+    107            }
+    108          }
+    109          #endif /* !NO_SYS */
+    110          #endif /* LWIP_TCP */
+    111          
+    112          #if IP_REASSEMBLY
+    113          /**
+    114           * Timer callback function that calls ip_reass_tmr() and reschedules itself.
+    115           *
+    116           * @param arg unused argument
+    117           */
+    118          static void
+    119          ip_reass_timer(void *arg)
+    120          {
+    121            LWIP_UNUSED_ARG(arg);
+    122            LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip: ip_reass_tmr()\n"));
+    123            ip_reass_tmr();
+    124            sys_timeout(IP_TMR_INTERVAL, ip_reass_timer, NULL);
+    125          }
+    126          #endif /* IP_REASSEMBLY */
+    127          
+    128          #if LWIP_ARP
+    129          /**
+    130           * Timer callback function that calls etharp_tmr() and reschedules itself.
+    131           *
+    132           * @param arg unused argument
+    133           */
+    134          static void
+    135          arp_timer(void *arg)
+    136          {
+    137            LWIP_UNUSED_ARG(arg);
+    138            LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip: etharp_tmr()\n"));
+    139            etharp_tmr();
+    140            sys_timeout(ARP_TMR_INTERVAL, arp_timer, NULL);
+    141          }
+    142          #endif /* LWIP_ARP */
+    143          
+    144          #if LWIP_DHCP
+    145          /**
+    146           * Timer callback function that calls dhcp_coarse_tmr() and reschedules itself.
+    147           *
+    148           * @param arg unused argument
+    149           */
+    150          static void
+    151          dhcp_timer_coarse(void *arg)
+    152          {
+    153            LWIP_UNUSED_ARG(arg);
+    154            LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip: dhcp_coarse_tmr()\n"));
+    155            dhcp_coarse_tmr();
+    156            sys_timeout(DHCP_COARSE_TIMER_MSECS, dhcp_timer_coarse, NULL);
+    157          }
+    158          
+    159          /**
+    160           * Timer callback function that calls dhcp_fine_tmr() and reschedules itself.
+    161           *
+    162           * @param arg unused argument
+    163           */
+    164          static void
+    165          dhcp_timer_fine(void *arg)
+    166          {
+    167            LWIP_UNUSED_ARG(arg);
+    168            LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip: dhcp_fine_tmr()\n"));
+    169            dhcp_fine_tmr();
+    170            sys_timeout(DHCP_FINE_TIMER_MSECS, dhcp_timer_fine, NULL);
+    171          }
+    172          #endif /* LWIP_DHCP */
+    173          
+    174          #if LWIP_AUTOIP
+    175          /**
+    176           * Timer callback function that calls autoip_tmr() and reschedules itself.
+    177           *
+    178           * @param arg unused argument
+    179           */
+    180          static void
+    181          autoip_timer(void *arg)
+    182          {
+    183            LWIP_UNUSED_ARG(arg);
+    184            LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip: autoip_tmr()\n"));
+    185            autoip_tmr();
+    186            sys_timeout(AUTOIP_TMR_INTERVAL, autoip_timer, NULL);
+    187          }
+    188          #endif /* LWIP_AUTOIP */
+    189          
+    190          #if LWIP_IGMP
+    191          /**
+    192           * Timer callback function that calls igmp_tmr() and reschedules itself.
+    193           *
+    194           * @param arg unused argument
+    195           */
+    196          static void
+    197          igmp_timer(void *arg)
+    198          {
+    199            LWIP_UNUSED_ARG(arg);
+    200            LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip: igmp_tmr()\n"));
+    201            igmp_tmr();
+    202            sys_timeout(IGMP_TMR_INTERVAL, igmp_timer, NULL);
+    203          }
+    204          #endif /* LWIP_IGMP */
+    205          
+    206          #if LWIP_DNS
+    207          /**
+    208           * Timer callback function that calls dns_tmr() and reschedules itself.
+    209           *
+    210           * @param arg unused argument
+    211           */
+    212          static void
+    213          dns_timer(void *arg)
+    214          {
+    215            LWIP_UNUSED_ARG(arg);
+    216            LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip: dns_tmr()\n"));
+    217            dns_tmr();
+    218            sys_timeout(DNS_TMR_INTERVAL, dns_timer, NULL);
+    219          }
+    220          #endif /* LWIP_DNS */
+    221          
+    222          /**
+    223           * The main lwIP thread. This thread has exclusive access to lwIP core functions
+    224           * (unless access to them is not locked). Other threads communicate with this
+    225           * thread using message boxes.
+    226           *
+    227           * It also starts all the timers to make sure they are running in the right
+    228           * thread context.
+    229           *
+    230           * @param arg unused argument
+    231           */
+    232          static void
+    233          tcpip_thread(void *arg)
+    234          {
+    235            struct tcpip_msg *msg;
+    236            LWIP_UNUSED_ARG(arg);
+    237          
+    238          #if IP_REASSEMBLY
+    239            sys_timeout(IP_TMR_INTERVAL, ip_reass_timer, NULL);
+    240          #endif /* IP_REASSEMBLY */
+    241          #if LWIP_ARP
+    242            sys_timeout(ARP_TMR_INTERVAL, arp_timer, NULL);
+    243          #endif /* LWIP_ARP */
+    244          #if LWIP_DHCP
+    245            sys_timeout(DHCP_COARSE_TIMER_MSECS, dhcp_timer_coarse, NULL);
+    246            sys_timeout(DHCP_FINE_TIMER_MSECS, dhcp_timer_fine, NULL);
+    247          #endif /* LWIP_DHCP */
+    248          #if LWIP_AUTOIP
+    249            sys_timeout(AUTOIP_TMR_INTERVAL, autoip_timer, NULL);
+    250          #endif /* LWIP_AUTOIP */
+    251          #if LWIP_IGMP
+    252            sys_timeout(IGMP_TMR_INTERVAL, igmp_timer, NULL);
+    253          #endif /* LWIP_IGMP */
+    254          #if LWIP_DNS
+    255            sys_timeout(DNS_TMR_INTERVAL, dns_timer, NULL);
+    256          #endif /* LWIP_DNS */
+    257          
+    258            if (tcpip_init_done != NULL) {
+    259              tcpip_init_done(tcpip_init_done_arg);
+    260            }
+    261          
+    262            LOCK_TCPIP_CORE();
+    263            while (1) {                          /* MAIN Loop */
+    264              sys_mbox_fetch(mbox, (void *)&msg);
+    265              switch (msg->type) {
+    266          #if LWIP_NETCONN
+    267              case TCPIP_MSG_API:
+    268                LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: API message %p\n", (void *)msg));
+    269                msg->msg.apimsg->function(&(msg->msg.apimsg->msg));
+    270                break;
+    271          #endif /* LWIP_NETCONN */
+    272          
+    273              case TCPIP_MSG_INPKT:
+    274                LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: PACKET %p\n", (void *)msg));
+    275          #if LWIP_ARP
+    276                if (msg->msg.inp.netif->flags & NETIF_FLAG_ETHARP) {
+    277                  ethernet_input(msg->msg.inp.p, msg->msg.inp.netif);
+    278                } else
+    279          #endif /* LWIP_ARP */
+    280                { ip_input(msg->msg.inp.p, msg->msg.inp.netif);
+    281                }
+    282                memp_free(MEMP_TCPIP_MSG_INPKT, msg);
+    283                break;
+    284          
+    285          #if LWIP_NETIF_API
+    286              case TCPIP_MSG_NETIFAPI:
+    287                LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: Netif API message %p\n", (void *)msg));
+    288                msg->msg.netifapimsg->function(&(msg->msg.netifapimsg->msg));
+    289                break;
+    290          #endif /* LWIP_NETIF_API */
+    291          
+    292              case TCPIP_MSG_CALLBACK:
+    293                LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: CALLBACK %p\n", (void *)msg));
+    294                msg->msg.cb.f(msg->msg.cb.ctx);
+    295                memp_free(MEMP_TCPIP_MSG_API, msg);
+    296                break;
+    297          
+    298              case TCPIP_MSG_TIMEOUT:
+    299                LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: TIMEOUT %p\n", (void *)msg));
+    300                sys_timeout(msg->msg.tmo.msecs, msg->msg.tmo.h, msg->msg.tmo.arg);
+    301                memp_free(MEMP_TCPIP_MSG_API, msg);
+    302                break;
+    303              case TCPIP_MSG_UNTIMEOUT:
+    304                LWIP_DEBUGF(TCPIP_DEBUG, ("tcpip_thread: UNTIMEOUT %p\n", (void *)msg));
+    305                sys_untimeout(msg->msg.tmo.h, msg->msg.tmo.arg);
+    306                memp_free(MEMP_TCPIP_MSG_API, msg);
+    307                break;
+    308          
+    309              default:
+    310                break;
+    311              }
+    312            }
+    313          }
+    314          
+    315          /**
+    316           * Pass a received packet to tcpip_thread for input processing
+    317           *
+    318           * @param p the received packet, p->payload pointing to the Ethernet header or
+    319           *          to an IP header (if netif doesn't got NETIF_FLAG_ETHARP flag)
+    320           * @param inp the network interface on which the packet was received
+    321           */
+    322          err_t
+    323          tcpip_input(struct pbuf *p, struct netif *inp)
+    324          {
+    325            struct tcpip_msg *msg;
+    326          
+    327            if (mbox != SYS_MBOX_NULL) {
+    328              msg = memp_malloc(MEMP_TCPIP_MSG_INPKT);
+    329              if (msg == NULL) {
+    330                return ERR_MEM;
+    331              }
+    332          
+    333              msg->type = TCPIP_MSG_INPKT;
+    334              msg->msg.inp.p = p;
+    335              msg->msg.inp.netif = inp;
+    336              if (sys_mbox_trypost(mbox, msg) != ERR_OK) {
+    337                memp_free(MEMP_TCPIP_MSG_INPKT, msg);
+    338                return ERR_MEM;
+    339              }
+    340              return ERR_OK;
+    341            }
+    342            return ERR_VAL;
+    343          }
+    344          
+    345          /**
+    346           * Call a specific function in the thread context of
+    347           * tcpip_thread for easy access synchronization.
+    348           * A function called in that way may access lwIP core code
+    349           * without fearing concurrent access.
+    350           *
+    351           * @param f the function to call
+    352           * @param ctx parameter passed to f
+    353           * @param block 1 to block until the request is posted, 0 to non-blocking mode
+    354           * @return ERR_OK if the function was called, another err_t if not
+    355           */
+    356          err_t
+    357          tcpip_callback_with_block(void (*f)(void *ctx), void *ctx, u8_t block)
+    358          {
+    359            struct tcpip_msg *msg;
+    360          
+    361            if (mbox != SYS_MBOX_NULL) {
+    362              msg = memp_malloc(MEMP_TCPIP_MSG_API);
+    363              if (msg == NULL) {
+    364                return ERR_MEM;
+    365              }
+    366          
+    367              msg->type = TCPIP_MSG_CALLBACK;
+    368              msg->msg.cb.f = f;
+    369              msg->msg.cb.ctx = ctx;
+    370              if (block) {
+    371                sys_mbox_post(mbox, msg);
+    372              } else {
+    373                if (sys_mbox_trypost(mbox, msg) != ERR_OK) {
+    374                  memp_free(MEMP_TCPIP_MSG_API, msg);
+    375                  return ERR_MEM;
+    376                }
+    377              }
+    378              return ERR_OK;
+    379            }
+    380            return ERR_VAL;
+    381          }
+    382          
+    383          /**
+    384           * call sys_timeout in tcpip_thread
+    385           *
+    386           * @param msec time in miliseconds for timeout
+    387           * @param h function to be called on timeout
+    388           * @param arg argument to pass to timeout function h
+    389           * @return ERR_MEM on memory error, ERR_OK otherwise
+    390           */
+    391          err_t
+    392          tcpip_timeout(u32_t msecs, sys_timeout_handler h, void *arg)
+    393          {
+    394            struct tcpip_msg *msg;
+    395          
+    396            if (mbox != SYS_MBOX_NULL) {
+    397              msg = memp_malloc(MEMP_TCPIP_MSG_API);
+    398              if (msg == NULL) {
+    399                return ERR_MEM;
+    400              }
+    401          
+    402              msg->type = TCPIP_MSG_TIMEOUT;
+    403              msg->msg.tmo.msecs = msecs;
+    404              msg->msg.tmo.h = h;
+    405              msg->msg.tmo.arg = arg;
+    406              sys_mbox_post(mbox, msg);
+    407              return ERR_OK;
+    408            }
+    409            return ERR_VAL;
+    410          }
+    411          
+    412          /**
+    413           * call sys_untimeout in tcpip_thread
+    414           *
+    415           * @param msec time in miliseconds for timeout
+    416           * @param h function to be called on timeout
+    417           * @param arg argument to pass to timeout function h
+    418           * @return ERR_MEM on memory error, ERR_OK otherwise
+    419           */
+    420          err_t
+    421          tcpip_untimeout(sys_timeout_handler h, void *arg)
+    422          {
+    423            struct tcpip_msg *msg;
+    424          
+    425            if (mbox != SYS_MBOX_NULL) {
+    426              msg = memp_malloc(MEMP_TCPIP_MSG_API);
+    427              if (msg == NULL) {
+    428                return ERR_MEM;
+    429              }
+    430          
+    431              msg->type = TCPIP_MSG_UNTIMEOUT;
+    432              msg->msg.tmo.h = h;
+    433              msg->msg.tmo.arg = arg;
+    434              sys_mbox_post(mbox, msg);
+    435              return ERR_OK;
+    436            }
+    437            return ERR_VAL;
+    438          }
+    439          
+    440          #if LWIP_NETCONN
+    441          /**
+    442           * Call the lower part of a netconn_* function
+    443           * This function is then running in the thread context
+    444           * of tcpip_thread and has exclusive access to lwIP core code.
+    445           *
+    446           * @param apimsg a struct containing the function to call and its parameters
+    447           * @return ERR_OK if the function was called, another err_t if not
+    448           */
+    449          err_t
+    450          tcpip_apimsg(struct api_msg *apimsg)
+    451          {
+    452            struct tcpip_msg msg;
+    453            
+    454            if (mbox != SYS_MBOX_NULL) {
+    455              msg.type = TCPIP_MSG_API;
+    456              msg.msg.apimsg = apimsg;
+    457              sys_mbox_post(mbox, &msg);
+    458              sys_arch_sem_wait(apimsg->msg.conn->op_completed, 0);
+    459              return ERR_OK;
+    460            }
+    461            return ERR_VAL;
+    462          }
+    463          
+    464          #if LWIP_TCPIP_CORE_LOCKING
+    465          /**
+    466           * Call the lower part of a netconn_* function
+    467           * This function has exclusive access to lwIP core code by locking it
+    468           * before the function is called.
+    469           *
+    470           * @param apimsg a struct containing the function to call and its parameters
+    471           * @return ERR_OK (only for compatibility fo tcpip_apimsg())
+    472           */
+    473          err_t
+    474          tcpip_apimsg_lock(struct api_msg *apimsg)
+    475          {
+    476            LOCK_TCPIP_CORE();
+    477            apimsg->function(&(apimsg->msg));
+    478            UNLOCK_TCPIP_CORE();
+    479            return ERR_OK;
+    480          
+    481          }
+    482          #endif /* LWIP_TCPIP_CORE_LOCKING */
+    483          #endif /* LWIP_NETCONN */
+    484          
+    485          #if LWIP_NETIF_API
+    486          #if !LWIP_TCPIP_CORE_LOCKING
+    487          /**
+    488           * Much like tcpip_apimsg, but calls the lower part of a netifapi_*
+    489           * function.
+    490           *
+    491           * @param netifapimsg a struct containing the function to call and its parameters
+    492           * @return error code given back by the function that was called
+    493           */
+    494          err_t
+    495          tcpip_netifapi(struct netifapi_msg* netifapimsg)
+    496          {
+    497            struct tcpip_msg msg;
+    498            
+    499            if (mbox != SYS_MBOX_NULL) {
+    500              netifapimsg->msg.sem = sys_sem_new(0);
+    501              if (netifapimsg->msg.sem == SYS_SEM_NULL) {
+    502                netifapimsg->msg.err = ERR_MEM;
+    503                return netifapimsg->msg.err;
+    504              }
+    505              
+    506              msg.type = TCPIP_MSG_NETIFAPI;
+    507              msg.msg.netifapimsg = netifapimsg;
+    508              sys_mbox_post(mbox, &msg);
+    509              sys_sem_wait(netifapimsg->msg.sem);
+    510              sys_sem_free(netifapimsg->msg.sem);
+    511              return netifapimsg->msg.err;
+    512            }
+    513            return ERR_VAL;
+    514          }
+    515          #else /* !LWIP_TCPIP_CORE_LOCKING */
+    516          /**
+    517           * Call the lower part of a netifapi_* function
+    518           * This function has exclusive access to lwIP core code by locking it
+    519           * before the function is called.
+    520           *
+    521           * @param netifapimsg a struct containing the function to call and its parameters
+    522           * @return ERR_OK (only for compatibility fo tcpip_netifapi())
+    523           */
+    524          err_t
+    525          tcpip_netifapi_lock(struct netifapi_msg* netifapimsg)
+    526          {
+    527            LOCK_TCPIP_CORE();  
+    528            netifapimsg->function(&(netifapimsg->msg));
+    529            UNLOCK_TCPIP_CORE();
+    530            return netifapimsg->msg.err;
+    531          }
+    532          #endif /* !LWIP_TCPIP_CORE_LOCKING */
+    533          #endif /* LWIP_NETIF_API */
+    534          
+    535          /**
+    536           * Initialize this module:
+    537           * - initialize all sub modules
+    538           * - start the tcpip_thread
+    539           *
+    540           * @param initfunc a function to call when tcpip_thread is running and finished initializing
+    541           * @param arg argument to pass to initfunc
+    542           */
+    543          void
+    544          tcpip_init(void (* initfunc)(void *), void *arg)
+    545          {
+    546            lwip_init();
+    547          
+    548            tcpip_init_done = initfunc;
+    549            tcpip_init_done_arg = arg;
+    550            mbox = sys_mbox_new(TCPIP_MBOX_SIZE);
+    551          #if LWIP_TCPIP_CORE_LOCKING
+    552            lock_tcpip_core = sys_sem_new(1);
+    553          #endif /* LWIP_TCPIP_CORE_LOCKING */
+    554          
+    555            sys_thread_new(TCPIP_THREAD_NAME, tcpip_thread, NULL, TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
+    556          }
+    557          
+    558          /**
+    559           * Simple callback function used with tcpip_callback to free a pbuf
+    560           * (pbuf_free has a wrong signature for tcpip_callback)
+    561           *
+    562           * @param p The pbuf (chain) to be dereferenced.
+    563           */
+    564          static void
+    565          pbuf_free_int(void *p)
+    566          {
+    567            struct pbuf *q = p;
+    568            pbuf_free(q);
+    569          }
+    570          
+    571          /**
+    572           * A simple wrapper function that allows you to free a pbuf from interrupt context.
+    573           *
+    574           * @param p The pbuf (chain) to be dereferenced.
+    575           * @return ERR_OK if callback could be enqueued, an err_t if not
+    576           */
+    577          err_t
+    578          pbuf_free_callback(struct pbuf *p)
+    579          {
+    580            return tcpip_callback_with_block(pbuf_free_int, p, 0);
+    581          }
+    582          
+    583          /**
+    584           * A simple wrapper function that allows you to free heap memory from
+    585           * interrupt context.
+    586           *
+    587           * @param m the heap memory to free
+    588           * @return ERR_OK if callback could be enqueued, an err_t if not
+    589           */
+    590          err_t
+    591          mem_free_callback(void *m)
+    592          {
+    593            return tcpip_callback_with_block(mem_free, m, 0);
+    594          }
+    595          
+    596          #endif /* !NO_SYS */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   arp_timer
+         8   -> etharp_tmr
+         8   -> sys_timeout
+       8   autoip_timer
+         8   -> autoip_tmr
+         8   -> sys_timeout
+       8   dhcp_timer_coarse
+         8   -> dhcp_coarse_tmr
+         8   -> sys_timeout
+       8   dhcp_timer_fine
+         8   -> dhcp_fine_tmr
+         8   -> sys_timeout
+       8   mem_free_callback
+         8   -> tcpip_callback_with_block
+       8   pbuf_free_callback
+         8   -> tcpip_callback_with_block
+       8   pbuf_free_int
+         8   -> pbuf_free
+       8   tcp_timer_needed
+         8   -> sys_timeout
+      32   tcpip_apimsg
+        32   -> sys_arch_sem_wait
+        32   -> sys_mbox_post
+      24   tcpip_callback_with_block
+        24   -> memp_free
+        24   -> memp_malloc
+        24   -> sys_mbox_post
+        24   -> sys_mbox_trypost
+      16   tcpip_init
+        16   -> lwip_init
+        16   -> sys_mbox_new
+        16   -> sys_thread_new
+      16   tcpip_input
+        16   -> memp_free
+        16   -> memp_malloc
+        16   -> sys_mbox_trypost
+       8   tcpip_tcp_timer
+         8   -> sys_timeout
+         8   -> tcp_tmr
+      16   tcpip_thread
+        16   -- Indirect call
+        16   -> ethernet_input
+        16   -> ip_input
+        16   -> memp_free
+        16   -> sys_mbox_fetch
+        16   -> sys_timeout
+        16   -> sys_untimeout
+      24   tcpip_timeout
+        24   -> memp_malloc
+        24   -> sys_mbox_post
+      16   tcpip_untimeout
+        16   -> memp_malloc
+        16   -> sys_mbox_post
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_10
+       4  ??DataTable14_11
+       4  ??DataTable14_12
+       4  ??DataTable14_13
+       4  ??DataTable14_14
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+       8  ?_0
+      22  arp_timer
+      20  autoip_timer
+      22  dhcp_timer_coarse
+      22  dhcp_timer_fine
+       4  mbox
+      16  mem_free_callback
+      16  pbuf_free_callback
+      12  pbuf_free_int
+      44  tcp_timer_needed
+      54  tcpip_apimsg
+      98  tcpip_callback_with_block
+      48  tcpip_init
+       4  tcpip_init_done
+       4  tcpip_init_done_arg
+      78  tcpip_input
+      50  tcpip_tcp_timer
+       4  tcpip_tcp_timer_active
+     236  tcpip_thread
+      64  tcpip_timeout
+      60  tcpip_untimeout
+
+ 
+  16 bytes in section .bss
+   8 bytes in section .rodata
+ 922 bytes in section .text
+ 
+ 922 bytes of CODE  memory
+   8 bytes of CONST memory
+  16 bytes of DATA  memory
+
+Errors: none
+Warnings: none

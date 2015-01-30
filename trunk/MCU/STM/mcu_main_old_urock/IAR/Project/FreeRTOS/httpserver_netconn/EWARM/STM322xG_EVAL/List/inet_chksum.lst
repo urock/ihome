@@ -1,0 +1,527 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:37
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\inet_chksum.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\inet_chksum.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\inet_chksum.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\inet_chksum.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Utilities\Third_Party\lwip_v1.3.2\src\core\ipv4\inet_chksum.c
+      1          /**
+      2           * @file
+      3           * Incluse internet checksum functions.
+      4           *
+      5           **/
+      6          
+      7          /*
+      8           * Copyright (c) 2001-2004 Swedish Institute of Computer Science.
+      9           * All rights reserved.
+     10           *
+     11           * Redistribution and use in source and binary forms, with or without modification,
+     12           * are permitted provided that the following conditions are met:
+     13           *
+     14           * 1. Redistributions of source code must retain the above copyright notice,
+     15           *    this list of conditions and the following disclaimer.
+     16           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     17           *    this list of conditions and the following disclaimer in the documentation
+     18           *    and/or other materials provided with the distribution.
+     19           * 3. The name of the author may not be used to endorse or promote products
+     20           *    derived from this software without specific prior written permission.
+     21           *
+     22           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+     23           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     24           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+     25           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+     26           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+     27           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+     28           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+     29           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+     30           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+     31           * OF SUCH DAMAGE.
+     32           *
+     33           * This file is part of the lwIP TCP/IP stack.
+     34           *
+     35           * Author: Adam Dunkels <adam@sics.se>
+     36           *
+     37           */
+     38          
+     39          #include "lwip/opt.h"
+     40          
+     41          #include "lwip/inet_chksum.h"
+     42          #include "lwip/inet.h"
+     43          
+     44          #include <stddef.h>
+     45          
+     46          /* These are some reference implementations of the checksum algorithm, with the
+     47           * aim of being simple, correct and fully portable. Checksumming is the
+     48           * first thing you would want to optimize for your platform. If you create
+     49           * your own version, link it in and in your cc.h put:
+     50           * 
+     51           * #define LWIP_CHKSUM <your_checksum_routine> 
+     52           *
+     53           * Or you can select from the implementations below by defining
+     54           * LWIP_CHKSUM_ALGORITHM to 1, 2 or 3.
+     55           */
+     56          
+     57          #ifndef LWIP_CHKSUM
+     58          # define LWIP_CHKSUM lwip_standard_chksum
+     59          # ifndef LWIP_CHKSUM_ALGORITHM
+     60          #  define LWIP_CHKSUM_ALGORITHM 1
+     61          # endif
+     62          #endif
+     63          /* If none set: */
+     64          #ifndef LWIP_CHKSUM_ALGORITHM
+     65          # define LWIP_CHKSUM_ALGORITHM 0
+     66          #endif
+     67          
+     68          /** Like the name says... */
+     69          #if LWIP_PLATFORM_BYTESWAP && (BYTE_ORDER == LITTLE_ENDIAN)
+     70          /* little endian and PLATFORM_BYTESWAP defined */
+     71          #define SWAP_BYTES_IN_WORD(w) LWIP_PLATFORM_HTONS(w)
+     72          #else
+     73          /* can't use htons on big endian (or PLATFORM_BYTESWAP not defined)... */
+     74          #define SWAP_BYTES_IN_WORD(w) ((w & 0xff) << 8) | ((w & 0xff00) >> 8)
+     75          #endif
+     76          
+     77          /** Split an u32_t in two u16_ts and add them up */
+     78          #define FOLD_U32T(u)          ((u >> 16) + (u & 0x0000ffffUL))
+     79          
+     80          #if (LWIP_CHKSUM_ALGORITHM == 1) /* Version #1 */
+     81          /**
+     82           * lwip checksum
+     83           *
+     84           * @param dataptr points to start of data to be summed at any boundary
+     85           * @param len length of data to be summed
+     86           * @return host order (!) lwip checksum (non-inverted Internet sum) 
+     87           *
+     88           * @note accumulator size limits summable length to 64k
+     89           * @note host endianess is irrelevant (p3 RFC1071)
+     90           */
+     91          static u16_t
+     92          lwip_standard_chksum(void *dataptr, u16_t len)
+     93          {
+     94            u32_t acc;
+     95            u16_t src;
+     96            u8_t *octetptr;
+     97          
+     98            acc = 0;
+     99            /* dataptr may be at odd or even addresses */
+    100            octetptr = (u8_t*)dataptr;
+    101            while (len > 1) {
+    102              /* declare first octet as most significant
+    103                 thus assume network order, ignoring host order */
+    104              src = (*octetptr) << 8;
+    105              octetptr++;
+    106              /* declare second octet as least significant */
+    107              src |= (*octetptr);
+    108              octetptr++;
+    109              acc += src;
+    110              len -= 2;
+    111            }
+    112            if (len > 0) {
+    113              /* accumulate remaining octet */
+    114              src = (*octetptr) << 8;
+    115              acc += src;
+    116            }
+    117            /* add deferred carry bits */
+    118            acc = (acc >> 16) + (acc & 0x0000ffffUL);
+    119            if ((acc & 0xffff0000UL) != 0) {
+    120              acc = (acc >> 16) + (acc & 0x0000ffffUL);
+    121            }
+    122            /* This maybe a little confusing: reorder sum using htons()
+    123               instead of ntohs() since it has a little less call overhead.
+    124               The caller must invert bits for Internet sum ! */
+    125            return htons((u16_t)acc);
+    126          }
+    127          #endif
+    128          
+    129          #if (LWIP_CHKSUM_ALGORITHM == 2) /* Alternative version #2 */
+    130          /*
+    131           * Curt McDowell
+    132           * Broadcom Corp.
+    133           * csm@broadcom.com
+    134           *
+    135           * IP checksum two bytes at a time with support for
+    136           * unaligned buffer.
+    137           * Works for len up to and including 0x20000.
+    138           * by Curt McDowell, Broadcom Corp. 12/08/2005
+    139           *
+    140           * @param dataptr points to start of data to be summed at any boundary
+    141           * @param len length of data to be summed
+    142           * @return host order (!) lwip checksum (non-inverted Internet sum) 
+    143           */
+    144          
+    145          static u16_t
+    146          lwip_standard_chksum(void *dataptr, int len)
+    147          {
+    148            u8_t *pb = dataptr;
+    149            u16_t *ps, t = 0;
+    150            u32_t sum = 0;
+    151            int odd = ((u32_t)pb & 1);
+    152          
+    153            /* Get aligned to u16_t */
+    154            if (odd && len > 0) {
+    155              ((u8_t *)&t)[1] = *pb++;
+    156              len--;
+    157            }
+    158          
+    159            /* Add the bulk of the data */
+    160            ps = (u16_t *)pb;
+    161            while (len > 1) {
+    162              sum += *ps++;
+    163              len -= 2;
+    164            }
+    165          
+    166            /* Consume left-over byte, if any */
+    167            if (len > 0) {
+    168              ((u8_t *)&t)[0] = *(u8_t *)ps;;
+    169            }
+    170          
+    171            /* Add end bytes */
+    172            sum += t;
+    173          
+    174            /* Fold 32-bit sum to 16 bits
+    175               calling this twice is propably faster than if statements... */
+    176            sum = FOLD_U32T(sum);
+    177            sum = FOLD_U32T(sum);
+    178          
+    179            /* Swap if alignment was odd */
+    180            if (odd) {
+    181              sum = SWAP_BYTES_IN_WORD(sum);
+    182            }
+    183          
+    184            return sum;
+    185          }
+    186          #endif
+    187          
+    188          #if (LWIP_CHKSUM_ALGORITHM == 3) /* Alternative version #3 */
+    189          /**
+    190           * An optimized checksum routine. Basically, it uses loop-unrolling on
+    191           * the checksum loop, treating the head and tail bytes specially, whereas
+    192           * the inner loop acts on 8 bytes at a time. 
+    193           *
+    194           * @arg start of buffer to be checksummed. May be an odd byte address.
+    195           * @len number of bytes in the buffer to be checksummed.
+    196           * @return host order (!) lwip checksum (non-inverted Internet sum) 
+    197           * 
+    198           * by Curt McDowell, Broadcom Corp. December 8th, 2005
+    199           */
+    200          
+    201          static u16_t
+    202          lwip_standard_chksum(void *dataptr, int len)
+    203          {
+    204            u8_t *pb = dataptr;
+    205            u16_t *ps, t = 0;
+    206            u32_t *pl;
+    207            u32_t sum = 0, tmp;
+    208            /* starts at odd byte address? */
+    209            int odd = ((u32_t)pb & 1);
+    210          
+    211            if (odd && len > 0) {
+    212              ((u8_t *)&t)[1] = *pb++;
+    213              len--;
+    214            }
+    215          
+    216            ps = (u16_t *)pb;
+    217          
+    218            if (((u32_t)ps & 3) && len > 1) {
+    219              sum += *ps++;
+    220              len -= 2;
+    221            }
+    222          
+    223            pl = (u32_t *)ps;
+    224          
+    225            while (len > 7)  {
+    226              tmp = sum + *pl++;          /* ping */
+    227              if (tmp < sum) {
+    228                tmp++;                    /* add back carry */
+    229              }
+    230          
+    231              sum = tmp + *pl++;          /* pong */
+    232              if (sum < tmp) {
+    233                sum++;                    /* add back carry */
+    234              }
+    235          
+    236              len -= 8;
+    237            }
+    238          
+    239            /* make room in upper bits */
+    240            sum = FOLD_U32T(sum);
+    241          
+    242            ps = (u16_t *)pl;
+    243          
+    244            /* 16-bit aligned word remaining? */
+    245            while (len > 1) {
+    246              sum += *ps++;
+    247              len -= 2;
+    248            }
+    249          
+    250            /* dangling tail byte remaining? */
+    251            if (len > 0) {                /* include odd byte */
+    252              ((u8_t *)&t)[0] = *(u8_t *)ps;
+    253            }
+    254          
+    255            sum += t;                     /* add end bytes */
+    256          
+    257            /* Fold 32-bit sum to 16 bits
+    258               calling this twice is propably faster than if statements... */
+    259            sum = FOLD_U32T(sum);
+    260            sum = FOLD_U32T(sum);
+    261          
+    262            if (odd) {
+    263              sum = SWAP_BYTES_IN_WORD(sum);
+    264            }
+    265          
+    266            return sum;
+    267          }
+    268          #endif
+    269          
+    270          /* inet_chksum_pseudo:
+    271           *
+    272           * Calculates the pseudo Internet checksum used by TCP and UDP for a pbuf chain.
+    273           * IP addresses are expected to be in network byte order.
+    274           *
+    275           * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+    276           * @param src source ip address (used for checksum of pseudo header)
+    277           * @param dst destination ip address (used for checksum of pseudo header)
+    278           * @param proto ip protocol (used for checksum of pseudo header)
+    279           * @param proto_len length of the ip data part (used for checksum of pseudo header)
+    280           * @return checksum (as u16_t) to be saved directly in the protocol header
+    281           */
+    282          u16_t
+    283          inet_chksum_pseudo(struct pbuf *p,
+    284                 struct ip_addr *src, struct ip_addr *dest,
+    285                 u8_t proto, u16_t proto_len)
+    286          {
+    287            u32_t acc;
+    288            struct pbuf *q;
+    289            u8_t swapped;
+    290          
+    291            acc = 0;
+    292            swapped = 0;
+    293            /* iterate through all pbuf in chain */
+    294            for(q = p; q != NULL; q = q->next) {
+    295              LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): checksumming pbuf %p (has next %p) \n",
+    296                (void *)q, (void *)q->next));
+    297              acc += LWIP_CHKSUM(q->payload, q->len);
+    298              /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): unwrapped lwip_chksum()=%"X32_F" \n", acc));*/
+    299              /* just executing this next line is probably faster that the if statement needed
+    300                 to check whether we really need to execute it, and does no harm */
+    301              acc = FOLD_U32T(acc);
+    302              if (q->len % 2 != 0) {
+    303                swapped = 1 - swapped;
+    304                acc = SWAP_BYTES_IN_WORD(acc);
+    305              }
+    306              /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): wrapped lwip_chksum()=%"X32_F" \n", acc));*/
+    307            }
+    308          
+    309            if (swapped) {
+    310              acc = SWAP_BYTES_IN_WORD(acc);
+    311            }
+    312            acc += (src->addr & 0xffffUL);
+    313            acc += ((src->addr >> 16) & 0xffffUL);
+    314            acc += (dest->addr & 0xffffUL);
+    315            acc += ((dest->addr >> 16) & 0xffffUL);
+    316            acc += (u32_t)htons((u16_t)proto);
+    317            acc += (u32_t)htons(proto_len);
+    318          
+    319            /* Fold 32-bit sum to 16 bits
+    320               calling this twice is propably faster than if statements... */
+    321            acc = FOLD_U32T(acc);
+    322            acc = FOLD_U32T(acc);
+    323            LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): pbuf chain lwip_chksum()=%"X32_F"\n", acc));
+    324            return (u16_t)~(acc & 0xffffUL);
+    325          }
+    326          
+    327          /* inet_chksum_pseudo:
+    328           *
+    329           * Calculates the pseudo Internet checksum used by TCP and UDP for a pbuf chain.
+    330           * IP addresses are expected to be in network byte order.
+    331           *
+    332           * @param p chain of pbufs over that a checksum should be calculated (ip data part)
+    333           * @param src source ip address (used for checksum of pseudo header)
+    334           * @param dst destination ip address (used for checksum of pseudo header)
+    335           * @param proto ip protocol (used for checksum of pseudo header)
+    336           * @param proto_len length of the ip data part (used for checksum of pseudo header)
+    337           * @return checksum (as u16_t) to be saved directly in the protocol header
+    338           */
+    339          /* Currently only used by UDPLITE, although this could change in the future. */
+    340          #if LWIP_UDPLITE
+    341          u16_t
+    342          inet_chksum_pseudo_partial(struct pbuf *p,
+    343                 struct ip_addr *src, struct ip_addr *dest,
+    344                 u8_t proto, u16_t proto_len, u16_t chksum_len)
+    345          {
+    346            u32_t acc;
+    347            struct pbuf *q;
+    348            u8_t swapped;
+    349            u16_t chklen;
+    350          
+    351            acc = 0;
+    352            swapped = 0;
+    353            /* iterate through all pbuf in chain */
+    354            for(q = p; (q != NULL) && (chksum_len > 0); q = q->next) {
+    355              LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): checksumming pbuf %p (has next %p) \n",
+    356                (void *)q, (void *)q->next));
+    357              chklen = q->len;
+    358              if (chklen > chksum_len) {
+    359                chklen = chksum_len;
+    360              }
+    361              acc += LWIP_CHKSUM(q->payload, chklen);
+    362              chksum_len -= chklen;
+    363              LWIP_ASSERT("delete me", chksum_len < 0x7fff);
+    364              /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): unwrapped lwip_chksum()=%"X32_F" \n", acc));*/
+    365              /* fold the upper bit down */
+    366              acc = FOLD_U32T(acc);
+    367              if (q->len % 2 != 0) {
+    368                swapped = 1 - swapped;
+    369                acc = SWAP_BYTES_IN_WORD(acc);
+    370              }
+    371              /*LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): wrapped lwip_chksum()=%"X32_F" \n", acc));*/
+    372            }
+    373          
+    374            if (swapped) {
+    375              acc = SWAP_BYTES_IN_WORD(acc);
+    376            }
+    377            acc += (src->addr & 0xffffUL);
+    378            acc += ((src->addr >> 16) & 0xffffUL);
+    379            acc += (dest->addr & 0xffffUL);
+    380            acc += ((dest->addr >> 16) & 0xffffUL);
+    381            acc += (u32_t)htons((u16_t)proto);
+    382            acc += (u32_t)htons(proto_len);
+    383          
+    384            /* Fold 32-bit sum to 16 bits
+    385               calling this twice is propably faster than if statements... */
+    386            acc = FOLD_U32T(acc);
+    387            acc = FOLD_U32T(acc);
+    388            LWIP_DEBUGF(INET_DEBUG, ("inet_chksum_pseudo(): pbuf chain lwip_chksum()=%"X32_F"\n", acc));
+    389            return (u16_t)~(acc & 0xffffUL);
+    390          }
+    391          #endif /* LWIP_UDPLITE */
+    392          
+    393          /* inet_chksum:
+    394           *
+    395           * Calculates the Internet checksum over a portion of memory. Used primarily for IP
+    396           * and ICMP.
+    397           *
+    398           * @param dataptr start of the buffer to calculate the checksum (no alignment needed)
+    399           * @param len length of the buffer to calculate the checksum
+    400           * @return checksum (as u16_t) to be saved directly in the protocol header
+    401           */
+    402          
+    403          u16_t
+    404          inet_chksum(void *dataptr, u16_t len)
+    405          {
+    406            return ~LWIP_CHKSUM(dataptr, len);
+    407          }
+    408          
+    409          /**
+    410           * Calculate a checksum over a chain of pbufs (without pseudo-header, much like
+    411           * inet_chksum only pbufs are used).
+    412           *
+    413           * @param p pbuf chain over that the checksum should be calculated
+    414           * @return checksum (as u16_t) to be saved directly in the protocol header
+    415           */
+    416          u16_t
+    417          inet_chksum_pbuf(struct pbuf *p)
+    418          {
+    419            u32_t acc;
+    420            struct pbuf *q;
+    421            u8_t swapped;
+    422          
+    423            acc = 0;
+    424            swapped = 0;
+    425            for(q = p; q != NULL; q = q->next) {
+    426              acc += LWIP_CHKSUM(q->payload, q->len);
+    427              acc = FOLD_U32T(acc);
+    428              if (q->len % 2 != 0) {
+    429                swapped = 1 - swapped;
+    430                acc = SWAP_BYTES_IN_WORD(acc);
+    431              }
+    432            }
+    433          
+    434            if (swapped) {
+    435              acc = SWAP_BYTES_IN_WORD(acc);
+    436            }
+    437            return (u16_t)~(acc & 0xffffUL);
+    438          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   inet_chksum
+        16   -> lwip_standard_chksum
+      24   inet_chksum_pbuf
+        24   -> lwip_standard_chksum
+      40   inet_chksum_pseudo
+        40   -> htons
+        40   -> lwip_standard_chksum
+      24   lwip_standard_chksum
+        24   -> htons
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      22  inet_chksum
+      92  inet_chksum_pbuf
+     204  inet_chksum_pseudo
+     100  lwip_standard_chksum
+
+ 
+ 418 bytes in section .text
+ 
+ 418 bytes of CODE memory
+
+Errors: none
+Warnings: none

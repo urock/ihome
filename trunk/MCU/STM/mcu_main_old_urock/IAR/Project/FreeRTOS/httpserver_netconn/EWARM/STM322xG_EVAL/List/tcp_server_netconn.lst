@@ -1,0 +1,361 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.70.2.6274/W32 for ARM      11/Jul/2014  14:16:52 #
+# Copyright 1999-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\src\tcp_server_netconn.c                 #
+#    Command line =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\src\tcp_server_netconn.c -D              #
+#                    USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL   #
+#                    -lcN C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTO #
+#                    S\httpserver_netconn\EWARM\STM322xG_EVAL\List\ -o        #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse        #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.7\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\inc\ -I                         #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\De #
+#                    viceSupport\ST\STM32F2xx\ -I                             #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_St #
+#                    dPeriph_Driver\inc\ -I C:\ihome\MCU\STM\trunk\mcu_main\I #
+#                    AR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\.. #
+#                    \Libraries\STM32F2x7_ETH_Driver\inc\ -I                  #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\C #
+#                    ommon\ -I C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\Fr #
+#                    eeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ST #
+#                    M32_EVAL\STM322xG_EVAL\ -I C:\ihome\MCU\STM\trunk\mcu_ma #
+#                    in\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\. #
+#                    .\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ -I   #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\src\include\lwip\ -I                         #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\src\include\netif\ -I                        #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\src\include\ipv4\ -I                         #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\port\STM32F2x7\ -I                           #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\port\STM32F2x7\FreeRTOS\ -I                  #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\include\ -On --use_c++_inline -I         #
+#                    "C:\Program Files (x86)\IAR Systems\Embedded Workbench   #
+#                    6.7\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\STM322xG_EVAL\List\tcp_server_netc #
+#                    onn.lst                                                  #
+#    Object file  =  C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\STM322xG_EVAL\Obj\tcp_server_netco #
+#                    nn.o                                                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\tcp_server_netconn.c
+      1          /* Includes ------------------------------------------------------------------*/
+      2          #include "main.h"
+      3          #include "tcp_server_netconn.h"
+      4          #include "tcp_protocol.h"
+      5          #include "flash.h"
+      6          
+      7          extern xQueueHandle power_control_queue ;
+      8          //extern xQueueHandle tcp_client_queue ;
+      9          
+     10          extern xSemaphoreHandle xUSARTSemaphore;
+     11          
+     12          extern uint8_t	current_relay_state[NUM_RELAY_BOARDS];
+     13          extern mcu_config_t	mcu_config;
+     14          
+     15          
+     16          void process_buffer(struct netconn *conn, void *buf, uint16_t buflen)
+     17          {
+     18          	uint8_t *lbuf;			// local buffer ptr
+     19          	uint8_t	n;				// number of boards
+     20          
+     21          	uint8_t wr_buf[MAX_TCP_MSG_SIZE];	// write buffer to send to host
+     22          	uint8_t *tmp_ptr;
+     23          
+     24          	uint16_t data16;
+     25          
+     26          
+     27          	int i;
+     28          
+     29          	lbuf = (uint8_t *)buf;
+     30          
+     31          	if (lbuf[0] == CID_RELAY) {
+     32          
+     33          		if (lbuf[1] == GET_RSTATE_REQ) {
+     34          
+     35          			// get number of boards to address
+     36          			// in this case it equals to number of payload bytes
+     37          			// skip lbuf[2] - MSB of length
+     38          			n = lbuf[3];
+     39          
+     40          			if (n > NUM_RELAY_BOARDS) {			// data field error
+     41          
+     42          				send_simple_answer(conn, CID_RELAY, MSG_ERROR, 1, ERROR_DATA);
+     43          
+     44          			} else {
+     45          
+     46          				//prepare write buffer
+     47          				wr_buf[0] = CID_RELAY;
+     48          				wr_buf[1] = GET_RSTATE_ANS;
+     49          				wr_buf[2] = 0; 		// MSB of Length
+     50          				wr_buf[3] = 2*n;	// LSB of length
+     51          
+     52          				for(i = 0; i<n; i++) {
+     53          					wr_buf[2*i + 4] = lbuf[i+4];
+     54          					wr_buf[2*i + 5] = current_relay_state[lbuf[i+4]];
+     55          				}
+     56          
+     57          				netconn_write(conn,wr_buf,2*n+4,NETCONN_COPY);
+     58          			}
+     59          
+     60          		} 	// lbuf[1] == GET_RSTATE_REQ
+     61          
+     62          		else if (lbuf[1] == SET_RSTATE_REQ) {
+     63          
+     64          			// get number of boards to address
+     65          			// in this case it equals to half of number of payload bytes
+     66          			// skip lbuf[2] - MSB of length
+     67          			n = (lbuf[3] >> 1);
+     68          
+     69          			if (n > NUM_RELAY_BOARDS) {			// data field error
+     70          
+     71          				send_simple_answer(conn, CID_RELAY, MSG_ERROR, 1, ERROR_DATA);
+     72          
+     73          			} else {
+     74          
+     75          
+     76          				for (i=0; i<n; i++) {
+     77          					data16 =  ((uint16_t)lbuf[2*i+4] << 8) + lbuf[2*i+5];
+     78          					xQueueSend(power_control_queue, &data16, QUEUE_WRITE_TICKS_TO_WAIT);
+     79          				}
+     80          
+     81          				send_simple_answer(conn, CID_RELAY, SET_RSTATE_ACK, 0, 0);
+     82          
+     83          			}
+     84          
+     85          		}	// lbuf[1] == SET_RSTATE_REQ
+     86          
+     87          		else {
+     88          
+     89          			send_simple_answer(conn, CID_RELAY, MSG_ERROR, 1, ERROR_CPAR_NACK);
+     90          
+     91          		}
+     92          
+     93          	} // lbuf[0] == CID_RELAY
+     94          
+     95          	else if (lbuf[0] == CID_CONFIG) {
+     96          
+     97          		if (lbuf[1] == GET_CONFIG_T_REQ) {		// host reads mcu_config
+     98          
+     99          			//prepare write buffer
+    100          			wr_buf[0] = CID_CONFIG;
+    101          			wr_buf[1] = GET_CONFIG_T_ANS;
+    102          			wr_buf[2] = 0; 		// MSB of Length
+    103          			wr_buf[3] = sizeof(mcu_config_t);	// LSB of length
+    104          
+    105          			tmp_ptr = (uint8_t *)(&mcu_config);
+    106          			for(i = 0; i<sizeof(mcu_config_t); i++) {
+    107          				wr_buf[i + 4] = *tmp_ptr++;
+    108          			}
+    109          
+    110          			netconn_write(conn, wr_buf, 4 + sizeof(mcu_config_t), NETCONN_COPY);
+    111          
+    112          
+    113          		}
+    114          
+    115          		else if (lbuf[1] == SET_CONFIG_T_REQ) {		// host writes mcu_config
+    116          
+    117          			// check data length
+    118          			// skip lbuf[2] - MSB of length
+    119          
+    120          			if (lbuf[3] != sizeof(mcu_config_t)) {
+    121          
+    122          				send_simple_answer(conn, CID_CONFIG, MSG_ERROR, 1, ERROR_DATA);
+    123          
+    124          			} else {
+    125          
+    126          				// save config ro ram
+    127          				tmp_ptr = (uint8_t *)(&mcu_config);
+    128          				for(i = 0; i<sizeof(mcu_config_t); i++) {
+    129          					*tmp_ptr++ = lbuf[4+i];
+    130          				}
+    131          
+    132          				// write config to flash
+    133          				write_config_to_flash(&mcu_config);
+    134          
+    135          				send_simple_answer(conn, CID_CONFIG, SET_CONFIG_T_ACK, 0, 0);
+    136          			}
+    137          
+    138          
+    139          		}
+    140          
+    141          		else {
+    142          
+    143          			send_simple_answer(conn, CID_CONFIG, MSG_ERROR, 1, ERROR_CPAR_NACK);
+    144          
+    145          		}
+    146          
+    147          	} // lbuf[0] == CID_CONFIG
+    148          
+    149          	else {
+    150          
+    151          		send_simple_answer(conn, CID_ERROR, MSG_ERROR, 1, ERROR_CID_NACK);
+    152          	}
+    153          
+    154          
+    155          }
+    156          
+    157          
+    158          
+    159          /**
+    160            * @brief serve tcp connection  
+    161            * @param conn: pointer on connection structure 
+    162            * @retval None
+    163            */
+    164          void tcp_server_serve(struct netconn *conn)
+    165          {
+    166            portBASE_TYPE xStatus;
+    167            struct netbuf *inbuf;
+    168            
+    169            void *buf;
+    170            uint16_t buflen;
+    171          
+    172            /* Read the data from the port, blocking if nothing yet there. 
+    173             We assume the request (the part we care about) is in one netbuf */
+    174            inbuf = netconn_recv(conn);
+    175            
+    176              
+    177            //*****************************************************************************
+    178            if (inbuf != NULL)
+    179            {
+    180              if (netconn_err(conn) == ERR_OK) 
+    181              {
+    182                netbuf_data(inbuf, (void**)&buf, &buflen);
+    183          
+    184                process_buffer(conn, buf,buflen);
+    185          
+    186            
+    187              }
+    188            }
+    189            /* Close the connection (server closes in HTTP) */
+    190            netconn_close(conn);
+    191          
+    192            /* Delete the buffer (netconn_recv gives us ownership,
+    193             so we have to make sure to deallocate the buffer) */
+    194            netbuf_delete(inbuf);
+    195          }
+    196          
+    197          
+    198          
+    199          /**
+    200            * @brief  http server thread 
+    201            * @param arg: pointer on argument(not used here) 
+    202            * @retval None
+    203            */
+    204          static void server_netconn_thread(void *arg)
+    205          { 
+    206            struct netconn *conn, *newconn;
+    207            err_t err;
+    208            
+    209            struct ip_addr ipaddr;
+    210          
+    211            IP4_ADDR(&ipaddr, IP_ADDR0, IP_ADDR1, IP_ADDR2, IP_ADDR3);
+    212          
+    213            /* Create a new TCP connection handle */
+    214            conn = netconn_new(NETCONN_TCP);
+    215            
+    216            if (conn!= NULL)
+    217            {
+    218              /* Bind to port TCP_SERVER_PORT  */
+    219              err = netconn_bind(conn, &ipaddr, TCP_SERVER_PORT);
+    220              
+    221              if (err == ERR_OK)
+    222              {
+    223                /* Put the connection into LISTEN state */
+    224                netconn_listen(conn);
+    225            
+    226                while(1) 
+    227                {
+    228                  // accept any icoming connection
+    229              	// this will block thread until new connection is incoming
+    230                  newconn = netconn_accept(conn);
+    231                
+    232                  /* serve connection */
+    233                  tcp_server_serve(newconn);
+    234                
+    235                  /* delete connection */
+    236                  netconn_delete(newconn);
+    237                }
+    238              }
+    239              else
+    240              {
+    241              	msg_dbg_tsk(("can not bind netconn\n "));
+    242              }
+    243            }
+    244            else
+    245            {
+    246          	  msg_dbg_tsk(("can not create netconn \n "));
+    247            }
+    248          
+    249            while(1);
+    250          }
+    251          
+    252          /**
+    253            * @brief  Initialize the HTTP server (start its thread) 
+    254            * @param  none
+    255            * @retval None
+    256            */
+    257          void tcp_server_netconn_init()
+    258          {
+    259            sys_thread_new("NetconnServer", server_netconn_thread, NULL, DEFAULT_THREAD_STACKSIZE, TCP_SERVER_THREAD_PRIO);
+    260          }
+    261          
+    262          
+    263          
+    264          /**
+    265            * @brief  Send short answer to host with one byte data length
+    266            * @param  none
+    267            * @retval None
+    268            */
+    269          void send_simple_answer(struct netconn *conn, uint8_t cid, uint8_t cpar, uint8_t len, uint8_t dat)
+    270          {
+    271          	uint8_t	wr_buf[5];
+    272          	wr_buf[0] = cid;
+    273          	wr_buf[1] = cpar;
+    274          
+    275          	if (len == 0) {
+    276          		wr_buf[2] = 0;
+    277          		wr_buf[3] = 0;
+    278          		netconn_write(conn,wr_buf,4,NETCONN_COPY);
+    279          	} else if (len == 1) {
+    280          		wr_buf[2] = 0;
+    281          		wr_buf[3] = 1;
+    282          		wr_buf[4] = dat;
+    283          		netconn_write(conn,wr_buf,5,NETCONN_COPY);
+    284          	}
+    285          
+    286          }
+
+Errors: 1
+Warnings: 9

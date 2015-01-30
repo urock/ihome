@@ -1,0 +1,395 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:03:13 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Utilities\STM32_EVAL\STM3 #
+#                    22xG_EVAL\stm322xg_eval.c                                #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Utilities\STM32_EVAL\STM3 #
+#                    22xG_EVAL\stm322xg_eval.c -D USE_STDPERIPH_DRIVER -D     #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\stm322xg_eval.lst    #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\stm322xg_eval.o       #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Utilities\STM32_EVAL\STM322xG_EVAL\stm322xg_eval.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    stm322xg_eval.c
+      4            * @author  MCD Application Team
+      5            * @version V5.0.0
+      6            * @date    07-October-2011
+      7            * @brief   This file provides
+      8            *            - set of firmware functions to manage Leds, push-button and COM ports
+      9            *            - low level initialization functions for SD card (on SDIO) and
+     10            *              serial EEPROM (sEE)
+     11            *          available on STM322xG-EVAL evaluation board(MB786) RevA and RevB 
+     12            *          from STMicroelectronics.
+     13            *
+     14            ******************************************************************************
+     15            * @attention
+     16            *
+     17            * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
+     18            * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
+     19            * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
+     20            * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
+     21            * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
+     22            * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+     23            *
+     24            * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
+     25            ******************************************************************************
+     26            */ 
+     27            
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "stm322xg_eval.h"
+     30          #include "stm32f2xx_sdio.h"
+     31          #include "stm32f2xx_dma.h"
+     32          #include "stm32f2xx_i2c.h"
+     33          
+     34          //GPIO_TypeDef* GPIO_PORT[LEDn] = {LED1_GPIO_PORT, LED2_GPIO_PORT, LED3_GPIO_PORT,
+     35          //                                 LED4_GPIO_PORT};
+     36          //const uint16_t GPIO_PIN[LEDn] = {LED1_PIN, LED2_PIN, LED3_PIN,
+     37          //                                 LED4_PIN};
+     38          //const uint32_t GPIO_CLK[LEDn] = {LED1_GPIO_CLK, LED2_GPIO_CLK, LED3_GPIO_CLK,
+     39          //                                 LED4_GPIO_CLK};
+     40          //
+     41          //USART_TypeDef* COM_USART[COMn] = {EVAL_COM1}; 
+     42          //
+     43          //GPIO_TypeDef* COM_TX_PORT[COMn] = {EVAL_COM1_TX_GPIO_PORT};
+     44          // 
+     45          //GPIO_TypeDef* COM_RX_PORT[COMn] = {EVAL_COM1_RX_GPIO_PORT};
+     46          //
+     47          ////const uint32_t COM_USART_CLK[COMn] = {EVAL_COM1_CLK};
+     48          //
+     49          //const uint32_t COM_TX_PORT_CLK[COMn] = {EVAL_COM1_TX_GPIO_CLK};
+     50          // 
+     51          //const uint32_t COM_RX_PORT_CLK[COMn] = {EVAL_COM1_RX_GPIO_CLK};
+     52          //
+     53          //const uint16_t COM_TX_PIN[COMn] = {EVAL_COM1_TX_PIN};
+     54          //
+     55          //const uint16_t COM_RX_PIN[COMn] = {EVAL_COM1_RX_PIN};
+     56          // 
+     57          //const uint8_t COM_TX_PIN_SOURCE[COMn] = {EVAL_COM1_TX_SOURCE};
+     58          //
+     59          //const uint8_t COM_RX_PIN_SOURCE[COMn] = {EVAL_COM1_RX_SOURCE};
+     60          // 
+     61          //const uint8_t COM_TX_AF[COMn] = {EVAL_COM1_TX_AF};
+     62          // 
+     63          //const uint8_t COM_RX_AF[COMn] = {EVAL_COM1_RX_AF};
+     64          //
+     65          //DMA_InitTypeDef    sEEDMA_InitStructure; 
+     66          //NVIC_InitTypeDef   NVIC_InitStructure;
+     67          //
+     68          //
+     69          ///**
+     70          //  * @brief  Configures LED GPIO.
+     71          //  * @param  Led: Specifies the Led to be configured. 
+     72          //  *   This parameter can be one of following parameters:
+     73          //  *     @arg LED1
+     74          //  *     @arg LED2
+     75          //  *     @arg LED3
+     76          //  *     @arg LED4
+     77          //  * @retval None
+     78          //  */
+     79          //void LEDInit(Led_TypeDef Led)
+     80          //{
+     81          //  GPIO_InitTypeDef  GPIO_InitStructure;
+     82          //  
+     83          //  /* Enable the GPIO_LED Clock */
+     84          //  RCC_AHB1PeriphClockCmd(GPIO_CLK[Led], ENABLE);
+     85          //
+     86          //
+     87          //  /* Configure the GPIO_LED pin */
+     88          //  GPIO_InitStructure.GPIO_Pin = GPIO_PIN[Led];
+     89          //  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+     90          //  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+     91          //  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+     92          //  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+     93          //  GPIO_Init(GPIO_PORT[Led], &GPIO_InitStructure);
+     94          //}
+     95          ////----------------------------
+     96          ///**
+     97          //* @brief Init LEDS alarm
+     98          //*/
+     99          //void LED_alarm_Init(void)
+    100          //{
+    101          //  GPIO_InitTypeDef  GPIO_InitStructure;
+    102          //  
+    103          //  /* Enable the GPIO_LED Clock */
+    104          //  RCC_AHB1PeriphClockCmd(LED_alerm_CLK, ENABLE);
+    105          //
+    106          //
+    107          //  /* Configure the GPIO_LED pin */
+    108          //  GPIO_InitStructure.GPIO_Pin = LED_alarm;
+    109          //  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    110          //  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    111          //  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    112          //  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    113          //  GPIO_Init(LED_alarm_PORT, &GPIO_InitStructure);
+    114          //}
+    115          ////----------------------------------------------
+    116          ///**
+    117          //* @brief Init LEDS alarm
+    118          //*/
+    119          //void LED_warning_Init(void)
+    120          //{
+    121          //  GPIO_InitTypeDef  GPIO_InitStructure;
+    122          //  
+    123          //  /* Enable the GPIO_LED Clock */
+    124          //  RCC_AHB1PeriphClockCmd(LED_warning_CLK, ENABLE);
+    125          //
+    126          //
+    127          //  /* Configure the GPIO_LED pin */
+    128          //  GPIO_InitStructure.GPIO_Pin = LED_warning;
+    129          //  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    130          //  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    131          //  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    132          //  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    133          //  GPIO_Init(LED_warning_PORT, &GPIO_InitStructure);
+    134          //}
+    135          ////----------------------------------------------
+    136          ///**
+    137          //* @brief Init LEDS status
+    138          //*/
+    139          //void LED_status_Init(void)
+    140          //{
+    141          //  GPIO_InitTypeDef  GPIO_InitStructure;
+    142          //  
+    143          //  /* Enable the GPIO_LED Clock */
+    144          //  RCC_AHB1PeriphClockCmd(LED_status_CLK , ENABLE);
+    145          //
+    146          //
+    147          //  /* Configure the GPIO_LED pin */
+    148          //  GPIO_InitStructure.GPIO_Pin = LED_status;
+    149          //  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    150          //  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    151          //  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    152          //  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    153          //  GPIO_Init(LED_status_PORT, &GPIO_InitStructure);
+    154          //}
+    155          ////----------------------------------------------
+    156          //
+    157          ///**
+    158          //  * @brief  Turns selected LED On.
+    159          //  * @param  Led: Specifies the Led to be set on. 
+    160          //  *   This parameter can be one of following parameters:
+    161          //  *     @arg LED1
+    162          //  *     @arg LED2
+    163          //  *     @arg LED3
+    164          //  *     @arg LED4  
+    165          //  * @retval None
+    166          //  */
+    167          //void LEDOn(Led_TypeDef Led)
+    168          //{
+    169          //  GPIO_PORT[Led]->BSRRL = GPIO_PIN[Led];
+    170          //}
+    171          //
+    172          ////------------------------------------
+    173          ///**
+    174          //* @bief LED alarm On
+    175          //*/
+    176          //void LED_alarm_On(void)
+    177          //{
+    178          //  LED_alarm_PORT->BSRRL = LED_alarm ;
+    179          //}
+    180          ////------------------------------------
+    181          ///**
+    182          //* @bief LED warning On
+    183          //*/
+    184          //void LED_warning_On(void)
+    185          //{
+    186          //  LED_warning_PORT->BSRRL = LED_warning ;
+    187          //}
+    188          ////------------------------------------
+    189          ///**
+    190          //* @bief LED status On
+    191          //*/
+    192          //void LED_status_On(void)
+    193          //{
+    194          //  LED_status_PORT->BSRRL = LED_status ;
+    195          //}
+    196          ////--------------------------------------
+    197          ///**
+    198          //  * @brief  Turns selected LED Off.
+    199          //  * @param  Led: Specifies the Led to be set off. 
+    200          //  *   This parameter can be one of following parameters:
+    201          //  *     @arg LED1
+    202          //  *     @arg LED2
+    203          //  *     @arg LED3
+    204          //  *     @arg LED4 
+    205          //  * @retval None
+    206          //  */
+    207          //void LEDOff(Led_TypeDef Led)
+    208          //{
+    209          //  GPIO_PORT[Led]->BSRRH = GPIO_PIN[Led];  
+    210          //}
+    211          ////-------------------------------------------
+    212          ///**
+    213          //* @brief LED alarm Off
+    214          //*/
+    215          //void LED_alarm_Off(void)
+    216          //{
+    217          //  LED_alarm_PORT->BSRRH = LED_alarm ;  
+    218          //}
+    219          ////-------------------------------------------
+    220          ///**
+    221          //* @brief LED warning Off
+    222          //*/
+    223          //void LED_warning_Off(void)
+    224          //{
+    225          //  LED_warning_PORT->BSRRH = LED_warning ;  
+    226          //}
+    227          ////-------------------------------------------
+    228          ///**
+    229          //* @brief LED status Off
+    230          //*/
+    231          //void LED_status_Off(void)
+    232          //{
+    233          //  LED_status_PORT->BSRRH = LED_status ;  
+    234          //}
+    235          ////--------------------------------------------
+    236          ///**
+    237          //  * @brief  Toggles the selected LED.
+    238          //  * @param  Led: Specifies the Led to be toggled. 
+    239          //  *   This parameter can be one of following parameters:
+    240          //  *     @arg LED1
+    241          //  *     @arg LED2
+    242          //  *     @arg LED3
+    243          //  *     @arg LED4  
+    244          //  * @retval None
+    245          //  */
+    246          //void LEDToggle(Led_TypeDef Led)
+    247          //{
+    248          //  GPIO_PORT[Led]->ODR ^= GPIO_PIN[Led];
+    249          //}
+    250          ////-------------------------------------------------
+    251          ///**
+    252          //* @brief Toggle LED alarm 
+    253          //*/
+    254          //void LED_alarm_Toggle(void)
+    255          //{
+    256          //  LED_alarm_PORT->ODR ^= LED_alarm ;
+    257          //}
+    258          ////----------------------------------------------------
+    259          ///**
+    260          //* @brief Toggle LED warning
+    261          //*/
+    262          //void LED_warning_Toggle(void)
+    263          //{
+    264          //  LED_warning_PORT->ODR ^= LED_warning;
+    265          //}
+    266          ////----------------------------------------------------
+    267          ///**
+    268          //* @brief Toggle LED status
+    269          //*/
+    270          //void LED_status_Toggle(void)
+    271          //{
+    272          //  LED_status_PORT->ODR ^= LED_status;
+    273          //}
+    274          //
+    275          //
+    276          ///**
+    277          //  * @brief  Configures COM port.
+    278          //  * @param  COM: Specifies the COM port to be configured.
+    279          //  *   This parameter can be one of following parameters:    
+    280          //  *     @arg COM1
+    281          //  *     @arg COM2  
+    282          //  * @param  USART_InitStruct: pointer to a USART_InitTypeDef structure that
+    283          //  *   contains the configuration information for the specified USART peripheral.
+    284          //  * @retval None
+    285          //  */
+    286          //void STM_EVAL_COMInit(COM_TypeDef COM, USART_InitTypeDef* USART_InitStruct)
+    287          //{
+    288          //  GPIO_InitTypeDef GPIO_InitStructure;
+    289          //
+    290          //  /* Enable GPIO clock */
+    291          //  RCC_AHB1PeriphClockCmd(COM_TX_PORT_CLK[COM] | COM_RX_PORT_CLK[COM], ENABLE);
+    292          //  /* Connect PXx to USARTx_Tx*/
+    293          //  GPIO_PinAFConfig(COM_TX_PORT[COM], COM_TX_PIN_SOURCE[COM], COM_TX_AF[COM]);
+    294          //
+    295          //  /* Connect PXx to USARTx_Rx*/
+    296          //  GPIO_PinAFConfig(COM_RX_PORT[COM], COM_RX_PIN_SOURCE[COM], COM_RX_AF[COM]);
+    297          //
+    298          //  /* Configure USART Tx as alternate function  */
+    299          //  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    300          //  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    301          //  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    302          //
+    303          //  GPIO_InitStructure.GPIO_Pin = COM_TX_PIN[COM];
+    304          //  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    305          //  GPIO_Init(COM_TX_PORT[COM], &GPIO_InitStructure);
+    306          //
+    307          //  /* Configure USART Rx as alternate function  */
+    308          //  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    309          //  GPIO_InitStructure.GPIO_Pin = COM_RX_PIN[COM];
+    310          //  GPIO_Init(COM_RX_PORT[COM], &GPIO_InitStructure);
+    311          //
+    312          //  /* USART configuration */
+    313          //  USART_Init(COM_USART[COM], USART_InitStruct);
+    314          //    
+    315          //  /* Enable USART */
+    316          //  USART_Cmd(COM_USART[COM], ENABLE);
+    317          //}
+    318          /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

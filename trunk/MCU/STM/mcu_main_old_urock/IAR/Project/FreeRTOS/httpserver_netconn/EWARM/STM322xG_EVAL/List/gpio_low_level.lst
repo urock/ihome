@@ -1,0 +1,171 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.2.7424/W32 for ARM        26/Sep/2014  17:06:36
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\gpio_low_level.c
+#    Command line =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\gpio_low_level.c
+#        -D USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL -lcN
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\
+#        -o
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.0_2\arm\INC\c\DLib_Config_Full.h" -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F2xx\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\netif\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\ipv4\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\
+#        -I
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7.4.2\include\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.0_2\arm\CMSIS\Include\"
+#    List file    =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\gpio_low_level.lst
+#    Object file  =  
+#        C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\Obj\gpio_low_level.o
+#
+###############################################################################
+
+C:\ihome\MCU\STM\trunk\mcu_main\IAR\Project\FreeRTOS\httpserver_netconn\src\gpio_low_level.c
+      1          
+      2          
+      3          #include "main.h"
+      4          #include "gpio_low_level.h"
+      5          
+      6          
+      7          
+      8          // leds section
+      9          
+     10          GPIO_TypeDef* LEDS_GPIO_PORT[NUM_LEDS] = {Led0_GPIO_PORT, Led1_GPIO_PORT, Led2_GPIO_PORT, Led3_GPIO_PORT, Led4_GPIO_PORT, Led5_GPIO_PORT, Led6_GPIO_PORT}; 
+     11          
+     12          const uint16_t LEDS_PIN[NUM_LEDS] = {Led0_PIN, Led1_PIN, Led2_PIN, Led3_PIN, Led4_PIN, Led5_PIN, Led6_PIN}; 
+     13          
+     14          const uint32_t LEDS_CLK[NUM_LEDS] = {Led0_GPIO_CLK, Led1_GPIO_CLK, Led2_GPIO_CLK, Led3_GPIO_CLK, Led4_GPIO_CLK, Led5_GPIO_CLK, Led6_GPIO_CLK}; 
+     15          
+     16          
+     17          void init_leds(void)
+     18          {
+     19          	int i;
+     20          	
+     21          	for(i=0; i < NUM_LEDS; i++) {
+     22          	  init_led_hardware((LED_TYPE)i);
+     23          	  led_off((LED_TYPE)i);
+     24          	}
+     25          }
+     26          
+     27          void init_led_hardware(LED_TYPE led)
+     28          {
+     29            GPIO_InitTypeDef  GPIO_InitStructure;
+     30            
+     31            RCC_AHB1PeriphClockCmd(LEDS_CLK[led], ENABLE);
+     32            GPIO_InitStructure.GPIO_Pin = LEDS_PIN[led];
+     33            	
+     34            // configure as output
+     35            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+     36            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+     37            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;
+     38            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+     39          
+     40            GPIO_Init(LEDS_GPIO_PORT[led], &GPIO_InitStructure);
+     41          }
+     42          
+     43          
+     44          // leds are active low, so invert output
+     45          void led_on(LED_TYPE led)
+     46          {
+     47          	LEDS_GPIO_PORT[led]->BSRRH = LEDS_PIN[led];  
+     48          }
+     49          
+     50          void led_off(LED_TYPE led)
+     51          {
+     52          	LEDS_GPIO_PORT[led]->BSRRL = LEDS_PIN[led];  
+     53          }
+     54          
+     55          void led_toggle(LED_TYPE led)
+     56          {
+     57          	LEDS_GPIO_PORT[led]->ODR ^= LEDS_PIN[led];
+     58          }
+     59          
+     60          //------------------------------------------------------------------------------
+     61          //Инициализация шины SEL_XC пока она не используется. Пока не назначаем входные и выходные сигналы
+     62          
+     63          GPIO_TypeDef* BUS_XC_GPIO_PORT[NUM_BUS_XC] = {CPLD_BUS_0_PORT, CPLD_BUS_1_PORT, CPLD_BUS_2_PORT}; 
+     64          
+     65          const uint16_t BUS_XC_PIN[NUM_BUS_XC] = {CPLD_BUS_0_PIN, CPLD_BUS_1_PIN, CPLD_BUS_2_PIN}; 
+     66          
+     67          const uint32_t BUS_XC_CLK[NUM_BUS_XC] = {CPLD_BUS_0_GPIO_CLK, CPLD_BUS_1_GPIO_CLK, CPLD_BUS_2_GPIO_CLK}; 
+     68          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   init_led_hardware
+        16   -> GPIO_Init
+        16   -> RCC_AHB1PeriphClockCmd
+       8   init_leds
+         8   -> init_led_hardware
+         8   -> led_off
+       0   led_off
+       0   led_on
+       0   led_toggle
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+      12  BUS_XC_CLK
+      12  BUS_XC_GPIO_PORT
+       8  BUS_XC_PIN
+      28  LEDS_CLK
+      28  LEDS_GPIO_PORT
+      16  LEDS_PIN
+      68  init_led_hardware
+      32  init_leds
+      20  led_off
+      20  led_on
+      32  led_toggle
+
+ 
+  40 bytes in section .data
+  64 bytes in section .rodata
+ 184 bytes in section .text
+ 
+ 184 bytes of CODE  memory
+  64 bytes of CONST memory
+  40 bytes of DATA  memory
+
+Errors: none
+Warnings: none
