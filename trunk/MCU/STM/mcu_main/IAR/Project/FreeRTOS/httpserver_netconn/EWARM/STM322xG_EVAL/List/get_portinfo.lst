@@ -1,0 +1,250 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:03 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\get_portinfo.c                            #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\get_portinfo.c -D USE_STDPERIPH_DRIVER    #
+#                    -D STM32F2XX -D USE_STM322xG_EVAL -lcN                   #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\get_portinfo.lst     #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\get_portinfo.o        #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\get_portinfo.c
+      1          #include "get_portinfo.h"
+      2          
+      3            extern volatile struct PORT_struct PORTs[MAX_PORTs];
+      4            extern const portTickType xTicksToWait;
+      5            extern xQueueHandle xQueue_sendText_t;// ,xQueue_port_struct;
+      6                                         
+      7          /**
+      8          * @Function return statuses of PORTs to HOST PC
+      9          * @param  void
+     10          * @return    void
+     11          * @brief Функция опрашивает состояние всех портов и передает эти состояния на ХОСТ машину по Ethernet  
+     12          */
+     13          void vGet_portinfo (void){
+     14            portBASE_TYPE xStatus;
+     15          //  const portTickType xTicksToWait = 100 / portTICK_RATE_MS;  // Макс число тактов для чтения или записи аднных из\в очередь 
+     16            struct sendText_t send2host_gi; // Структура хранящая состояние порта, передается в очередь
+     17            
+     18            // Просто локальные переменные
+     19            int val;
+     20            char str[5];
+     21            uint8_t i_gi;
+     22            char port_gi[3], stat_gi[2], ena_gi[2], val_gi[4], key_gi[4], mode_gi[2];   
+     23          //  char send_com_gi[MAX_CMDSTR]; //="GET /objects/?object=Port0&op=m&m=changedStatus&status=1 HTTP/1.1\r\nHost: 192.168.0.111\r\nConnection: close\r\n\r\n\0";;
+     24            for (i_gi = MIN_PORT_OUT; i_gi < MAX_PORT_OUT ; i_gi ++){
+     25              
+     26              val = PORTs[i_gi].num_port;  //Port int to string
+     27              sprintf(str, "%d", val);
+     28              strcpy(port_gi,str);
+     29              
+     30              val = PORTs[i_gi].status;  //Status int to string
+     31              sprintf(str, "%d", val);
+     32              strcpy(stat_gi,str);
+     33              
+     34              val = PORTs[i_gi].enable; //Enable int to string
+     35              sprintf(str, "%d", val);
+     36              strcpy(ena_gi,str);
+     37              
+     38              val = PORTs[i_gi].value;  //Value int to string
+     39              sprintf(str, "%d", val);
+     40              strcpy(val_gi,str);
+     41          
+     42              val = PORTs[i_gi].key;  //Key int to string
+     43              sprintf(str, "%d", val);
+     44              strcpy(key_gi,str);
+     45          
+     46              val = PORTs[i_gi].mode; //Mode int to string
+     47              sprintf(str, "%d", val);
+     48              strcpy(mode_gi,str);
+     49              
+     50          // String for Status   
+     51              send2host_gi.cmd[0]=0;
+     52              strcat(strcpy(send2host_gi.cmd, begin_pack), port_gi);
+     53              strcat(send2host_gi.cmd, status_pack);
+     54              strcat(send2host_gi.cmd, stat_gi);
+     55              strcat(send2host_gi.cmd, end_pack);
+     56                     
+     57              send2host_gi.len = strlen(send2host_gi.cmd);                  //length of send_com
+     58              xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_gi, xTicksToWait );
+     59              if (xStatus != pdPASS){
+     60                LED_alarm_On();
+     61                printf ("(get_port_info) The queue is full, can't to write to queue, error is = %d, status = %d\n", xStatus ,stat_gi);
+     62              }
+     63              vNetconnClient_init(NULL);  
+     64              vTaskDelay(200);
+     65              
+     66          //// String for Active
+     67              send2host_gi.cmd[0]=0;
+     68              strcat(strcpy(send2host_gi.cmd, begin_pack), port_gi);
+     69              strcat(send2host_gi.cmd, enable_pack);
+     70              strcat(send2host_gi.cmd, ena_gi);
+     71              strcat(send2host_gi.cmd, end_pack);
+     72                     
+     73              send2host_gi.len = strlen(send2host_gi.cmd);                  //length of send_com
+     74              xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_gi, xTicksToWait );
+     75              if (xStatus != pdPASS){
+     76                LED_alarm_On();
+     77                printf ("(get_port_info) The queue is full, can't to write to queue, error is = %d, enable = %d\n", xStatus ,ena_gi);
+     78              }
+     79              
+     80              vNetconnClient_init(NULL);     
+     81              vTaskDelay(200);
+     82          
+     83          //////// String for Key    
+     84              send2host_gi.cmd[0]=0;
+     85              strcat(strcpy(send2host_gi.cmd, begin_pack), port_gi);
+     86              strcat(send2host_gi.cmd, key_pack);
+     87              strcat(send2host_gi.cmd, key_gi);
+     88              strcat(send2host_gi.cmd, end_pack);
+     89                     
+     90              send2host_gi.len = strlen(send2host_gi.cmd);                  //length of send_com
+     91              xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_gi, xTicksToWait );
+     92              if (xStatus != pdPASS){
+     93                LED_alarm_On();
+     94                printf ("(get_port_info) The queue is full, can't to write to queue, error is = %d, key = %d\n", xStatus ,key_gi);
+     95              }
+     96              
+     97              vNetconnClient_init(NULL); 
+     98              vTaskDelay(200);    
+     99              
+    100          //////// String for Mode
+    101              send2host_gi.cmd[0]=0;
+    102              strcat(strcpy(send2host_gi.cmd, begin_pack), port_gi);
+    103              strcat(send2host_gi.cmd, mode_pack);
+    104              strcat(send2host_gi.cmd, mode_gi);
+    105              strcat(send2host_gi.cmd, end_pack);
+    106                     
+    107              send2host_gi.len = strlen(send2host_gi.cmd);                  //length of send_com
+    108              xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_gi, xTicksToWait );
+    109              if (xStatus != pdPASS){
+    110                LED_alarm_On();
+    111                printf ("(get_port_info) The queue is full, can't to write to queue, error is = %d, mode = %d\n", xStatus ,mode_gi);
+    112              }
+    113              
+    114              vNetconnClient_init(NULL); 
+    115              vTaskDelay(200);
+    116          
+    117          //////// String for Value
+    118              send2host_gi.cmd[0]=0;
+    119              strcat(strcpy(send2host_gi.cmd, begin_pack), port_gi);
+    120              strcat(send2host_gi.cmd, value_pack);
+    121              strcat(send2host_gi.cmd, val_gi);
+    122              strcat(send2host_gi.cmd, end_pack);
+    123                     
+    124              send2host_gi.len = strlen(send2host_gi.cmd);                  //length of send_com
+    125              xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_gi, xTicksToWait );
+    126              if (xStatus != pdPASS){
+    127                LED_alarm_On();
+    128                printf ("(get_port_info) The queue is full, can't to write to queue, error is = %d, value = %d\n", xStatus ,val_gi);
+    129              }
+    130              
+    131              vNetconnClient_init(NULL);         
+    132              vTaskDelay(200);
+    133           } 
+    134            vTaskDelete( NULL );
+    135            
+    136          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     200   vGet_portinfo
+       200   -> LED_alarm_On
+       200   -> printf
+       200   -> sprintf
+       200   -> strcat
+       200   -> strcpy
+       200   -> strlen
+       200   -> vNetconnClient_init
+       200   -> vTaskDelay
+       200   -> vTaskDelete
+       200   -> xQueueGenericSend
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      56  ?<Constant " HTTP/1.1\r\nHost: 192....">
+       4  ?<Constant "%d">
+      32  ?<Constant "&op=m&m=changedActive...">
+      24  ?<Constant "&op=m&m=changedKey&key=">
+      28  ?<Constant "&op=m&m=changedMode&m...">
+      32  ?<Constant "&op=m&m=changedStatus...">
+      28  ?<Constant "&op=m&m=changedValue&...">
+      88  ?<Constant "(get_port_info) The q...">
+      88  ?<Constant "(get_port_info) The q...">_1
+      88  ?<Constant "(get_port_info) The q...">_2
+      88  ?<Constant "(get_port_info) The q...">_3
+      88  ?<Constant "(get_port_info) The q...">_4
+      28  ?<Constant "GET /objects/?object=...">
+     804  vGet_portinfo
+
+ 
+ 672 bytes in section .rodata
+ 804 bytes in section .text
+ 
+ 804 bytes of CODE  memory
+ 672 bytes of CONST memory
+
+Errors: none
+Warnings: none

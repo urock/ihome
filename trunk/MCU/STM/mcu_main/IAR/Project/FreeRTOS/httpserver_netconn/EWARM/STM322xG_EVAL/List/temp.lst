@@ -1,0 +1,140 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:03:18 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\temp.c                                    #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\temp.c -D USE_STDPERIPH_DRIVER -D         #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\temp.lst             #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\temp.o                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\temp.c
+      1          //struct device_pt parsing_setPort(char *buf){     
+      2          //        char port_str[3];  //port
+      3          //        char inout_str[4];   // inp/out     
+      4          //	char mode_str[2];  // mode input/output
+      5          //	char val_str[4];  // value input or output       
+      6          //        char def_state_str[4];  // default state 0 or 1 for input or output or ADC or PWM
+      7          //        
+      8          //        int port;     // int port
+      9          //        
+     10          //        struct device_pt device_t;
+     11          ////-----------------------------------------------------------        
+     12          //	// Parsing Port
+     13          //	strncpy(port_str, &buf[11],2);  //Port number, all port 99
+     14          //	port_str[2] = '\0';
+     15          //        sscanf(port_str, "%d", &port); // «аписать в device_t.port число, содержащеес€ в строке port_str
+     16          //        if (getPort_name(port) != Port100 ){
+     17          //          device_t.Port = getPort_name(port);
+     18          //          device_t.noPort = 1;
+     19          //        }
+     20          //        else{
+     21          //          device_t.noPort = 0;  // Port is not exist
+     22          //          return device_t;
+     23          //        }
+     24          ////-----------------------------
+     25          //	//Parsing IN \ OUT
+     26          //	strncpy(inout_str,&buf[14],3);  //in or out
+     27          //        inout_str[3] = '\0';
+     28          ////-----------------------------
+     29          //	// Mode input
+     30          //	  mode_str[0] = buf[17]; //mode input
+     31          //	  mode_str[1] = '\0';
+     32          //          sscanf(mode_str, "%d", &device_t.mode); // «аписать в j число, содержащеес€ в строке str
+     33          //                                                        // Mode input (2- interrupt front, 3- interrupt raise, 4 - interrupt both, 5 - ADC /
+     34          //                                                        //Mode output - 1- switch, 2- pwm
+     35          ////-----------------------------
+     36          //		if (strcmp(inout_str,"inp")==0){
+     37          //			  // if input
+     38          //		 //----  input mode ------------
+     39          //                          device_t.direction = INPUT;  //Input
+     40          ////                        setPort_interrupt(device_t.Port, device_t.mode);
+     41          //		}  // end if
+     42          //		else if (strcmp(inout_str,"out")==0){
+     43          //			// Get out value
+     44          //                          device_t.direction = OUTPUT; //Output                          
+     45          //			  strncpy(val_str,&buf[19],3);  // value Output;
+     46          //			  val_str[3] = '\0';
+     47          //			  device_t.value = atoi(val_str);
+     48          ////                          setPort(device_t.Port, device_t.mode, device_t.value);
+     49          //		}  // end else
+     50          ////--------------------------------
+     51          //    strcpy(device_t.port_html, "/portxx.html" );
+     52          //
+     53          //    sprintf(port_str, "%d", port);
+     54          //    if (port < 10){
+     55          //      device_t.port_html[5] = '0';
+     56          //      device_t.port_html[6] = port_str[0];
+     57          //    }
+     58          //    else{
+     59          //      device_t.port_html[5] = port_str[0];
+     60          //      device_t.port_html[6] = port_str[1];
+     61          //    }
+     62          //  return device_t;
+     63          //} // end function
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

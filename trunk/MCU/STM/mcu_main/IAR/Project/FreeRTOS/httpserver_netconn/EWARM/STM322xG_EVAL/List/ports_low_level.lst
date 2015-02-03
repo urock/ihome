@@ -1,0 +1,558 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      29/Jan/2014  10:04:15 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\src\ports_low_level.c                #
+#    Command line =  E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\src\ports_low_level.c -D             #
+#                    USE_STDPERIPH_DRIVER -D STM32F2XX -D USE_STM322xG_EVAL   #
+#                    -lcN E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\Fre #
+#                    eRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\ -o    #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse    #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\inc\ -I                     #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM #
+#                    3\DeviceSupport\ST\STM32F2xx\ -I                         #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32F2x #
+#                    x_StdPeriph_Driver\inc\ -I E:\work\ihome\spi\mcu\ihome_s #
+#                    tm_021\IAR\Project\FreeRTOS\httpserver_netconn\EWARM\..\ #
+#                    ..\..\..\Libraries\STM32F2x7_ETH_Driver\inc\ -I          #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EV #
+#                    AL\Common\ -I E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\STM32_EVAL\STM322xG_EVAL\ -I                       #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\lwip_v1.3.2\src\include\ -I                          #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\lwip_v1.3.2\src\include\lwip\ -I                     #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\lwip_v1.3.2\src\include\netif\ -I                    #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\lwip_v1.3.2\src\include\ipv4\ -I                     #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\lwip_v1.3.2\port\STM32F2x7\ -I                       #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\lwip_v1.3.2\port\STM32F2x7\FreeRTOS\ -I              #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I             #
+#                    E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\..\..\..\..\Utilities\Third_Pa #
+#                    rty\FreeRTOS_v7.4.2\include\ -On --use_c++_inline -I     #
+#                    "C:\Program Files (x86)\IAR Systems\Embedded Workbench   #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\STM322xG_EVAL\List\ports_low_l #
+#                    evel.lst                                                 #
+#    Object file  =  E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS #
+#                    \httpserver_netconn\EWARM\STM322xG_EVAL\Obj\ports_low_le #
+#                    vel.o                                                    #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\spi\mcu\ihome_stm_021\IAR\Project\FreeRTOS\httpserver_netconn\src\ports_low_level.c
+      1          
+      2          
+      3          #include "main.h"
+      4          #include "ports_low_level.h"
+      5          
+      6          // private functions
+      7          void port_init_hardware(int p, PortModeEnum port_mode);
+      8          void port_set_pin_status(int p, PortStatusEnum status);
+      9          
+     10          
+     11          
+     12          port_group_str	igpoup[NUM_OUTPUT_PORTS]; 
+     13          
+     14          struct port_str	iport[NUM_ALL_PORTS]; 
+     15          
+     16          int num_groups; 
+     17          
+     18          
+     19          
+     20          // port configuration arrays
+     21          
+     22          // Arrays PORT_GPIO_PORT, PORT_PIN, PORT_CLK - can not be changed in runtime
+     23          
+     24          // Arrays PORT_MODE, PORT_STATUS, PORT_KEY, PORT_ENABLE can be chaned in runtime and saved to flash
+     25          
+     26          GPIO_TypeDef* PORT_GPIO_PORT[NUM_ALL_PORTS] = {Port0_GPIO_PORT, Port1_GPIO_PORT, Port2_GPIO_PORT, Port3_GPIO_PORT,
+     27          												Port4_GPIO_PORT, Port5_GPIO_PORT, Port6_GPIO_PORT, Port7_GPIO_PORT}; 
+     28          
+     29          const uint16_t PORT_PIN[NUM_ALL_PORTS] = {Port0_PIN, Port1_PIN, Port2_PIN, Port3_PIN,
+     30          											Port4_PIN, Port5_PIN, Port6_PIN, Port7_PIN}; 
+     31          
+     32          const uint32_t PORT_CLK[NUM_ALL_PORTS] = {Port0_GPIO_CLK, Port1_GPIO_CLK, Port2_GPIO_CLK, Port3_GPIO_CLK,
+     33          											Port4_GPIO_CLK, Port5_GPIO_CLK, Port6_GPIO_CLK, Port7_GPIO_CLK}; 
+     34          
+     35          PortModeEnum	 PORT_MODE[NUM_ALL_PORTS] = {Port0_MODE, Port1_MODE, Port2_MODE, Port3_MODE,
+     36          												Port4_MODE, Port5_MODE, Port6_MODE, Port7_MODE};
+     37          
+     38          PortStatusEnum	 PORT_STATUS[NUM_ALL_PORTS] = {Port0_STATUS, Port1_STATUS, Port2_STATUS, Port3_STATUS,
+     39          												Port4_STATUS, Port5_STATUS, Port6_STATUS, Port7_STATUS};
+     40          
+     41          uint8_t	 PORT_KEY[NUM_ALL_PORTS] = {Port0_KEY, Port1_KEY, Port2_KEY, Port3_KEY,
+     42          										Port4_KEY, Port5_KEY, Port6_KEY, Port7_KEY};
+     43          
+     44          PortEnableEnum	 PORT_ENABLE[NUM_ALL_PORTS] = {Port0_ENABLE, Port1_ENABLE, Port2_ENABLE, Port3_ENABLE,
+     45          												Port4_ENABLE, Port5_ENABLE, Port6_ENABLE, Port7_ENABLE};
+     46          
+     47          
+     48          
+     49          
+     50          void iport_init_groups(void)
+     51          {
+     52          	
+     53          	int i;
+     54          	
+     55          	int g=0; 	// group
+     56          	
+     57          	
+     58          	// init iport_gpoup
+     59          	for(i=0; i < NUM_OUTPUT_PORTS; i++)
+     60          		iport_init_group_str(&igpoup[i]);
+     61          	
+     62          	//cycle through ports
+     63          	for (i = 0; i < NUM_ALL_PORTS; i++) {
+     64          		
+     65          		// init iport_str
+     66          		iport_init_str(&iport[i], NULL, i, PORT_MODE[i], PORT_STATUS[i], PORT_KEY[i], PORT_ENABLE[i]);
+     67          		
+     68          		iport_init_hardware(&iport[i]);
+     69          		
+     70          		if (iport[i].mode == OUTPUT_PORT)
+     71          			iport_set_status(&iport[i]); 
+     72          		
+     73          		iport_add_to_group(&igpoup[iport[i].key], &iport[i]); 
+     74          	  
+     75          	}
+     76          }
+     77          
+     78          void iport_init_group_str(port_group_str *group_p)
+     79          {
+     80          	group_p->input_ports  = NULL;
+     81          	group_p->output_ports = NULL; 
+     82          }
+     83          
+     84          
+     85          
+     86          void iport_add_to_group(port_group_str	*gpoup_p, struct port_str *port_p)
+     87          {
+     88          	struct port_str *next_port;
+     89          	
+     90          	// defualt termination of list
+     91          	port_p->next_port = NULL;
+     92          	
+     93          	if (port_p->mode == OUTPUT_PORT) {
+     94          	  
+     95          	  	if (gpoup_p->output_ports == NULL)	// empty list
+     96          			gpoup_p->output_ports = port_p; 
+     97          		else {
+     98          		  	
+     99          		  	// find end of list
+    100          			next_port = gpoup_p->output_ports->next_port;
+    101          			while ( next_port != NULL)
+    102          				next_port = gpoup_p->output_ports->next_port;
+    103          			
+    104          			// add port to list
+    105          			gpoup_p->output_ports->next_port = port_p; 
+    106          		}	  
+    107          	  
+    108          	} 
+    109          	else {
+    110          	  
+    111          	  	if (gpoup_p->input_ports == NULL)	// empty list
+    112          			gpoup_p->input_ports = port_p; 
+    113          		else {
+    114          		  	
+    115          		  	// find end of list
+    116          			next_port = gpoup_p->input_ports->next_port;
+    117          			while ( next_port != NULL)
+    118          				next_port = gpoup_p->input_ports->next_port;
+    119          			
+    120          			// add port to list
+    121          			gpoup_p->input_ports->next_port = port_p; 
+    122          		}	  
+    123          		
+    124            	}
+    125          }
+    126          
+    127          
+    128          // return values:
+    129          // 0 	- port has been found and deleted
+    130          // -1 	- port has not been found in list
+    131          int iport_delete_from_group(port_group_str	*gpoup_p, struct port_str *port_p)
+    132          {
+    133          	struct port_str *port;
+    134          	struct port_str *next_port;
+    135              
+    136          	if (port_p->mode == OUTPUT_PORT) {
+    137          	  
+    138          		if (gpoup_p->output_ports == NULL) {	// if list is emtpy - exit
+    139          			return -1; 
+    140          		} else {
+    141          			port = gpoup_p->output_ports; 
+    142          			
+    143          			
+    144          			if (port->key == port_p->key) {		// found element in list
+    145          				// delete element from list
+    146          			  	next_port = port->next_port; 
+    147          			 	port->next_port = next_port->next_port; 
+    148          				return 0; 
+    149          			} else {
+    150          				
+    151          				while(port->next_port != NULL) {
+    152          					port = port->next_port; 
+    153          					if (port->key == port_p->key) {		// found element in list
+    154          						// delete element from list
+    155          						next_port = port->next_port; 
+    156          						port->next_port = next_port->next_port; 
+    157          						return 0; 
+    158          					}					
+    159          				}
+    160          			}
+    161          		}
+    162          	  
+    163          	  
+    164          	} else {
+    165          	  
+    166          	  
+    167          	}
+    168            
+    169          }
+    170          
+    171          
+    172          
+    173          
+    174          // walk through outpout ports list and change their statuses 
+    175          void iport_toggle_group_output(port_group_str *gpoup_p)
+    176          {
+    177          	struct port_str *out_port;
+    178          	
+    179          	if (gpoup_p->output_ports != NULL) {
+    180          		out_port = gpoup_p->output_ports;
+    181          		iport_toggle_status(out_port); 
+    182          		
+    183          		while(out_port->next_port != NULL) {
+    184          			out_port = out_port->next_port; 
+    185          			iport_toggle_status(out_port);
+    186          		}
+    187          		
+    188          	}	
+    189          	
+    190          	
+    191          }
+    192          
+    193          
+    194          
+    195          uint8_t iport_input_changed(struct port_str *port_p)
+    196          {
+    197          	PortStatusEnum  new_status; 
+    198          	  
+    199          	new_status = iport_read_status(port_p);
+    200          	
+    201          	if (new_status != port_p->status) {
+    202          		port_p->status = new_status; 
+    203          		return 1;
+    204          	} else
+    205          		return 0; 
+    206          
+    207          }
+    208          
+    209          
+    210          
+    211          
+    212          PortStatusEnum iport_read_status(struct port_str *port_p)
+    213          {
+    214          	return port_read_status(port_p->num_port);
+    215          }
+    216          
+    217          
+    218          
+    219          void iport_change_status(struct port_str *port_p, PortStatusEnum new_status)
+    220          {
+    221          	port_p->status = new_status;
+    222          	
+    223          	iport_set_status(port_p);
+    224          }
+    225          
+    226          	
+    227          void iport_toggle_status(struct port_str *port_p)
+    228          {
+    229            	if (port_p->status == PORT_ON) 
+    230          		port_p->status = PORT_OFF;
+    231          	else
+    232          		port_p->status = PORT_ON;
+    233          	
+    234          	iport_set_status(port_p);
+    235          }
+    236          
+    237          
+    238          void iport_init_str(struct port_str *port_p, struct port_str *next_port, int port_num, PortModeEnum port_mode, 
+    239          					PortStatusEnum	port_status, uint8_t port_key, PortEnableEnum port_enable)
+    240          {
+    241          	port_p->next_port = next_port;
+    242          	port_p->num_port = port_num;
+    243          	port_p->mode	 = port_mode;
+    244          	port_p->status 	 = port_status;
+    245          	port_p->key		 = port_key;
+    246          	port_p->enable 	 = port_enable;
+    247          }
+    248          
+    249          
+    250          
+    251          void iport_init_hardware(struct port_str *port_p)
+    252          {
+    253          	port_init_hardware(port_p->num_port, port_p->mode);	
+    254          }
+    255          
+    256          
+    257          // set MCU pin value for iport
+    258          void iport_set_status(struct port_str *port_p)
+    259          {
+    260          	if (port_p->enable == PORT_ENABLED)
+    261          		port_set_pin_status(port_p->num_port, port_p->status); 
+    262          }
+    263          
+    264          
+    265          
+    266          
+    267          
+    268          
+    269          // private functions
+    270          
+    271          
+    272          // init MCU pin
+    273          void port_init_hardware(int p, PortModeEnum port_mode)
+    274          {
+    275            GPIO_InitTypeDef  GPIO_InitStructure;
+    276            
+    277            RCC_AHB1PeriphClockCmd(PORT_CLK[p], ENABLE);
+    278            GPIO_InitStructure.GPIO_Pin = PORT_PIN[p];
+    279            
+    280            if (port_mode == OUTPUT_PORT) {
+    281          	
+    282          	  // configure as output
+    283          	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    284          	  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    285          	  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;
+    286          	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    287          	  
+    288            } else if (port_mode == INPUT_PORT) {
+    289          	  
+    290          	  // configure as input
+    291          	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+    292          	  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;
+    293          	
+    294            }
+    295          
+    296            GPIO_Init(PORT_GPIO_PORT[p], &GPIO_InitStructure);
+    297          }
+    298          
+    299          
+    300          
+    301          
+    302          
+    303          // set MCU pin value
+    304          void port_set_pin_status(int p, PortStatusEnum status)
+    305          {
+    306            if (status != PORT_OFF)
+    307          	PORT_GPIO_PORT[p]->BSRRH = PORT_PIN[p];  
+    308            else 
+    309          	PORT_GPIO_PORT[p]->BSRRL = PORT_PIN[p];  
+    310          }
+    311          
+    312          
+    313          // returns hardware status of the MCU pin
+    314          PortStatusEnum port_read_status(int p)
+    315          {
+    316            if ((PORT_GPIO_PORT[p]->IDR & PORT_PIN[p]) != 0)
+    317            {
+    318              return PORT_ON; 
+    319            }
+    320            else
+    321            {
+    322              return PORT_OFF;
+    323            }	  
+    324          }
+    325          
+    326          
+    327          
+    328          // leds section
+    329          
+    330          GPIO_TypeDef* LEDS_GPIO_PORT[NUM_LEDS] = {Led0_GPIO_PORT, Led1_GPIO_PORT, Led2_GPIO_PORT}; 
+    331          
+    332          const uint16_t LEDS_PIN[NUM_LEDS] = {Led0_PIN, Led1_PIN, Led2_PIN}; 
+    333          
+    334          const uint32_t LEDS_CLK[NUM_LEDS] = {Led0_GPIO_CLK, Led1_GPIO_CLK, Led2_GPIO_CLK}; 
+    335          
+    336          
+    337          void init_leds(void)
+    338          {
+    339          	int i;
+    340          	
+    341          	for(i=0; i< NUM_LEDS; i++) {
+    342          	  init_led_hardware((LED_TYPE)i);
+    343          	  led_off((LED_TYPE)i);
+    344          	}
+    345          }
+    346          
+    347          void init_led_hardware(LED_TYPE led)
+    348          {
+    349            GPIO_InitTypeDef  GPIO_InitStructure;
+    350            
+    351            RCC_AHB1PeriphClockCmd(LEDS_CLK[led], ENABLE);
+    352            GPIO_InitStructure.GPIO_Pin = LEDS_PIN[led];
+    353            	
+    354            // configure as output
+    355            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    356            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    357            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;
+    358            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    359          
+    360            GPIO_Init(LEDS_GPIO_PORT[led], &GPIO_InitStructure);
+    361          }
+    362          
+    363          
+    364          // leds are active low, so invert output
+    365          void led_on(LED_TYPE led)
+    366          {
+    367          	LEDS_GPIO_PORT[led]->BSRRH = LEDS_PIN[led];  
+    368          }
+    369          
+    370          void led_off(LED_TYPE led)
+    371          {
+    372          	LEDS_GPIO_PORT[led]->BSRRL = LEDS_PIN[led];  
+    373          }
+    374          
+    375          void led_toggle(LED_TYPE led)
+    376          {
+    377          	LEDS_GPIO_PORT[led]->ODR ^= LEDS_PIN[led];
+    378          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   init_led_hardware
+        16   -> GPIO_Init
+        16   -> RCC_AHB1PeriphClockCmd
+       8   init_leds
+         8   -> init_led_hardware
+         8   -> led_off
+       0   iport_add_to_group
+      16   iport_change_status
+        16   -> iport_set_status
+       8   iport_delete_from_group
+       0   iport_init_group_str
+      32   iport_init_groups
+        32   -> iport_add_to_group
+        32   -> iport_init_group_str
+        32   -> iport_init_hardware
+        32   -> iport_init_str
+        32   -> iport_set_status
+       8   iport_init_hardware
+         8   -> port_init_hardware
+      12   iport_init_str
+      16   iport_input_changed
+        16   -> iport_read_status
+       8   iport_read_status
+         8   -> port_read_status
+       8   iport_set_status
+         8   -> port_set_pin_status
+      16   iport_toggle_group_output
+        16   -> iport_toggle_status
+       8   iport_toggle_status
+         8   -> iport_set_status
+       0   led_off
+       0   led_on
+       0   led_toggle
+      24   port_init_hardware
+        24   -> GPIO_Init
+        24   -> RCC_AHB1PeriphClockCmd
+       0   port_read_status
+       0   port_set_pin_status
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+      12  LEDS_CLK
+      12  LEDS_GPIO_PORT
+       8  LEDS_PIN
+      32  PORT_CLK
+       8  PORT_ENABLE
+      32  PORT_GPIO_PORT
+       8  PORT_KEY
+       8  PORT_MODE
+      16  PORT_PIN
+       8  PORT_STATUS
+      32  igpoup
+      68  init_led_hardware
+      32  init_leds
+      96  iport
+      78  iport_add_to_group
+      16  iport_change_status
+      78  iport_delete_from_group
+      10  iport_init_group_str
+     146  iport_init_groups
+      14  iport_init_hardware
+      24  iport_init_str
+      30  iport_input_changed
+      12  iport_read_status
+      20  iport_set_status
+      38  iport_toggle_group_output
+      28  iport_toggle_status
+      20  led_off
+      20  led_on
+      32  led_toggle
+       4  num_groups
+      92  port_init_hardware
+      28  port_read_status
+      38  port_set_pin_status
+
+ 
+ 132 bytes in section .bss
+  76 bytes in section .data
+  68 bytes in section .rodata
+ 872 bytes in section .text
+ 
+ 872 bytes of CODE  memory
+  68 bytes of CONST memory
+ 208 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

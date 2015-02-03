@@ -1,0 +1,675 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:04 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\my_tasks.c                                #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\my_tasks.c -D USE_STDPERIPH_DRIVER -D     #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\my_tasks.lst         #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\my_tasks.o            #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\my_tasks.c
+      1          #include "my_tasks.h"
+      2          
+      3          extern volatile struct PORT_struct PORTs[MAX_PORTs];  // Массив портов где будут храниться все их параметры.
+      4          extern const uint16_t GPIOM_PIN[PORTn];
+      5          extern GPIO_TypeDef* GPIOM_PORT[PORTn];
+      6          extern __IO uint16_t ADC1ConvertedValue[3];
+      7          extern const portTickType xTicksToWait;
+      8          //const portTickType xTicksToWait = 100 / portTICK_RATE_MS;  // Макс число тактов для чтения или записи аднных из\в очередь 
+      9          extern xQueueHandle xQueue_sendText_t ,xQueue_port_struct;
+     10          
+     11          //---- Init treads -------------------------------------------------------------
+     12          /**
+     13          * @brief Function init task my_tasks_vConfigPort
+     14          * @param dev - Device structure parsing_html_device_pt
+     15          * @return - None
+     16          */
+     17          void my_tasks_vConfigPort_init(void * dev)
+     18          {
+     19             xTaskCreate(my_tasks_vConfigPort, "cfgPort", configMINIMAL_STACK_SIZE * 2, dev ,ConfigPort_TASK_PRIO, NULL);
+     20          }
+     21          
+     22          //------------------------------------------------------------------------------
+     23          /**
+     24          * @brief Function config Port 
+     25          * @param dev - Device structure parsing_html_device_ptuint8_t i; // Переменная в цикле
+     26          */
+     27          //---------------------------------------------
+     28          void my_tasks_vConfigPort (void *dev)
+     29          {
+     30          volatile struct PORT_struct *device ;
+     31          uint8_t i; // Переменная в цикле
+     32          //Ports_TypeDef port;
+     33          
+     34            device = (volatile struct PORT_struct *)dev;
+     35            
+     36          //  for (;;)
+     37          //  {
+     38          //    // Сделать проверку по ключу key всех выходов и на всех их установить новое значение статуса
+     39          //    for(int i=0; i < MAX_PORTs; i++){
+     40          //      if ((PORTs[i].key == device->key)&&(PORTs[i].mode == OUT_pin)){
+     41          //            PORTs[i].status = device->status;
+     42          //        if ((device->enable == enable)&&(device->status == On)){
+     43          //              if (PORTs[i].enable == enable){
+     44          //                port = getPort_name(PORTs[i].num_port);
+     45          //                make_pulse_init ((void*)&port);
+     46          ////                set_ports_PORTOn(getPort_name(PORTs[i].num_port));                
+     47          //              }
+     48          ////              set_ports_PORTOn(getPort_name(device->num_port));
+     49          //                port = getPort_name(device->num_port);
+     50          //                make_pulse_init ((void*)&port);              
+     51          //            } //end enable       
+     52          //        else {
+     53          //          if (PORTs[i].enable == enable){
+     54          //             port = getPort_name(PORTs[i].num_port);
+     55          //             make_pulse_init ((void*)&port);          
+     56          ////            set_ports_PORTOff(getPort_name(PORTs[i].num_port));
+     57          //          }
+     58          //             port = getPort_name(device->num_port);
+     59          //             make_pulse_init ((void*)&port);                        
+     60          ////             set_ports_PORTOff(getPort_name(device->num_port));
+     61          //        }  //end else enable
+     62          //      }  //end key
+     63          //    }  //end for PORTs
+     64          //    //set_ports_setAllValues(device);
+     65          //    vTaskDelete( NULL );
+     66          ////    vTaskDelay(200);
+     67          //  } //end for ;;
+     68          //------------------------------------------------------------------------------
+     69            for (;;)
+     70            {
+     71              // Сделать проверку по ключу key всех выходов и на всех их установить новое значение статуса
+     72              for(i = 0; i < MAX_PORTs; i++){
+     73                if ((PORTs[i].key == device->key)&&(PORTs[i].mode == OUT_pin)){
+     74                  PORTs[i].status = device->status;
+     75          //        port = getPort_name(device->num_port);
+     76                  make_pulse_init ((void*)&device);                        
+     77                  make_pulse_init ((void*)&PORTs[i]);                        
+     78                }  //end key
+     79              }  //end for PORTs
+     80              //set_ports_setAllValues(device);
+     81              vTaskDelete( NULL );
+     82          //    vTaskDelay(200);
+     83            } //end for 
+     84          }
+     85          //------------------------------------------------------------------------------
+     86          /**
+     87          * @brief  - Инициализация задачи обработчика нажатия кнопки
+     88          * @param  - *pt указательна PORT_struct
+     89          * @return - None
+     90          */
+     91          void my_tasks_vReceiveButton_init (void * pt)
+     92          {
+     93            portBASE_TYPE xReturn;  //  TaskCreate Error
+     94            
+     95            char but[10] = "Button";
+     96            char port_str[3];
+     97            volatile struct PORT_struct *port ;  // Передаем порт подключенный к кнопке
+     98            Ports_TypeDef port_num;
+     99            
+    100            port = (volatile struct PORT_struct *)pt;  
+    101            port_num = getPort_name(port->num_port);
+    102            
+    103            sprintf(port_str, "%d", port_num);
+    104            strcat(but,port_str); // Создаем задачу обработчика нажатия кнопки с уникальным имененм "Button1 ....Button.."
+    105            
+    106            xReturn = xTaskCreate(my_tasks_vReceiveButton, (signed char*)but, configMINIMAL_STACK_SIZE * 2  , pt ,INPUTS_TASK_PRIO, NULL);
+    107            if (xReturn != pdPASS){
+    108                printf ("Can't create Button Tasks, see errors %d in file 'projdefs.h' \n", xReturn);    
+    109                LED_alarm_On();
+    110            }
+    111            
+    112          }
+    113          
+    114          //------------------------------------------------------------------------------
+    115          
+    116          /**
+    117          * @brief  - Инициализация задачи обработчика нажатия кнопки
+    118          * @param  - *pt указательна PORT_struct
+    119          * @return - None
+    120          */
+    121          void my_tasks_vReceiveButton (void * pt)
+    122          {  
+    123            portBASE_TYPE xStatus;  
+    124            // Локальные переменные
+    125            struct sendText_t send2host_gi;
+    126            uint8_t val;
+    127            char str[5];
+    128            char port_gi[3], stat_gi[2]; //, ena_gi[2], val_gi[4], key_gi[4], mode_gi[2];   
+    129            uint8_t i; // Переменная в цикле
+    130            
+    131            volatile struct PORT_struct *port_st ;  // Передаем порт подключенный к кнопке
+    132            Ports_TypeDef port_num;
+    133            
+    134            port_st = (volatile struct PORT_struct *)pt;  
+    135            port_num = getPort_name(port_st->num_port); // Берем номер порта для работы
+    136          
+    137            uint8_t stat1_pin = 0, stat2_pin = 0;
+    138            
+    139            for(;;){
+    140          ///*---------- Debug  -------------------------*/      
+    141          //#ifdef Debug_my
+    142          //  vTaskDelay(8000);
+    143          //  taskENTER_CRITICAL();  
+    144          //    size_t mem = xPortGetFreeHeapSize();  
+    145          //    printf ("Free Heap size = %d \n\n", mem);      
+    146          //  taskEXIT_CRITICAL();
+    147          //#endif  
+    148          ///*-------------------------------------------*/
+    149            
+    150            stat1_pin = GPIO_ReadInputDataBit(GPIOM_PORT[port_num],GPIOM_PIN[port_num]);    // Считываем состояние кнопки
+    151            vTaskDelay(50); 
+    152            stat2_pin = GPIO_ReadInputDataBit(GPIOM_PORT[port_num],GPIOM_PIN[port_num]);    // Считываем состояние кнопки
+    153              
+    154            if (stat1_pin == stat2_pin){
+    155              continue;
+    156            }
+    157            else{ 
+    158          // sergey begin Возможно не нужно сохранять состояние входного порта, а хранить только состояние выходного порта    
+    159          // ---- Устанавливаем состояние входного порта ------             
+    160                    if ((stat1_pin == 0)&&(stat2_pin == 1)){
+    161                      port_st->status = On;
+    162                      printf("PORTs 'On'  Port %d \n", port_st->num_port);
+    163                      //Включить выход            
+    164                    }
+    165                    if ((stat1_pin == 1)&& (stat2_pin == 0)){
+    166                      //Выключить выход      
+    167                      port_st->status = Off;
+    168                      printf("PORTs 'Off' Port  %d\n", port_st->num_port);
+    169                    }
+    170          //----sergey end ---------    
+    171                    for(i = MIN_PORT_OUT; i < MAX_PORT_OUT ; i++){  //Переводит все выходы соединеные с кнопкой в новое состояние
+    172                      if (PORTs[i].key == port_st->key){  
+    173                        
+    174                        PORTs[i].status = port_st->status;
+    175                                      
+    176                        make_pulse_init ((void*)&PORTs[i]); 
+    177                        
+    178                        printf("Send pulse port %d \n", PORTs[i].num_port);
+    179                            
+    180                            val = PORTs[i].status;  //Status int to string
+    181                            sprintf(str, "%d", val);
+    182                            strcpy(stat_gi,str);
+    183                                  
+    184                            val = PORTs[i].num_port;  //Port int to string
+    185                            sprintf(str, "%d", val);
+    186                            strcpy(port_gi,str);
+    187                                      
+    188                              // String for Status   
+    189                            send2host_gi.cmd[0]=0; // Обнуляем командную строку, чтобы записать новые данные
+    190                            strcat(strcpy(send2host_gi.cmd, begin_pack), port_gi);
+    191                            strcat(send2host_gi.cmd, status_pack);
+    192                            strcat(send2host_gi.cmd, stat_gi);
+    193                            strcat(send2host_gi.cmd, end_pack);  // Записали все новые данные
+    194                                         
+    195                            send2host_gi.len = strlen(send2host_gi.cmd);                  //length of send_com
+    196          
+    197                            xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_gi, xTicksToWait); // Посылаем данные в очередь
+    198                            if (xStatus != pdPASS){
+    199                              LED_alarm_On();
+    200                              printf("(my_tasks)Can't to write port status, error is %d ", xStatus);
+    201                            }
+    202                            
+    203                            vNetconnClient_init(NULL);         // Запускаем задачу посылки данных по ethernet                                       
+    204                            vTaskDelay(100);
+    205                            printf("send message to host\n");
+    206                                                                
+    207                      }  //end if key
+    208                    }  //end for PORTs    
+    209               } //end else stat1 == stat2 
+    210            } // end for (;;)
+    211          }               
+    212          
+    213          
+    214          /**------------------------------------------------------------------------------------
+    215          * @brief Чтение температуры с датчиков.DS18b20+ и передача ее на ХОСТ по ETH
+    216          * @param
+    217          * @return void
+    218          * !ВНИМАНИЕ в функции OW_Send параметр readStart зависит от посылаемой команды, т.к. ТХ связан с RX то что передаю (клманды), то и принимаю - вот это мы пропускаем и считываем только данные
+    219          */
+    220          void my_task_vGetTemperature (void * dev){
+    221            
+    222            struct sendText_t send2host_temper;  // Структура для передачи данных на ХОСТ
+    223          
+    224            struct owidbuf_t owidbuf[MAX_DS18]; // Переменная где хранится информация о всех датчиках ID, Temperature
+    225            
+    226            uint8_t buf[9]; //Буфер для чтения данных из датчика
+    227            uint8_t idbuf[MAX_DS18][8]; //Массив где хранятся ID датчиков
+    228            uint8_t i;
+    229            uint8_t j;
+    230          //  uint8_t err_ds18b20 = 0;
+    231          //  char id[64]; 
+    232            char id_tmp[5];  //Строковый   вид ID и температуры
+    233            signed char integer_temp = 0; //Температура целая часть    
+    234            signed char frac_temp;        //Температура дробная часть
+    235          //  int  result;             //Итоговая температура
+    236            
+    237            portBASE_TYPE xStatus;
+    238          
+    239            OW_Init();  //Инициализация шины 1-wire
+    240            
+    241            uint8_t found = OW_Scan((uint8_t *)idbuf, MAX_DS18); // Ищем устройства на шине 1-wire
+    242            printf ("found %d devices\n", found);
+    243            
+    244            for (j = 0; j < found; j++){  //Создаем массив для доступа к каждому устройству на шине по его ID
+    245          //    id[0] = 0;
+    246              owidbuf[j].id[0] = 0x55;  //Команда обращения по ID на шине 1-wire
+    247              for(i = 0; i < 8; i++){
+    248                owidbuf[j].id[i+1] = idbuf[j][i];  //Записываем в массив ID
+    249                //Заодно в этом цикле посылаем все найденые ID на ХОСТ машину
+    250          //      sprintf(id_tmp, "%02x",idbuf[j][i]); //Создаем строку с ID которую потом отсылаем на ХОСТ
+    251          //      strcat(id,id_tmp);
+    252          //      strcat(id," ");
+    253          //      // Отправляем все ID на ХОСТ компьютер!!!!
+    254          //      send2host_temper.cmd[0]=0;
+    255          //      strcat(strcpy(send2host_temper.cmd, tp), id_tmp);
+    256          //      strcat(send2host_temper.cmd, ed);
+    257          //             
+    258          //      send2host_temper.len = strlen(send2host_temper.cmd);                  //length of send_com
+    259          //      xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_temper, xTicksToWait );
+    260          //                  if (xStatus != pdPASS){
+    261          //                    LED_alarm_On();
+    262          //                    printf("(my_tasks)Can't to write port status, error is %d ", xStatus);
+    263          //                  }
+    264          //      vNetconnClient_init(NULL);   
+    265          //      vTaskDelay(200);
+    266              }
+    267              owidbuf[j].id[9] = 0xbe;  //Продолжаем дописывать массив - команда чтения всех регистров датчика DS18B20
+    268              
+    269              for (i=10; i < 15; i++){
+    270                 owidbuf[j].id[i] = 0xff;  //Пишем 5 раз ff в массив что бы потом можно было считать 5 байт из датчика
+    271                 //Для того чтобы считать байт нужно послать байт ff
+    272              }    
+    273            }
+    274            
+    275            for (;;){  // В цикле измеряем температуру со всех датчиков 
+    276          /*----------------------------------------------------------------------------*/    
+    277          #ifdef Debug_my
+    278            taskENTER_CRITICAL();  
+    279              size_t mem = xPortGetFreeHeapSize();  
+    280              printf ("Free Heap size in temperature Task = %d \n\n", mem);      
+    281            taskEXIT_CRITICAL();
+    282          #endif  
+    283          /*----------------------------------------------------------------------------*/
+    284            
+    285              OW_Send(OW_SEND_RESET, "\xcc\x44", 2, NULL, NULL, OW_NO_READ); // Измеряем температуру на всех датчиках
+    286              vTaskDelay(1000);  // Ждем около  1 сек пока закончится процесс измерения температуры !!!ОБЯЗАТЕЛЬНО
+    287              
+    288              for (j = 0; j < found; j++){
+    289                //Посылаем 15 байт, считываем 13 байт, но в буфер кладем, только с десятого, т.е. в буфере будет 3 байта
+    290              OW_Send(OW_SEND_RESET, owidbuf[j].id, 15, buf, 13, 10); // Считываем температуру  
+    291              
+    292          /****************************************************************/ 
+    293          
+    294                frac_temp    = buf[0] & 0x0f;                            //получить дробную часть      
+    295                integer_temp = (buf[0]>>4) | ((buf[1] & 0x0f)<<4);      //получить целую часть 
+    296               
+    297                //если температура отрицательная
+    298                if(integer_temp < 0)
+    299                {
+    300                  integer_temp = 0 - integer_temp - 1;
+    301                  owidbuf[j].temp  = integer_temp * 10;                            //учитываем целую часть
+    302                  frac_temp = frac_temp | 0xf0;
+    303                  frac_temp = 0 - frac_temp ;                                 
+    304                }
+    305                //если температура положительная
+    306                else      owidbuf[j].temp  = integer_temp * 10;                    //учитываем целую часть
+    307               
+    308                owidbuf[j].temp =  owidbuf[j].temp + ((frac_temp * 10)/16);                  //учитываем дробную часть //Чтобы получить реальную температуру, нужно это число разделить на 10.
+    309                printf("Temperature %d\n\n", owidbuf[j].temp);
+    310              } //end for перебор датчиков температуры
+    311          //**********************************************************************/
+    312          //////-------------- Сравниваем температуру от всех датчиков и берем среднее значение
+    313          //  if (found == 3){
+    314          //    if (((owidbuf[0].temp - owidbuf[1].temp) < 10)&&((owidbuf[0].temp - owidbuf[1].temp)> -10)){  // <>10 т.к. у нас вся температура умножена на 10 т.е. мы не учмтываем десятые доли градуса.
+    315          //      if (((owidbuf[1].temp - owidbuf[2].temp) < 10)&&((owidbuf[1].temp - owidbuf[2].temp)> -10)){
+    316          //      result = (owidbuf[0].temp + owidbuf[1].temp + owidbuf[2].temp)/3;
+    317          //      }
+    318          //      else{
+    319          //        result = (owidbuf[0].temp + owidbuf[1].temp)/2;
+    320          //        err_ds18b20 = 1;
+    321          //        // Посылаем alarm owidbuf[2].temp не исправен датчик температуры
+    322          //      }
+    323          //    }
+    324          //    else if (((owidbuf[1].temp - owidbuf[2].temp) < 10)&&((owidbuf[1].temp - owidbuf[2].temp)> -10)){
+    325          //      result = (owidbuf[2].temp + owidbuf[1].temp)/2;
+    326          //       // Посылаем alarm owidbuf[0].temp не исправен датчик температуры
+    327          //      err_ds18b20 = 1;
+    328          //    }
+    329          //    else{
+    330          //      result = (owidbuf[2].temp + owidbuf[0].temp)/2;
+    331          //       // Посылаем alarm owidbuf[1].temp не исправен датчик температуры      
+    332          //      err_ds18b20 = 1;
+    333          //    }
+    334          //  }   
+    335            // Отсылаем полученный результат на ХОСТ компьютер
+    336              
+    337              sprintf(id_tmp, "%d", owidbuf[j].temp); 
+    338              send2host_temper.cmd[0] = 0;
+    339              strcpy(send2host_temper.cmd, temper_pack);
+    340              strcat(send2host_temper.cmd, id_tmp);
+    341              strcat(send2host_temper.cmd, end_pack);
+    342                     
+    343              send2host_temper.len = strlen(send2host_temper.cmd);                  //length of send_com
+    344          
+    345              xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_temper, xTicksToWait );
+    346              if (xStatus != pdPASS){
+    347                 LED_alarm_On();
+    348                 printf("(my_tasks)Can't to write port temperature, error is %d ", xStatus);
+    349              }
+    350              
+    351              vNetconnClient_init(NULL);   
+    352              vTaskDelay(200);
+    353              
+    354           //-----------   
+    355          //    //Если в датчике была ошибка то отсылаем предупреждение
+    356          //    send2host_temper.cmd[0]=0;
+    357          //    if (err_ds18b20 == 1){
+    358          //    strcat(send2host_temper.cmd, "GET /objects/?object=tempSensor&op=m&m=errSensor&error=1");
+    359          //    err_ds18b20 = 0;
+    360          //    }
+    361          //    else{
+    362          //    strcat(send2host_temper.cmd, "GET /objects/?object=tempSensor&op=m&m=errSensor&error=0");  
+    363          //    }
+    364          //    strcat(send2host_temper.cmd, end_pack);          
+    365          //    send2host_temper.len = strlen(send2host_temper.cmd);                  //length of send_com
+    366          //    xStatus = xQueueSendToBack( xQueue_sendText_t, &send2host_temper, xTicksToWait );
+    367          //      if (xStatus != pdPASS){
+    368          //        LED_alarm_On();
+    369          //      }    
+    370          //    vNetconnClient_init(NULL);   
+    371           //-----------     
+    372          
+    373            vTaskDelay(10000);  //ЗАдержка перед следующим измерением температуры
+    374          ///**************************************************************************/
+    375            }//end for(;;)
+    376          }
+    377          //----------------****************************************
+    378          //---- Init treads wather ADC -------------------------------------------------------------
+    379          /**
+    380          * @brief Function init task wather_sensor_init
+    381          * @param dev - null
+    382          * @return - None
+    383          */
+    384          //void vWather_sensor_init(void *dev)
+    385          //{
+    386          //portBASE_TYPE xReturn;  //  TaskCreate Error
+    387          //   xTaskCreate(vWather_sensor, "wather_sensor", configMINIMAL_STACK_SIZE * 2, NULL ,CLIENT_HTTP + 1, NULL);
+    388          //      if (xReturn != pdPASS){
+    389          //        printf ("See errors %d in file 'projdefs.h' \n", xReturn);    
+    390          //        LED_alarm_On();   
+    391          //      }
+    392          
+    393          //}
+    394          
+    395          //------------------------------------------------------------------------------
+    396          /**
+    397          * @brief Function read ADC for Wather Sensor 
+    398          * @param None
+    399          */
+    400          //---------------------------------------------
+    401          void vWather_sensor (void *dev)
+    402          {  
+    403            int a;     // Расчет влажности
+    404            uint8_t b; // Оценка влажности
+    405            
+    406            ADC_SoftwareStartConv(ADC1);
+    407            
+    408            for (;;)
+    409            {
+    410                a = ((3300 * ADC1ConvertedValue[0]) / 4095); //Wather
+    411                
+    412                if ((0 < a)&&(a < 300)){
+    413                  b = 1;  // Мокро
+    414                }
+    415                
+    416                if ((301 < a)&&(a < 700)){
+    417                  b = 2;  // Влажно
+    418                }
+    419                
+    420                if (701 < a){
+    421                  b = 3;   //Сухо
+    422                }
+    423                
+    424                if (ADC1ConvertedValue[1] > 100){  //GAS
+    425                 
+    426                  LEDOn(LED4); 
+    427               }
+    428               else{
+    429                  LEDOff(LED4); 
+    430               }
+    431          
+    432               if (ADC1ConvertedValue[2] > 100){  //Move
+    433                 set_ports_PORTOff(Port4);
+    434                 LEDOff(LED3);
+    435               }
+    436               else{
+    437                 set_ports_PORTOn(Port4);
+    438                  LEDOn(LED3);
+    439               }
+    440               
+    441            vTaskDelay(100);  
+    442            } //end for ;;
+    443          }
+    444          //------------------------------------------------------------------------------
+    445          void my_task_TaskList (void *dev){
+    446            for (;;){  
+    447            
+    448            portCHAR PAGE_BODY[512];
+    449            portCHAR pagehits[10] = {0};
+    450          
+    451            memset(PAGE_BODY, 0,512);
+    452          
+    453            /* Update the hit count */
+    454            strcat(PAGE_BODY, pagehits);
+    455            strcat((char *)PAGE_BODY, "Name          State  Priority  Stack   Num\n" );
+    456            strcat((char *)PAGE_BODY, "---------------------------------------------\n");
+    457              
+    458            /* The list of tasks and their status */
+    459            vTaskList((signed char *)(PAGE_BODY + strlen(PAGE_BODY)));
+    460            strcat((char *)PAGE_BODY, "---------------------------------------------\n");
+    461            strcat((char *)PAGE_BODY, "B : Blocked, R : Ready, D : Deleted, S : Suspended\n\n");
+    462            printf ("%s\n", PAGE_BODY);
+    463              
+    464            vTaskDelay (10000);
+    465            } //end for 
+    466            
+    467          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   memset
+        16   -> __aeabi_memset
+     536   my_task_TaskList
+       536   -> memset
+       536   -> printf
+       536   -> strcat
+       536   -> strlen
+       536   -> vTaskDelay
+       536   -> vTaskList
+     248   my_task_vGetTemperature
+       248   -> LED_alarm_On
+       248   -> OW_Init
+       248   -> OW_Scan
+       248   -> OW_Send
+       248   -> printf
+       248   -> sprintf
+       248   -> strcat
+       248   -> strcpy
+       248   -> strlen
+       248   -> vNetconnClient_init
+       248   -> vPortEnterCritical
+       248   -> vPortExitCritical
+       248   -> vTaskDelay
+       248   -> xPortGetFreeHeapSize
+       248   -> xQueueGenericSend
+      16   my_tasks_vConfigPort
+        16   -> make_pulse_init
+        16   -> vTaskDelete
+      24   my_tasks_vConfigPort_init
+        24   -> xTaskGenericCreate
+     208   my_tasks_vReceiveButton
+       208   -> GPIO_ReadInputDataBit
+       208   -> LED_alarm_On
+       208   -> getPort_name
+       208   -> make_pulse_init
+       208   -> printf
+       208   -> sprintf
+       208   -> strcat
+       208   -> strcpy
+       208   -> strlen
+       208   -> vNetconnClient_init
+       208   -> vTaskDelay
+       208   -> xQueueGenericSend
+      56   my_tasks_vReceiveButton_init
+        56   -> LED_alarm_On
+        56   -> __aeabi_memcpy4
+        56   -> getPort_name
+        56   -> printf
+        56   -> sprintf
+        56   -> strcat
+        56   -> xTaskGenericCreate
+      16   vWather_sensor
+        16   -> ADC_SoftwareStartConv
+        16   -> LEDOff
+        16   -> LEDOn
+        16   -> set_ports_PORTOff
+        16   -> set_ports_PORTOn
+        16   -> vTaskDelay
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      56  ?<Constant " HTTP/1.1\r\nHost: 192....">
+       4  ?<Constant "%d">
+       4  ?<Constant "%s\n">
+      32  ?<Constant "&op=m&m=changedStatus...">
+      52  ?<Constant "(my_tasks)Can\'t to wr...">
+      56  ?<Constant "(my_tasks)Can\'t to wr...">_1
+      48  ?<Constant "---------------------...">
+      56  ?<Constant "B : Blocked, R : Read...">
+       8  ?<Constant "Button">
+      64  ?<Constant "Can\'t create Button T...">
+      44  ?<Constant "Free Heap size in tem...">
+      28  ?<Constant "GET /objects/?object=...">
+      60  ?<Constant "GET /objects/?object=...">_1
+      44  ?<Constant "Name          State  ...">
+      24  ?<Constant "PORTs \'Off\' Port  %d\n">
+      24  ?<Constant "PORTs \'On\'  Port %d \n">
+      24  ?<Constant "Send pulse port %d \n">
+      20  ?<Constant "Temperature %d\n\n">
+       4  ?<Constant "\314D">
+       8  ?<Constant "cfgPort">
+      20  ?<Constant "found %d devices\n">
+      24  ?<Constant "send message to host\n">
+      12  ?<Constant {0}>
+       4  ??DataTable3
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_14
+       4  ??DataTable6_15
+       4  ??DataTable6_16
+       4  ??DataTable6_17
+       4  ??DataTable6_18
+       4  ??DataTable6_19
+       4  ??DataTable6_2
+       4  ??DataTable6_20
+       4  ??DataTable6_21
+       4  ??DataTable6_22
+       4  ??DataTable6_23
+       4  ??DataTable6_24
+       4  ??DataTable6_25
+       4  ??DataTable6_26
+       4  ??DataTable6_27
+       4  ??DataTable6_28
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+      22  memset
+     100  my_task_TaskList
+     558  my_task_vGetTemperature
+     108  my_tasks_vConfigPort
+      40  my_tasks_vConfigPort_init
+     460  my_tasks_vReceiveButton
+     104  my_tasks_vReceiveButton_init
+     136  vWather_sensor
+
+ 
+   716 bytes in section .rodata
+ 1 648 bytes in section .text
+ 
+ 1 626 bytes of CODE  memory (+ 22 bytes shared)
+   716 bytes of CONST memory
+
+Errors: none
+Warnings: 1

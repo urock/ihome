@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1861</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1395</ColumnWidth1>
+        <ColumnWidth2>372</ColumnWidth2>
+        <ColumnWidth3>93</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>50</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <col-names>
+          <item>Disassembly</item>
+          <item>_I0</item>
+        </col-names>
+        <col-widths>
+          <item>500</item>
+          <item>20</item>
+        </col-widths>
+        <DisasmHistory/>
+        <PreferedWindows>
+          <Position>2</Position>
+          <ScreenPosX>0</ScreenPosX>
+          <ScreenPosY>0</ScreenPosY>
+          <Windows/>
+        </PreferedWindows>
+        <ShowCodeCoverage>1</ShowCodeCoverage>
+        <ShowInstrProfiling>1</ShowInstrProfiling>
+      </Disassembly>
+      <WATCH_1>
+        <expressions>
+          
+          
+        <item>rd_val</item><item/></expressions>
+        <col-names>
+          
+          
+          
+          
+        <item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names>
+        <col-widths>
+          
+          
+          
+          
+        <item>100</item><item>150</item><item>100</item><item>100</item></col-widths>
+      </WATCH_1>
+    </Static>
+    <Windows>
+      
+      
+      
+    <Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-10911-17769</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-10389-17779</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-21660-17773</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>Project</ExpandedNode><ExpandedNode>Project/User</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd5>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-13254-19363</Identity>
+            <TabName>Watch 1</TabName>
+            <Factory>WATCH_1</Factory>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd5></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>31</YPos2><SelStart2>1552</SelStart2><SelEnd2>1552</SelEnd2></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\api\tcpip.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>23</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\core\tcp.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>126</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2\src\include\lwip\memp_std.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>1669</SelStart2><SelEnd2>1669</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00CD16F0><key>iaridepm.enu1</key></Toolbar-00CD16F0></Sizes></Row0><Row1><Sizes><Toolbar-0F9DA5A8><key>debuggergui.enu1</key></Toolbar-0F9DA5A8></Sizes></Row1><Row2><Sizes><Toolbar-0F9D7E98><key>armjlink.enu1</key></Toolbar-0F9D7E98></Sizes></Row2></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>469</Bottom><Right>141</Right><x>-2</x><y>-2</y><xscreen>216</xscreen><yscreen>126</yscreen><sizeHorzCX>158824</sizeHorzCX><sizeHorzCY>183673</sizeHorzCY><sizeVertCX>105147</sizeVertCX><sizeVertCY>686589</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>469</Bottom><Right>214</Right><x>-2</x><y>-2</y><xscreen>216</xscreen><yscreen>126</yscreen><sizeHorzCX>158824</sizeHorzCX><sizeHorzCY>183673</sizeHorzCY><sizeVertCX>158824</sizeVertCX><sizeVertCY>686589</sizeVertCY></Rect></Wnd5></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>124</Bottom><Right>1362</Right><x>-2</x><y>-2</y><xscreen>1364</xscreen><yscreen>126</yscreen><sizeHorzCX>1002941</sizeHorzCX><sizeHorzCY>183673</sizeHorzCY><sizeVertCX>158824</sizeVertCX><sizeVertCY>183673</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

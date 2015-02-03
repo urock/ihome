@@ -1,0 +1,293 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:03 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\interface_cpld.c                          #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\interface_cpld.c -D USE_STDPERIPH_DRIVER  #
+#                    -D STM32F2XX -D USE_STM322xG_EVAL -lcN                   #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\interface_cpld.lst   #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\interface_cpld.o      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\interface_cpld.c
+      1          #include "interface_cpld.h"
+      2          
+      3          extern volatile struct PORT_struct PORTs[MAX_PORTs];
+      4          extern const uint16_t GPIOM_PIN[PORTn];
+      5          extern GPIO_TypeDef* GPIOM_PORT[PORTn];
+      6          extern volatile struct info_struct_t info_struct;
+      7          extern unsigned char ID;
+      8          
+      9          void interface_cpld_init (void){
+     10            unsigned char res;
+     11            uint8_t i;
+     12            Ports_TypeDef port;
+     13            uint8_t *buf_ptr;
+     14            uint8_t size;    // Размер структуры
+     15            uint8_t a = 0;  // Временная переменная задающая поле key 
+     16              
+     17          //------ Устанавливаем 4 пина STM в режим чтения подключенных плат.
+     18              //---- Для верхнего разъема
+     19          //      init_ports_PORTOut(Port0); // TCK
+     20          //      init_ports_PORTOut(Port1); // TDI     
+     21          //      init_ports_PORTIn(Port2);// TDO
+     22          //      //-- read ID power board ---
+     23          //      ID = Read_ID_cpld(Port0, Port1, Port2, Cmd_Read_ID_cpld);
+     24          //        ID = 0;
+     25          
+     26          //------- Читаем FLASH на предмет уже сконфигурированныйх портов и если находим конфигурация для подключенной платы power, то
+     27          // считываем ее из FLASH --- если ID не совпадает с считанной из FLASH
+     28          // т.е. была замена платы power, то происходит конфигурирование портов по defaults
+     29            
+     30          //        size = sizeof(info_struct);  // Вычисляем размер структуры
+     31          //        buf_ptr =(uint8_t*) &info_struct;  // Устанавливаем указатель на адрес структуры
+     32          //        read_buf_from_flash(buf_ptr, size, USER_FLASH_INFO);  // Читаем структуры в RAM
+     33          //        
+     34          //        if (info_struct.ver != 0xFF){ //Если в ФЛЭШ памяти записана версия прошивки!
+     35          //          //-------------------------------------------------------------------------------
+     36          //          /* Чтение структуры из флеш памяти */  
+     37          //              size = sizeof(PORTs);  // Вычисляем размер структуры
+     38          //              buf_ptr =(uint8_t*) &PORTs[0];  // Устанавливаем указатель на адрес структуры
+     39          //              read_buf_from_flash(buf_ptr, size, USER_FLASH_BASE);  // Читаем структуры в RAM
+     40          //        }  
+     41          //-----------------END FLASH ---------------------------------------------------
+     42          //
+     43          //      switch (ID){  
+     44          //      case ID_I8O8_relay: // Конфигурация портов для этой платы
+     45          //        {
+     46          
+     47                    for (i = MIN_PORT_IN; i < MAX_PORT_IN + 1; i++){
+     48          //            if (ID == info_struct.ID_board_flash){
+     49          //              port = getPort_name(i);
+     50          //              init_ports_PORTIn(port); // config Port how Input  
+     51          //            }
+     52          //            else{
+     53                      PORTs[i].status = Off;  //off
+     54                      PORTs[i].value = 0;   // 0
+     55                      PORTs[i].enable = enable;   // disable
+     56                      PORTs[i].key = a; 
+     57                      PORTs[i].num_port = i;
+     58                      PORTs[i].mode = IN_pin;            
+     59                      port = getPort_name(i);
+     60                      init_ports_PORTIn(port); // config Port how Input            
+     61                      printf("Init INs %d , key is %d \n", port, a);
+     62                      a++;
+     63          //            } //end if
+     64                    }  //end for
+     65          a = 0;          
+     66                    for (i = MIN_PORT_OUT; i < MAX_PORT_OUT + 1; i++){
+     67          //            if (ID == info_struct.ID_board_flash){
+     68          //              port = getPort_name(i);
+     69          //              init_ports_PORTOut(port); // config Port how Output            
+     70          //            }
+     71          //            else{            
+     72                      PORTs[i].status = Off;  //off
+     73                      PORTs[i].value = 0;   // 0
+     74                      PORTs[i].enable = enable;   // disable
+     75                      PORTs[i].key = a; 
+     76                      PORTs[i].num_port = i;
+     77                      PORTs[i].mode = OUT_pin;            
+     78                      port = getPort_name(i);
+     79                      init_ports_PORTOut(port); // config Port how Output            
+     80                      set_ports_PORTOn(getPort_name(i)); 
+     81                      printf("Init OUTs %d, key is %d \n", port, a);
+     82                      a++;
+     83          //            } // end if
+     84                    }  // end for                  
+     85          //          break;
+     86          //        }
+     87          //      default:{  // Конфигурируем четные выходы, нечетные входы
+     88          //          for (i = 0; i < 16; i++){
+     89          //            if (i % 2 == 0){  // Четные  - выходы
+     90          //              PORTs[i].status = Off;  //off
+     91          //              PORTs[i].value = 0;   // 0
+     92          //              PORTs[i].enable = disable;   // disable
+     93          //              PORTs[i].key = 0; 
+     94          //              PORTs[i].num_port = i;
+     95          //              PORTs[i].mode = OUT_pin;            
+     96          //              port = getPort_name(i);
+     97          //              init_ports_PORTOut(port); // config Port how Input                        
+     98          //            }
+     99          //            else{  //Нечетные входы
+    100          //              PORTs[i].status = Off;  //off
+    101          //              PORTs[i].value = 0;   // 0
+    102          //              PORTs[i].enable = disable;   // disable
+    103          //              PORTs[i].key = 0; 
+    104          //              PORTs[i].num_port = i;
+    105          //              PORTs[i].mode = IN_pin;            
+    106          //              port = getPort_name(i);
+    107          //              init_ports_PORTIn(port); // config Port how Input                          
+    108          //            }
+    109          //          }           
+    110          //          break;
+    111          //        }
+    112          //      } // end switch
+    113          //      
+    114          //      res = Read_ID_cpld(Port0, Port1, Port2, Cmd_auto_cpld); // Переводим cpld в режим работы     
+    115          //      init_ports_PORTOut(Port0);
+    116          //      init_ports_PORTOut(Port1);
+    117          //      init_ports_PORTOut(Port2);
+    118          //---------------------- Для нижнего разъема -----------------------------------        
+    119          //    //---- Для нижнего разъема
+    120          //      init_ports_PORTOut(Port16); // TCK
+    121          //      init_ports_PORTOut(Port17); // TDI
+    122          //      init_ports_PORTIn(Port18);// TDO
+    123          //      //-- read ID power board ---
+    124          ////------------------------------------------      
+    125          //      ID = Read_ID_cpld(Port16, Port17, Port18, Cmd_Read_ID_cpld);
+    126          //      switch (ID){  
+    127          //      case ID_8in_8out: // Конфигурация портов для этой платы
+    128          //        {
+    129          //          
+    130          //          break;
+    131          //        }
+    132          //      default:{  // Конфигурируем четные выходы, нечетные входы
+    133          //          
+    134          //          break;
+    135          //        }
+    136          //      } // end switch
+    137          //      res = Read_ID_cpld(Port16, Port17, Port18, Cmd_auto_cpld); // Переводим cpld в режим работы           
+    138                
+    139          }
+    140          
+    141          
+    142          // ------------- Interface CPLD Functions --------------------------------------
+    143          
+    144          void interface_cpld_clk(Ports_TypeDef Port_clk){
+    145            
+    146            set_ports_PORTOff(Port_clk);
+    147            vTaskDelay(10);
+    148            set_ports_PORTOn(Port_clk);
+    149            vTaskDelay(10);
+    150            set_ports_PORTOff(Port_clk);
+    151            
+    152          }
+    153          //------------------------------------------
+    154          unsigned char Read_ID_cpld(Ports_TypeDef Port_clk, Ports_TypeDef Port_data_out, Ports_TypeDef Port_data_in, unsigned char data){
+    155            unsigned char c = 1, i, mask = 1, res1 = 0, res2 = 0;
+    156            for (i=0; i < Max_Light_cmd_cpld; i++){  //Write command to cpld - передаем с младшего разряда
+    157              if ((c && data)== 1){
+    158                set_ports_PORTOn(Port_data_out);
+    159                interface_cpld_clk(Port_clk);
+    160              }  //end then
+    161              else{
+    162                set_ports_PORTOff(Port_data_out);
+    163                interface_cpld_clk(Port_clk);      
+    164              }  //end else
+    165              c = c << 1;
+    166            } // end for write
+    167              
+    168            c = 0;
+    169            for (i=0; i < Max_Light_ID_cpld; i++){  //Read ID from cpld - принимаем с младшего разряда
+    170              c = GPIO_ReadInputDataBit(GPIOM_PORT[Port_data_in],GPIOM_PIN[Port_data_in]); 
+    171              res1 = c && mask;
+    172              res2 = res1 || res2;
+    173              mask = mask << 1;
+    174              interface_cpld_clk(Port_clk);              
+    175              
+    176            } // end for read
+    177            return res2;
+    178          }
+    179          // ----- END CPLD FUNCTIONS ----------------------------------------------------
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   Read_ID_cpld
+        40   -> GPIO_ReadInputDataBit
+        40   -> interface_cpld_clk
+        40   -> set_ports_PORTOff
+        40   -> set_ports_PORTOn
+       8   interface_cpld_clk
+         8   -> set_ports_PORTOff
+         8   -> set_ports_PORTOn
+         8   -> vTaskDelay
+      16   interface_cpld_init
+        16   -> getPort_name
+        16   -> init_ports_PORTIn
+        16   -> init_ports_PORTOut
+        16   -> printf
+        16   -> set_ports_PORTOn
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      28  ?<Constant "Init INs %d , key is ...">
+      28  ?<Constant "Init OUTs %d, key is ...">
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+     228  Read_ID_cpld
+      42  interface_cpld_clk
+     280  interface_cpld_init
+
+ 
+  56 bytes in section .rodata
+ 570 bytes in section .text
+ 
+ 570 bytes of CODE  memory
+  56 bytes of CONST memory
+
+Errors: none
+Warnings: 3

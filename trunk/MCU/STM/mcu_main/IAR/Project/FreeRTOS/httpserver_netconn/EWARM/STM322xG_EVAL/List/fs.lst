@@ -1,0 +1,280 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      30/Sep/2013  17:47:21 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\src\fs.c                                            #
+#    Command line =  C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\src\fs.c -D USE_STDPERIPH_DRIVER -D STM32F2XX -D    #
+#                    USE_STM322xG_EVAL -lcN C:\2home\home_soft\trunk\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\STM322xG_EVAL\List\    #
+#                    -o C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_ #
+#                    netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse --no_unroll    #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M3  #
+#                    -e --fpu=None --dlib_config "C:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.5\arm\INC\c\DLib_Config_Ful #
+#                    l.h" -I C:\2home\home_soft\trunk\Project\FreeRTOS\httpse #
+#                    rver_netconn\EWARM\..\inc\ -I                            #
+#                    C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSupport #
+#                    \ST\STM32F2xx\ -I C:\2home\home_soft\trunk\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Libraries\STM32 #
+#                    F2xx_StdPeriph_Driver\inc\ -I                            #
+#                    C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Driver\in #
+#                    c\ -I C:\2home\home_soft\trunk\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\Common #
+#                    \ -I C:\2home\home_soft\trunk\Project\FreeRTOS\httpserve #
+#                    r_netconn\EWARM\..\..\..\..\Utilities\STM32_EVAL\STM322x #
+#                    G_EVAL\ -I C:\2home\home_soft\trunk\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    lwip_v1.3.2\src\include\ -I                              #
+#                    C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2 #
+#                    \src\include\lwip\ -I C:\2home\home_soft\trunk\Project\F #
+#                    reeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\T #
+#                    hird_Party\lwip_v1.3.2\src\include\netif\ -I             #
+#                    C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2 #
+#                    \src\include\ipv4\ -I C:\2home\home_soft\trunk\Project\F #
+#                    reeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\T #
+#                    hird_Party\lwip_v1.3.2\port\STM32F2x7\ -I                #
+#                    C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1.3.2 #
+#                    \port\STM32F2x7\FreeRTOS\ -I                             #
+#                    C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7 #
+#                    .4.2\portable\IAR\ARM_CM3\ -I                            #
+#                    C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTOS_v7 #
+#                    .4.2\include\ -On --use_c++_inline -I "C:\Program Files  #
+#                    (x86)\IAR Systems\Embedded Workbench                     #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\STM322xG_EVAL\List\fs.lst                     #
+#    Object file  =  C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_net #
+#                    conn\EWARM\STM322xG_EVAL\Obj\fs.o                        #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\2home\home_soft\trunk\Project\FreeRTOS\httpserver_netconn\src\fs.c
+      1          /**
+      2           * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
+      3           * All rights reserved. 
+      4           * 
+      5           * Redistribution and use in source and binary forms, with or without modification, 
+      6           * are permitted provided that the following conditions are met:
+      7           *
+      8           * 1. Redistributions of source code must retain the above copyright notice,
+      9           *    this list of conditions and the following disclaimer.
+     10           * 2. Redistributions in binary form must reproduce the above copyright notice,
+     11           *    this list of conditions and the following disclaimer in the documentation
+     12           *    and/or other materials provided with the distribution.
+     13           * 3. The name of the author may not be used to endorse or promote products
+     14           *    derived from this software without specific prior written permission. 
+     15           *
+     16           * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED 
+     17           * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+     18           * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+     19           * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+     20           * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT 
+     21           * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+     22           * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+     23           * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+     24           * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+     25           * OF SUCH DAMAGE.
+     26           *
+     27           * This file is part of the lwIP TCP/IP stack.
+     28           * 
+     29           * Author: Adam Dunkels <adam@sics.se>
+     30           *
+     31           **/
+     32          #include "lwip/opt.h"
+     33          #include "lwip/def.h"
+     34          #include "fs.h"
+     35          #include "fsdata.h"
+     36          #include <string.h>
+     37          
+     38          /** Set this to 1 to include "fsdata_custom.c" instead of "fsdata.c" for the
+     39           * file system (to prevent changing the file included in CVS) */
+     40          #ifndef HTTPD_USE_CUSTUM_FSDATA
+     41          #define HTTPD_USE_CUSTUM_FSDATA 0
+     42          #endif
+     43          
+     44          #if HTTPD_USE_CUSTUM_FSDATA
+     45          #include "fsdata_custom.c"
+     46          #else /* HTTPD_USE_CUSTUM_FSDATA */
+     47          #include "fsdata.c"
+     48          #endif /* HTTPD_USE_CUSTUM_FSDATA */
+     49          
+     50          /*-----------------------------------------------------------------------------------*/
+     51          /* Define the number of open files that we can support. */
+     52          #ifndef LWIP_MAX_OPEN_FILES
+     53          #define LWIP_MAX_OPEN_FILES     10
+     54          #endif
+     55          
+     56          /* Define the file system memory allocation structure. */
+     57          struct fs_table {
+     58            struct fs_file file;
+     59            u8_t inuse;
+     60          };
+     61          
+     62          /* Allocate file system memory */
+     63          struct fs_table fs_memory[LWIP_MAX_OPEN_FILES];
+     64          
+     65          #if LWIP_HTTPD_CUSTOM_FILES
+     66          int fs_open_custom(struct fs_file *file, const char *name);
+     67          void fs_close_custom(struct fs_file *file);
+     68          #endif /* LWIP_HTTPD_CUSTOM_FILES */
+     69          
+     70          /*-----------------------------------------------------------------------------------*/
+     71          static struct fs_file *
+     72          fs_malloc(void)
+     73          {
+     74            int i;
+     75            for(i = 0; i < LWIP_MAX_OPEN_FILES; i++) {
+     76              if(fs_memory[i].inuse == 0) {
+     77                fs_memory[i].inuse = 1;
+     78                return(&fs_memory[i].file);
+     79              }
+     80            }
+     81            return(NULL);
+     82          }
+     83          
+     84          /*-----------------------------------------------------------------------------------*/
+     85          static void
+     86          fs_free(struct fs_file *file)
+     87          {
+     88            int i;
+     89            for(i = 0; i < LWIP_MAX_OPEN_FILES; i++) {
+     90              if(&fs_memory[i].file == file) {
+     91                fs_memory[i].inuse = 0;
+     92                break;
+     93              }
+     94            }
+     95            return;
+     96          }
+     97          
+     98          /*-----------------------------------------------------------------------------------*/
+     99          struct fs_file *
+    100          fs_open(const char *name)
+    101          {
+    102          //  struct fs_file *file;
+    103          //  const struct fsdata_file *f;
+    104          //
+    105          //  file = fs_malloc();
+    106          //  if(file == NULL) {
+    107          //    return NULL;
+    108          //  }
+    109          //
+    110          //#if LWIP_HTTPD_CUSTOM_FILES
+    111          //  if(fs_open_custom(file, name)) {
+    112          //    file->is_custom_file = 1;
+    113          //    return file;
+    114          //  }
+    115          //  file->is_custom_file = 0;
+    116          //#endif /* LWIP_HTTPD_CUSTOM_FILES */
+    117          //
+    118          //  for(f = FS_ROOT; f != NULL; f = f->next) {
+    119          //    if (!strcmp(name, (char *)f->name)) {
+    120          //      file->data = (const char *)f->data;
+    121          //      file->len = f->len;
+    122          //      file->index = f->len;
+    123          //      file->pextension = NULL;
+    124          //      file->http_header_included = f->http_header_included;
+    125          //#if HTTPD_PRECALCULATED_CHECKSUM
+    126          //      file->chksum_count = f->chksum_count;
+    127          //      file->chksum = f->chksum;
+    128          //#endif /* HTTPD_PRECALCULATED_CHECKSUM */
+    129          //#if LWIP_HTTPD_FILE_STATE
+    130          //      file->state = fs_state_init(file, name);
+    131          //#endif /* #if LWIP_HTTPD_FILE_STATE */
+    132          //      return file;
+    133          //    }
+    134          //  }
+    135          //  fs_free(file);
+    136            return NULL;
+    137          }
+    138          
+    139          /*-----------------------------------------------------------------------------------*/
+    140          void
+    141          fs_close(struct fs_file *file)
+    142          {
+    143          #if LWIP_HTTPD_CUSTOM_FILES
+    144            if (file->is_custom_file) {
+    145              fs_close_custom(file);
+    146            }
+    147          #endif /* LWIP_HTTPD_CUSTOM_FILES */
+    148          #if LWIP_HTTPD_FILE_STATE
+    149            fs_state_free(file, file->state);
+    150          #endif /* #if LWIP_HTTPD_FILE_STATE */
+    151            fs_free(file);
+    152          }
+    153          /*-----------------------------------------------------------------------------------*/
+    154          int
+    155          fs_read(struct fs_file *file, char *buffer, int count)
+    156          {
+    157            int read;
+    158          
+    159            if(file->index == file->len) {
+    160              return -1;
+    161            }
+    162          
+    163            read = file->len - file->index;
+    164            if(read > count) {
+    165              read = count;
+    166            }
+    167          
+    168            MEMCPY(buffer, (file->data + file->index), read);
+    169            file->index += read;
+    170          
+    171            return(read);
+    172          }
+    173          /*-----------------------------------------------------------------------------------*/
+    174          int fs_bytes_left(struct fs_file *file)
+    175          {
+    176            return file->len - file->index;
+    177          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   fs_bytes_left
+       8   fs_close
+         8   -> fs_free
+       0   fs_free
+       0   fs_open
+      24   fs_read
+        24   -> memcpy
+      16   memcpy
+        16   -> __aeabi_memcpy
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       8  fs_bytes_left
+      12  fs_close
+      40  fs_free
+     240  fs_memory
+       6  fs_open
+      60  fs_read
+      22  memcpy
+
+ 
+ 240 bytes in section .bss
+ 152 bytes in section .text
+ 
+ 130 bytes of CODE memory (+ 22 bytes shared)
+ 240 bytes of DATA memory
+
+Errors: none
+Warnings: 1

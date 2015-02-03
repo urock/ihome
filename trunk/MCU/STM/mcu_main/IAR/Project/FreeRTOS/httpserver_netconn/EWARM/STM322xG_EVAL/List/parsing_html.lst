@@ -1,0 +1,148 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:07 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\parsing_html.c                            #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\parsing_html.c -D USE_STDPERIPH_DRIVER    #
+#                    -D STM32F2XX -D USE_STM322xG_EVAL -lcN                   #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\parsing_html.lst     #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\parsing_html.o        #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\parsing_html.c
+      1          #include "parsing_html.h"
+      2          //char *store_str;
+      3          char store_str[10];	
+      4          //------------------------------------------------------------------------------
+      5          /**
+      6          * @brief Function parsing html to get all device properties
+      7          * @param input_str - input string for parsing, key_str - key string for find text in input string
+      8          * @return int - begin char there start key string
+      9          */
+     10          int parsing_html_parsingGET(char *input_str, char *key_str){
+     11          	short size = strlen(key_str);
+     12                  uint8_t error = 0;
+     13          	char *ptr_begin;
+     14          	char *ptr_end;
+     15          	char local_str[10];
+     16          	uint8_t i;
+     17          	uint8_t length;
+     18          	// найдем начало ключевой строки
+     19          	ptr_begin = strstr(input_str, key_str);
+     20          	// теперь ptr указывает на начало ключа во входной строке
+     21                  if (ptr_begin !=0) {
+     22                    ptr_begin += size + 1; // прибавляем  к длине 1
+     23          
+     24                    // найдем конец
+     25                    ptr_end = ptr_begin;
+     26          
+     27                    while((*ptr_end != '&')&&(*ptr_end != ' '))
+     28                            ptr_end++;
+     29          
+     30                    // теперь определим длину искомой величины
+     31          
+     32                    length = ptr_end - ptr_begin;
+     33          
+     34                    // сохраним искомую величину в локальную строчку
+     35                    for(i = 0; i < length; i++)
+     36                            local_str[i] = *ptr_begin++;
+     37          
+     38                    // добавим терминирующий нуль
+     39                    local_str[length] = '\0';
+     40          
+     41          	// копируем найденную строку обратно
+     42          // store_str - указатель на строку, куда поместить искомое значение
+     43                    strncpy(store_str,local_str,10); // тут 50  - это максимальная длина для копирования
+     44                  }
+     45                  else{
+     46                    error = 1;          
+     47                  }
+     48              return error;
+     49          }
+     50          //-------------------------------------------------------------------------------
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   parsing_html_parsingGET
+        48   -> strlen
+        48   -> strncpy
+        48   -> strstr
+      16   strstr
+        16   -> __iar_Strstr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     156  parsing_html_parsingGET
+      12  store_str
+      16  strstr
+
+ 
+  12 bytes in section .bss
+ 172 bytes in section .text
+ 
+ 156 bytes of CODE memory (+ 16 bytes shared)
+  12 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,198 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:08 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\send2host.c                               #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\send2host.c -D USE_STDPERIPH_DRIVER -D    #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\send2host.lst        #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\send2host.o           #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\send2host.c
+      1          #include "send2host.h"
+      2          
+      3          
+      4          struct ip_addr remote_ip; 
+      5          
+      6          extern const portTickType xTicksToWait;
+      7          extern xQueueHandle xQueue_sendText_t ,xQueue_port_struct;
+      8          
+      9          /**
+     10          * @brief Initialisation Client task
+     11          * @param buf -string to send on web server Сейчас сделана передача этих параметров через очередь FIFO
+     12          * return - None
+     13          */
+     14          void vNetconnClient_init(void *buf)
+     15          {
+     16            portBASE_TYPE xReturn;
+     17            
+     18            xReturn = xTaskCreate(vNetconnClient, ( signed char * )"Client", configMINIMAL_STACK_SIZE * 2, NULL , HTTP_Cient_TASK_PRIO, NULL);
+     19            if (xReturn != pdPASS){
+     20                printf ("See errors %d in file 'projdefs.h' \n", xReturn);    
+     21                LED_alarm_On();
+     22            }
+     23            
+     24          }
+     25          
+     26          //*******************************************************************************
+     27          //void send_to_host(char buf1[])
+     28          /**
+     29          * @brief Function send on web server GET request
+     30          * @param buf -string to send on web server Сейчас сделана передача этих параметров через очередь FIFO
+     31          */
+     32          void vNetconnClient(void *buf)
+     33          {
+     34            portBASE_TYPE xStatus;
+     35          //  const portTickType xTicksToWait = 300 / portTICK_RATE_MS;  // Макс число тактов для чтения или записи аднных из\в очередь 
+     36            struct sendText_t lReceivedValue;  // Сюда считываем структуру передаваемых данных из очереди
+     37            
+     38             
+     39            uint8_t connErr, writeErr;  // Ошибки при передачи
+     40            uint8_t fl_send = 1;   // Флаг посылки 
+     41            struct netconn *xNetConn = NULL;  // указатель на соединения
+     42            
+     43            xStatus = xQueueReceive( xQueue_sendText_t, &lReceivedValue, xTicksToWait); // Берем данные из очереди
+     44            if (xStatus != pdPASS){
+     45              LED_alarm_On();
+     46            }
+     47          //***************************************************
+     48            IP4_ADDR( &remote_ip, 192, 168, 0, 111 );    // Адрес куда передаем
+     49          
+     50            while(fl_send){   //Первоначально у нас стоит 1 - т.е. нужно отослать пакет
+     51            xNetConn = netconn_new ( NETCONN_TCP ); // Устанавливаем соединение
+     52           
+     53            while ( xNetConn == NULL ) { 
+     54            netconn_delete ( xNetConn );
+     55            xNetConn = netconn_new ( NETCONN_TCP );   // Пытаемся установить соединение несколько раз
+     56          }
+     57          //---------- Connection --------
+     58            connErr = netconn_connect ( xNetConn, &remote_ip, 80 );  
+     59           
+     60            if ( connErr != ERR_OK )
+     61          {
+     62            netconn_delete ( xNetConn );
+     63            continue;
+     64          } 
+     65          
+     66          // ---------Write data --------------------
+     67            writeErr = netconn_write(xNetConn, lReceivedValue.cmd, lReceivedValue.len, NETCONN_NOCOPY);  //ишем данные в ethernet
+     68            if (writeErr != ERR_OK){
+     69              while(netconn_delete(xNetConn) != 0);
+     70              continue;
+     71            }
+     72          //---------------------------------------------  
+     73            netconn_delete(xNetConn);
+     74            fl_send = 0; // Пакет отослали !!! НУЖНО НЕ ЗАБЫТЬ ВЕРНУТЬ в 1 В КОНЦЕ ФУНКЦИИ.
+     75          }// end while fl_send
+     76          LED_warning_Toggle();  // Показываем что идет обмен по ethernet
+     77          fl_send = 1;  // Возвращаем в 1 чтобы можно было отправить следующий пакет!!!
+     78          vTaskDelete( NULL );
+     79          vTaskDelay(200);  // Делаем задержку для удаления мусора этой задачи ОС
+     80          //*******************************************************************
+     81          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     184   vNetconnClient
+       184   -> LED_alarm_On
+       184   -> LED_warning_Toggle
+       184   -> htonl
+       184   -> netconn_connect
+       184   -> netconn_delete
+       184   -> netconn_new_with_proto_and_callback
+       184   -> netconn_write
+       184   -> vTaskDelay
+       184   -> vTaskDelete
+       184   -> xQueueGenericReceive
+      32   vNetconnClient_init
+        32   -> LED_alarm_On
+        32   -> printf
+        32   -> xTaskGenericCreate
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?<Constant "Client">
+      40  ?<Constant "See errors %d in file...">
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  remote_ip
+     198  vNetconnClient
+      60  vNetconnClient_init
+
+ 
+   4 bytes in section .bss
+  48 bytes in section .rodata
+ 282 bytes in section .text
+ 
+ 282 bytes of CODE  memory
+  48 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>Project/STM322xG_EVAL</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>417</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      <PreferedWindows><Position>1</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows></Workspace>
+      <Build>
+        
+        
+        
+        
+      <PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1043</ColumnWidth1><ColumnWidth2>827</ColumnWidth2><ColumnWidth3>93</ColumnWidth3></Build>
+      <TerminalIO/>
+    <Debug-Log><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1062</ColumnWidth1></Debug-Log><Find-in-Files><PreferedWindows><Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Debug-Log</Factory></Window></Windows></PreferedWindows><ColumnWidth0>652</ColumnWidth0><ColumnWidth1>77</ColumnWidth1><ColumnWidth2>932</ColumnWidth2><ColumnWidth3>256</ColumnWidth3></Find-in-Files><Select-Ambiguous-Definitions><ColumnWidth0>446</ColumnWidth0><ColumnWidth1>63</ColumnWidth1><ColumnWidth2>765</ColumnWidth2></Select-Ambiguous-Definitions></Static>
+    <Windows>
+      
+      
+    <Wnd1><Tabs><Tab><Identity>TabID-4153-23543</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-23642-25839</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-23426-32206</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-2218-26756</Identity><TabName>Ambiguous Definitions</TabName><Factory>Select-Ambiguous-Definitions</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd1><Wnd4><Tabs><Tab><Identity>TabID-26540-11921</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>Project</ExpandedNode><ExpandedNode>Project/CMSIS</ExpandedNode><ExpandedNode>Project/EWARM</ExpandedNode><ExpandedNode>Project/STM32_EVAL</ExpandedNode><ExpandedNode>Project/User</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd4></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>30</YPos2><SelStart2>1283</SelStart2><SelEnd2>1283</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\stm_host.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>144</YPos2><SelStart2>2895</SelStart2><SelEnd2>2895</SelEnd2></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\jtag\ports.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>92</YPos2><SelStart2>3770</SelStart2><SelEnd2>3770</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\jtag\ports.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>15</YPos2><SelStart2>1352</SelStart2><SelEnd2>1353</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-02806A38><key>iaridepm.enu1</key></Toolbar-02806A38></Sizes></Row0></Top><Left><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>840</Bottom><Right>491</Right><x>-2</x><y>-2</y><xscreen>321</xscreen><yscreen>158</yscreen><sizeHorzCX>167188</sizeHorzCX><sizeHorzCY>141324</sizeHorzCY><sizeVertCX>256771</sizeVertCX><sizeVertCY>753131</sizeVertCY></Rect></Wnd4></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>233</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>235</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>210197</sizeHorzCY><sizeVertCX>2257292</sizeVertCX><sizeVertCY>97496</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

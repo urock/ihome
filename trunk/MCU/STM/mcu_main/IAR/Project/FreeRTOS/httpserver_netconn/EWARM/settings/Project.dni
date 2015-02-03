@@ -1,0 +1,141 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+<<<<<<< .mine
+Checksum=1342867641
+=======
+Checksum=-1181834851
+>>>>>>> .r42
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+<<<<<<< .mine
+[CodeCoverage]
+Enabled=_ 0
+[JLinkDriver]
+CStepIntDis=_ 0
+=======
+>>>>>>> .r42
+<<<<<<< .mine
+[CodeCoverage]
+Enabled=_ 0
+>>>>>>> .r42
+[struct_types]
+Fmt0=relay_port_status_t-BoardIndex	3	0
+Fmt1=relay_port_status_t-PortNumber	3	0
+Fmt2=struct dmx512_t-adr	3	0
+Fmt3=struct dmx512_t-direction	3	0
+Fmt4=struct dmx512_t-flag_send	3	0
+Fmt5=struct dmx512_t-smooth_step	3	0
+Fmt6=struct dmx512_t-smooth_time	3	0
+[array_types]
+Fmt0=uint8_t[513]	3	0
+[watch_formats]
+Fmt0={W}0:numBit	3	0
+Fmt1={W}0:tmp	3	0
+Fmt2={W}1:adr	3	0
+Fmt3={W}1:count	3	0
+Fmt4={W}1:found	3	0
+Fmt5={W}1:frac_temp	3	0
+Fmt6={W}1:i	3	0
+Fmt7={W}1:integer_temp	3	0
+Fmt8={W}1:lbuf[5]	3	0
+Fmt9={W}1:lbuf[6]	3	0
+Fmt10={W}1:lbuf[7]	3	0
+Fmt11={W}1:max	3	0
+Fmt12={W}1:min	3	0
+Fmt13={W}1:val	3	0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[DriverProfiling]
+Enabled=0
+Mode=3
+Graph=0
+Symbiont=0
+Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "C:\2home\home_soft\trunk\Utilities\Third_Party\FreeRTOS_v7.4.2\tasks.c" ""
+Count=1
+SuppressDialog=0

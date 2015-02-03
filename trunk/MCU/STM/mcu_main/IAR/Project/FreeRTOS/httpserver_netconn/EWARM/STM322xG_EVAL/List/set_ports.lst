@@ -1,0 +1,595 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:38:50 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\set_ports.c                               #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\set_ports.c -D USE_STDPERIPH_DRIVER -D    #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\set_ports.lst        #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\set_ports.o           #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\set_ports.c
+      1          #include "set_ports.h"
+      2          extern const uint32_t GPIOM_CLK[PORTn];
+      3          extern const uint16_t GPIOM_PIN[PORTn];
+      4          extern GPIO_TypeDef* GPIOM_PORT[PORTn];
+      5          extern const uint16_t PORT_EXTI_LINE[PORTn];
+      6          extern const uint8_t PORT_EXTI_PORT_SOURCE[PORTn];
+      7          extern const uint8_t PORT_EXTI_PIN_SOURCE[PORTn];
+      8          extern const uint8_t PORT_EXTI_IRQn[PORTn];
+      9          extern volatile struct PORT_struct PORTs[MAX_PORTs];
+     10          /**-------------- Set Ports ----------------------*/
+     11          //void set_ports_setAllValues(Ports_TypeDef Port, PortMode_TypeDef mode, int status, int def_value)
+     12          /**
+     13          * @brief Функция пока не реализована (должна инициализировать все порты, уже есть аналог LED_Init
+     14          * @param - PORT_struct
+     15          * @return - void
+     16          *
+     17          */
+     18          void set_ports_setAllValues(volatile struct PORT_struct *device)
+     19          {  
+     20          //  if (device->mode == OUT_pin)
+     21          //  {
+     22          //      init_ports_PORTOut(device->num_port);      
+     23          //      if (device->status == On){
+     24          //        set_ports_PORTOn(device->num_port);
+     25          //      }
+     26          //      else
+     27          //      {
+     28          //        set_ports_PORTOff(device->num_port);
+     29          //      }
+     30          //  }
+     31            
+     32          //  
+     33          //  switch(device->mode)
+     34          //  {
+     35          //    case 0:{
+     36          //      
+     37          //    break;
+     38          //  }
+     39          //    case 1:{   //interrupt 
+     40          //      set_ports_interrupt(device->Port,INP_pin);
+     41          //    break;
+     42          //  }
+     43          //    case 2:{  //PWM
+     44          //  
+     45          //    break;
+     46          //  }
+     47          //    case 3:{ //ADC
+     48          //  
+     49          //    break;
+     50          //  }
+     51          // } //end switch
+     52          }
+     53          //-------------------------------------------------
+     54          /**
+     55          * @brief  Turns selected LED On.
+     56          * @param  Led: Specifies the Led to be set on. 
+     57          *   This parameter can be one of following parameters:
+     58          * @retval None
+     59          */
+     60          void set_ports_PORTOn(Ports_TypeDef Port)
+     61          {
+     62            GPIOM_PORT[Port]->BSRRL = GPIOM_PIN[Port];
+     63          }
+     64          
+     65          /**
+     66          * @brief  Turns selected LED Off.
+     67          * @param  Led: Specifies the Led to be set off. 
+     68          *   This parameter can be one of following parameters:
+     69          * @retval None
+     70          */
+     71          void set_ports_PORTOff(Ports_TypeDef Port)
+     72          {
+     73            GPIOM_PORT[Port]->BSRRH = GPIOM_PIN[Port];  
+     74          }
+     75          
+     76          /**
+     77          * @brief  Toggles the selected LED.
+     78          * @param  Led: Specifies the Led to be toggled. 
+     79          *   This parameter can be one of following parameters:
+     80          * @retval None
+     81          */
+     82          void set_ports_PORTToggle(Ports_TypeDef Port)
+     83          {
+     84            GPIOM_PORT[Port]->ODR ^= GPIOM_PIN[Port];
+     85          }
+     86          
+     87          /**
+     88          * @brief  Returns the selected Button state.
+     89          * @param  Button: Specifies the Button to be checked.
+     90          *   This parameter can be one of following parameters:    
+     91          *     @arg BUTTON_WAKEUP: Wakeup Push Button
+     92          *     @arg BUTTON_TAMPER: Tamper Push Button  
+     93          *     @arg BUTTON_KEY: Key Push Button 
+     94          *     @arg BUTTON_RIGHT: Joystick Right Push Button 
+     95          *     @arg BUTTON_LEFT: Joystick Left Push Button 
+     96          *     @arg BUTTON_UP: Joystick Up Push Button 
+     97          *     @arg BUTTON_DOWN: Joystick Down Push Button
+     98          *     @arg BUTTON_SEL: Joystick Sel Push Button    
+     99          * @retval The Button GPIO pin value.
+    100          */
+    101          uint32_t set_ports_Interrupt_GetState(Ports_TypeDef Port)
+    102          {
+    103            return GPIO_ReadInputDataBit(GPIOM_PORT[Port], GPIOM_PIN[Port]);
+    104          }
+    105          //-------------------------------------------------
+    106          /**
+    107          * @brief Function convert integer to Port_TypeDef 
+    108          * @param pt - number of Port
+    109          * @return Port_TypeDef (Port1)
+    110          */
+    111          Ports_TypeDef getPort_name (uint8_t pt)
+    112          {
+    113            switch (pt)
+    114            {
+    115            case 0:
+    116              {
+    117                return (Port0);  
+    118                break;
+    119              } //end case 0
+    120              
+    121            case 1:
+    122              {
+    123                return (Port1);  
+    124                break;
+    125              } //end case1
+    126          
+    127            case 2:
+    128              {
+    129                return (Port2);  
+    130                break;
+    131              }  //end case 2
+    132          
+    133            case 3:
+    134              {
+    135                return (Port3);  
+    136                break;
+    137              } //end case 3
+    138          
+    139            case 4:
+    140              {
+    141                return (Port4);  
+    142                break;
+    143              } //end case 4
+    144          
+    145            case 5:
+    146              {
+    147                return (Port5);  
+    148                break;
+    149              } //end case 5
+    150          
+    151            case 6:
+    152              {
+    153                return (Port6);  
+    154                break;
+    155              } //end case 6
+    156          
+    157            case 7:
+    158              {
+    159                return (Port7);  
+    160                break;
+    161              }  //end case 7
+    162          
+    163            case 8:
+    164              {
+    165                return (Port8);  
+    166                break;
+    167              }  //end case 8
+    168          
+    169            case 9:
+    170              {
+    171                return (Port9);  
+    172                break;
+    173              }  //end case 9
+    174          
+    175            case 10:
+    176              {
+    177                return (Port10);  
+    178                break;
+    179              }  //end case 10
+    180          
+    181            case 11:
+    182              {
+    183                return (Port11);  
+    184                break;
+    185              }  //end case 11
+    186          
+    187            case 12:
+    188              {
+    189                return (Port12);  
+    190                break;
+    191              }  //end case 12
+    192          
+    193            case 13:
+    194              {
+    195                return (Port13);  
+    196                break;
+    197              }  //end case 13
+    198          
+    199            case 14:
+    200              {
+    201                return (Port14);  
+    202                break;
+    203              }  //end case 14
+    204          
+    205            case 15:
+    206              {
+    207                return (Port15);  
+    208                break;
+    209              } //end case 15
+    210              
+    211            case 16:
+    212              {
+    213                return (Port16);  
+    214                break;
+    215              } //end case 16 
+    216          
+    217            case 17:
+    218              {
+    219                return (Port17);  
+    220                break;
+    221              }  //end case 17
+    222          
+    223            case 18:
+    224              {
+    225                return (Port18);  
+    226                break;
+    227              } //end case 18
+    228          
+    229            case 19:
+    230              {
+    231                return (Port19);  
+    232                break;
+    233              } //end case 19
+    234          
+    235            case 20:
+    236              {
+    237                return (Port20);  
+    238                break;
+    239              } //end case 20
+    240          
+    241            case 21:
+    242              {
+    243                return (Port21);  
+    244                break;
+    245              } //end case 21
+    246          
+    247            case 22:
+    248              {
+    249                return (Port22);  
+    250                break;
+    251              }  //end case 22
+    252          
+    253            case 23:
+    254              {
+    255                return (Port23);  
+    256                break;
+    257              }  //end case 23
+    258          
+    259            case 24:
+    260              {
+    261                return (Port24);  
+    262                break;
+    263              }  //end case 24
+    264          
+    265            case 25:
+    266              {
+    267                return (Port25);  
+    268                break;
+    269              }  //end case 25
+    270            case 26:
+    271              {
+    272                return (Port26);  
+    273                break;
+    274              } //end case 26
+    275              
+    276            case 27:
+    277              {
+    278                return (Port27);  
+    279                break;
+    280              } //end case27
+    281          
+    282            case 28:
+    283              {
+    284                return (Port28);  
+    285                break;
+    286              }  //end case 28
+    287          
+    288            case 29:
+    289              {
+    290                return (Port29);  
+    291                break;
+    292              } //end case 29
+    293          
+    294            case 30:
+    295              {
+    296                return (Port30);  
+    297                break;
+    298              } //end case 30
+    299          
+    300            case 31:
+    301              {
+    302                return (Port31);  
+    303                break;
+    304              } //end case 31
+    305          
+    306            default : {
+    307              return (Port100);  // error Port
+    308              break;
+    309            } //end case default
+    310                  
+    311            } // end switch
+    312              
+    313          } //end function
+    314          
+    315          
+    316          //*********************************************
+    317          /**
+    318          * @brief Function set Raise or Falling interrupt
+    319          * @param port - number of Port, mode - Interrupt (Raise or fallling)
+    320          * @arguments
+    321          *         EXTI_Trigger_Rising
+    322          *         EXTI_Trigger_Falling
+    323          *         EXTI_Trigger_Rising_Falling
+    324          *         EXTITrigger_TypeDef;
+    325          * @return void
+    326          */
+    327          void set_ports_interrupt(Ports_TypeDef Port, uint8_t mode)
+    328          {
+    329            switch (mode){
+    330            case 2:
+    331              {
+    332                init_ports_Interrupt(Port,PORT_MODE_EXTI, EXTI_Trigger_Rising);
+    333                break;
+    334              }
+    335            case 3:
+    336              {
+    337                init_ports_Interrupt(Port,PORT_MODE_EXTI, EXTI_Trigger_Falling);
+    338                break;
+    339              }
+    340            case 4:
+    341              {
+    342                init_ports_Interrupt(Port,PORT_MODE_EXTI, EXTI_Trigger_Rising_Falling);
+    343                break;
+    344              }
+    345            }
+    346            
+    347          }
+    348          
+    349          //---------------------------
+    350          /**
+    351          * @brief  Function convert integer to PortMode_TypeDef
+    352          * param pt - mode pins (OUT, IN, PWM, ADC)
+    353          * @return PortMode_TypeDef (OUT_pin, INP_pin, PWM_OUT_pin, ADC_IN_pin)
+    354          */
+    355          PortMode_TypeDef getPinMode (uint8_t pt)
+    356          {
+    357            switch (pt)
+    358            {
+    359              case 0:
+    360                {
+    361                return (OUT_pin);
+    362                break;
+    363                }
+    364              case 1:
+    365                {
+    366                return (IN_pin);
+    367                break;
+    368                }
+    369              case 2:
+    370                {
+    371                return (PWM_OUT_pin);
+    372                break;
+    373                }
+    374              case 3:
+    375                {
+    376                return (ADC_IN_pin);
+    377                break;
+    378                }
+    379            default :{
+    380                return (IN_pin);
+    381                break;    
+    382            }
+    383            } //switch
+    384          }
+    385          
+    386          //---------------------------
+    387          /**
+    388          * @brief  Function convert integer to PortMode_TypeDef
+    389          * param pt - mode pins (OUT, IN, PWM, ADC)
+    390          * @return PortMode_TypeDef (OUT_pin, INP_pin, PWM_OUT_pin, ADC_IN_pin)
+    391          */
+    392          uint8_t getIntPinMode (PortMode_TypeDef pt)
+    393          {
+    394            uint8_t a;
+    395            if (pt == OUT_pin){
+    396              a = 0;
+    397            };
+    398            
+    399            if (pt == IN_pin){
+    400              a = 1;
+    401            };
+    402          
+    403            if (pt == PWM_OUT_pin){
+    404              a = 2;
+    405            };
+    406          
+    407            if (pt == ADC_IN_pin){
+    408              a = 2;
+    409            };
+    410            return a;
+    411          }
+    412          
+    413          
+    414          //---------------------------------------------
+    415          /**
+    416          * @brief Function convert integer to PortStatus_TypeDef
+    417          * @param stat - status (Off, On)  
+    418          * @return PortStatus_TypeDef (Off, On)
+    419          */
+    420          PortStatus_TypeDef getStatus(uint8_t stat){
+    421              switch (stat){
+    422              case 0:
+    423                {
+    424                  return (Off);
+    425                  break;
+    426                }
+    427              case 1:
+    428                {
+    429                  return (On);
+    430                  break;
+    431                }
+    432              default:
+    433                {
+    434                  return (Off);
+    435                  break;
+    436                }
+    437                
+    438              } // end switch
+    439            
+    440          }
+    441          
+    442          
+    443          //---------------------------------------------
+    444          /**
+    445          * @brief Function convert integer to PortStatus_TypeDef
+    446          * @param stat - status (Off, On)  
+    447          * @return PortStatus_TypeDef (Off, On)
+    448          */
+    449          uint8_t getIntStatus(PortStatus_TypeDef stat){
+    450            uint8_t pt;
+    451            if (stat == Off){
+    452              pt = Off_port;
+    453            };
+    454            
+    455            if (stat == On){
+    456              pt = On_port;
+    457            };  
+    458            return pt;
+    459          }
+    460          //---------------------------------------------
+    461          /**
+    462          * @brief Function convert integer to PortStatus_TypeDef
+    463          * @param stat - status (Off, On)  
+    464          * @return PortEnable_TypeDef (disable, enable)
+    465          */
+    466          PortEnable_TypeDef getEnable(uint8_t ena){
+    467              switch (ena){
+    468              case 0:
+    469                {
+    470                  return (disable);
+    471                  break;
+    472                }
+    473              case 1:
+    474                {
+    475                  return (enable);
+    476                  break;
+    477                }
+    478              default:
+    479                {
+    480                  return (disable);
+    481                  break;
+    482                }
+    483                
+    484              } //end switch ena
+    485            
+    486          }
+    487          //------------------------------------------------------------------------------
+    488          /**
+    489          * @brief Function convert integer to PortStatus_TypeDef
+    490          * @param stat - status (Off, On)  
+    491          * @return PortEnable_TypeDef (disable, enable)
+    492          */
+    493          uint8_t getIntEnable(PortEnable_TypeDef ena){
+    494            uint8_t en_;
+    495            if (ena == disable){
+    496              en_ = 0;
+    497            };
+    498            
+    499            if (ena == enable){
+    500              en_ = 1;
+    501            };  
+    502            return en_;
+    503          }
+    504          
+    505          /************************
+    506          * @brief Переключение выключателя в противоположное положение 
+    507          * @param Port_struct Port номер порта
+    508          * @return void
+    509          */
+    510          //---------------------------------------------------------------------------
+    511          void set_ports_ToggleState_Ports( volatile struct PORT_struct Port)
+    512          {
+    513            if (Port.status == Off){
+    514              Port.status = On;
+    515            }
+    516            else
+    517            {
+    518              Port.status = Off;
+    519            }
+    520            
+    521          }
+    522          //---------------------------------------------------------------
+    523          
+    524          
+
+Errors: 4
+Warnings: none

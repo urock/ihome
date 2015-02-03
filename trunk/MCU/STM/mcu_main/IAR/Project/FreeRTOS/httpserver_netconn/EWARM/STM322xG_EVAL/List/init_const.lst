@@ -1,0 +1,567 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:03:07 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\init_const.c                              #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\init_const.c -D USE_STDPERIPH_DRIVER -D   #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\init_const.lst       #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\init_const.o          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\init_const.c
+      1          #include "init_const.h"
+      2          extern xTimerHandle	xOneShotTimers;
+      3          
+      4          //------------------------------------------------------------------------------
+      5          /** 
+      6          * @brief Description for ports GPIOM_PORT[PORTn]
+      7          */
+      8          GPIO_TypeDef* GPIOM_PORT[PORTn] = {Port0_GPIO_PORT,Port1_GPIO_PORT, Port2_GPIO_PORT, Port3_GPIO_PORT,
+      9                                           Port4_GPIO_PORT, Port5_GPIO_PORT, Port6_GPIO_PORT, Port7_GPIO_PORT,
+     10                                           Port8_GPIO_PORT, Port9_GPIO_PORT, Port10_GPIO_PORT, Port11_GPIO_PORT,
+     11                                           Port12_GPIO_PORT, Port13_GPIO_PORT, Port14_GPIO_PORT, Port15_GPIO_PORT,
+     12                                           Port16_GPIO_PORT, Port17_GPIO_PORT, Port18_GPIO_PORT, Port19_GPIO_PORT,
+     13                                           Port20_GPIO_PORT, Port21_GPIO_PORT, Port22_GPIO_PORT, Port23_GPIO_PORT,
+     14                                           Port24_GPIO_PORT, Port25_GPIO_PORT, Port26_GPIO_PORT, Port27_GPIO_PORT,
+     15                                           Port28_GPIO_PORT, Port29_GPIO_PORT, Port30_GPIO_PORT, Port31_GPIO_PORT//,
+     16          //                                 Port32_GPIO_PORT, Port33_GPIO_PORT, Port34_GPIO_PORT, Port35_GPIO_PORT,
+     17          //                                 Port36_GPIO_PORT, Port37_GPIO_PORT, Port38_GPIO_PORT, Port39_GPIO_PORT
+     18          };
+     19          
+     20          /** 
+     21          * @brief Description for pins GPIOM_PIN[PORTn]
+     22          */
+     23          const uint16_t GPIOM_PIN[PORTn] = {Port0_PIN, Port1_PIN, Port2_PIN, Port3_PIN,
+     24                                           Port4_PIN, Port5_PIN, Port6_PIN, Port7_PIN,
+     25                                           Port8_PIN, Port9_PIN, Port10_PIN, Port11_PIN,
+     26                                           Port12_PIN, Port13_PIN, Port14_PIN, Port15_PIN,
+     27                                           Port16_PIN, Port17_PIN, Port18_PIN, Port19_PIN,
+     28                                           Port20_PIN, Port21_PIN, Port22_PIN, Port23_PIN,
+     29                                           Port24_PIN, Port25_PIN, Port26_PIN, Port27_PIN,
+     30                                           Port28_PIN, Port29_PIN, Port30_PIN, Port31_PIN//,
+     31          //                                 Port32_PIN, Port33_PIN, Port34_PIN, Port35_PIN,
+     32          //                                 Port36_PIN, Port37_PIN, Port38_PIN, Port39_PIN
+     33          };
+     34          
+     35          /** 
+     36          * @brief Description for clocks GPIOM_CLK[PORTn]
+     37          */
+     38          const uint32_t GPIOM_CLK[PORTn] = {Port0_GPIO_CLK, Port1_GPIO_CLK, Port2_GPIO_CLK, Port3_GPIO_CLK,
+     39                                           Port4_GPIO_CLK, Port5_GPIO_CLK, Port6_GPIO_CLK, Port7_GPIO_CLK,
+     40                                           Port8_GPIO_CLK, Port9_GPIO_CLK, Port10_GPIO_CLK, Port11_GPIO_CLK,
+     41                                           Port12_GPIO_CLK, Port13_GPIO_CLK, Port14_GPIO_CLK, Port15_GPIO_CLK,
+     42                                           Port16_GPIO_CLK, Port17_GPIO_CLK, Port18_GPIO_CLK, Port19_GPIO_CLK,
+     43                                           Port20_GPIO_CLK, Port21_GPIO_CLK, Port22_GPIO_CLK, Port23_GPIO_CLK,
+     44                                           Port24_GPIO_CLK, Port25_GPIO_CLK, Port26_GPIO_CLK, Port27_GPIO_CLK,
+     45                                           Port28_GPIO_CLK, Port29_GPIO_CLK, Port30_GPIO_CLK, Port31_GPIO_CLK//,
+     46          //                                 Port32_GPIO_CLK, Port33_GPIO_CLK, Port34_GPIO_CLK, Port35_GPIO_CLK,
+     47          //                                 Port36_GPIO_CLK, Port37_GPIO_CLK, Port38_GPIO_CLK, Port39_GPIO_CLK
+     48          };
+     49          /**------ Описание Interrupts ----------------------------------------
+     50          * @brief Description for PORT_EXTI_LINE[PORTn]
+     51          */
+     52          const uint16_t PORT_EXTI_LINE[PORTn] = {Port0_EXTI_LINE, Port1_EXTI_LINE, Port2_EXTI_LINE, Port3_EXTI_LINE,
+     53                                                  Port4_EXTI_LINE, Port5_EXTI_LINE, Port6_EXTI_LINE, Port7_EXTI_LINE,
+     54                                                  Port8_EXTI_LINE, Port9_EXTI_LINE, Port10_EXTI_LINE, Port11_EXTI_LINE,
+     55                                                  Port12_EXTI_LINE, Port13_EXTI_LINE, Port14_EXTI_LINE, Port15_EXTI_LINE,
+     56                                                  Port16_EXTI_LINE, Port17_EXTI_LINE, Port18_EXTI_LINE, Port19_EXTI_LINE,                                      
+     57                                                  Port20_EXTI_LINE, Port21_EXTI_LINE, Port22_EXTI_LINE, Port23_EXTI_LINE,                                      
+     58                                                  Port24_EXTI_LINE, Port25_EXTI_LINE, Port26_EXTI_LINE, Port27_EXTI_LINE,                                      
+     59                                                  Port28_EXTI_LINE, Port29_EXTI_LINE, Port30_EXTI_LINE, Port31_EXTI_LINE                                                                                                                    
+     60          };
+     61          
+     62          /**------ Описание Interrupts ----------------------------------------
+     63          * @brief Description for PORT_EXTI_PORT_SOURCE[PORTn]
+     64          */
+     65          const uint8_t PORT_EXTI_PORT_SOURCE[PORTn] = {Port0_EXTI_PORT_SOURCE, Port1_EXTI_PORT_SOURCE, Port2_EXTI_PORT_SOURCE, Port3_EXTI_PORT_SOURCE,
+     66                                                        Port4_EXTI_PORT_SOURCE, Port5_EXTI_PORT_SOURCE, Port6_EXTI_PORT_SOURCE, Port7_EXTI_PORT_SOURCE,
+     67                                                        Port8_EXTI_PORT_SOURCE, Port9_EXTI_PORT_SOURCE, Port10_EXTI_PORT_SOURCE, Port11_EXTI_PORT_SOURCE,
+     68                                                        Port12_EXTI_PORT_SOURCE, Port13_EXTI_PORT_SOURCE, Port14_EXTI_PORT_SOURCE, Port15_EXTI_PORT_SOURCE,
+     69                                                        Port16_EXTI_PORT_SOURCE, Port17_EXTI_PORT_SOURCE, Port18_EXTI_PORT_SOURCE, Port19_EXTI_PORT_SOURCE,
+     70                                                        Port20_EXTI_PORT_SOURCE, Port21_EXTI_PORT_SOURCE, Port22_EXTI_PORT_SOURCE, Port23_EXTI_PORT_SOURCE,
+     71                                                        Port24_EXTI_PORT_SOURCE, Port25_EXTI_PORT_SOURCE, Port26_EXTI_PORT_SOURCE, Port27_EXTI_PORT_SOURCE,
+     72                                                        Port28_EXTI_PORT_SOURCE, Port29_EXTI_PORT_SOURCE, Port30_EXTI_PORT_SOURCE, Port31_EXTI_PORT_SOURCE                                                                                            
+     73          };
+     74          
+     75          /**------ Описание Interrupts ----------------------------------------
+     76          * @brief Description for PORT_EXTI_PIN_SOURCE[PORTn]
+     77          */
+     78          const uint8_t PORT_EXTI_PIN_SOURCE[PORTn] = {Port0_EXTI_PIN_SOURCE, Port1_EXTI_PIN_SOURCE, Port2_EXTI_PIN_SOURCE, Port3_EXTI_PIN_SOURCE,
+     79                                                       Port4_EXTI_PIN_SOURCE, Port5_EXTI_PIN_SOURCE, Port6_EXTI_PIN_SOURCE, Port7_EXTI_PIN_SOURCE,
+     80                                                       Port8_EXTI_PIN_SOURCE, Port9_EXTI_PIN_SOURCE, Port10_EXTI_PIN_SOURCE, Port11_EXTI_PIN_SOURCE,
+     81                                                       Port12_EXTI_PIN_SOURCE, Port13_EXTI_PIN_SOURCE, Port14_EXTI_PIN_SOURCE, Port15_EXTI_PIN_SOURCE,
+     82                                                       Port16_EXTI_PIN_SOURCE, Port17_EXTI_PIN_SOURCE, Port18_EXTI_PIN_SOURCE, Port19_EXTI_PIN_SOURCE,
+     83                                                       Port20_EXTI_PIN_SOURCE, Port21_EXTI_PIN_SOURCE, Port22_EXTI_PIN_SOURCE, Port23_EXTI_PIN_SOURCE,
+     84                                                       Port24_EXTI_PIN_SOURCE, Port25_EXTI_PIN_SOURCE, Port26_EXTI_PIN_SOURCE, Port27_EXTI_PIN_SOURCE,
+     85                                                       Port28_EXTI_PIN_SOURCE, Port29_EXTI_PIN_SOURCE, Port30_EXTI_PIN_SOURCE, Port31_EXTI_PIN_SOURCE
+     86          }; 
+     87          
+     88          /**------ Описание Interrupts ----------------------------------------
+     89          * @brief Description for PORT_EXTI_IRQn[PORTn]
+     90          */
+     91          const uint8_t PORT_EXTI_IRQn[PORTn] = {Port0_EXTI_IRQn, Port1_EXTI_IRQn, Port2_EXTI_IRQn, Port3_EXTI_IRQn,
+     92                                                 Port4_EXTI_IRQn, Port5_EXTI_IRQn, Port6_EXTI_IRQn, Port7_EXTI_IRQn,
+     93                                                 Port8_EXTI_IRQn, Port9_EXTI_IRQn, Port10_EXTI_IRQn, Port11_EXTI_IRQn,
+     94                                                 Port12_EXTI_IRQn, Port13_EXTI_IRQn, Port14_EXTI_IRQn, Port15_EXTI_IRQn,
+     95                                                 Port16_EXTI_IRQn, Port17_EXTI_IRQn, Port18_EXTI_IRQn, Port19_EXTI_IRQn,
+     96                                                 Port20_EXTI_IRQn, Port21_EXTI_IRQn, Port22_EXTI_IRQn, Port23_EXTI_IRQn,
+     97                                                 Port24_EXTI_IRQn, Port25_EXTI_IRQn, Port26_EXTI_IRQn, Port27_EXTI_IRQn,
+     98                                                 Port28_EXTI_IRQn, Port29_EXTI_IRQn, Port30_EXTI_IRQn, Port31_EXTI_IRQn
+     99          };
+    100           
+    101          //------------------------------------------------------------------------------
+    102          
+    103          GPIO_TypeDef* GPIO_PORT[LEDn] = {LED1_GPIO_PORT, LED2_GPIO_PORT, LED3_GPIO_PORT,
+    104                                           LED4_GPIO_PORT};
+    105          const uint16_t GPIO_PIN[LEDn] = {LED1_PIN, LED2_PIN, LED3_PIN,
+    106                                           LED4_PIN};
+    107          const uint32_t GPIO_CLK[LEDn] = {LED1_GPIO_CLK, LED2_GPIO_CLK, LED3_GPIO_CLK,
+    108                                           LED4_GPIO_CLK};
+    109          
+    110          USART_TypeDef* COM_USART[COMn] = {EVAL_COM1}; 
+    111          
+    112          GPIO_TypeDef* COM_TX_PORT[COMn] = {EVAL_COM1_TX_GPIO_PORT};
+    113           
+    114          GPIO_TypeDef* COM_RX_PORT[COMn] = {EVAL_COM1_RX_GPIO_PORT};
+    115          
+    116          //const uint32_t COM_USART_CLK[COMn] = {EVAL_COM1_CLK};
+    117          
+    118          const uint32_t COM_TX_PORT_CLK[COMn] = {EVAL_COM1_TX_GPIO_CLK};
+    119           
+    120          const uint32_t COM_RX_PORT_CLK[COMn] = {EVAL_COM1_RX_GPIO_CLK};
+    121          
+    122          const uint16_t COM_TX_PIN[COMn] = {EVAL_COM1_TX_PIN};
+    123          
+    124          const uint16_t COM_RX_PIN[COMn] = {EVAL_COM1_RX_PIN};
+    125           
+    126          const uint8_t COM_TX_PIN_SOURCE[COMn] = {EVAL_COM1_TX_SOURCE};
+    127          
+    128          const uint8_t COM_RX_PIN_SOURCE[COMn] = {EVAL_COM1_RX_SOURCE};
+    129           
+    130          const uint8_t COM_TX_AF[COMn] = {EVAL_COM1_TX_AF};
+    131           
+    132          const uint8_t COM_RX_AF[COMn] = {EVAL_COM1_RX_AF};
+    133          
+    134          DMA_InitTypeDef    sEEDMA_InitStructure; 
+    135          NVIC_InitTypeDef   NVIC_InitStructure;
+    136          
+    137          
+    138          /**
+    139            * @brief  Configures LED GPIO.
+    140            * @param  Led: Specifies the Led to be configured. 
+    141            *   This parameter can be one of following parameters:
+    142            *     @arg LED1
+    143            *     @arg LED2
+    144            *     @arg LED3
+    145            *     @arg LED4
+    146            * @retval None
+    147            */
+    148          void LEDInit(Led_TypeDef Led)
+    149          {
+    150            GPIO_InitTypeDef  GPIO_InitStructure;
+    151            
+    152            /* Enable the GPIO_LED Clock */
+    153            RCC_AHB1PeriphClockCmd(GPIO_CLK[Led], ENABLE);
+    154          
+    155          
+    156            /* Configure the GPIO_LED pin */
+    157            GPIO_InitStructure.GPIO_Pin = GPIO_PIN[Led];
+    158            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    159            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    160            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    161            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    162            GPIO_Init(GPIO_PORT[Led], &GPIO_InitStructure);
+    163          }
+    164          //----------------------------
+    165          /**
+    166          * @brief Init LEDS alarm
+    167          */
+    168          void LED_alarm_Init(void)
+    169          {
+    170            GPIO_InitTypeDef  GPIO_InitStructure;
+    171            
+    172            /* Enable the GPIO_LED Clock */
+    173            RCC_AHB1PeriphClockCmd(LED_alerm_CLK, ENABLE);
+    174          
+    175          
+    176            /* Configure the GPIO_LED pin */
+    177            GPIO_InitStructure.GPIO_Pin = LED_alarm;
+    178            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    179            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    180            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    181            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    182            GPIO_Init(LED_alarm_PORT, &GPIO_InitStructure);
+    183          }
+    184          //----------------------------------------------
+    185          /**
+    186          * @brief Init LEDS alarm
+    187          */
+    188          void LED_warning_Init(void)
+    189          {
+    190            GPIO_InitTypeDef  GPIO_InitStructure;
+    191            
+    192            /* Enable the GPIO_LED Clock */
+    193            RCC_AHB1PeriphClockCmd(LED_warning_CLK, ENABLE);
+    194          
+    195          
+    196            /* Configure the GPIO_LED pin */
+    197            GPIO_InitStructure.GPIO_Pin = LED_warning;
+    198            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    199            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    200            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    201            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    202            GPIO_Init(LED_warning_PORT, &GPIO_InitStructure);
+    203          }
+    204          //----------------------------------------------
+    205          /**
+    206          * @brief Init LEDS status
+    207          */
+    208          void LED_status_Init(void)
+    209          {
+    210            GPIO_InitTypeDef  GPIO_InitStructure;
+    211            
+    212            /* Enable the GPIO_LED Clock */
+    213            RCC_AHB1PeriphClockCmd(LED_status_CLK , ENABLE);
+    214          
+    215          
+    216            /* Configure the GPIO_LED pin */
+    217            GPIO_InitStructure.GPIO_Pin = LED_status;
+    218            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    219            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    220            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    221            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    222            GPIO_Init(LED_status_PORT, &GPIO_InitStructure);
+    223          }
+    224          //----------------------------------------------
+    225          
+    226          /**
+    227            * @brief  Turns selected LED On.
+    228            * @param  Led: Specifies the Led to be set on. 
+    229            *   This parameter can be one of following parameters:
+    230            *     @arg LED1
+    231            *     @arg LED2
+    232            *     @arg LED3
+    233            *     @arg LED4  
+    234            * @retval None
+    235            */
+    236          void LEDOn(Led_TypeDef Led)
+    237          {
+    238            GPIO_PORT[Led]->BSRRL = GPIO_PIN[Led];
+    239          }
+    240          
+    241          //------------------------------------
+    242          /**
+    243          * @bief LED alarm On
+    244          */
+    245          void LED_alarm_On(void)
+    246          {
+    247            LED_alarm_PORT->BSRRL = LED_alarm ;
+    248          }
+    249          //------------------------------------
+    250          /**
+    251          * @bief LED warning On
+    252          */
+    253          void LED_warning_On(void)
+    254          {
+    255            LED_warning_PORT->BSRRL = LED_warning ;
+    256          }
+    257          //------------------------------------
+    258          /**
+    259          * @bief LED status On
+    260          */
+    261          void LED_status_On(void)
+    262          {
+    263            LED_status_PORT->BSRRL = LED_status ;
+    264          }
+    265          //--------------------------------------
+    266          /**
+    267            * @brief  Turns selected LED Off.
+    268            * @param  Led: Specifies the Led to be set off. 
+    269            *   This parameter can be one of following parameters:
+    270            *     @arg LED1
+    271            *     @arg LED2
+    272            *     @arg LED3
+    273            *     @arg LED4 
+    274            * @retval None
+    275            */
+    276          void LEDOff(Led_TypeDef Led)
+    277          {
+    278            GPIO_PORT[Led]->BSRRH = GPIO_PIN[Led];  
+    279          }
+    280          //-------------------------------------------
+    281          /**
+    282          * @brief LED alarm Off
+    283          */
+    284          void LED_alarm_Off(void)
+    285          {
+    286            LED_alarm_PORT->BSRRH = LED_alarm ;  
+    287          }
+    288          //-------------------------------------------
+    289          /**
+    290          * @brief LED warning Off
+    291          */
+    292          void LED_warning_Off(void)
+    293          {
+    294            LED_warning_PORT->BSRRH = LED_warning ;  
+    295          }
+    296          //-------------------------------------------
+    297          /**
+    298          * @brief LED status Off
+    299          */
+    300          void LED_status_Off(void)
+    301          {
+    302            LED_status_PORT->BSRRH = LED_status ;  
+    303          }
+    304          //--------------------------------------------
+    305          /**
+    306            * @brief  Toggles the selected LED.
+    307            * @param  Led: Specifies the Led to be toggled. 
+    308            *   This parameter can be one of following parameters:
+    309            *     @arg LED1
+    310            *     @arg LED2
+    311            *     @arg LED3
+    312            *     @arg LED4  
+    313            * @retval None
+    314            */
+    315          void LEDToggle(Led_TypeDef Led)
+    316          {
+    317            GPIO_PORT[Led]->ODR ^= GPIO_PIN[Led];
+    318          }
+    319          //-------------------------------------------------
+    320          /**
+    321          * @brief Toggle LED alarm 
+    322          */
+    323          void LED_alarm_Toggle(void)
+    324          {
+    325            LED_alarm_PORT->ODR ^= LED_alarm ;
+    326          }
+    327          //----------------------------------------------------
+    328          /**
+    329          * @brief Toggle LED warning
+    330          */
+    331          void LED_warning_Toggle(void)
+    332          {
+    333            LED_warning_PORT->ODR ^= LED_warning;
+    334          }
+    335          //----------------------------------------------------
+    336          /**
+    337          * @brief Toggle LED status
+    338          */
+    339          void LED_status_Toggle(void)
+    340          {
+    341            LED_status_PORT->ODR ^= LED_status;
+    342          }
+    343          
+    344          
+    345          /**
+    346            * @brief  Configures COM port.
+    347            * @param  COM: Specifies the COM port to be configured.
+    348            *   This parameter can be one of following parameters:    
+    349            *     @arg COM1
+    350            *     @arg COM2  
+    351            * @param  USART_InitStruct: pointer to a USART_InitTypeDef structure that
+    352            *   contains the configuration information for the specified USART peripheral.
+    353            * @retval None
+    354            */
+    355          void STM_EVAL_COMInit(COM_TypeDef COM, USART_InitTypeDef* USART_InitStruct)
+    356          {
+    357            GPIO_InitTypeDef GPIO_InitStructure;
+    358          
+    359            /* Enable GPIO clock */
+    360            RCC_AHB1PeriphClockCmd(COM_TX_PORT_CLK[COM] | COM_RX_PORT_CLK[COM], ENABLE);
+    361            /* Connect PXx to USARTx_Tx*/
+    362            GPIO_PinAFConfig(COM_TX_PORT[COM], COM_TX_PIN_SOURCE[COM], COM_TX_AF[COM]);
+    363          
+    364            /* Connect PXx to USARTx_Rx*/
+    365            GPIO_PinAFConfig(COM_RX_PORT[COM], COM_RX_PIN_SOURCE[COM], COM_RX_AF[COM]);
+    366          
+    367            /* Configure USART Tx as alternate function  */
+    368            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+    369            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+    370            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    371          
+    372            GPIO_InitStructure.GPIO_Pin = COM_TX_PIN[COM];
+    373            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    374            GPIO_Init(COM_TX_PORT[COM], &GPIO_InitStructure);
+    375          
+    376            /* Configure USART Rx as alternate function  */
+    377            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    378            GPIO_InitStructure.GPIO_Pin = COM_RX_PIN[COM];
+    379            GPIO_Init(COM_RX_PORT[COM], &GPIO_InitStructure);
+    380          
+    381            /* USART configuration */
+    382            USART_Init(COM_USART[COM], USART_InitStruct);
+    383              
+    384            /* Enable USART */
+    385            USART_Cmd(COM_USART[COM], ENABLE);
+    386          }
+    387          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   LEDInit
+        16   -> GPIO_Init
+        16   -> RCC_AHB1PeriphClockCmd
+       0   LEDOff
+       0   LEDOn
+       0   LEDToggle
+      16   LED_alarm_Init
+        16   -> GPIO_Init
+        16   -> RCC_AHB1PeriphClockCmd
+       0   LED_alarm_Off
+       0   LED_alarm_On
+       0   LED_alarm_Toggle
+      16   LED_status_Init
+        16   -> GPIO_Init
+        16   -> RCC_AHB1PeriphClockCmd
+       0   LED_status_Off
+       0   LED_status_On
+       0   LED_status_Toggle
+      16   LED_warning_Init
+        16   -> GPIO_Init
+        16   -> RCC_AHB1PeriphClockCmd
+       0   LED_warning_Off
+       0   LED_warning_On
+       0   LED_warning_Toggle
+      24   STM_EVAL_COMInit
+        24   -> GPIO_Init
+        24   -> GPIO_PinAFConfig
+        24   -> RCC_AHB1PeriphClockCmd
+        24   -> USART_Cmd
+        24   -> USART_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_10
+       4  ??DataTable16_11
+       4  ??DataTable16_12
+       4  ??DataTable16_13
+       4  ??DataTable16_14
+       4  ??DataTable16_15
+       4  ??DataTable16_16
+       4  ??DataTable16_17
+       4  ??DataTable16_2
+       4  ??DataTable16_3
+       4  ??DataTable16_4
+       4  ??DataTable16_5
+       4  ??DataTable16_6
+       4  ??DataTable16_7
+       4  ??DataTable16_8
+       4  ??DataTable16_9
+       2  COM_RX_AF
+       4  COM_RX_PIN
+       2  COM_RX_PIN_SOURCE
+       8  COM_RX_PORT
+       8  COM_RX_PORT_CLK
+       2  COM_TX_AF
+       4  COM_TX_PIN
+       2  COM_TX_PIN_SOURCE
+       8  COM_TX_PORT
+       8  COM_TX_PORT_CLK
+       8  COM_USART
+     160  GPIOM_CLK
+      80  GPIOM_PIN
+     160  GPIOM_PORT
+      16  GPIO_CLK
+       8  GPIO_PIN
+      16  GPIO_PORT
+      68  LEDInit
+      20  LEDOff
+      20  LEDOn
+      32  LEDToggle
+      50  LED_alarm_Init
+       8  LED_alarm_Off
+       8  LED_alarm_On
+      14  LED_alarm_Toggle
+      50  LED_status_Init
+       8  LED_status_Off
+       8  LED_status_On
+      14  LED_status_Toggle
+      50  LED_warning_Init
+       8  LED_warning_Off
+       8  LED_warning_On
+      14  LED_warning_Toggle
+       4  NVIC_InitStructure
+      40  PORT_EXTI_IRQn
+      80  PORT_EXTI_LINE
+      40  PORT_EXTI_PIN_SOURCE
+      40  PORT_EXTI_PORT_SOURCE
+     192  STM_EVAL_COMInit
+      60  sEEDMA_InitStructure
+
+ 
+  64 bytes in section .bss
+ 200 bytes in section .data
+ 496 bytes in section .rodata
+ 644 bytes in section .text
+ 
+ 644 bytes of CODE  memory
+ 496 bytes of CONST memory
+ 264 bytes of DATA  memory
+
+Errors: none
+Warnings: none

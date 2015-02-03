@@ -1,0 +1,707 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      18/Jun/2013  17:54:26 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\src\1wire.c                                     #
+#    Command line =  C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\src\1wire.c -D USE_STDPERIPH_DRIVER -D          #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\STM322xG_EVAL\List\ -o                    #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse --no_unroll   #
+#                    --no_inline --no_code_motion --no_tbaa --no_clustering   #
+#                    --no_scheduling --debug --endian=little --cpu=Cortex-M3  #
+#                    -e --fpu=None --dlib_config "C:\Program Files (x86)\IAR  #
+#                    Systems\Embedded Workbench 6.5\arm\INC\c\DLib_Config_Ful #
+#                    l.h" -I C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\ht #
+#                    tpserver_netconn\EWARM\..\inc\ -I                        #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceSup #
+#                    port\ST\STM32F2xx\ -I C:\ROSTA\host_soft_stm_NORAB\Proje #
+#                    ct\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Librari #
+#                    es\STM32F2xx_StdPeriph_Driver\inc\ -I                    #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Drive #
+#                    r\inc\ -I C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\ #
+#                    httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_EVA #
+#                    L\Common\ -I C:\ROSTA\host_soft_stm_NORAB\Project\FreeRT #
+#                    OS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32_ #
+#                    EVAL\STM322xG_EVAL\ -I C:\ROSTA\host_soft_stm_NORAB\Proj #
+#                    ect\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilit #
+#                    ies\Third_Party\lwip_v1.3.2\src\include\ -I              #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1 #
+#                    .3.2\src\include\lwip\ -I C:\ROSTA\host_soft_stm_NORAB\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Uti #
+#                    lities\Third_Party\lwip_v1.3.2\src\include\netif\ -I     #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1 #
+#                    .3.2\src\include\ipv4\ -I C:\ROSTA\host_soft_stm_NORAB\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Uti #
+#                    lities\Third_Party\lwip_v1.3.2\port\STM32F2x7\ -I        #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_v1 #
+#                    .3.2\port\STM32F2x7\FreeRTOS\ -I                         #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTO #
+#                    S_v7.4.2\portable\IAR\ARM_CM3\ -I                        #
+#                    C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeRTO #
+#                    S_v7.4.2\include\ -On --use_c++_inline -I "C:\Program    #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\STM322xG_EVAL\List\1wire.lst              #
+#    Object file  =  C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver #
+#                    _netconn\EWARM\STM322xG_EVAL\Obj\1wire.o                 #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\ROSTA\host_soft_stm_NORAB\Project\FreeRTOS\httpserver_netconn\src\1wire.c
+      1          #include "1wire.h"
+      2          //#include "stm32f2xx_tim.h"
+      3          
+      4          #define FALSE 0
+      5          #define TRUE  1
+      6          
+      7          uint8_t ROM_NO[8];
+      8          uint16_t LastDiscrepancy;
+      9          uint16_t LastFamilyDiscrepancy;
+     10          uint16_t LastDeviceFlag;
+     11          uint8_t crc8;
+     12          
+     13          
+     14          void RCC_Configuration (void)
+     15          {
+     16              RCC_AHB1PeriphClockCmd (RCC_AHB1Periph_GPIOC, ENABLE);
+     17                  
+     18              RCC_APB1PeriphClockCmd (RCC_APB1Periph_TIM3, ENABLE);
+     19          }
+     20          
+     21          void TIM3_Configuration (void)
+     22          {
+     23              TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+     24                  
+     25              TIM_TimeBaseStructure.TIM_Period = UINT16_MAX;
+     26              TIM_TimeBaseStructure.TIM_Prescaler = 59;
+     27              TIM_TimeBaseStructure.TIM_ClockDivision = 0;
+     28              TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+     29                  
+     30              TIM_TimeBaseInit(TIM3, &TIM_TimeBaseStructure);
+     31              TIM_Cmd(TIM3, ENABLE);
+     32          }
+     33          
+     34          void Delay_US (uint16_t useconds)
+     35          {
+     36              TIM3->CNT = 0;
+     37              while((TIM3->CNT) <= useconds);
+     38          }
+     39          
+     40          void Delay_MS (uint16_t mseconds)
+     41          {
+     42              uint16_t i;
+     43              for(i=0; i<=(mseconds - 1); ++i)
+     44              Delay_US (1000);  
+     45          }
+     46          
+     47          void Set_Port_input (void)
+     48          {
+     49              GPIO_InitTypeDef GPIO_InitStructure;
+     50                  
+     51              GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;
+     52              GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+     53              GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+     54              GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+     55              GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+     56              GPIO_Init(GPIOC, &GPIO_InitStructure);      
+     57          }
+     58          
+     59          void Set_Port_output (void)
+     60          {
+     61              GPIO_InitTypeDef GPIO_InitStructure;
+     62                  
+     63              GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;
+     64              GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+     65              GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+     66              GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+     67              GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+     68              GPIO_Init(GPIOC, &GPIO_InitStructure);      
+     69          }
+     70          
+     71          void Set_Port_Up (void)
+     72          {
+     73              GPIOC->BSRRL = GPIO_Pin_7;
+     74          }
+     75          
+     76          void Set_Port_Down (void)
+     77          {
+     78              GPIOC->BSRRH = GPIO_Pin_7;
+     79          }
+     80          
+     81          uint8_t ow_reset (void)
+     82          {
+     83              uint8_t ret = 10;
+     84          
+     85              Set_Port_output ();
+     86              Set_Port_Down ();
+     87              Delay_US(600);
+     88              Set_Port_input ();
+     89              Delay_US(80);
+     90              if(GPIOC->IDR & GPIO_Pin_7)
+     91                  {
+     92                      ret = 0;
+     93                  }
+     94              else
+     95                  {
+     96                      ret = 1;
+     97                  }
+     98              Delay_US (400);
+     99              return ret;
+    100          }
+    101          
+    102          void ow_write_bit (uint8_t bit)
+    103          {
+    104              if (bit)
+    105                  {
+    106                      Set_Port_output ();
+    107                      Set_Port_Down ();
+    108                      Delay_US (10);
+    109                      Set_Port_Up ();
+    110                      Delay_US (49);
+    111                  }
+    112              else
+    113                  {
+    114                      Set_Port_output ();
+    115                      Set_Port_Down ();
+    116                      Delay_US (59);
+    117                      Set_Port_Up ();
+    118                  } 
+    119          }
+    120          
+    121          uint8_t ow_read_bit (void)
+    122          {
+    123              uint8_t ret = 10;
+    124          
+    125              Set_Port_output ();
+    126              Set_Port_Down ();
+    127              Delay_US (5);
+    128              Set_Port_input ();
+    129              Delay_US (10);
+    130              if (GPIOC->IDR & GPIO_Pin_7)
+    131                  {
+    132                      ret = 1;
+    133                  }
+    134              else
+    135                  {
+    136                      ret = 0;
+    137                  }
+    138              Delay_US (44);
+    139              return ret; 
+    140          }
+    141          
+    142          uint8_t ow_read_byte (void)
+    143          {
+    144              uint8_t i;
+    145              uint8_t byte=0;
+    146          
+    147              for (i=0;i<8;i++)
+    148                  {
+    149                      if(ow_read_bit ()) byte |= (0x01<<i);
+    150                      Delay_US (1);
+    151                  }
+    152              return(byte);
+    153          }
+    154          
+    155          void ow_write_byte (uint8_t byte)
+    156          {
+    157              uint8_t a;
+    158              uint8_t temp;
+    159          
+    160              for(a=0;a<8;a++)
+    161                  {
+    162                      temp = byte >> a;
+    163                      temp &=0x01;
+    164                      ow_write_bit (temp);
+    165                      Delay_US (1);
+    166                  }
+    167          }
+    168          
+    169          uint8_t docrc8(uint8_t value)
+    170          {
+    171              static uint8_t dscrc_table[] = {
+    172              0, 94,188,226, 97, 63,221,131,194,156,126, 32,163,253, 31, 65,
+    173              157,195, 33,127,252,162, 64, 30, 95,  1,227,189, 62, 96,130,220,
+    174              35,125,159,193, 66, 28,254,160,225,191, 93,  3,128,222, 60, 98,
+    175              190,224,  2, 92,223,129, 99, 61,124, 34,192,158, 29, 67,161,255,
+    176              70, 24,250,164, 39,121,155,197,132,218, 56,102,229,187, 89,  7,
+    177              219,133,103, 57,186,228,  6, 88, 25, 71,165,251,120, 38,196,154,
+    178              101, 59,217,135,  4, 90,184,230,167,249, 27, 69,198,152,122, 36,
+    179              248,166, 68, 26,153,199, 37,123, 58,100,134,216, 91,  5,231,185,
+    180              140,210, 48,110,237,179, 81, 15, 78, 16,242,172, 47,113,147,205,
+    181              17, 79,173,243,112, 46,204,146,211,141,111, 49,178,236, 14, 80,
+    182              175,241, 19, 77,206,144,114, 44,109, 51,209,143, 12, 82,176,238,
+    183              50,108,142,208, 83, 13,239,177,240,174, 76, 18,145,207, 45,115,
+    184              202,148,118, 40,171,245, 23, 73,  8, 86,180,234,105, 55,213,139,
+    185              87,  9,235,181, 54,104,138,212,149,203, 41,119,244,170, 72, 22,
+    186              233,183, 85, 11,136,214, 52,106, 43,117,151,201, 74, 20,246,168,
+    187              116, 42,200,150, 21, 75,169,247,182,232, 10, 84,215,137,107, 53};
+    188                                  
+    189             crc8 = dscrc_table[crc8 ^ value];
+    190             return crc8;
+    191          }
+    192          
+    193          
+    194          uint16_t ow_search (void)
+    195          {
+    196              uint16_t id_bit_number;
+    197              uint16_t last_zero, rom_byte_number, search_result;
+    198              uint16_t id_bit, cmp_id_bit;
+    199              uint8_t rom_byte_mask, search_direction;
+    200          
+    201            id_bit_number = 1;
+    202            last_zero = 0;
+    203            rom_byte_number = 0;
+    204            rom_byte_mask = 1;
+    205            search_result = 0;
+    206            crc8 = 0;
+    207          
+    208             if (!LastDeviceFlag)
+    209             {
+    210                if (!ow_reset ())
+    211                {
+    212                   LastDiscrepancy = 0;
+    213                   LastDeviceFlag = FALSE;
+    214                   LastFamilyDiscrepancy = 0;
+    215                   return FALSE;
+    216                }
+    217           
+    218                ow_write_byte(0xF0);  
+    219          
+    220                do
+    221                {
+    222                   id_bit = ow_read_bit();
+    223                   cmp_id_bit = ow_read_bit();
+    224          
+    225                   if ((id_bit == 1) && (cmp_id_bit == 1))
+    226                      break;
+    227                   else
+    228                   {
+    229                      if (id_bit != cmp_id_bit)
+    230                         search_direction = id_bit; 
+    231                      else
+    232                      {
+    233                         if (id_bit_number < LastDiscrepancy)
+    234                            search_direction = ((ROM_NO[rom_byte_number] & rom_byte_mask) > 0);
+    235                         else
+    236                            search_direction = (id_bit_number == LastDiscrepancy);
+    237          
+    238                         if (search_direction == 0)
+    239                         {
+    240                            last_zero = id_bit_number;
+    241          
+    242                            if (last_zero < 9)
+    243                               LastFamilyDiscrepancy = last_zero;
+    244                         }
+    245                      }
+    246          
+    247                      if (search_direction == 1)
+    248                        ROM_NO[rom_byte_number] |= rom_byte_mask;
+    249                      else
+    250                        ROM_NO[rom_byte_number] &= ~rom_byte_mask;
+    251          
+    252                      ow_write_bit(search_direction);
+    253          
+    254                      id_bit_number++;
+    255                      rom_byte_mask <<= 1;
+    256          
+    257                      if (rom_byte_mask == 0)
+    258                      {
+    259                          docrc8(ROM_NO[rom_byte_number]); 
+    260                          rom_byte_number++;
+    261                          rom_byte_mask = 1;
+    262                      }
+    263                   }
+    264                }
+    265                while(rom_byte_number < 8); 
+    266          
+    267                if (!((id_bit_number < 65) || (crc8 != 0)))
+    268                {
+    269                   LastDiscrepancy = last_zero;
+    270          
+    271                   if (LastDiscrepancy == 0)
+    272                      LastDeviceFlag = TRUE;
+    273                   
+    274                   search_result = TRUE;
+    275                }
+    276             }
+    277          
+    278             if (!search_result || !ROM_NO[0])
+    279             {
+    280                LastDiscrepancy = 0;
+    281                LastDeviceFlag = FALSE;
+    282                LastFamilyDiscrepancy = 0;
+    283                search_result = FALSE;
+    284             }
+    285             return search_result;
+    286          }
+    287          
+    288          int OWFirst()
+    289          {
+    290              LastDiscrepancy = 0;
+    291              LastDeviceFlag = FALSE;
+    292              LastFamilyDiscrepancy = 0;
+    293          
+    294              return ow_search();
+    295          }
+    296          
+    297          int OWNext()
+    298          {
+    299              return ow_search();
+    300          }
+    301          
+    302          //**********************************************************************************
+    303          //#define PORT  GPIOC   //указать порт, к которому подключены датчики
+    304          //#define TIMER TIM3    //задаем таймер, используемый для формирования задержек
+    305          // 
+    306          ////*********************************************************************************************
+    307          ///**
+    308          //* @function  импульс сброса                                                                   
+    309          //* @param  маска порта                                                                      
+    310          //* @return    0 - устройство обнаружен, 1 - не обнаружено, 2 - к.з. на линии                   
+    311          //*/
+    312          ////*********************************************************************************************
+    313          //uint8_t ds_reset_pulse(uint16_t PinMask)
+    314          //{
+    315          //   uint16_t result;   
+    316          // 
+    317          //   if((PORT->IDR & PinMask)==0)  return 2;         //проверить линию на отсутствие замыкания
+    318          //   PORT->ODR &= ~PinMask;                          //потянуть шину к земле
+    319          //   TIMER->CNT=0;
+    320          //   while(TIMER->CNT<480){};                        //ждать 480 микросекунд
+    321          //   PORT->ODR |=  PinMask;                          //отпустить шину
+    322          //   while(TIMER->CNT<550){};                        //ждать 70 микросекунд
+    323          //   result     =  PORT->IDR & PinMask;              //прочитать шину 
+    324          //   while(TIMER->CNT<960){};                        //дождаться окончания инициализации
+    325          //   if(result) return 1;                            //датчик не обнаружен
+    326          //   return 0;                                       //датчик обнаружен      
+    327          //}
+    328          //
+    329          ////*********************************************************************************************
+    330          ///**
+    331          //* @function  передача бита                                                                    
+    332          //* @param  значение передаваемого бита,маска порта                                         
+    333          //* @return     none                                                                        
+    334          //*/
+    335          ////*********************************************************************************************
+    336          //void ds_write_bit(uint8_t bit,uint16_t PinMask)
+    337          //{
+    338          //   TIMER->CNT=0;
+    339          //   PORT->ODR &= ~PinMask;                          //потянуть шину к земле
+    340          //   while(TIMER->CNT<2){};                          //ждать 1 микросекунду
+    341          //   if(bit) PORT->ODR |=  PinMask;                  //если передаем 1, то отпускаем шину
+    342          //   while(TIMER->CNT<60){};                         //задержка 60 микросекунд 
+    343          //   PORT->ODR |=  PinMask;                          //отпускаем шину 
+    344          //}
+    345          //
+    346          ////*********************************************************************************************
+    347          ///**
+    348          //* @function  чтение бита                                                                      
+    349          //* @param  маска порта                                                                     
+    350          //* @return    прочитанный бит                                                              
+    351          //*/
+    352          ////*********************************************************************************************
+    353          //uint16_t ds_read_bit(uint16_t PinMask)
+    354          //{
+    355          //   uint16_t result;
+    356          // 
+    357          //   TIMER->CNT=0;
+    358          //   PORT->ODR &= ~PinMask;                          //потянуть шину к земле
+    359          //   while(TIMER->CNT<2){};
+    360          //   PORT->ODR |=  PinMask;                          //отпускаем шину  
+    361          //   while(TIMER->CNT<15){};                         //задержка 15 микросекунд
+    362          //   result     =  PORT->IDR & PinMask;              //прочитать шину
+    363          //   while(TIMER->CNT<60){};                         //оставшееся время 
+    364          //   return result;                                  //возвратить результат
+    365          //}
+    366          //
+    367          ////*********************************************************************************************
+    368          ///**
+    369          //* @function  запись байта                                                                     
+    370          //* @param  передаваемый байт,маска порта                                                   
+    371          //* @return    none                                                                         
+    372          //*/
+    373          ////*********************************************************************************************
+    374          //
+    375          //void ds_write_byte(uint8_t byte, uint16_t PinMask)
+    376          //{
+    377          //   uint8_t i;
+    378          //   for(i=0;i<8;i++) ds_write_bit(byte&(1<<i), PinMask);
+    379          //}
+    380          ////*********************************************************************************************
+    381          ///**
+    382          //* @function  чтение байта                                                                     
+    383          //* @param  маска порта                                                                     
+    384          //* @return    прочитанный байт                                                             
+    385          //*/
+    386          ////*********************************************************************************************
+    387          //uint8_t ds_read_byte(uint16_t PinMask)
+    388          //{
+    389          //   uint8_t i,result = 0;
+    390          //   for(i=0;i<8;i++) 
+    391          //   if(ds_read_bit(PinMask)) result |= 1<<i; 
+    392          //   return result;
+    393          //}
+    394          //
+    395          ////*********************************************************************************************
+    396          ///**
+    397          //* @function  пуск измерения температуры                                                       
+    398          //* @param  номер пина порта 0..15                                                          
+    399          //* @return    0 - пуск выполнен, 1 - датчик не обнаружен, 2 - к.з. на линии                
+    400          //*/
+    401          ////*********************************************************************************************
+    402          //uint8_t ds_start_convert_single(uint8_t PinNumb)
+    403          //{
+    404          //  uint8_t result;
+    405          //  result = ds_reset_pulse(1<<PinNumb);       //послать импульс сброса
+    406          //  if(result) return result;                  //если ошибка - возвращаем ее код
+    407          //  ds_write_byte(0xCC,1<<PinNumb);            //разрешить доступ к датчику не используя адрес  
+    408          //  ds_write_byte(0x44,1<<PinNumb);            //запустить преобразование
+    409          //  return 0;
+    410          //}
+    411          //
+    412          //
+    413          ////*********************************************************************************************
+    414          ///**
+    415          //* @function  чтение памяти датчика                                                            
+    416          //* @param  указатель на массив-приемник данных, номер пина порта 0..15                      
+    417          //* @return    0 - данные прочитаны, 1 - датчик не обнаружен, 2 - к.з. 3 - ошибка CRC        
+    418          //*/
+    419          ////*********************************************************************************************
+    420          //uint8_t ds_read_data_single(uint8_t *buff, uint8_t PinNumb)
+    421          //{
+    422          //  uint8_t crc = 0;
+    423          //  uint8_t data;
+    424          //  uint8_t i,j;
+    425          //  uint8_t tmp;
+    426          // 
+    427          //  tmp = ds_reset_pulse(1<<PinNumb);          //послать импульс сброса
+    428          //  if(tmp) return tmp;                        //если ошибка - возвращаем ее код
+    429          //  ds_write_byte(0xCC,1<<PinNumb);            //разрешить доступ к датчику не используя адрес
+    430          // 
+    431          //  ds_write_byte(0xBE,1<<PinNumb);            //запрос 9 байт памяти
+    432          // 
+    433          //  //прочитать 8 байт и вычислить CRC
+    434          //  for( i=0; i<8; i++) 
+    435          //  {
+    436          //    data = ds_read_byte(1<<PinNumb);         //прочитать очередной байт      
+    437          //    buff[i] = data;                          //сохранить его в массиве
+    438          // 
+    439          //    //вычисление CRC - обрабатываем каждый бит принятого байта
+    440          //    for( j=0; j<8; j++)         
+    441          //    {
+    442          //      tmp = (crc ^ data) & 0x01;
+    443          //      if (tmp==0x01) crc = crc ^ 0x18;
+    444          //      crc = (crc >> 1) & 0x7F;
+    445          //      if (tmp==0x01) crc = crc | 0x80;
+    446          //      data = data >> 1;
+    447          //    }		
+    448          //  }
+    449          // 
+    450          //  data = ds_read_byte(1<<PinNumb);          //прочитать CRC датчика
+    451          //  if(crc==data) return 0;                   //если CRC совпали - значит ошибки нет
+    452          //  return 3;                                 //CRC не совпали, ошибка принятых данных
+    453          //}
+    454          //
+    455          ////*********************************************************************************************
+    456          ///**
+    457          //* @function  чтение температуры датчика                                                       
+    458          //* @param   номер пина порта 0..15                                                         
+    459          //* @return    1280 - ошибка, иначе - результат измерения                                   
+    460          //*/
+    461          ////*********************************************************************************************
+    462          //signed int ds_read_temperature(uint8_t PinNumb)
+    463          //{
+    464          //  signed char integer = 0;     
+    465          //  signed char frac;
+    466          //  signed int  result;
+    467          //  uint8_t     buff[8];
+    468          // 
+    469          //  //прочитать данные из датчика 
+    470          //  if(ds_read_data_single(&buff[0],PinNumb))  return 1280;
+    471          // 
+    472          //  frac    = buff[0] & 0x0f;                            //получить дробную часть      
+    473          //  integer = (buff[0]>>4) | ((buff[1] & 0x0f)<<4);      //получить целую часть 
+    474          // 
+    475          //  //если температура отрицательная
+    476          //  if(integer<0)
+    477          //  {
+    478          //    integer = 0 - integer - 1;
+    479          //    result  = integer *10;                            //учитываем целую часть
+    480          //    frac = frac | 0xf0;
+    481          //    frac = 0 - frac ;                                 
+    482          //  }
+    483          //  //если температура положительная
+    484          //  else     result  = integer *10;                    //учитываем целую часть
+    485          // 
+    486          //  result = result + ((frac*10)/16);                  //учитываем дробную часть
+    487          // 
+    488          //  return result;
+    489          //}
+    490          ////******************************************************************************
+    491          //void ds_init(void)
+    492          //{
+    493          //RCC->APB1ENR |= RCC_APB1ENR_TIM3EN;   //подать тактирование на TIM3                           /
+    494          //TIM3->PSC     = 25 - 1;                  //настроить делитель для формирования микросекунд
+    495          //TIM3->ARR     = 1000; 
+    496          //TIM3->CR1     = TIM_CR1_CEN;
+    497          //
+    498          //RCC->APB2ENR |=  RCC_APB2ENR_IOPCEN;  //Разрешить тактирование порта                          /
+    499          //GPIOC->CRL   &= ~GPIO_CRL_MODE7;      //Очистить биты MODE
+    500          //GPIOC->CRL   &= ~GPIO_CRL_CNF7;       //Очистить биты CNF
+    501          //GPIOC->CRL   |=  GPIO_CRL_MODE7_1 ;   //Выход,частота 2MHz
+    502          //GPIOC->CRL   |=  GPIO_CRL_CNF7_0;     //Открытый сток общего назначения
+    503          //GPIOC->ODR   |=  1<<7 ;               //отпустить шину  
+    504          //}
+    505          ////******************************************************************************
+    506          //
+    507          ///*
+    508          //http://mycontroller.ru/stm32-ds18b20-izmerenie-temperaturyi/
+    509          //Я выбрал 1280 (128.0 градуса), т.к. максимальная температура для этих датчиков 125 градусов.
+    510          //Посмотрим, как теперь выглядит процесс измерения температуры:
+    511          //
+    512          //signed int tmp;
+    513          // 
+    514          //ds_start_convert_single(7);     //запустить измерение температуры                              /
+    515          //delay_ms(1000);                 //время для окончания преобразования
+    516          //tmp = ds_read_temperature(7);   //прочитать результат измерения
+    517          //*/
+    518          //
+    519          //
+    520          ///*
+    521          //Прежде чем использовать приведенные выше функции, необходимо инициализировать таймер и порт.
+    522          //Таймер инициализируем так:
+    523          //RCC->APB1ENR |= RCC_APB1ENR_TIM3EN;   //подать тактирование на TIM3                           /
+    524          //TIM3->PSC     = 8-1;                  //настроить делитель для формирования микросекунд
+    525          //TIM3->ARR     = 1000; 
+    526          //TIM3->CR1     = TIM_CR1_CEN;
+    527          //Строка №2 обеспечивает подачу микросекундных импульсов на вход счетного регистра.
+    528          //В этом примере тактирование таймера осуществляется от 8MHz, поэтому в TIM3->PSC загружается 8-1. Эту строку нужно подстроить под свое тактирование.
+    529          //Настройка порта. Я подключил датчик к выводу 7 порта С. Настройка выглядит так:
+    530          //
+    531          //RCC->APB2ENR |=  RCC_APB2ENR_IOPCEN;  //Разрешить тактирование порта                          /
+    532          //GPIOC->CRL   &= ~GPIO_CRL_MODE7;      //Очистить биты MODE
+    533          //GPIOC->CRL   &= ~GPIO_CRL_CNF7;       //Очистить биты CNF
+    534          //GPIOC->CRL   |=  GPIO_CRL_MODE7_1 ;   //Выход,частота 2MHz
+    535          //GPIOC->CRL   |=  GPIO_CRL_CNF7_0;     //Открытый сток общего назначения
+    536          //GPIOC->ODR   |=  1<<7 ;               //отпустить шину
+    537          //*/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   Delay_MS
+        16   -> Delay_US
+       0   Delay_US
+       8   OWFirst
+         8   -> ow_search
+       8   OWNext
+         8   -> ow_search
+       8   RCC_Configuration
+         8   -> RCC_AHB1PeriphClockCmd
+         8   -> RCC_APB1PeriphClockCmd
+       0   Set_Port_Down
+       0   Set_Port_Up
+      16   Set_Port_input
+        16   -> GPIO_Init
+      16   Set_Port_output
+        16   -> GPIO_Init
+      16   TIM3_Configuration
+        16   -> TIM_Cmd
+        16   -> TIM_TimeBaseInit
+       0   docrc8
+       8   ow_read_bit
+         8   -> Delay_US
+         8   -> Set_Port_Down
+         8   -> Set_Port_input
+         8   -> Set_Port_output
+      16   ow_read_byte
+        16   -> Delay_US
+        16   -> ow_read_bit
+       8   ow_reset
+         8   -> Delay_US
+         8   -> Set_Port_Down
+         8   -> Set_Port_input
+         8   -> Set_Port_output
+      40   ow_search
+        40   -> docrc8
+        40   -> ow_read_bit
+        40   -> ow_reset
+        40   -> ow_write_bit
+        40   -> ow_write_byte
+       8   ow_write_bit
+         8   -> Delay_US
+         8   -> Set_Port_Down
+         8   -> Set_Port_Up
+         8   -> Set_Port_output
+      16   ow_write_byte
+        16   -> Delay_US
+        16   -> ow_write_bit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_10
+       4  ??DataTable10_11
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       4  ??DataTable10_8
+       4  ??DataTable10_9
+      32  Delay_MS
+      18  Delay_US
+       2  LastDeviceFlag
+       2  LastDiscrepancy
+       2  LastFamilyDiscrepancy
+      26  OWFirst
+       8  OWNext
+      20  RCC_Configuration
+       8  ROM_NO
+       8  Set_Port_Down
+       8  Set_Port_Up
+      42  Set_Port_input
+      42  Set_Port_output
+      48  TIM3_Configuration
+       1  crc8
+      24  docrc8
+     256  dscrc_table
+      58  ow_read_bit
+      44  ow_read_byte
+      62  ow_reset
+     378  ow_search
+      56  ow_write_bit
+      46  ow_write_byte
+
+ 
+  15 bytes in section .bss
+ 256 bytes in section .data
+ 968 bytes in section .text
+ 
+ 968 bytes of CODE memory
+ 271 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,152 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.50.1.4415/W32 for ARM      25/Nov/2013  16:31:05 #
+# Copyright 1999-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\pulse.c                                   #
+#    Command line =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\src\pulse.c -D USE_STDPERIPH_DRIVER -D        #
+#                    STM32F2XX -D USE_STM322xG_EVAL -lcN                      #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\ -o                  #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\ --no_cse             #
+#                    --no_unroll --no_inline --no_code_motion --no_tbaa       #
+#                    --no_clustering --no_scheduling --debug --endian=little  #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\INC\c\DLib_Config_Full.h" -I                     #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\inc\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\CMSIS\CM3\DeviceS #
+#                    upport\ST\STM32F2xx\ -I E:\work\ihome\stm\ihome_stm_02\P #
+#                    roject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Lib #
+#                    raries\STM32F2xx_StdPeriph_Driver\inc\ -I                #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Libraries\STM32F2x7_ETH_Dri #
+#                    ver\inc\ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeR #
+#                    TOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\STM32 #
+#                    _EVAL\Common\ -I E:\work\ihome\stm\ihome_stm_02\Project\ #
+#                    FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Utilities\ #
+#                    STM32_EVAL\STM322xG_EVAL\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ -I E:\work\ihome\stm\ihome_stm_02\Pr #
+#                    oject\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\Util #
+#                    ities\Third_Party\lwip_v1.3.2\src\include\lwip\ -I       #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\netif\ -I                             #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\src\include\ipv4\ -I                              #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\lwip_ #
+#                    v1.3.2\port\STM32F2x7\ -I E:\work\ihome\stm\ihome_stm_02 #
+#                    \Project\FreeRTOS\httpserver_netconn\EWARM\..\..\..\..\U #
+#                    tilities\Third_Party\lwip_v1.3.2\port\STM32F2x7\FreeRTOS #
+#                    \ -I E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\htt #
+#                    pserver_netconn\EWARM\..\..\..\..\Utilities\Third_Party\ #
+#                    FreeRTOS_v7.4.2\portable\IAR\ARM_CM3\ -I                 #
+#                    E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\..\..\..\..\Utilities\Third_Party\FreeR #
+#                    TOS_v7.4.2\include\ -On --use_c++_inline -I "C:\Program  #
+#                    Files (x86)\IAR Systems\Embedded Workbench               #
+#                    6.5\arm\CMSIS\Include\"                                  #
+#    List file    =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\List\pulse.lst            #
+#    Object file  =  E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserv #
+#                    er_netconn\EWARM\STM322xG_EVAL\Obj\pulse.o               #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+E:\work\ihome\stm\ihome_stm_02\Project\FreeRTOS\httpserver_netconn\src\pulse.c
+      1          #include "pulse.h"
+      2          
+      3          
+      4          /**
+      5          * @brief Function init task my_tasks_vConfigPort
+      6          * @param dev - Device structure parsing_html_device_pt
+      7          * @return - None
+      8          */
+      9          void make_pulse_init(void * pt)
+     10          { 
+     11             portBASE_TYPE xReturn;
+     12             xReturn =  xTaskCreate(make_pulse, "PULSE", configMINIMAL_STACK_SIZE, pt ,PULSE_TASK_PRIO, NULL);
+     13             if (xReturn != pdPASS){
+     14               printf ("See errors %d in file 'projdefs.h' \n", xReturn);    
+     15               LED_alarm_On();   
+     16             }
+     17          //   
+     18          //   printf ("pdPASS = %d\n\n", xReturn);
+     19          }
+     20          //---------------------------------------------------
+     21          void make_pulse (void * pt)
+     22          {
+     23            volatile struct PORT_struct *port ;  // Передаем порт подключенный к кнопке
+     24            Ports_TypeDef port_num;
+     25            
+     26            port = (volatile struct PORT_struct *)pt;  
+     27            port_num = getPort_name(port->num_port);  
+     28            
+     29          //------------------------------------------------------------------------------    
+     30              set_ports_PORTOn(port_num);
+     31              LEDOn(LED4);
+     32          //    printf ("Port On %d \n", port_num);
+     33          //    vTaskDelay(10 / portTICK_RATE_MS);  
+     34              vTaskDelay(10);
+     35              set_ports_PORTOff(port_num);
+     36              LEDOff(LED4);
+     37          //    printf ("Port Off %s \n", port_num);
+     38          //    vTaskDelay(10 / portTICK_RATE_MS);
+     39              vTaskDelay(10);
+     40              set_ports_PORTOn(port_num);
+     41              LEDOn(LED4);
+     42              vTaskDelete( NULL );   
+     43          //------------------------------------------------------------------------------
+     44            
+     45          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   make_pulse
+        16   -> LEDOff
+        16   -> LEDOn
+        16   -> getPort_name
+        16   -> set_ports_PORTOff
+        16   -> set_ports_PORTOn
+        16   -> vTaskDelay
+        16   -> vTaskDelete
+      32   make_pulse_init
+        32   -> LED_alarm_On
+        32   -> printf
+        32   -> xTaskGenericCreate
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?<Constant "PULSE">
+      40  ?<Constant "See errors %d in file...">
+       4  ??DataTable0
+       4  ??DataTable0_1
+      76  make_pulse
+      58  make_pulse_init
+
+ 
+  48 bytes in section .rodata
+ 142 bytes in section .text
+ 
+ 142 bytes of CODE  memory
+  48 bytes of CONST memory
+
+Errors: none
+Warnings: none

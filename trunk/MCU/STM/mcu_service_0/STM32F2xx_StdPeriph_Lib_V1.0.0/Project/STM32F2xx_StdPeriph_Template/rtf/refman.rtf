@@ -1,0 +1,4174 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\comment begin body}
+{\info 
+{\title {\comment "RC47 STM" }"RC47 STM"}
+{\comment Generated byDoxgyen. }
+{\creatim \yr2013\mo4\dy23\hr15\min14\sec58}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt TITLE}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt CREATEDATE}}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b adc_data_t} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold ADC data measured by STM })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b max_status_t} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold MAX6656 data })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b stm_status_t} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General Error and Status structure for RC47 board })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all documented files with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b ADC.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File contains functions to work with STM ADC })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ADC.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.h} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file with main RC47 defines })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b plx.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b plx_func.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with PLX })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b spi_cpld.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with CPLD over SPI bus })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b spi_cpld.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b stm32f2xx_conf.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b stm32f2xx_it.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b stm_host.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions servicing interaction with USB and PCIe hosts, of RDM and performing delayed actions scheduled in different ISRs })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b stm_host.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_flash.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_i2c.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with local I2C bus })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_i2c.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_i2c_edge.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with Edge I2C bus. Mainly for communication with RDM-03 })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_i2c_edge.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_sdio.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with SD card })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_sdio.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_timer.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing Timer Init and delay functions })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_timer.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_uart.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with USART interface with USB HOST })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b user_uart.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b wide_bus.c} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with WIDE BUS interface to Spartan6 and LEDS })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b wide_bus.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b jtag/{\b lenval.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b jtag/{\b micro.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b jtag/{\b ports.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+adc_data_t Struct Reference\par \pard\plain 
+{\tc\tcl2 \v adc_data_t}
+{\xe \v adc_data_t}
+{\bkmkstart AAAAAAAAFD}
+{\bkmkend AAAAAAAAFD}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold ADC data measured by STM. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint16_t {\b Vref_25_raw}{\bkmkstart AAAAAAAAFE}
+{\bkmkend AAAAAAAAFE}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+adc data for reference voltage of 2.5 V }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold ADC data measured by STM. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Updated every second. Can be transfered to host (USB or PCIe) upon request. Also it is partly read out by RDM-03 (I2C_Edge) with the help of Edge_i2c_ConvertData fucntion.\par
+All voltages are in millivolts \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b main.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+max_status_t Struct Reference\par \pard\plain 
+{\tc\tcl2 \v max_status_t}
+{\xe \v max_status_t}
+{\bkmkstart AAAAAAAAFF}
+{\bkmkend AAAAAAAAFF}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold MAX6656 data. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b i2c_error_38}{\bkmkstart AAAAAAAAFG}
+{\bkmkend AAAAAAAAFG}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set on error on MAX1 (U38) device. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b i2c_error_39}{\bkmkstart AAAAAAAAFH}
+{\bkmkend AAAAAAAAFH}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set on error on MAX2 (U39) device. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b i2c_error_40}{\bkmkstart AAAAAAAAFI}
+{\bkmkend AAAAAAAAFI}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set on error on MAX3 (U40) device. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b u38_Text1}{\bkmkstart AAAAAAAAFJ}
+{\bkmkend AAAAAAAAFJ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Temperature FPGA LD. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b u38_Text2}{\bkmkstart AAAAAAAAFK}
+{\bkmkend AAAAAAAAFK}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Temperature FPGA LU. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b u39_Text1}{\bkmkstart AAAAAAAAFL}
+{\bkmkend AAAAAAAAFL}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Temperature FPGA RD. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b u39_Text2}{\bkmkstart AAAAAAAAFM}
+{\bkmkend AAAAAAAAFM}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Temperature FPGA RU. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b u40_Text1}{\bkmkstart AAAAAAAAFN}
+{\bkmkend AAAAAAAAFN}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Temperature PLX. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold MAX6656 data. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Updated every second. Can be transfered to host (USB or PCIe) upon request. Also it is partly read out by RDM-03 (I2C_Edge) with the help of Edge_i2c_ConvertData fucntion. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b main.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+stm_status_t Struct Reference\par \pard\plain 
+{\tc\tcl2 \v stm_status_t}
+{\xe \v stm_status_t}
+{\bkmkstart AAAAAAAAFO}
+{\bkmkend AAAAAAAAFO}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General Error and Status structure for RC47 board. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b fversion}{\bkmkstart AAAAAAAAFP}
+{\bkmkend AAAAAAAAFP}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+STM Firmware version. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b i2c_error}{\bkmkstart AAAAAAAAFQ}
+{\bkmkend AAAAAAAAFQ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set on error on I2C bus. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b cpld_error}{\bkmkstart AAAAAAAAFR}
+{\bkmkend AAAAAAAAFR}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set on CPLD error. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b sdio_error}{\bkmkstart AAAAAAAAFS}
+{\bkmkend AAAAAAAAFS}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set on SDIO error. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b sdio_card_vaild_code}{\bkmkstart AAAAAAAAFT}
+{\bkmkend AAAAAAAAFT}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set when SD card contains valid data. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b plx_error}{\bkmkstart AAAAAAAAFU}
+{\bkmkend AAAAAAAAFU}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set on PLX Switch error. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint32_t {\b plx_id}{\bkmkstart AAAAAAAAFV}
+{\bkmkend AAAAAAAAFV}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Vendor&DeviceID. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General Error and Status structure for RC47 board. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This stucture initialiases once on power up and then can be transfered to host (USB or PCIe) upon request \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b main.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ADC.c File Reference\par \pard\plain 
+{\tc\tcl2 \v ADC.c}
+{\xe \v ADC.c}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File contains functions to work with STM ADC. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b user_adc_init} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialises ADC periferial, calibrates and read first data. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b adc_calibrate} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Calibrate ADC data. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b adc_read_data} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read ADC data from all mux inputs. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint16_t {\b set_adc_sel} (uint16_t sel_val)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Selects mux channel. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ADC_Init_DMA} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Low level initialiasation of ADC periferial and MCU_ADC_SEL_i pins. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ADC_Read_DMA} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read ADC data from from selected mux input. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint16_t {\b adc_buffer} [4]{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RAM buffer to hold DMA data from ADC. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File contains functions to work with STM ADC. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+On RC47 STM ADC is used to measure several voltages.\par
+Four ADC channels are used:{
+\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+1.\tab MCU_ADC1 - ADC12_IN4 (PA4)\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+2.\tab MCU_ADC2 - ADC12_IN5 (PA5)\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+3.\tab MCU_ADC3 - ADC12_IN6 (PA6)\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+4.\tab MCU_ADC4 - ADC12_IN7 (PA7)\par}
+Each of the four channels is connected to the outputs of four analog multiplexers. All muxes are the same and each has 8 unique analog inputs and 3 shared digital control inputs connected to STM {
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MCU_ADC_SEL_0 PC0 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MCU_ADC_SEL_1 PC1 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MCU_ADC_SEL_2 PC2 \par}
+Connetions: {
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MCU_ADC1 {
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Y0 = (12 VDC)*(R1/(R1+R2)) = 12VDC/7; R1 = 1 kOm; R2 = 6 kOm \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Y1 = 1v0_LU \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Y2 = 1.2VA_LU \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+4.\tab Y3 = 1.0VA_LU \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+5.\tab Y4 = UEM1_L \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+6.\tab Y5 = 1.5V_L \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+7.\tab Y6 = 1.2V \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+8.\tab Y7 = 2.5V_REF \par}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MCU_ADC2 {
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Y0 = (5V)*(R1/(R1+R2)) = 5V/3.5; R1 = 1 kOm; R2 = 2.5 kOm \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Y1 = 1v0_LD \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Y2 = 1.2VA_LD \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+4.\tab Y3 = 1.0VA_LD \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+5.\tab Y4 = UEM2_L \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+6.\tab Y5 = 1.2VA_S \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+7.\tab Y6 = MUX_T1 (TP36) \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+8.\tab Y7 = 2.5V_REF \par}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MCU_ADC3 {
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Y0 = (3.3V)*(R1/(R1+R2)) = 3.3V/2; R1 = 2.5 kOm; R2 = 2.5 kOm \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Y1 = 1v0_RU \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Y2 = 1.2VA_RU \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+4.\tab Y3 = 1.0VA_RU \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+5.\tab Y4 = UEM1_R \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+6.\tab Y5 = 1.5V_R \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+7.\tab Y6 = MUX_T2 (TP37) \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+8.\tab Y7 = 2.5V_REF \par}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MCU_ADC4 {
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Y0 = 1.8V \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Y1 = 1v0_RD \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Y2 = 1.2VA_RD \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+4.\tab Y3 = 1.0VA_RD \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+5.\tab Y4 = UEM2_R \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+6.\tab Y5 = 1.8VA \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+7.\tab Y6 = MUX_T3 (TP38) \par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+8.\tab Y7 = 2.5V_REF \par}
+\par}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v adc_calibrate\:ADC.c}
+{\xe \v ADC.c\:adc_calibrate}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void adc_calibrate (void )}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Calibrate ADC data. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Each analog mux Y7 input is conneted to Reference voltage 2.5 volts which is used to calibrate all other data points.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v ADC_Init_DMA\:ADC.c}
+{\xe \v ADC.c\:ADC_Init_DMA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ADC_Init_DMA (void )}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Low level initialiasation of ADC periferial and MCU_ADC_SEL_i pins. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures ADC to use DMA transfer from ADC1_DR_ADDRESS to RAM location pointed by adc_buffer without using interrupts. Configures ADC_NbrOfConversion = 4, channels and ranks and sampling time = 56 cycles\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v adc_read_data\:ADC.c}
+{\xe \v ADC.c\:adc_read_data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void adc_read_data (void )}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read ADC data from all mux inputs. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads ADC data by continuously selecting muxs inputs from Y0 to Y7 and reading and saving 4 data points into {\b adc_data_t} structure\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v ADC_Read_DMA\:ADC.c}
+{\xe \v ADC.c\:ADC_Read_DMA}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ADC_Read_DMA (void )}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read ADC data from from selected mux input. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Data is saved in adc_buffer global array\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v set_adc_sel\:ADC.c}
+{\xe \v ADC.c\:set_adc_sel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint16_t set_adc_sel (uint16_t {\i sel_val})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Selects mux channel. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i sel_val} \cell }{- Channel to select (0 - 7)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v user_adc_init\:ADC.c}
+{\xe \v ADC.c\:user_adc_init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void user_adc_init (void )}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initialises ADC periferial, calibrates and read first data. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.c File Reference\par \pard\plain 
+{\tc\tcl2 \v main.c}
+{\xe \v main.c}
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Main function. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Timer_Interrupt_Service} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+TIM3 timer ISR (period 1 second) }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b update_board_data} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Measurements of ADC voltages and MAX6656 temperatures. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b analyse_board_data} (void){\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Analazes FPGA temperatures and clears its configuration on error. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b g_error_2}{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+One hot encoded errors. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_update} =0{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in Timer_Interrupt_Service (every second) to trigger ADC and temp measurments in DPC. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b RDM_I2C_Data_Out} [EDGE_I2C_TRANSMITTER_BUF]{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Edge I2C Slave Transmitter Buffer. Updated in. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v main\:main.c}
+{\xe \v main.c\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+main (void )}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Main function. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Initialisation: global structures, wbus pins, leds, usart\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Initialisation ADC\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab I2C controller init and test I2C devices on board\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+4.\tab Timer initialisation: Systick (1 ms), TIM2 (50 ns), TIM3 (1 sec, with delayed enabling of interrupts)\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+5.\tab SD card controller init and loading of FPGA (Spartan and Virtexs)\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+6.\tab Init SPI controller and test CPLD\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+7.\tab Read from CPLD status of PCIe PRESENT signal (from edge connector) 7.1 If the baord is not plugged into EDGE slot -> init edge_i2c bus (goes to RDM)\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+8.\tab Hard reset of PLX (through CPLD) and test PLX I2C bus\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+9.\tab Init wbus pins for interaction with Spartan6\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+10.\tab Enable 1 sec timer interrupts at the end of init\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+11.\tab Start STM <-> HOST (PCIE, USB, RDM) communication (stm_host_comm function)\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+{\xe \v Timer_Interrupt_Service\:main.c}
+{\xe \v main.c\:Timer_Interrupt_Service}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Timer_Interrupt_Service (void )}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+TIM3 timer ISR (period 1 second) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Checks Virtex DONE signals\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Sets need_update flag to trigger voltages and temp measurments on board\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+{\xe \v update_board_data\:main.c}
+{\xe \v main.c\:update_board_data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+update_board_data (void )}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Measurements of ADC voltages and MAX6656 temperatures. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm: Function to measure ADC voltages and MAX6656 temperatures\par
+Data is written to max_status and adc_data global structures, compared to global limits and error code is generated.\par
+Also RDM_I2C_Data_Out buffer is generated in Edge_i2c_ConvertData\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.h File Reference\par \pard\plain 
+{\tc\tcl2 \v main.h}
+{\xe \v main.h}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file with main RC47 defines. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b stm_status_t}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General Error and Status structure for RC47 board. }}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b max_status_t}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold MAX6656 data. }}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b adc_data_t}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Structure to hold ADC data measured by STM. }}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+#define {\b RC47_STM_FIRMWARE_VER}\~ 24{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Init value for stm_status.fversion. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+#define {\b NDEBUG}{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Defines FTDI_BAUDRATE and disables printf. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Timer_Interrupt_Service} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+TIM3 timer ISR (period 1 second) }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b update_board_data} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Measurements of ADC voltages and MAX6656 temperatures. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b analyse_board_data} (void){\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Analazes FPGA temperatures and clears its configuration on error. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Header file with main RC47 defines. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v Timer_Interrupt_Service\:main.h}
+{\xe \v main.h\:Timer_Interrupt_Service}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Timer_Interrupt_Service (void )}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+TIM3 timer ISR (period 1 second) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Checks Virtex DONE signals\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Sets need_update flag to trigger voltages and temp measurments on board\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+{\xe \v update_board_data\:main.h}
+{\xe \v main.h\:update_board_data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void update_board_data (void )}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Measurements of ADC voltages and MAX6656 temperatures. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm: Function to measure ADC voltages and MAX6656 temperatures\par
+Data is written to max_status and adc_data global structures, compared to global limits and error code is generated.\par
+Also RDM_I2C_Data_Out buffer is generated in Edge_i2c_ConvertData\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+plx_func.c File Reference\par \pard\plain 
+{\tc\tcl2 \v plx_func.c}
+{\xe \v plx_func.c}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with PLX. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b user_plx_work} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reset PLX and read its dev id over I2C. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b plx_reset} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Assert reset, wait PLX_RESET_PERIOD ms, deassert reset PLX. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b plx_read_port_status} (uint8_t plx_port, plx_port_status_t *plx_port_status)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads PLX port status (width and speed) }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b PlxEepromInit} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks PLX EEPROM Status and Initialises it if it's blank. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b PlxEepromPresent} (uint8_t *pStatus)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the state of the EEPROM as reported by the PLX device. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b PlxEepromSetAddressWidth} (uint8_t width)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sets a new EEPROM address width. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b plx_read_eeprom_reg} (uint16_t eeprom_addr, uint32_t *value)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads PLX EEPROM location. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b plx_write_eeprom_reg} (uint16_t eeprom_addr, uint32_t value)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites PLX EEPROM location. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with PLX. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+STM MC can get access to PLX registers over I2C and set strapp signals and generate reset through CPLD \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v plx_read_eeprom_reg\:plx_func.c}
+{\xe \v plx_func.c\:plx_read_eeprom_reg}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int plx_read_eeprom_reg (uint16_t {\i eeprom_addr}, uint32_t * {\i value})}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads PLX EEPROM location. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i eeprom_addr} \cell }{EEPROM Address to access \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{A pointer to the buffer that receives read data \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v plx_read_port_status\:plx_func.c}
+{\xe \v plx_func.c\:plx_read_port_status}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int plx_read_port_status (uint8_t {\i plx_port}, plx_port_status_t * {\i plx_port_status})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads PLX port status (width and speed) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i plx_port} \cell }{PLX Port number \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i plx_port_status} \cell }{Pointer to plx_port_status_t to hold width and speed\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid int <0 on error \par
+}}}
+{\xe \v plx_reset\:plx_func.c}
+{\xe \v plx_func.c\:plx_reset}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void plx_reset (void )}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Assert reset, wait PLX_RESET_PERIOD ms, deassert reset PLX. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+{\xe \v plx_write_eeprom_reg\:plx_func.c}
+{\xe \v plx_func.c\:plx_write_eeprom_reg}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int plx_write_eeprom_reg (uint16_t {\i eeprom_addr}, uint32_t {\i value})}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites PLX EEPROM location. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i eeprom_addr} \cell }{EEPROM Address to access \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value} \cell }{Value to Write \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v PlxEepromInit\:plx_func.c}
+{\xe \v plx_func.c\:PlxEepromInit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int PlxEepromInit (void )}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks PLX EEPROM Status and Initialises it if it's blank. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid <0 on error or if no PLX EEPROM is present \par
+}}}
+{\xe \v PlxEepromPresent\:plx_func.c}
+{\xe \v plx_func.c\:PlxEepromPresent}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int PlxEepromPresent (uint8_t * {\i pStatus})}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the state of the EEPROM as reported by the PLX device. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pStatus} \cell }{Pointer to data byte to hold EEPROM Status\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid STATUS_OK or STATUS_ERROR on error \par
+}}}
+{\xe \v PlxEepromSetAddressWidth\:plx_func.c}
+{\xe \v plx_func.c\:PlxEepromSetAddressWidth}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int PlxEepromSetAddressWidth (uint8_t {\i width})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sets a new EEPROM address width. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i width} \cell }{EEPROM address width in bytes (1, 2 or 3. Usually it is 2)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid STATUS_OK or STATUS_ERROR on error \par
+}}}
+{\xe \v user_plx_work\:plx_func.c}
+{\xe \v plx_func.c\:user_plx_work}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int user_plx_work (void )}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reset PLX and read its dev id over I2C. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Reset PLX and wait\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab check Vendor&Device ID\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid STATUS_OK or STATUS_ERROR (<0) \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+spi_cpld.c File Reference\par \pard\plain 
+{\tc\tcl2 \v spi_cpld.c}
+{\xe \v spi_cpld.c}
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with CPLD over SPI bus. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b cpld_test} (uint8_t *pcie_edge_active)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Init and test of CPLD (spi bus) }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b CPLD_Init} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes SPI controller in polling mode. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint8_t {\b CPLD_Send_Cmd} (uint8_t cmd, uint8_t reg_val)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends cmd to write register to CPLD. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b CPLD_OUT_ENABLE} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends CPLD_CMD_OUT_EN CMD to CPLD. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b CPLD_OUT_ENDISABLE} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends CPLD_CMD_OUT_DIS CMD to CPLD. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b CPLD_RST_PLX_LOW} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Assert PLX Reset signal. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b CPLD_RST_PLX_HIGH} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deassert PLX Reset signal. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with CPLD over SPI bus. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+SPI3 {
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SCK - PB3 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MISO - PB4 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+MOSI - PB5 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+CS - PA15 \par}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v CPLD_Init\:spi_cpld.c}
+{\xe \v spi_cpld.c\:CPLD_Init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void CPLD_Init (void )}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Initializes SPI controller in polling mode. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v CPLD_OUT_ENABLE\:spi_cpld.c}
+{\xe \v spi_cpld.c\:CPLD_OUT_ENABLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void CPLD_OUT_ENABLE (void )}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends CPLD_CMD_OUT_EN CMD to CPLD. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v CPLD_OUT_ENDISABLE\:spi_cpld.c}
+{\xe \v spi_cpld.c\:CPLD_OUT_ENDISABLE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void CPLD_OUT_ENDISABLE (void )}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends CPLD_CMD_OUT_DIS CMD to CPLD. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v CPLD_RST_PLX_HIGH\:spi_cpld.c}
+{\xe \v spi_cpld.c\:CPLD_RST_PLX_HIGH}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void CPLD_RST_PLX_HIGH (void )}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deassert PLX Reset signal. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v CPLD_RST_PLX_LOW\:spi_cpld.c}
+{\xe \v spi_cpld.c\:CPLD_RST_PLX_LOW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void CPLD_RST_PLX_LOW (void )}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Assert PLX Reset signal. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v CPLD_Send_Cmd\:spi_cpld.c}
+{\xe \v spi_cpld.c\:CPLD_Send_Cmd}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint8_t CPLD_Send_Cmd (uint8_t {\i cmd}, uint8_t {\i reg_val})}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends cmd to write register to CPLD. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i cmd} \cell }{Selects opperation and register to access \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i reg_val} \cell }{Register data to write \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid The value of the received byte \par
+}}}
+{\xe \v cpld_test\:spi_cpld.c}
+{\xe \v spi_cpld.c\:cpld_test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int cpld_test (uint8_t * {\i pcie_edge_active})}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Init and test of CPLD (spi bus) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab CPLD_Init\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Write/Read/Verify cycle to REG1\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Read pcie_edge_active signal from CPLD\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid STATUS_OK or STATUS_ERROR (<0) \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+stm_host.c File Reference\par \pard\plain 
+{\tc\tcl2 \v stm_host.c}
+{\xe \v stm_host.c}
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions servicing interaction with USB and PCIe hosts, of RDM and performing delayed actions scheduled in different ISRs. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b stm_host_comm} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Endless loop where program waits for assetions of flags either in servicing requests from USB, PCIe host or RDM module, or in Timer ISR (every 1 sec). }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_plx_reset}{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in ISR to schedule PLX Reset in DPC. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+struct cmd_frame_s {\b uframe}{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cmd from host received by USART. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_uframe_dpc}{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in USART ISR to schedule delayed procedure call for USART command. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b Buffer_Block_Rx} [SDIO_BLOCK_SIZE *SDIO_MAX_BLOCKS_RX]{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RAM Buffer used in SDIO and USART Host Transfers. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b usart_stm_ready}{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in USART DPC when smth is done;. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b usart_ready_to_send_data}{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+flag set in ISR to tell DPC to finish data transfer }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+struct cmd_frame_s {\b sp6_frame}{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cmd from host received by SP6. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_sp6_frame_dpc}{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in WBUS ISR to schedule delayed procedure call for WBUS command. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b Buffer_Block_Tx} [SDIO_BLOCK_SIZE *SDIO_MAX_BLOCKS_RX]{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RAM Buffer used in SDIO and WBuS Host Transfers. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b sp6_stm_ready}{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in WBUS DPC when smth is done;. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b sp6_ready_to_send_data}{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in WBUS ISR to tell DPC to finish data transfer. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_update}{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in Timer_Interrupt_Service (every second) to trigger ADC and temp measurments in DPC. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions servicing interaction with USB and PCIe hosts, of RDM and performing delayed actions scheduled in different ISRs. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General Idea is that lowest priority program spins in endless while loop in stm_host_comm function and waits for asserting flags. These flags are asserted in ISRs: either in servicing requests from USB, PCIe host or RDM module, or in Timer ISR (every 1 sec). \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v stm_host_comm\:stm_host.c}
+{\xe \v stm_host.c\:stm_host_comm}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void stm_host_comm (void )}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Endless loop where program waits for assetions of flags either in servicing requests from USB, PCIe host or RDM module, or in Timer ISR (every 1 sec). }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+USB - USART: Flag need_uframe_dpc is set in USART ISR when STM received the whole command Frame Commads supported by this interface: {
+\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_STATUS \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_MAX_DATA \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_ADC_DATA \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_PLX_I2C_READ \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_PLX_I2C_WRITE \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_WRITE_XSVF \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_XSVF \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_PROG_CPLD \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_TEST_WIDE_BUS \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_PLX_RST \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_V7_RST \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_SD_CARD \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_INIT_EEP \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_EEPR \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_WRITE_EEPR \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_WRITE_SDIO \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_SDIO \par}
+PCIe - WideBus: Flag need_sp6_frame_dpc is set in WideBus ISR when STM received the whole command Frame Commads supported by this interface: {
+\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_STATUS \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_MAX_DATA \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_ADC_DATA \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_V7_RST \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_SD_CARD \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_WRITE_SDIO \par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+CMD_READ_SDIO \par}
+RDM - Edge I2C: Flag need_plx_reset is set in EDGE I2C ISR when STM received such command from RDM\par
+Timer ISR: Flag need_update is set in Timer ISR and triggers temperature and voltages measurments\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+user_i2c.c File Reference\par \pard\plain 
+{\tc\tcl2 \v user_i2c.c}
+{\xe \v user_i2c.c}
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with local I2C bus. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b user_i2c_work} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Local I2C Init and MAX test. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b i2c_read_data} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read MAX_STATUS data (voltages and temperature) from Local I2C bus. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b i2c_read_temp} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read MAX_STATUS data temperature from Local I2C bus. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Local_i2c_Init} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Local I2C Low Level Initialisation. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b i2c_write_buf} (uint8_t I2C_Address, uint8_t *wr_buf, uint8_t num)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites buffer over Local I2C bus. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b i2c_read_buf} (uint8_t I2C_Address, uint8_t *rd_buf, uint8_t NumByteToRead)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads buffer from Local I2C bus. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b i2c_read_byte_max6656} (uint8_t I2C_Address, uint8_t cmd, uint8_t *rd_byte)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads byte from MAX6656. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b i2c_write_eeprom} (uint16_t EepromAddr, uint8_t *wr_buf, uint16_t NumBytes)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites buffer to EEPROM memory over Local I2C bus. Address of the EEPROM is defined by I2C_EEPROM_ADDR macro. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b i2c_read_eeprom} (uint16_t EepromAddr, uint8_t *rd_buf, uint16_t NumBytes)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads buffer from EEPROM memory over Local I2C bus. Address of the EEPROM is defined by I2C_EEPROM_ADDR macro. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b i2c_write_plx_reg} (uint8_t plx_port, uint16_t reg_addr, uint32_t reg_val)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites PLX register over Local I2C bus. Address of the PLX is defined by I2C_PLX_ADDR macro. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b i2c_read_plx_reg} (uint8_t plx_port, uint16_t reg_addr, uint32_t *reg_val)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads PLX register over Local I2C bus. Address of the PLX is defined by I2C_PLX_ADDR macro. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Local_i2c_EV_IRQ_handler} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Local I2C bus ISR. Master Mode. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with local I2C bus. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+I2C2 {
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+LOCAL_SMCK - PB10 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+LOCAL_SMDA - PB11 \par}
+Device address on I2C2 bus: {
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+I2C_MAX_U38_ADDR 0x30 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+I2C_MAX_U39_ADDR 0x98 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+I2C_MAX_U40_ADDR 0x34 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+I2C_PLX_ADDR 0x70 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+I2C_EEPROM_ADDR 0xA0 \par}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v i2c_read_buf\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_read_buf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i2c_read_buf (uint8_t {\i I2C_Address}, uint8_t * {\i rd_buf}, uint8_t {\i NumByteToRead})}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads buffer from Local I2C bus. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i I2C_Address} \cell }{Device Address on the Local I2C bus \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i rd_buf} \cell }{Pointer to destination buffer \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i NumByteToRead} \cell }{Number of bytes to transfer \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v i2c_read_byte_max6656\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_read_byte_max6656}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i2c_read_byte_max6656 (uint8_t {\i I2C_Address}, uint8_t {\i cmd}, uint8_t * {\i rd_byte})}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads byte from MAX6656. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b i2c_read_byte_max6656(uint8_t I2C_Address, uint8_t cmd, uint8_t *rd_byte)} {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i I2C_Address} \cell }{Device Address on the Local I2C bus \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i cmd} \cell }{Command to send to MAX \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i rd_byte} \cell }{A pointer to the buffer that receives data byte \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v i2c_read_data\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_read_data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+i2c_read_data (void )}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read MAX_STATUS data (voltages and temperature) from Local I2C bus. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+{\xe \v i2c_read_eeprom\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_read_eeprom}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i2c_read_eeprom (uint16_t {\i EepromAddr}, uint8_t * {\i rd_buf}, uint16_t {\i NumBytes})}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads buffer from EEPROM memory over Local I2C bus. Address of the EEPROM is defined by I2C_EEPROM_ADDR macro. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i EepromAddr} \cell }{EEPROM Start Byte Address \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i rd_buf} \cell }{Pointer to dest buffer \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i NumBytes} \cell }{Number of bytes to transfer\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v i2c_read_plx_reg\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_read_plx_reg}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i2c_read_plx_reg (uint8_t {\i plx_port}, uint16_t {\i reg_addr}, uint32_t * {\i reg_val})}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Reads PLX register over Local I2C bus. Address of the PLX is defined by I2C_PLX_ADDR macro. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i plx_port} \cell }{PLX Port number \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i reg_addr} \cell }{Register Address to access \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i reg_val} \cell }{A pointer to the buffer that receives register data \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v i2c_read_temp\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_read_temp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+i2c_read_temp (void )}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Read MAX_STATUS data temperature from Local I2C bus. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+{\xe \v i2c_write_buf\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_write_buf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i2c_write_buf (uint8_t {\i I2C_Address}, uint8_t * {\i wr_buf}, uint8_t {\i num})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites buffer over Local I2C bus. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i I2C_Address} \cell }{Device Address on the Local I2C bus \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i wr_buf} \cell }{Pointer to source buffer \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i num} \cell }{Number of bytes to transfer \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v i2c_write_eeprom\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_write_eeprom}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i2c_write_eeprom (uint16_t {\i EepromAddr}, uint8_t * {\i wr_buf}, uint16_t {\i NumBytes})}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites buffer to EEPROM memory over Local I2C bus. Address of the EEPROM is defined by I2C_EEPROM_ADDR macro. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i EepromAddr} \cell }{EEPROM Start Byte Address \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i wr_buf} \cell }{Pointer to source buffer \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i NumBytes} \cell }{Number of bytes to transfer\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v i2c_write_plx_reg\:user_i2c.c}
+{\xe \v user_i2c.c\:i2c_write_plx_reg}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int i2c_write_plx_reg (uint8_t {\i plx_port}, uint16_t {\i reg_addr}, uint32_t {\i reg_val})}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites PLX register over Local I2C bus. Address of the PLX is defined by I2C_PLX_ADDR macro. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i plx_port} \cell }{PLX Port number \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i reg_addr} \cell }{Register Address to access \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i reg_val} \cell }{Register Value to Write \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid -1 on error \par
+}}}
+{\xe \v Local_i2c_EV_IRQ_handler\:user_i2c.c}
+{\xe \v user_i2c.c\:Local_i2c_EV_IRQ_handler}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Local_i2c_EV_IRQ_handler ()}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Local I2C bus ISR. Master Mode. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v Local_i2c_Init\:user_i2c.c}
+{\xe \v user_i2c.c\:Local_i2c_Init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Local_i2c_Init (void )}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Local I2C Low Level Initialisation. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures Local I2C controller with interrupts\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+{\xe \v user_i2c_work\:user_i2c.c}
+{\xe \v user_i2c.c\:user_i2c_work}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+user_i2c_work (void )}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Local I2C Init and MAX test. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+General algorithm:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Local I2C conteroller initialisation\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Reading MAX devices id and verifying it\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid STATUS_OK or STATUS_ERROR (<0) \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+user_i2c_edge.c File Reference\par \pard\plain 
+{\tc\tcl2 \v user_i2c_edge.c}
+{\xe \v user_i2c_edge.c}
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with Edge I2C bus. Mainly for communication with RDM-03. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Edge_i2c_Init} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Edge I2C Low Level Initialisation. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Edge_i2c_EV_IRQ_handler} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Edge I2C bus ISR. Slave Mode. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b RDM_I2C_Data_Out} [EDGE_I2C_TRANSMITTER_BUF]{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Edge I2C Slave Transmitter Buffer. Updated in. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_plx_reset}{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in ISR to schedule PLX Reset in DPC. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with Edge I2C bus. Mainly for communication with RDM-03. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+I2C1 {
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+EDGE_SMCK - PB8 \par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+EDGE_SMDA - PB9 \par}
+Edge I2C bus is used for communication with RDM-03 module, which is Master on the bus.\par
+RDM-03 requests supported: {
+\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+1.\tab EDGE_I2C_SEND_DATA: RDM sends byte EDGE_I2C_SEND_DATA and RC47 respons with data from RDM_I2C_Data_Out buffer which is written to in update_board_data ({\b main.c}) and Edge_i2c_ConvertData \par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+2.\tab RESET PLX: RDM send byte EDGE_I2C_RESET and RC47 reset PLX\par
+\par}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v Edge_i2c_EV_IRQ_handler\:user_i2c_edge.c}
+{\xe \v user_i2c_edge.c\:Edge_i2c_EV_IRQ_handler}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Edge_i2c_EV_IRQ_handler ()}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Edge I2C bus ISR. Slave Mode. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+For now handles all communication with RDM Module\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v Edge_i2c_Init\:user_i2c_edge.c}
+{\xe \v user_i2c_edge.c\:Edge_i2c_Init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Edge_i2c_Init (void )}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Edge I2C Low Level Initialisation. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures Edge I2C controller with interrupts\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+< LOCAL_I2C Periph clock enable\par
+< LOCAL_I2C_SCL_GPIO_CLK and LOCAL_I2C_SDA_GPIO_CLK Periph clock enable\par
+< GPIO configuration\par
+< Configure LOCAL_I2C pins: SCL\par
+< Configure LOCAL_I2C pins: SDA\par
+< I2C configuration \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+user_sdio.c File Reference\par \pard\plain 
+{\tc\tcl2 \v user_sdio.c}
+{\xe \v user_sdio.c}
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with SD card. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b user_sdio_work} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures, test SD card and loads bitstreams into Spartan 6 and Virtex7. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b user_sdio_read_card} (int config_sp6, int v7_chip_select, int v7_bit_id)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures, test SD card and loads bitstreams into Spartan 6 and Virtex7. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b read_sdcard_config_sp6} (unsigned int bit_file_addr, unsigned int bit_file_length)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures Spartan 6. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b read_sdcard_config_v7} (unsigned int bit_file_addr, unsigned int bit_file_length, int chip_select)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures Virtex 7 chips. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b Buffer_Block_Rx} [SDIO_BLOCK_SIZE *SDIO_MAX_BLOCKS_RX]{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RAM Buffer used in SDIO and USART Host Transfers. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b Buffer_Block_Tx} [SDIO_BLOCK_SIZE *SDIO_MAX_BLOCKS_RX]{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RAM Buffer used in SDIO and WBuS Host Transfers. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with SD card. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+SD card communication is done over stm32_eval_sdio_sd driver (stm32_eval_sdio_sd.c) which is provided by STm.\par
+SD Card on RC47 board for now only contains bitfiles for Spartan 6 and Virtex7 devices.\par
+For now firmware supports only one bitfile for virtex7. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v read_sdcard_config_sp6\:user_sdio.c}
+{\xe \v user_sdio.c\:read_sdcard_config_sp6}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int read_sdcard_config_sp6 (unsigned int {\i bit_file_addr}, unsigned int {\i bit_file_length})}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures Spartan 6. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid State of Spartan DONE signal \par
+}}}
+{\xe \v read_sdcard_config_v7\:user_sdio.c}
+{\xe \v user_sdio.c\:read_sdcard_config_v7}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int read_sdcard_config_v7 (unsigned int {\i bit_file_addr}, unsigned int {\i bit_file_length}, int {\i chip_select})}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures Virtex 7 chips. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid DONE_RU<<3 + DONE_RD<<2 + DONE_LU<<1 + DONE_RD<<0 one-hot encoding for v7 done signals; (0xF on success) \par
+}}}
+{\xe \v user_sdio_read_card\:user_sdio.c}
+{\xe \v user_sdio.c\:user_sdio_read_card}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int user_sdio_read_card (int {\i config_sp6}, int {\i v7_chip_select}, int {\i v7_bit_id})}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures, test SD card and loads bitstreams into Spartan 6 and Virtex7. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+When microSD cards holds multiple bitfiles for virtex 7 this function should be modified\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i config_sp6} \cell }{Flag to tell should Spartan6 be configured \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i v7_chip_select} \cell }{Virtex 7 Chip select \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i v7_bit_id} \cell }{Virtex 7 bit file ID\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid one-hot encoding: DONE_SP6<<4 + DONE_RU<<3 + DONE_RD<<2 + DONE_LU<<1 + DONE_LD<<0 \par
+}}}
+{\xe \v user_sdio_work\:user_sdio.c}
+{\xe \v user_sdio.c\:user_sdio_work}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int user_sdio_work (void )}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configures, test SD card and loads bitstreams into Spartan 6 and Virtex7. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid none \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+user_timer.c File Reference\par \pard\plain 
+{\tc\tcl2 \v user_timer.c}
+{\xe \v user_timer.c}
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing Timer Init and delay functions. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b user_timer_init1} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Timers Init. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Delay} (__IO uint32_t nTime)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wait function. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing Timer Init and delay functions. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RC47 STM program uses 3 counters:{
+\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+1.\tab Systick - 1 msec interrupts - used for makeing Delay in millisecs\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+2.\tab TIM2 - dt = 50 ns - used for precise timing measurments\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+3.\tab TIM3 - 1 sec interrupts - used from trigger periodic work\par}
+Presice timing measurments example (TIM2)\par
+/code TIM_SetCounter(TIM2,0); code_to_be_measured(); t2 = TIM_GetCounter(TIM2); /endcode \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v Delay\:user_timer.c}
+{\xe \v user_timer.c\:Delay}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Delay (__IO uint32_t {\i nTime})}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wait function. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i nTime} \cell }{Miliseconds to wait \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v user_timer_init1\:user_timer.c}
+{\xe \v user_timer.c\:user_timer_init1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void user_timer_init1 (void )}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Timers Init. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+user_uart.c File Reference\par \pard\plain 
+{\tc\tcl2 \v user_uart.c}
+{\xe \v user_uart.c}
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with USART interface with USB HOST. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b user_usart1_init} (int baud_date)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Init USART1 to use interrupts. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b user_put_char} (uint8_t ch)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends byte over USART1 and waits for completeion of transfer. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b user_put_char_no_wait} (uint8_t ch)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends byte over USART1 without waiting for completeion of transfer. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b user_tx_buf_usart} (uint8_t *buf, uint16_t buf_len)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends buffer over USART1 and waits for completeion of transfer. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b user_usart_irq_handler} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+USART1 ISR. Sends data from UsartTxBufferPtr and handles received data in state machine fashion. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t * {\b UsartTxBufferPtr}{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pointer to Buffer set to transmit over USART1. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint16_t {\b UsartNumBytes}{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+USART1 Transmit Total Byte Number. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b uart_char}{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Buffer byte used when tramsitting one byte. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b state} = STATE_IDLE{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+State var used in USART ISR RX state machine. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b ss} = 0{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yet another State var used in USART ISR RX state machine. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+struct cmd_frame_s {\b uframe}{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cmd from host received by USART. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_uframe_dpc}{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in USART ISR to schedule delayed procedure call for USART command. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b usart_stm_ready} = 0{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in USART DPC when smth is done;. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b usart_ready_to_send_data} = 0{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+flag set in ISR to tell DPC to finish data transfer }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b Buffer_Block_Rx} [SDIO_BLOCK_SIZE *SDIO_MAX_BLOCKS_RX]{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RAM Buffer used in SDIO and USART Host Transfers. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with USART interface with USB HOST. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RC47 HOST USART\par
+USART_1 TX - PA9\par
+USART_1 RX - PA10 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v user_put_char\:user_uart.c}
+{\xe \v user_uart.c\:user_put_char}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void user_put_char (uint8_t {\i ch})}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends byte over USART1 and waits for completeion of transfer. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i ch} \cell }{Byte to be transferred\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v user_put_char_no_wait\:user_uart.c}
+{\xe \v user_uart.c\:user_put_char_no_wait}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void user_put_char_no_wait (uint8_t {\i ch})}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends byte over USART1 without waiting for completeion of transfer. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i ch} \cell }{Byte to be transferred\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v user_tx_buf_usart\:user_uart.c}
+{\xe \v user_uart.c\:user_tx_buf_usart}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void user_tx_buf_usart (uint8_t * {\i buf}, uint16_t {\i buf_len})}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sends buffer over USART1 and waits for completeion of transfer. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buf} \cell }{Pointer to global array to be transferred \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buf_len} \cell }{Number of bytes to be transfered\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v user_usart1_init\:user_uart.c}
+{\xe \v user_uart.c\:user_usart1_init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void user_usart1_init (int {\i baud_date})}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Init USART1 to use interrupts. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i baud_date} \cell }{USART Baud Rate (Can be up to 3M)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v user_usart_irq_handler\:user_uart.c}
+{\xe \v user_uart.c\:user_usart_irq_handler}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void user_usart_irq_handler (void )}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+USART1 ISR. Sends data from UsartTxBufferPtr and handles received data in state machine fashion. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Transmitting data:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab Program calls user_put_char or user_tx_buf_usart which sets UsartTxBufferPtr and UsartNumBytes and enables Transmit interrupt (USART_IT_TXE) which is generated when tx data register is empty\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab USART_IT_TXE interrupt is generated where byte is trasmitted and UsartNumBytes decreased\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Bytes are transmitted one by one. After transmitting the last one USART_IT_TXE is disabled\par}
+Receiving data:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab USART1 Receive interrupt (USART_IT_RXNE) is enabled at init time\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab New received byte is written to rx_byte and then analyzed.\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab Depending on the command code state machine will receiv needed amount of data (frame size) and schedule DPC ({\b stm_host.c})\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+4.\tab DPC will do some work and finish request from host\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+wide_bus.c File Reference\par \pard\plain 
+{\tc\tcl2 \v wide_bus.c}
+{\xe \v wide_bus.c}
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with WIDE BUS interface to Spartan6 and LEDS. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b leds_init} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Init active low leds. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b led_off} (RC47_Led_TypeDef Led)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Turn off led. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b led_on} (RC47_Led_TypeDef Led)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Turn on led. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b led_toggle} (RC47_Led_TypeDef Led)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Toggle led. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_deinit} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure all wide bus pins as inputs. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_init_load_sp6} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure wide bus pins to load Spartan 6. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_load_sp6_deinit} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+De init load Spartan 6 pins. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_sp6_start} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Start Spartan 6 config. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_sp6_write_buf} (uint8_t *buf_ptr, int buf_len)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes config buffer to Spartan6. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_sp6_toggle_cclk} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Toggle conf Spartan6 clock. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint16_t {\b wbus_config_sp6_check_done} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Spartan Done bit. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint16_t {\b wbus_config_sp6_check_init} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Spartan Init bit. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_sp6_end} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ends Spartan 6 config, deasserts CS. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_init_load_v7} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure wide bus pins to load Virtex 7. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_load_v7_deinit} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+De init load Virtex 7 pins. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_v7_start} (int chip_select)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Start Virtex 7 config. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_v7_write_buf} (uint8_t *buf_ptr, int buf_len)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes config buffer to Virtex 7. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_v7_toggle_cclk} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Toggle conf Virtex 7 clock. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint16_t {\b wbus_config_v7_check_done} (int chip_select)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Virtex 7 Done bit. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint8_t {\b wbus_check_all_v7_done} (int chip_select)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks all Virtex 7 Done bit. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+uint16_t {\b wbus_config_v7_check_init} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Spartan Init bit. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_config_v7_end} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ends Spartan 6 config, deasserts CS. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_clear_v7_config} (int chip_select)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clears Virtex 7 configuration. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_init_sp6_comm} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure wide bus pins for stm communication with sp6. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_deinit_sp6_comm} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deinit wide bus pins for stm communication with sp6. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_irq_handler} (void)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wbus ISR. Handles received data in state machine fashion. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_write_byte_sp6} (uint8_t byte_val)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites Byte WideBus. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b wbus_write_buf_sp6} (uint8_t *buf, int num)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites Buffer to WideBus. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b Buffer_Block_Tx} [SDIO_BLOCK_SIZE *SDIO_MAX_BLOCKS_RX]{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+RAM Buffer used in SDIO and WBuS Host Transfers. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+struct cmd_frame_s {\b sp6_frame}{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Cmd from host received by SP6. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b need_sp6_frame_dpc}{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in WBUS ISR to schedule delayed procedure call for WBUS command. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b sp6_stm_ready} = 0{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in WBUS DPC when smth is done;. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+__IO uint8_t {\b sp6_ready_to_send_data} = 0{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Flag set in WBUS ISR to tell DPC to finish data transfer. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b sp6_state} = STATE_SP6_IDLE{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+State var used in WBUS ISR state machine. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+uint8_t {\b sp6_ss} = 0{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Yet another State var used in WBUS ISR state machine. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+File containing functions to work with WIDE BUS interface to Spartan6 and LEDS. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+WIDE BUS is used for:{
+\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+1.\tab Configuring Spartan6 from SD card\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+2.\tab Configuring Virtex7 from SD card\par
+\pard\plain \s90\fi-360\li360\widctlpar\fs20\cgrid 
+3.\tab Communication with PCIe host over Spartan6 \par}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v led_off\:wide_bus.c}
+{\xe \v wide_bus.c\:led_off}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void led_off (RC47_Led_TypeDef {\i Led})}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Turn off led. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i RC47} \cell }{Led, from RC47_Led_TypeDef (MCU_LEDx, where x = 1..6)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v led_on\:wide_bus.c}
+{\xe \v wide_bus.c\:led_on}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void led_on (RC47_Led_TypeDef {\i Led})}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Turn on led. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i RC47} \cell }{Led, from RC47_Led_TypeDef (MCU_LEDx, where x = 1..6)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v led_toggle\:wide_bus.c}
+{\xe \v wide_bus.c\:led_toggle}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void led_toggle (RC47_Led_TypeDef {\i Led})}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Toggle led. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i RC47} \cell }{Led, from RC47_Led_TypeDef (MCU_LEDx, where x = 1..6)\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v leds_init\:wide_bus.c}
+{\xe \v wide_bus.c\:leds_init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void leds_init (void )}}
+\par
+{\bkmkstart AAAAAAAAEE}
+{\bkmkend AAAAAAAAEE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Init active low leds. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_check_all_v7_done\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_check_all_v7_done}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint8_t wbus_check_all_v7_done (int {\i chip_select})}}
+\par
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks all Virtex 7 Done bit. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i chip_select} \cell }{One of RU(RD)(LU)(LD)_SELECT macros\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid DONE_RU<<3 + DONE_RD<<2 + DONE_LU<<1 + DONE_RD<<0 \par
+}}}
+{\xe \v wbus_clear_v7_config\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_clear_v7_config}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_clear_v7_config (int {\i chip_select})}}
+\par
+{\bkmkstart AAAAAAAAEG}
+{\bkmkend AAAAAAAAEG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clears Virtex 7 configuration. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i chip_select} \cell }{One of RU(RD)(LU)(LD)_SELECT macros\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_sp6_check_done\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_sp6_check_done}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint16_t wbus_config_sp6_check_done (void )}}
+\par
+{\bkmkstart AAAAAAAAEH}
+{\bkmkend AAAAAAAAEH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Spartan Done bit. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid DONE pin input val \par
+}}}
+{\xe \v wbus_config_sp6_check_init\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_sp6_check_init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint16_t wbus_config_sp6_check_init (void )}}
+\par
+{\bkmkstart AAAAAAAAEI}
+{\bkmkend AAAAAAAAEI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Spartan Init bit. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid INIT pin input val \par
+}}}
+{\xe \v wbus_config_sp6_end\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_sp6_end}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_sp6_end (void )}}
+\par
+{\bkmkstart AAAAAAAAEJ}
+{\bkmkend AAAAAAAAEJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ends Spartan 6 config, deasserts CS. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_sp6_start\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_sp6_start}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_sp6_start (void )}}
+\par
+{\bkmkstart AAAAAAAAEK}
+{\bkmkend AAAAAAAAEK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Start Spartan 6 config. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Toggles PROG, waits for INIT to go high and assert CS\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_sp6_toggle_cclk\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_sp6_toggle_cclk}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_sp6_toggle_cclk (void )}}
+\par
+{\bkmkstart AAAAAAAAEL}
+{\bkmkend AAAAAAAAEL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Toggle conf Spartan6 clock. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_sp6_write_buf\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_sp6_write_buf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_sp6_write_buf (uint8_t * {\i buf_ptr}, int {\i buf_len})}}
+\par
+{\bkmkstart AAAAAAAAEM}
+{\bkmkend AAAAAAAAEM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes config buffer to Spartan6. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes Data to L bus and Toggles Configuration Clk\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buf_ptr} \cell }{Pointer to write data \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buf_len} \cell }{Byte count to transfer\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_v7_check_done\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_v7_check_done}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint16_t wbus_config_v7_check_done (int {\i chip_select})}}
+\par
+{\bkmkstart AAAAAAAAEN}
+{\bkmkend AAAAAAAAEN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Virtex 7 Done bit. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i chip_select} \cell }{One of RU(RD)(LU)(LD)_SELECT macros\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid 1 when done one of fpga, 0 otherwise \par
+}}}
+{\xe \v wbus_config_v7_check_init\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_v7_check_init}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+uint16_t wbus_config_v7_check_init (void )}}
+\par
+{\bkmkstart AAAAAAAAEO}
+{\bkmkend AAAAAAAAEO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Checks Spartan Init bit. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid INIT pin input val \par
+}}}
+{\xe \v wbus_config_v7_end\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_v7_end}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_v7_end (void )}}
+\par
+{\bkmkstart AAAAAAAAEP}
+{\bkmkend AAAAAAAAEP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Ends Spartan 6 config, deasserts CS. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_v7_start\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_v7_start}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_v7_start (int {\i chip_select})}}
+\par
+{\bkmkstart AAAAAAAAEQ}
+{\bkmkend AAAAAAAAEQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Start Virtex 7 config. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Aassert CS, Toggles PROG, waits for INIT to go high\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i chip_select} \cell }{One of RU(RD)(LU)(LD)_SELECT macros\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_v7_toggle_cclk\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_v7_toggle_cclk}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_v7_toggle_cclk (void )}}
+\par
+{\bkmkstart AAAAAAAAER}
+{\bkmkend AAAAAAAAER}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Toggle conf Virtex 7 clock. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_config_v7_write_buf\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_config_v7_write_buf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_config_v7_write_buf (uint8_t * {\i buf_ptr}, int {\i buf_len})}}
+\par
+{\bkmkstart AAAAAAAAES}
+{\bkmkend AAAAAAAAES}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes config buffer to Virtex 7. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Writes Data to L bus and Toggles Configuration Clk\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buf_ptr} \cell }{Pointer to write data \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buf_len} \cell }{Byte count to transfer\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_deinit\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_deinit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_deinit (void )}}
+\par
+{\bkmkstart AAAAAAAAET}
+{\bkmkend AAAAAAAAET}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure all wide bus pins as inputs. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_deinit_sp6_comm\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_deinit_sp6_comm}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_deinit_sp6_comm (void )}}
+\par
+{\bkmkstart AAAAAAAAEU}
+{\bkmkend AAAAAAAAEU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Deinit wide bus pins for stm communication with sp6. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_init_load_sp6\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_init_load_sp6}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_init_load_sp6 (void )}}
+\par
+{\bkmkstart AAAAAAAAEV}
+{\bkmkend AAAAAAAAEV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure wide bus pins to load Spartan 6. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_init_load_v7\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_init_load_v7}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_init_load_v7 (void )}}
+\par
+{\bkmkstart AAAAAAAAEW}
+{\bkmkend AAAAAAAAEW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure wide bus pins to load Virtex 7. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_init_sp6_comm\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_init_sp6_comm}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_init_sp6_comm (void )}}
+\par
+{\bkmkstart AAAAAAAAEX}
+{\bkmkend AAAAAAAAEX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Configure wide bus pins for stm communication with sp6. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Receiving data{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab MCU_LU_INIT PD3 - interrupt line from sp6; stm reads data on rising edge; input\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab MCU_R_D0 - 7 PF0-7 - data line; input\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab MCU_LU_CCLK PE9 - ack line from stm; output\par}
+Transmitting data{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab MCU_RU_CCLK PF9 - clock line to sp6; sp6 latches data on rising edge; output\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab MCU_L_D0 - 7 PE0-7 - data line; output\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_irq_handler\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_irq_handler}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_irq_handler (void )}}
+\par
+{\bkmkstart AAAAAAAAEY}
+{\bkmkend AAAAAAAAEY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wbus ISR. Handles received data in state machine fashion. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Receiving data:{
+\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+1.\tab New received byte is written to sp6_byte and then analyzed.\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+2.\tab Depending on the command code state machine will receiv needed amount of data (frame size) and schedule DPC ({\b stm_host.c})\par
+\pard\plain \s91\fi-360\li720\widctlpar\fs20\cgrid 
+3.\tab DPC will do some work and finish request from host\par}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_load_sp6_deinit\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_load_sp6_deinit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_load_sp6_deinit (void )}}
+\par
+{\bkmkstart AAAAAAAAEZ}
+{\bkmkend AAAAAAAAEZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+De init load Spartan 6 pins. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_load_v7_deinit\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_load_v7_deinit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_load_v7_deinit (void )}}
+\par
+{\bkmkstart AAAAAAAAFA}
+{\bkmkend AAAAAAAAFA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+De init load Virtex 7 pins. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_write_buf_sp6\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_write_buf_sp6}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_write_buf_sp6 (uint8_t * {\i buf}, int {\i num})}}
+\par
+{\bkmkstart AAAAAAAAFB}
+{\bkmkend AAAAAAAAFB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites Buffer to WideBus. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buf} \cell }{Pointer to buffer to write \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i num} \cell }{Number of bytes to transfer\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+{\xe \v wbus_write_byte_sp6\:wide_bus.c}
+{\xe \v wide_bus.c\:wbus_write_byte_sp6}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void wbus_write_byte_sp6 (uint8_t {\i byte_val})}}
+\par
+{\bkmkstart AAAAAAAAFC}
+{\bkmkend AAAAAAAAFC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Wites Byte WideBus. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i byte_val} \cell }{Byte to write\cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid None \par
+}}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
